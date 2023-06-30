@@ -4,56 +4,56 @@ import { normalizeURL, decode } from 'ufo'
 import { interopDefault } from './utils'
 import scrollBehavior from './router.scrollBehavior.js'
 
-const _ffc36c40 = () => interopDefault(import('..\\pages\\admin\\index.vue' /* webpackChunkName: "pages/admin/index" */))
-const _9918d4fa = () => interopDefault(import('..\\pages\\bebek-asi-takvimi-hesaplama.vue' /* webpackChunkName: "pages/bebek-asi-takvimi-hesaplama" */))
-const _24f48698 = () => interopDefault(import('..\\pages\\bebek-isim-bulucu.vue' /* webpackChunkName: "pages/bebek-isim-bulucu" */))
-const _c5cec97e = () => interopDefault(import('..\\pages\\cin-takvimiyle-cinsiyet-hesaplama.vue' /* webpackChunkName: "pages/cin-takvimiyle-cinsiyet-hesaplama" */))
-const _6d720a27 = () => interopDefault(import('..\\pages\\cocuk-boyu-hesaplama.vue' /* webpackChunkName: "pages/cocuk-boyu-hesaplama" */))
-const _23a8e2b7 = () => interopDefault(import('..\\pages\\cocuk-gelisimi-tablosu.vue' /* webpackChunkName: "pages/cocuk-gelisimi-tablosu" */))
-const _f4df66ac = () => interopDefault(import('..\\pages\\dogum-planlayici.vue' /* webpackChunkName: "pages/dogum-planlayici" */))
-const _791afcfc = () => interopDefault(import('..\\pages\\dogum-tarihi-hesaplama.vue' /* webpackChunkName: "pages/dogum-tarihi-hesaplama" */))
-const _523861fa = () => interopDefault(import('..\\pages\\goz-rengi-tahmini.vue' /* webpackChunkName: "pages/goz-rengi-tahmini" */))
-const _a7a6d5e8 = () => interopDefault(import('..\\pages\\hamilelik-kilo-hesaplama.vue' /* webpackChunkName: "pages/hamilelik-kilo-hesaplama" */))
-const _7ab2769d = () => interopDefault(import('..\\pages\\iletisim.vue' /* webpackChunkName: "pages/iletisim" */))
-const _77893b06 = () => interopDefault(import('..\\pages\\sac-rengi-tahmini.vue' /* webpackChunkName: "pages/sac-rengi-tahmini" */))
-const _4f036681 = () => interopDefault(import('..\\pages\\uye-giris.vue' /* webpackChunkName: "pages/uye-giris" */))
-const _59351c56 = () => interopDefault(import('..\\pages\\uye-kayit.vue' /* webpackChunkName: "pages/uye-kayit" */))
-const _43dd5e26 = () => interopDefault(import('..\\pages\\uye-sifremi-unuttum.vue' /* webpackChunkName: "pages/uye-sifremi-unuttum" */))
-const _0ca26747 = () => interopDefault(import('..\\pages\\yumurtlama-gunu-hesaplama.vue' /* webpackChunkName: "pages/yumurtlama-gunu-hesaplama" */))
-const _c646e4a0 = () => interopDefault(import('..\\pages\\admin\\add-blog.vue' /* webpackChunkName: "pages/admin/add-blog" */))
-const _c337dbb0 = () => interopDefault(import('..\\pages\\admin\\add-contents.vue' /* webpackChunkName: "pages/admin/add-contents" */))
-const _da770e86 = () => interopDefault(import('..\\pages\\admin\\add-image.vue' /* webpackChunkName: "pages/admin/add-image" */))
-const _7b13fe57 = () => interopDefault(import('..\\pages\\admin\\blog-category.vue' /* webpackChunkName: "pages/admin/blog-category" */))
-const _28f6a2c2 = () => interopDefault(import('..\\pages\\admin\\blogs.vue' /* webpackChunkName: "pages/admin/blogs" */))
-const _fd59ebd6 = () => interopDefault(import('..\\pages\\admin\\brand.vue' /* webpackChunkName: "pages/admin/brand" */))
-const _538aab22 = () => interopDefault(import('..\\pages\\admin\\category\\index.vue' /* webpackChunkName: "pages/admin/category/index" */))
-const _668e0d7c = () => interopDefault(import('..\\pages\\admin\\contents.vue' /* webpackChunkName: "pages/admin/contents" */))
-const _58f58adf = () => interopDefault(import('..\\pages\\admin\\contents-category.vue' /* webpackChunkName: "pages/admin/contents-category" */))
-const _65cd0e3a = () => interopDefault(import('..\\pages\\admin\\customers.vue' /* webpackChunkName: "pages/admin/customers" */))
-const _2d0f78be = () => interopDefault(import('..\\pages\\admin\\file-manager.vue' /* webpackChunkName: "pages/admin/file-manager" */))
-const _56718135 = () => interopDefault(import('..\\pages\\admin\\header-menu\\index.vue' /* webpackChunkName: "pages/admin/header-menu/index" */))
-const _49c5ecf7 = () => interopDefault(import('..\\pages\\admin\\login.vue' /* webpackChunkName: "pages/admin/login" */))
-const _386818b7 = () => interopDefault(import('..\\pages\\admin\\model.vue' /* webpackChunkName: "pages/admin/model" */))
-const _61f62aa6 = () => interopDefault(import('..\\pages\\admin\\order\\index.vue' /* webpackChunkName: "pages/admin/order/index" */))
-const _6f8a0836 = () => interopDefault(import('..\\pages\\admin\\product\\index.vue' /* webpackChunkName: "pages/admin/product/index" */))
-const _53c7c205 = () => interopDefault(import('..\\pages\\admin\\settings.vue' /* webpackChunkName: "pages/admin/settings" */))
-const _67e3d220 = () => interopDefault(import('..\\pages\\admin\\sub-product.vue' /* webpackChunkName: "pages/admin/sub-product" */))
-const _a8eff9a4 = () => interopDefault(import('..\\pages\\admin\\supplier.vue' /* webpackChunkName: "pages/admin/supplier" */))
-const _9d6d7952 = () => interopDefault(import('..\\pages\\admin\\theme.vue' /* webpackChunkName: "pages/admin/theme" */))
-const _74efb7d4 = () => interopDefault(import('..\\pages\\admin\\users.vue' /* webpackChunkName: "pages/admin/users" */))
-const _6b95a7b6 = () => interopDefault(import('..\\pages\\admin\\xml.vue' /* webpackChunkName: "pages/admin/xml" */))
-const _3f346b0e = () => interopDefault(import('..\\pages\\admin\\product\\add\\index.vue' /* webpackChunkName: "pages/admin/product/add/index" */))
-const _3f50404a = () => interopDefault(import('..\\pages\\admin\\product\\edit\\index.vue' /* webpackChunkName: "pages/admin/product/edit/index" */))
-const _57a620bc = () => interopDefault(import('..\\pages\\admin\\sliders\\editorlerimizin-sectikleri.vue' /* webpackChunkName: "pages/admin/sliders/editorlerimizin-sectikleri" */))
-const _1fa7a222 = () => interopDefault(import('..\\pages\\admin\\sliders\\herkes-onu-konusuyor.vue' /* webpackChunkName: "pages/admin/sliders/herkes-onu-konusuyor" */))
-const _2c23342a = () => interopDefault(import('..\\pages\\admin\\sliders\\slider-page.vue' /* webpackChunkName: "pages/admin/sliders/slider-page" */))
-const _6223680a = () => interopDefault(import('..\\pages\\admin\\sliders\\surdurulebilir-yasam.vue' /* webpackChunkName: "pages/admin/sliders/surdurulebilir-yasam" */))
-const _07c8e465 = () => interopDefault(import('..\\pages\\index.vue' /* webpackChunkName: "pages/index" */))
-const _739f59dd = () => interopDefault(import('..\\pages\\admin\\order\\detail\\_id.vue' /* webpackChunkName: "pages/admin/order/detail/_id" */))
-const _519bcd40 = () => interopDefault(import('..\\pages\\admin\\blog-detail\\_id.vue' /* webpackChunkName: "pages/admin/blog-detail/_id" */))
-const _4806d890 = () => interopDefault(import('..\\pages\\admin\\contents-detail\\_id.vue' /* webpackChunkName: "pages/admin/contents-detail/_id" */))
-const _b9969f08 = () => interopDefault(import('..\\pages\\admin\\customer-detail\\_id.vue' /* webpackChunkName: "pages/admin/customer-detail/_id" */))
-const _e4cf4116 = () => interopDefault(import('..\\pages\\_seoLink.vue' /* webpackChunkName: "pages/_seoLink" */))
+const _99720490 = () => interopDefault(import('..\\pages\\admin\\index.vue' /* webpackChunkName: "pages/admin/index" */))
+const _1c81b6ab = () => interopDefault(import('..\\pages\\bebek-asi-takvimi-hesaplama.vue' /* webpackChunkName: "pages/bebek-asi-takvimi-hesaplama" */))
+const _e24b0c80 = () => interopDefault(import('..\\pages\\bebek-isim-bulucu.vue' /* webpackChunkName: "pages/bebek-isim-bulucu" */))
+const _75433e69 = () => interopDefault(import('..\\pages\\cin-takvimiyle-cinsiyet-hesaplama.vue' /* webpackChunkName: "pages/cin-takvimiyle-cinsiyet-hesaplama" */))
+const _28153402 = () => interopDefault(import('..\\pages\\cocuk-boyu-hesaplama.vue' /* webpackChunkName: "pages/cocuk-boyu-hesaplama" */))
+const _0ec4a88f = () => interopDefault(import('..\\pages\\cocuk-gelisimi-tablosu.vue' /* webpackChunkName: "pages/cocuk-gelisimi-tablosu" */))
+const _69e956fc = () => interopDefault(import('..\\pages\\dogum-planlayici.vue' /* webpackChunkName: "pages/dogum-planlayici" */))
+const _6436c2d4 = () => interopDefault(import('..\\pages\\dogum-tarihi-hesaplama.vue' /* webpackChunkName: "pages/dogum-tarihi-hesaplama" */))
+const _87c355bc = () => interopDefault(import('..\\pages\\goz-rengi-tahmini.vue' /* webpackChunkName: "pages/goz-rengi-tahmini" */))
+const _3f6e44e4 = () => interopDefault(import('..\\pages\\hamilelik-kilo-hesaplama.vue' /* webpackChunkName: "pages/hamilelik-kilo-hesaplama" */))
+const _e5825316 = () => interopDefault(import('..\\pages\\iletisim.vue' /* webpackChunkName: "pages/iletisim" */))
+const _2e2155a5 = () => interopDefault(import('..\\pages\\sac-rengi-tahmini.vue' /* webpackChunkName: "pages/sac-rengi-tahmini" */))
+const _e3f9fcae = () => interopDefault(import('..\\pages\\uye-giris.vue' /* webpackChunkName: "pages/uye-giris" */))
+const _12650cfd = () => interopDefault(import('..\\pages\\uye-kayit.vue' /* webpackChunkName: "pages/uye-kayit" */))
+const _66471a15 = () => interopDefault(import('..\\pages\\uye-sifremi-unuttum.vue' /* webpackChunkName: "pages/uye-sifremi-unuttum" */))
+const _3cd29b22 = () => interopDefault(import('..\\pages\\yumurtlama-gunu-hesaplama.vue' /* webpackChunkName: "pages/yumurtlama-gunu-hesaplama" */))
+const _0a752ad8 = () => interopDefault(import('..\\pages\\admin\\add-blog.vue' /* webpackChunkName: "pages/admin/add-blog" */))
+const _2699db50 = () => interopDefault(import('..\\pages\\admin\\add-contents.vue' /* webpackChunkName: "pages/admin/add-contents" */))
+const _4f80fed6 = () => interopDefault(import('..\\pages\\admin\\add-image.vue' /* webpackChunkName: "pages/admin/add-image" */))
+const _0cd14ba2 = () => interopDefault(import('..\\pages\\admin\\blog-category.vue' /* webpackChunkName: "pages/admin/blog-category" */))
+const _1ead6277 = () => interopDefault(import('..\\pages\\admin\\blogs.vue' /* webpackChunkName: "pages/admin/blogs" */))
+const _97088426 = () => interopDefault(import('..\\pages\\admin\\brand.vue' /* webpackChunkName: "pages/admin/brand" */))
+const _3ea670fa = () => interopDefault(import('..\\pages\\admin\\category\\index.vue' /* webpackChunkName: "pages/admin/category/index" */))
+const _57b2aab8 = () => interopDefault(import('..\\pages\\admin\\contents.vue' /* webpackChunkName: "pages/admin/contents" */))
+const _27918a92 = () => interopDefault(import('..\\pages\\admin\\contents-category.vue' /* webpackChunkName: "pages/admin/contents-category" */))
+const _129480bb = () => interopDefault(import('..\\pages\\admin\\customers.vue' /* webpackChunkName: "pages/admin/customers" */))
+const _95757c34 = () => interopDefault(import('..\\pages\\admin\\file-manager.vue' /* webpackChunkName: "pages/admin/file-manager" */))
+const _2b65cc5d = () => interopDefault(import('..\\pages\\admin\\header-menu\\index.vue' /* webpackChunkName: "pages/admin/header-menu/index" */))
+const _7ceea0cf = () => interopDefault(import('..\\pages\\admin\\login.vue' /* webpackChunkName: "pages/admin/login" */))
+const _6b90cc8f = () => interopDefault(import('..\\pages\\admin\\model.vue' /* webpackChunkName: "pages/admin/model" */))
+const _2ba81864 = () => interopDefault(import('..\\pages\\admin\\order\\index.vue' /* webpackChunkName: "pages/admin/order/index" */))
+const _1a231b0d = () => interopDefault(import('..\\pages\\admin\\product\\index.vue' /* webpackChunkName: "pages/admin/product/index" */))
+const _7d3f41a6 = () => interopDefault(import('..\\pages\\admin\\settings.vue' /* webpackChunkName: "pages/admin/settings" */))
+const _c232ee70 = () => interopDefault(import('..\\pages\\admin\\sub-product.vue' /* webpackChunkName: "pages/admin/sub-product" */))
+const _1920a056 = () => interopDefault(import('..\\pages\\admin\\supplier.vue' /* webpackChunkName: "pages/admin/supplier" */))
+const _371c11a2 = () => interopDefault(import('..\\pages\\admin\\theme.vue' /* webpackChunkName: "pages/admin/theme" */))
+const _0e9e5024 = () => interopDefault(import('..\\pages\\admin\\users.vue' /* webpackChunkName: "pages/admin/users" */))
+const _6b28f5fd = () => interopDefault(import('..\\pages\\admin\\xml.vue' /* webpackChunkName: "pages/admin/xml" */))
+const _08c984e6 = () => interopDefault(import('..\\pages\\admin\\product\\add\\index.vue' /* webpackChunkName: "pages/admin/product/add/index" */))
+const _49660103 = () => interopDefault(import('..\\pages\\admin\\product\\edit\\index.vue' /* webpackChunkName: "pages/admin/product/edit/index" */))
+const _0586ead8 = () => interopDefault(import('..\\pages\\admin\\sliders\\editorlerimizin-sectikleri.vue' /* webpackChunkName: "pages/admin/sliders/editorlerimizin-sectikleri" */))
+const _79ecdac7 = () => interopDefault(import('..\\pages\\admin\\sliders\\herkes-onu-konusuyor.vue' /* webpackChunkName: "pages/admin/sliders/herkes-onu-konusuyor" */))
+const _52fc8713 = () => interopDefault(import('..\\pages\\admin\\sliders\\slider-page.vue' /* webpackChunkName: "pages/admin/sliders/slider-page" */))
+const _58aef7d3 = () => interopDefault(import('..\\pages\\admin\\sliders\\surdurulebilir-yasam.vue' /* webpackChunkName: "pages/admin/sliders/surdurulebilir-yasam" */))
+const _a43758e6 = () => interopDefault(import('..\\pages\\index.vue' /* webpackChunkName: "pages/index" */))
+const _4893a505 = () => interopDefault(import('..\\pages\\admin\\order\\detail\\_id.vue' /* webpackChunkName: "pages/admin/order/detail/_id" */))
+const _6c0e7b30 = () => interopDefault(import('..\\pages\\admin\\blog-detail\\_id.vue' /* webpackChunkName: "pages/admin/blog-detail/_id" */))
+const _450ab4e0 = () => interopDefault(import('..\\pages\\admin\\contents-detail\\_id.vue' /* webpackChunkName: "pages/admin/contents-detail/_id" */))
+const _0c42d1a4 = () => interopDefault(import('..\\pages\\admin\\customer-detail\\_id.vue' /* webpackChunkName: "pages/admin/customer-detail/_id" */))
+const _bfb68166 = () => interopDefault(import('..\\pages\\_seoLink.vue' /* webpackChunkName: "pages/_seoLink" */))
 
 const emptyFn = () => {}
 
@@ -68,203 +68,203 @@ export const routerOptions = {
 
   routes: [{
     path: "/admin",
-    component: _ffc36c40,
+    component: _99720490,
     name: "admin"
   }, {
     path: "/bebek-asi-takvimi-hesaplama",
-    component: _9918d4fa,
+    component: _1c81b6ab,
     name: "bebek-asi-takvimi-hesaplama"
   }, {
     path: "/bebek-isim-bulucu",
-    component: _24f48698,
+    component: _e24b0c80,
     name: "bebek-isim-bulucu"
   }, {
     path: "/cin-takvimiyle-cinsiyet-hesaplama",
-    component: _c5cec97e,
+    component: _75433e69,
     name: "cin-takvimiyle-cinsiyet-hesaplama"
   }, {
     path: "/cocuk-boyu-hesaplama",
-    component: _6d720a27,
+    component: _28153402,
     name: "cocuk-boyu-hesaplama"
   }, {
     path: "/cocuk-gelisimi-tablosu",
-    component: _23a8e2b7,
+    component: _0ec4a88f,
     name: "cocuk-gelisimi-tablosu"
   }, {
     path: "/dogum-planlayici",
-    component: _f4df66ac,
+    component: _69e956fc,
     name: "dogum-planlayici"
   }, {
     path: "/dogum-tarihi-hesaplama",
-    component: _791afcfc,
+    component: _6436c2d4,
     name: "dogum-tarihi-hesaplama"
   }, {
     path: "/goz-rengi-tahmini",
-    component: _523861fa,
+    component: _87c355bc,
     name: "goz-rengi-tahmini"
   }, {
     path: "/hamilelik-kilo-hesaplama",
-    component: _a7a6d5e8,
+    component: _3f6e44e4,
     name: "hamilelik-kilo-hesaplama"
   }, {
     path: "/iletisim",
-    component: _7ab2769d,
+    component: _e5825316,
     name: "iletisim"
   }, {
     path: "/sac-rengi-tahmini",
-    component: _77893b06,
+    component: _2e2155a5,
     name: "sac-rengi-tahmini"
   }, {
     path: "/uye-giris",
-    component: _4f036681,
+    component: _e3f9fcae,
     name: "uye-giris"
   }, {
     path: "/uye-kayit",
-    component: _59351c56,
+    component: _12650cfd,
     name: "uye-kayit"
   }, {
     path: "/uye-sifremi-unuttum",
-    component: _43dd5e26,
+    component: _66471a15,
     name: "uye-sifremi-unuttum"
   }, {
     path: "/yumurtlama-gunu-hesaplama",
-    component: _0ca26747,
+    component: _3cd29b22,
     name: "yumurtlama-gunu-hesaplama"
   }, {
     path: "/admin/add-blog",
-    component: _c646e4a0,
+    component: _0a752ad8,
     name: "admin-add-blog"
   }, {
     path: "/admin/add-contents",
-    component: _c337dbb0,
+    component: _2699db50,
     name: "admin-add-contents"
   }, {
     path: "/admin/add-image",
-    component: _da770e86,
+    component: _4f80fed6,
     name: "admin-add-image"
   }, {
     path: "/admin/blog-category",
-    component: _7b13fe57,
+    component: _0cd14ba2,
     name: "admin-blog-category"
   }, {
     path: "/admin/blogs",
-    component: _28f6a2c2,
+    component: _1ead6277,
     name: "admin-blogs"
   }, {
     path: "/admin/brand",
-    component: _fd59ebd6,
+    component: _97088426,
     name: "admin-brand"
   }, {
     path: "/admin/category",
-    component: _538aab22,
+    component: _3ea670fa,
     name: "admin-category"
   }, {
     path: "/admin/contents",
-    component: _668e0d7c,
+    component: _57b2aab8,
     name: "admin-contents"
   }, {
     path: "/admin/contents-category",
-    component: _58f58adf,
+    component: _27918a92,
     name: "admin-contents-category"
   }, {
     path: "/admin/customers",
-    component: _65cd0e3a,
+    component: _129480bb,
     name: "admin-customers"
   }, {
     path: "/admin/file-manager",
-    component: _2d0f78be,
+    component: _95757c34,
     name: "admin-file-manager"
   }, {
     path: "/admin/header-menu",
-    component: _56718135,
+    component: _2b65cc5d,
     name: "admin-header-menu"
   }, {
     path: "/admin/login",
-    component: _49c5ecf7,
+    component: _7ceea0cf,
     name: "admin-login"
   }, {
     path: "/admin/model",
-    component: _386818b7,
+    component: _6b90cc8f,
     name: "admin-model"
   }, {
     path: "/admin/order",
-    component: _61f62aa6,
+    component: _2ba81864,
     name: "admin-order"
   }, {
     path: "/admin/product",
-    component: _6f8a0836,
+    component: _1a231b0d,
     name: "admin-product"
   }, {
     path: "/admin/settings",
-    component: _53c7c205,
+    component: _7d3f41a6,
     name: "admin-settings"
   }, {
     path: "/admin/sub-product",
-    component: _67e3d220,
+    component: _c232ee70,
     name: "admin-sub-product"
   }, {
     path: "/admin/supplier",
-    component: _a8eff9a4,
+    component: _1920a056,
     name: "admin-supplier"
   }, {
     path: "/admin/theme",
-    component: _9d6d7952,
+    component: _371c11a2,
     name: "admin-theme"
   }, {
     path: "/admin/users",
-    component: _74efb7d4,
+    component: _0e9e5024,
     name: "admin-users"
   }, {
     path: "/admin/xml",
-    component: _6b95a7b6,
+    component: _6b28f5fd,
     name: "admin-xml"
   }, {
     path: "/admin/product/add",
-    component: _3f346b0e,
+    component: _08c984e6,
     name: "admin-product-add"
   }, {
     path: "/admin/product/edit",
-    component: _3f50404a,
+    component: _49660103,
     name: "admin-product-edit"
   }, {
     path: "/admin/sliders/editorlerimizin-sectikleri",
-    component: _57a620bc,
+    component: _0586ead8,
     name: "admin-sliders-editorlerimizin-sectikleri"
   }, {
     path: "/admin/sliders/herkes-onu-konusuyor",
-    component: _1fa7a222,
+    component: _79ecdac7,
     name: "admin-sliders-herkes-onu-konusuyor"
   }, {
     path: "/admin/sliders/slider-page",
-    component: _2c23342a,
+    component: _52fc8713,
     name: "admin-sliders-slider-page"
   }, {
     path: "/admin/sliders/surdurulebilir-yasam",
-    component: _6223680a,
+    component: _58aef7d3,
     name: "admin-sliders-surdurulebilir-yasam"
   }, {
     path: "/",
-    component: _07c8e465,
+    component: _a43758e6,
     name: "index"
   }, {
     path: "/admin/order/detail/:id?",
-    component: _739f59dd,
+    component: _4893a505,
     name: "admin-order-detail-id"
   }, {
     path: "/admin/blog-detail/:id?",
-    component: _519bcd40,
+    component: _6c0e7b30,
     name: "admin-blog-detail-id"
   }, {
     path: "/admin/contents-detail/:id?",
-    component: _4806d890,
+    component: _450ab4e0,
     name: "admin-contents-detail-id"
   }, {
     path: "/admin/customer-detail/:id?",
-    component: _b9969f08,
+    component: _0c42d1a4,
     name: "admin-customer-detail-id"
   }, {
     path: "/:seoLink",
-    component: _e4cf4116,
+    component: _bfb68166,
     name: "seoLink"
   }],
 

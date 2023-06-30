@@ -50,6 +50,9 @@
   "Weather": {
     "description": "Auto imported from components/weather.vue"
   },
+  "AdminHeader": {
+    "description": "Auto imported from components/admin/header.vue"
+  },
   "BlogBabyDictionary": {
     "description": "Auto imported from components/blog/babyDictionary.vue"
   },
@@ -88,9 +91,6 @@
   },
   "BlogToolNewBlogs": {
     "description": "Auto imported from components/blog/toolNewBlogs.vue"
-  },
-  "AdminHeader": {
-    "description": "Auto imported from components/admin/header.vue"
   },
   "ContentDetail": {
     "description": "Auto imported from components/content/detail.vue"

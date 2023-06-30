@@ -35,7 +35,7 @@
                             <div class="container">
                                 <div class="row">
                                     <div class="col-12">
-                                        <HomepagePregnancyWeekByWeek :pregnancies="pregnanciesData"/>
+                                        <HomepagePregnancyWeekByWeek/>
                                     </div>
                                 </div>
                             </div>
@@ -49,7 +49,7 @@
                             <div class="container">
                                 <div class="row">
                                     <div class="col-12">
-                                        <HomepagePopularTools :tools="toolsData"/>
+                                        <HomepagePopularTools/>
                                     </div>
                                 </div>
                             </div>
@@ -125,7 +125,7 @@
                             <div class="container">
                                 <div class="row">
                                     <div class="col-12 col-lg-9 mx-auto">
-                                        <HomepageBabyNames :mans="babyNamesMans" :womens="babyNamesWomens"/>
+                                        <HomepageBabyNames/>
                                     </div>
                                 </div>
                             </div>
@@ -155,23 +155,6 @@ export default
             '$route.query': '$fetch'
         },
         async fetch() {           
-
-            await this.$axios.get('/Data/json/general.json')
-            .then(res => {
-                this.pregnanciesData = res.data.pregnancies
-            })
-
-            await this.$axios.get('/Data/json/general.json')
-            .then(res => {
-                this.toolsData = res.data.tools
-            })
-
-            await this.$axios.get('/Data/json/general.json')
-            .then(res => {
-                this.babyNamesMans = res.data.baby_names_man;
-                this.babyNamesWomens = res.data.baby_names_women;
-            })
-
 			let reqData = {
 				"paging": {
 					"start": 0,
@@ -202,16 +185,12 @@ export default
                 isMobile: false,
                 homeSlider:[],
                 herkesOnuKonusuyorSlider:[],
-                pregnanciesData:[],
-                toolsData:[],
                 newBlogsData:[],
                 pagingNewBlogs: {
                     currentPage: 1,
                     total: undefined,
                     length: 6
-                },
-                babyNamesMans:[],
-                babyNamesWomens:[]
+                }
             }
         },
         methods: {

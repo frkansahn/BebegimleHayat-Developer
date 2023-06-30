@@ -24,9 +24,72 @@
 <script>
 export default {
 	name: 'PopularTools',
-	props: [
-        "tools"
-    ]
+    data() {
+        return {
+            tools : [
+                {
+                    "name":"Yumurtlama Günü Hesaplama",
+                    "url":"/yumurtlama-gunu-hesaplama",
+                    "image":"/Data/image/extra_small/yumurtagunuhesaplama-1684180646598.jpeg"
+                },
+                {
+                    "name":"Doğum Tarihi Hesaplama",
+                    "url":"/dogum-tarihi-hesaplama",
+                    "image":"/Data/image/extra_small/dogum_tarihi_hesaplama-1684180646598.jpeg"
+                },
+                {
+                    "name":"Çin Takvimiyle Cinsiyet Hesaplama",
+                    "url":"/cin-takvimiyle-cinsiyet-hesaplama",
+                    "image":"/Data/image/extra_small/cin_takvimiyle_cinsiyet_hesaplama-1684180646596.jpeg"
+                },
+                {
+                    "name":"Bebek İsim Bulucu",
+                    "url":"/bebek-isim-bulucu",
+                    "image":"/Data/image/extra_small/bebekisim_bulucu-1684180646597.jpeg"
+                },
+                {
+                    "name":"Hamilelik Kilo Hesaplama",
+                    "url":"/hamilelik-kilo-hesaplama",
+                    "image":"/Data/image/extra_small/hamilelik_kilo_hesaplama-1684180646595.jpeg"
+                },
+                {
+                    "name":"Doğum Planlayıcısı",
+                    "url":"/dogum-planlayici",
+                    "image":"/Data/image/extra_small/dogum_planlayicisi-1684180646596.jpeg"
+                },
+                {
+                    "name":"Bebek Masraf Hesaplama",
+                    "url":"#",
+                    "image":"/Data/image/extra_small/bebek_maliyeti_hesaplama-1684180646596.jpeg"
+                },
+                {
+                    "name":"Çocuk Gelişimi Tablosu",
+                    "url":"/cocuk-gelisimi-tablosu",
+                    "image":"/Data/image/extra_small/cocuk_gelisimi_tablosu-1684180646597.jpeg"
+                },
+                {
+                    "name":"Çocuk Boyu Hesaplama",
+                    "url":"/cocuk-boyu-hesaplama",
+                    "image":"/Data/image/extra_small/cocuk_boyu_hesaplama-1684180646598.jpeg"
+                },
+                {
+                    "name":"Göz Rengi Tahmin Edici",
+                    "url":"/goz-rengi-tahmini",
+                    "image":"/Data/image/extra_small/goz_rengi_tahmin_edici-1684180646597.jpeg"
+                },
+                {
+                    "name":"Saç Rengi Tahmin Edici",
+                    "url":"/sac-rengi-tahmini",
+                    "image":"/Data/image/extra_small/sac_rengi_tahmin_edici-1684180646557.jpeg"
+                },
+                {
+                    "name":"Bebek Aşı Takvimi Hesaplama",
+                    "url":"/bebek-asi-takvimi-hesaplama",
+                    "image":"/Data/image/extra_small/bebek_asi_takvimi_hesaplama-1684180646597.jpeg"
+                }
+            ] 
+        }
+    }
 }
 </script>
 
