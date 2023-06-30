@@ -15,11 +15,13 @@ export default
                 pageType:null
             }
         },
-        created() {
-            this.$repositories.page.getTypeBySeoLink(this.$route.params.seoLink)
+        async fetch() {
+            await this.$repositories.page.getTypeBySeoLink(this.$route.params.seoLink)
             .then(res => {
                 this.pageType = res.data.response;
-            }) 
+            })
+        },  
+        created() {
         }
     }
 </script>

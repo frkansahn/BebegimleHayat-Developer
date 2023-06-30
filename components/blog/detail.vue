@@ -2,7 +2,7 @@
     <div class="container px-0">
         <Navigation :nav="navigation" v-if="navigation" />
         <imageGallery :images="sliders" @closeGallery="closeGallery" v-if="galleryActive" />
-        <div class="row" v-if="blog">
+        <div class="row">
             <div class="col-12">
                 <div class="row my-4 my-md-5">
                     
@@ -10,7 +10,7 @@
                         <div class="row">
                             <div class="col-12 mb-2 mb-md-4 blog-title">
                                 <h1 class="text-left">
-                                    {{ blog.subject }}
+                                    {{ blog?.subject }}
                                 </h1>
                             </div>
                             
@@ -37,7 +37,7 @@
                             </div>
                             
 
-                            <div class="col-12 mb-4" v-if="blog.image && !isHaftaHaftaGebelik && !isAylikBebekGelisimi">
+                            <div class="col-12 mb-4" v-if="blog && blog.image && !isHaftaHaftaGebelik && !isAylikBebekGelisimi">
                                 <ElementImage :src="`/Data/image/medium/${blog.image}`" :alt="blog.subject" />
                             </div>
 
@@ -79,7 +79,7 @@
                             </div>
 
                             <div class="col-12 mb-5" id="blog_detail">
-                                <section v-for="(section, index) in blog.sections" :id="`blog_detail_${section.unique}`">
+                                <section v-for="(section, index) in blog?.sections" :id="`blog_detail_${section.unique}`">
                                     <div v-html="section.value" v-if="section.type == 'content'"></div>
                                 </section>
                             </div>
@@ -218,7 +218,7 @@ export default
                 },
                 shareButtonActive: false,
                 sharing: {
-                    url: undefined,
+                    url: "",
                     title: 'Paylaşım',
                     description: 'Paylaşım',
                     quote: '',
@@ -241,6 +241,9 @@ export default
                 ]
             }
         },
+        async fetch() {           
+			await this.getBlogDetail();
+        },
         props: {
             seoLink: {
                 type: String
@@ -251,33 +254,17 @@ export default
                 return this.blog?.sections?.filter(x => x.unique != '')
             },
             isHaftaHaftaGebelik() {
-                if(window) {
-                    return window?.location?.href.indexOf('-hafta-gebelik') > -1 ? true : false
-                }
-                else
-                    return false
+                return this.blog?.seo_link?.indexOf('-hafta-gebelik') > -1 ? true : false;
             },
             kacHaftaGebelik() {
-                if(window) {
-                    return window?.location?.pathname?.split('-')[0].slice(1) || ""
-                }
-                else
-                    return ""
+                return this.blog?.seo_link?.split('-')[0] || "";
             },
 
             isAylikBebekGelisimi() {
-                if(window) {
-                    return window?.location?.href.indexOf('-aylik-bebek-gelisimi') > -1 ? true : false
-                }
-                else
-                    return false
+                return this.blog?.seo_link?.indexOf('-aylik-bebek-gelisimi') > -1 ? true : false;
             },
             kacAylikBebekGelisimi() {
-                if(window) {
-                    return window?.location?.pathname?.split('-')[0].slice(1) || ""
-                }
-                else
-                    return ""
+                return this.blog?.seo_link?.split('-')[0] || "";
             }
         },
         methods: {
@@ -291,54 +278,51 @@ export default
                     });
             },
             getBlogDetail() {
-                var _this = this;
-                var seo_link = _this.seoLink;
-                _this.$repositories.blog.show(seo_link)
-                    .then(res => {
-                        if (res) {
-                            _this.blog = res.data.response;
-
-                            if (_this.blog.sections && _this.blog.sections.length > 0) {
-                                _this.blog.sections.map((item,index) => {
-                                    if(_this.$checkIsNullOrEmpty(item.name)) {
-                                        item["unique"] = 'blog_' + index;
-                                    }
-                                    else {
-                                        item["unique"] = '';
-                                    }
-                                })
-                            }
-
-                            _this.seo_title = _this.blog.seo_title;
-                            _this.seo_keyword = _this.blog.seo_keyword;
-                            _this.seo_description = _this.blog.seo_description;
-                            _this.sliders = JSON.parse(_this.blog.gallery);
-                            _this.navigation = [
-                                {
-                                    "name": _this.blog.category_name,
-                                    "url": _this.blog.category_seo_link
-                                },
-                                {
-                                    "name": _this.blog.subject,
-                                    "url": _this.blog.seo_link
+                return new Promise((resolve,reject) => {
+                    var _this = this;
+                    var seo_link = _this.seoLink;
+                    _this.$repositories.blog.show(seo_link)
+                        .then(res => {
+                            if (res) {
+                                _this.blog = res.data.response;
+    
+                                if (_this.blog.sections && _this.blog.sections.length > 0) {
+                                    _this.blog.sections.map((item,index) => {
+                                        if(_this.$checkIsNullOrEmpty(item.name)) {
+                                            item["unique"] = 'blog_' + index;
+                                        }
+                                        else {
+                                            item["unique"] = '';
+                                        }
+                                    })
                                 }
-                            ]
-                        }
-                    });
+    
+                                _this.seo_title = _this.blog.seo_title;
+                                _this.seo_keyword = _this.blog.seo_keyword;
+                                _this.seo_description = _this.blog.seo_description;
+                                _this.otherBlog = res.data.response.otherBlogs;
+                                _this.navigation = [
+                                    {
+                                        "name": _this.blog.category_name,
+                                        "url": _this.blog.category_seo_link
+                                    },
+                                    {
+                                        "name": _this.blog.subject,
+                                        "url": _this.blog.seo_link
+                                    }
+                                ]
 
-                _this.$repositories.blog.getOtherBlogs(seo_link)
-                    .then(res => {
-                        if (res)
-                            _this.otherBlog = res.data.response;
-                    });
+                                resolve(true);
+                            }
+                            else {
+                                resolve(false);
+                            }
+                        });
+                })
             },
             closeGallery() {
                 this.galleryActive = false;
             },
-        },
-        created() {
-            var _this = this;
-            _this.getBlogDetail();
         },
         async mounted() {
             var _this = this;
