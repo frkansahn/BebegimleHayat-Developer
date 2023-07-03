@@ -1,7 +1,7 @@
 <template>
 	<div class="slider" id="sliderType1">
 		<div class="row">
-			<div class="col-12">
+			<div class="col-12 px-0 px-md-3">
 				<swiper ref="mySwiper" :options="swiperOptions">
 					<swiper-slide v-for="(slide, index) in slidersData" v-bind:key="`Slider${index}`">
 						<NuxtLink :to="slide.url" :id="`slider${index}`" v-html="decodeURIComponent(slide.image)"

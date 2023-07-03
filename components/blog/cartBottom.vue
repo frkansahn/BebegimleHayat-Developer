@@ -53,33 +53,17 @@
 	    },
 		computed: {
 			isHaftaHaftaGebelik() {
-				if(window && this.blog) {
-					return this.blog?.seo_link?.indexOf('-hafta-gebelik') > -1 ? true : false
-				}
-				else
-					return false
+				return this.blog?.seo_link?.indexOf('-hafta-gebelik') > -1 ? true : false
 			},
 			kacHaftaGebelik() {
-				if(window && this.blog) {
-					return this.blog?.seo_link?.split('-')[0] || ""
-				}
-				else
-					return ""
+				return this.blog?.seo_link?.split('-')[0] || ""
 			},
 
 			isAylikBebekGelisimi() {
-				if(window) {
-					return this.blog?.seo_link?.indexOf('-aylik-bebek-gelisimi') > -1 ? true : false
-				}
-				else
-					return false
+				return this.blog?.seo_link?.indexOf('-aylik-bebek-gelisimi') > -1 ? true : false
 			},
 			kacAylikBebekGelisimi() {
-				if(window) {
-					return this.blog?.seo_link?.split('-')[0] || ""
-				}
-				else
-					return ""
+				return this.blog?.seo_link?.split('-')[0] || ""
 			}
 		},
 	    methods:{

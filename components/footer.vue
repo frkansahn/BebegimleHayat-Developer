@@ -48,7 +48,7 @@
 											</b-button>
 										</div>
 									</div>
-									<div class="col-12" v-if="links1">
+									<div class="col-12">
 										<div class="row my-5">
 											<div class="col-12">
 												<h5 class="text-white font-weight-bold mb-4">
@@ -74,31 +74,6 @@
 												}" :sliders="links1"/>
 											</div>
 										</div>
-										<!-- <div class="row my-5">
-											<div class="col-12">
-												<h5 class="text-white font-weight-bold mb-4">
-													Makyaj ipuçları
-												</h5>
-												<SliderFooterLinks :breakpoints="{
-													1024: {
-														slidesPerView: 3,
-														spaceBetween: 10
-													},
-													768: {
-														slidesPerView: 2,
-														spaceBetween: 10
-													},
-													640: {
-														slidesPerView: 2,
-														spaceBetween: 8
-													},
-													320: {
-														slidesPerView: 2,
-														spaceBetween: 8
-													}
-												}" :sliders="links2"/>
-											</div>
-										</div> -->
 									</div>
 								</div>
 							</div>
@@ -164,8 +139,8 @@
 							</li>
 						</ul>
 					</div>
-					<div class="col-12 tumHaklar ">
-						© 2023 bebegimlehayat.com
+					<div class="col-12 tumHaklar">
+						Bu sitede yer alan içerikler tamamen bilgilendirme amaçlıdır. Doktor tavsiyesi yerine kesinlikle geçmez. Tanı ve tedavi için hekiminize danışınız.
 					</div>
 				</div>
 			</div>
@@ -186,7 +161,38 @@ export default {
 		return {
 			isMobile: false,
 			email: null,
-			links1: undefined,
+			links1 : [
+				{
+					name:"Adet (Regl) Kanamasının Az Olmasının Nedenleri",
+					url:"https://bebegimlehayat.com/adet-regl-kanamasinin-az-olmasinin-nedenleri",
+					image:"https://api.bebegimlehayat.com/Data/image/small/adet-kanamam-az-1684260822427.jpeg"
+				},
+				{
+					name:"Bebek Cinsiyeti Anne Karnında Belirlenebilir Mi? Bebek Cinsiyeti Belirleme Yöntemleri",
+					url:"https://bebegimlehayat.com/bebek-cinsiyeti-anne-karninda-belirlenebilir-mi-bebek-cinsiyeti-belirleme-yontemleri",
+					image:"https://api.bebegimlehayat.com/Data/image/small/bebek-cinsiyeti-nasil-belirlenir-1684932798765.jpeg"
+				},
+				{
+					name:"Progestan Nedir? Progesteron Hormonunun Yan Etkileri Nelerdir?",
+					url:"https://bebegimlehayat.com/progestan-nedir-progesteron-hormonunun-yan-etkileri-nelerdir",
+					image:"https://api.bebegimlehayat.com/Data/image/small/progestan-yan-etkileri-nelerdir-1684932532365.jpeg"
+				},
+				{
+					name:"Hamilelikte Adet Görülür Mü?",
+					url:"https://bebegimlehayat.com/hamilelikte-adet-gorulur-mu",
+					image:"https://api.bebegimlehayat.com/Data/image/small/WhatsApp%20Image%202023-05-23%20at%2018-1684874422133.jpeg"
+				},
+				{
+					name:"Bebeklerde Kuru Öksürük",
+					url:"https://bebegimlehayat.com/bebeklerde-kuru-oksuruk",
+					image:"https://api.bebegimlehayat.com/Data/image/small/bebeklerde-kuru-oksuruk-1684275123747.jpeg"
+				},
+				{
+					name:"Gebelikte Bebeğin Gelişmesi ve Kilo Alması İçin Uygulanması Gereken Beslenme Düzeni",
+					url:"https://bebegimlehayat.com/gebelikte-bebegin-gelismesi-ve-kilo-almasi-icin-uygulanmasi-gereken-beslenme-duzeni",
+					image:"https://api.bebegimlehayat.com/Data/image/small/hamilelikte-bebek-gelisimi-icin-ne-yemeli-1684932682612.jpeg"
+				}
+			],
 			isCookiePolitical:false
 		}
 	},
@@ -313,13 +319,6 @@ export default {
 				return JSON.parse(this.$store.state.config.social_media).sort(compare);
 			}
 		}
-	},
-	async created() {
-        await fetch('/Data/json/footerLinks.json')
-        .then(res => res.json())
-        .then(data => {
-            this.links1 = data.link1;
-        })
 	}
 }
 </script>

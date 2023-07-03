@@ -4,9 +4,12 @@
             <div class="col-12 mw-1440 mx-auto px-0 px-md-3 mb-1">
                 <div class="position-relative" id="blog_category">
                     <div class="pic category-pic" v-if="blog_category.image">
-                        <ElementImage v-desktop :src="`/Data/image/extra_big/${blog_category.image}`" :alt="blog_category.category_name"/>
-                        <ElementImage v-tablet :src="`/Data/image/medium/${blog_category.image}`" :alt="blog_category.category_name"/>
-                        <ElementImage v-mobile :src="`/Data/image/medium/${blog_category.image}`" :alt="blog_category.category_name"/>
+                        <ElementImage v-desktop :src="`/Data/image/extra_big/${blog_category.image}`"
+                            :alt="blog_category.category_name" />
+                        <ElementImage v-tablet :src="`/Data/image/medium/${blog_category.image}`"
+                            :alt="blog_category.category_name" />
+                        <ElementImage v-mobile :src="`/Data/image/medium/${blog_category.image}`"
+                            :alt="blog_category.category_name" />
                     </div>
                     <div class="txt">
                         <div class="center">
@@ -50,13 +53,13 @@
                                 slidesPerView: 1,
                                 spaceBetween: 8
                             }
-                        }" :sliders="blog_category.other_categories"/>
+                        }" :sliders="blog_category.other_categories" />
                     </div>
                 </div>
                 <div class="row my-4">
                     <div class="col-12">
                         <div class="row px-2" v-if="blog_category">
-                            <BlogListPagination :seo-link="$route.params.seoLink" :blogCategory="blog_category"/>
+                            <BlogListPagination :seo-link="$route.params.seoLink" :blogCategory="blog_category" />
                         </div>
                     </div>
                 </div>
@@ -67,7 +70,7 @@
             <div class="container">
                 <Navigation :nav="navigation" v-if="navigation" />
                 <div class="row my-5" v-if="blog_category && blog_category.other_categories">
-                    <BlogBabyDictionaryParentCategory :otherCategory="blog_category.other_categories"/>
+                    <BlogBabyDictionaryParentCategory :otherCategory="blog_category.other_categories" />
                 </div>
             </div>
         </div>
@@ -89,6 +92,9 @@ export default
                 ],
             }
         },
+        async fetch() {
+            await this.getBlogCategory();
+        },
         data() {
             return {
                 seo_title: 'Bebeklere Dair Her Şey Burada! | BebegimleHayatBebegimle Hayat',
@@ -96,64 +102,71 @@ export default
                 seo_keyword: 'BebegimVeBen',
                 navigation: undefined,
                 blog_category: undefined,
-                screen:'desktop'
+                screen: 'desktop'
             }
         },
         props: {
-            seoLink:{
-                type:String
+            seoLink: {
+                type: String
             }
         },
         methods: {
             eventWindowResize() {
                 const _this = this;
-                if(window.screen.width > 0 && window.screen.width < 768) {
+                if (window.screen.width > 0 && window.screen.width < 768) {
                     _this.screen = 'mobile'
                 }
-                else if(window.screen.width > 767 && window.screen.width < 992) {
+                else if (window.screen.width > 767 && window.screen.width < 992) {
                     _this.screen = 'tablet'
                 }
                 else {
                     _this.screen = 'desktop'
                 }
             },
+            getBlogCategory() {
+                return new Promise((resolve, reject) => {
+                    this.$repositories.blog_category.getBlogCategoryBySeoLink(this.seoLink)
+                        .then(res => {
+                            this.blog_category = res?.data?.response;
+
+                            this.seo_title = this.blog_category?.seo_title;
+                            this.seo_description = this.blog_category?.seo_description;
+                            this.seo_keyword = this.blog_category?.seo_keyword;
+
+                            if (this.blog_category?.parent_id) {
+                                let parentCategory = this.blog_category?.other_categories?.find(x => x.id == this.blog_category.parent_id);
+                                this.navigation = [
+                                    {
+                                        "name": parentCategory?.category_name,
+                                        "url": parentCategory?.url
+                                    },
+                                    {
+                                        "name": this.blog_category?.category_name,
+                                        "url": this.blog_category?.url
+                                    }
+                                ]
+                            }
+                            else {
+                                this.navigation = [
+                                    {
+                                        "name": this.blog_category?.category_name,
+                                        "url": this.blog_category?.url
+                                    }
+                                ]
+                            }
+
+                            resolve(true);
+                        })
+                        .catch(err => {
+                            resolve(false);
+                        })
+                })
+            }
         },
         async mounted() {
             const _this = this;
             _this.eventWindowResize();
             window.addEventListener("resize", _this.eventWindowResize);
-        },
-        created() {
-            this.$repositories.blog_category.getBlogCategoryBySeoLink(this.seoLink)
-                .then(res => {
-                    this.blog_category = res?.data?.response;
-
-                    this.seo_title = this.blog_category?.seo_title;
-                    this.seo_description = this.blog_category?.seo_description;
-                    this.seo_keyword = this.blog_category?.seo_keyword;
-
-                    if(this.blog_category?.parent_id) {
-                        let parentCategory = this.blog_category?.other_categories?.find(x => x.id == this.blog_category.parent_id);
-                        this.navigation = [
-                            {
-                                "name": parentCategory?.category_name,
-                                "url": parentCategory?.url
-                            },
-                            {
-                                "name": this.blog_category?.category_name,
-                                "url": this.blog_category?.url
-                            }
-                        ]
-                    }
-                    else {
-                        this.navigation = [
-                            {
-                                "name": this.blog_category?.category_name,
-                                "url": this.blog_category?.url
-                            }
-                        ]
-                    }
-                })
         }
     }
 </script>
@@ -161,7 +174,7 @@ export default
 <style lang="scss">
 #blog_category {
     min-height: 110px;
-    
+
     .category-pic {
         overflow: hidden;
         position: relative;
@@ -169,11 +182,11 @@ export default
         width: 100%;
 
         @media screen and (max-width: 768px) {
-            padding-bottom: 80%;            
+            padding-bottom: 80%;
         }
 
         @media screen and (max-width: 540px) {
-            padding-bottom: 110%;            
+            padding-bottom: 110%;
         }
 
         picture {
@@ -248,5 +261,4 @@ export default
             }
         }
     }
-}
-</style>
+}</style>

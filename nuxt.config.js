@@ -81,8 +81,51 @@ export default {
         '@nuxtjs/axios',
         ['cookie-universal-nuxt', { alias: 'cookiz' }],
         'nuxt-purgecss',
-        'vue-social-sharing/nuxt'
+        'vue-social-sharing/nuxt',
+        '@nuxtjs/sitemap',
+        '@nuxtjs/redirect-module'
     ],
+    sitemap:{
+        hostname: 'https://bebegimlehayat.com',
+        cacheTime : 1000 * 60 * 60,
+        path: '/sitemap.xml',
+        sitemaps: [
+            {
+                path: '/category-sitemap.xml',
+                exclude: ['/**'],
+                routes: async () => {
+                    const res = await axios.get('https://api.bebegimlehayat.com/api/v1/blog/category/sitemap')
+                    return res.data.response.map((b) => `/${b.seo_link}`)
+                }
+
+            }, 
+            {
+                exclude: ['/**'],
+                path: '/post-sitemap.xml',
+                routes: async () => {
+                    const res = await axios.get('https://api.bebegimlehayat.com/api/v1/blog/sitemap')
+                    return res.data.response.map((b) => `/${b.seo_link}`)
+                }
+            },
+            {
+                path: '/static-sitemap.xml',
+                exclude: ['/**'],
+                routes: [
+                    '/yumurtlama-gunu-hesaplama', 
+                    '/sac-rengi-tahmini', 
+                    '/hamilelik-kilo-hesaplama',
+                    '/goz-rengi-hesaplama',
+                    '/dogum-tarihi-hesaplama',
+                    '/dogum-planlayici',
+                    '/cocuk-gelisimi-tablosu',
+                    '/cocuk-boyu-hesaplama',
+                    '/cin-takvimiyle-cinsiyet-hesaplama',
+                    '/bebek-isim-bulucu',
+                    '/bebek-asi-takvimi-hesaplama'
+                ]
+            }
+        ]
+    },
     purgeCSS: {
         mode: 'webpack',
         enabled: ({ isDev, isClient }) => (!isDev && isClient),
@@ -106,15 +149,12 @@ export default {
         proxyHeaders: false,
         credentials: false
     },
-    serverMiddleware: [{ 
-        path: '/',
-        handler: '~/serverMiddleware/redirects.js'
-    }],
     redirect: [
-        { from: '^/kullanim-sart-ve-kosullari-bebegimlehayat', to: '/kullanim-sart-ve-kosullari', statusCode: 301 },
-        { from: '^/kisisel-verilerin-korunmasi-politikasi-bebegimlehayat', to: '/kisisel-verilerin-korunmasi-politikasi', statusCode: 301 },
-        { from: '^/cerez-politikasi-bebegimlehayat', to: '/cerez-politikasi', statusCode: 301 },
-        { from: '^/hakkimizda-bebegimlehayat', to: '/hakkimizda', statusCode: 301 }
+        { from: '^/kullanim-sart-ve-kosullari-bebegimlehayat', to: '/kullanim-sart-ve-kosullari' },
+        { from: '^/kisisel-verilerin-korunmasi-politikasi-bebegimlehayat', to: '/kisisel-verilerin-korunmasi-politikasi' },
+        { from: '^/cerez-politikasi-bebegimlehayat', to: '/cerez-politikasi' },
+        { from: '^/hakkimizda-bebegimlehayat', to: '/hakkimizda' },
+        { from: '^/post-sitemap1.xml', to: '/post-sitemap.xml' },
     ],
     build: {
         extend(config, ctx) {

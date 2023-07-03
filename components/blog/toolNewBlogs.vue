@@ -31,7 +31,7 @@ export default {
             let reqData = {
                 "paging": {
                     "start": 0,
-                    "end": 10
+                    "end": 6
                 }
             }
             _this.$repositories.blog.getNewBlogs(reqData)

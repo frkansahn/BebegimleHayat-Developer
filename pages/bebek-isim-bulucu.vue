@@ -11,113 +11,6 @@
                     </div>
                     <div class="col-12">
                         <div class="col-12 text-center no-result" id="bebekIsimBulucuForm">
-                            <!-- <b-form class="row" v-if="!result">
-                                <div class="col-12 mb-3">
-                                    <div class="h5">
-                                        İsim yapısı hakkında
-                                    </div>
-                                </div>
-
-                                <div class="col-12">
-                                    <p class="h6">
-                                        <b-form-input size="md"
-                                            class="w-auto mw-80px d-inline-block border-dark rounded-0 px-2 my-2"
-                                            id="first_letter_input" v-model="firstLetter" placeholder="Harf"
-                                            autocomplete="off" type="text"></b-form-input> ile başlayıp
-                                        <b-form-input size="md"
-                                            class="w-auto mw-80px d-inline-block border-dark rounded-0 px-2 my-2"
-                                            id="last_letter_input" v-model="lastLetter" placeholder="Harf"
-                                            autocomplete="off" type="text"></b-form-input> ile biten <v-select
-                                            class="w-140px d-inline-block border border-dark" :clearable="false"
-                                            v-model="gender" placeholder="seç.." :options="genders" label="name"
-                                            :reduce="m => m.value"></v-select> ismi arıyorum
-                                    </p>
-                                </div>
-
-                                <div class="col-12 mt-5 mb-3">
-                                    <div class="h5">
-                                        İsim anlamı hakkında
-                                    </div>
-                                </div>
-
-                                <div class="col-12">
-                                    <p class="h6">
-                                        İsim anlamı <b-form-input size="md"
-                                            class="w-auto mw-120px d-inline-block border-dark rounded-0 px-2 my-2"
-                                            id="first_letter_input" v-model="mean" placeholder="Anlam" autocomplete="off"
-                                            type="text"></b-form-input> olan <v-select
-                                            class="w-140px d-inline-block border border-dark" :clearable="false"
-                                            v-model="category" placeholder="seç.." :options="categories" label="name"
-                                            :reduce="m => m.value"></v-select> kategorisinde isim arıyorum.
-                                    </p>
-                                </div>
-
-                                <div class="col-12 mt-5">
-                                    <button type="button" class="btn btn-info py-3 px-5 rounded" @click="generate">
-                                        <h6 class="font-weight-bold">
-                                            <b-spinner small label="Loading..." v-if="isLoading" class="mr-2"></b-spinner>
-                                            Bul
-                                        </h6>
-                                    </button>
-                                </div>
-                            </b-form>
-                            <div class="row p-5" v-else>
-                                <div class="col-12 p-4 bg-white text-center" id="result">
-                                    <div class="row">
-                                        <div class="col-12 col-lg-9 mx-auto">
-                                            <div class="row mb-4 h6">
-                                                <div class="col-12 px-0 py-2" v-for="(D,index) in getResult" :class="index+1 != getResult.length ? 'border-bottom':''">
-                                                    <div class="row">
-                                                        <div class="col-12 d-flex align-items-center justify-content-between">
-                                                            <strong class="d-flex align-items-center">
-                                                                {{ D.name }}
-                                                                <svg v-if="D.gender == 1" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="venus" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="text-white svg-inline--fa fa-venus ml-2"><path fill="#ffc0cb" d="M80 176a112 112 0 1 1 224 0A112 112 0 1 1 80 176zM224 349.1c81.9-15 144-86.8 144-173.1C368 78.8 289.2 0 192 0S16 78.8 16 176c0 86.3 62.1 158.1 144 173.1V384H128c-17.7 0-32 14.3-32 32s14.3 32 32 32h32v32c0 17.7 14.3 32 32 32s32-14.3 32-32V448h32c17.7 0 32-14.3 32-32s-14.3-32-32-32H224V349.1z" class=""></path></svg>
-                                                                <svg v-else aria-hidden="true" focusable="false" data-prefix="fas" data-icon="mars" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="text-white svg-inline--fa fa-mars ml-2"><path fill="#60b4c5" d="M289.8 46.8c3.7-9 12.5-14.8 22.2-14.8H424c13.3 0 24 10.7 24 24V168c0 9.7-5.8 18.5-14.8 22.2s-19.3 1.7-26.2-5.2l-33.4-33.4L321 204.2c19.5 28.4 31 62.7 31 99.8c0 97.2-78.8 176-176 176S0 401.2 0 304s78.8-176 176-176c37 0 71.4 11.4 99.8 31l52.6-52.6L295 73c-6.9-6.9-8.9-17.2-5.2-26.2zM400 80l0 0h0v0zM176 416a112 112 0 1 0 0-224 112 112 0 1 0 0 224z" class=""></path></svg>
-                                                            </strong>
-        
-                                                            <button v-b-toggle="`accordion-name-${index}`" class="btn float-left p-2">
-                                                                <b-icon-chevron-down variant="secondary"></b-icon-chevron-down>
-                                                            </button>
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="row">
-                                                        <div class="col-12">
-                                                            <b-collapse :id="`accordion-name-${index}`" :accordion="`accordion-name-${index}`" role="tabpanel">
-                                                                <b-card-body class="py-3 text-left border-left">
-                                                                    <div class="mb-3">
-                                                                        <strong>Kategori :</strong> {{ D.category }} 
-                                                                    </div>
-                                                                    <div class="mb-3">
-                                                                        <strong>Anlamı :</strong> {{ D.mean }} 
-                                                                    </div>
-                                                                </b-card-body>
-                                                            </b-collapse>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="row mb-4" v-if="currentPage*length < result.length">
-                                                <div class="col-12">
-                                                    <button class="btn btn-dark btn-sm" @click="showMore">
-                                                        + Daha Fazla
-                                                    </button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row border-top pt-5 mt-4">
-                                        <div class="col-12 mb-3">
-                                            <h5 role="button" class="start-over" @click="doAgain">
-                                                <small>
-                                                    Tekrar Yap
-                                                </small>
-                                            </h5>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div> -->
-
                             <form class="row">
                                 <div class="col-12">
                                     <h6 class="font-weight-bold">
@@ -132,7 +25,7 @@
                                                     hegiht="34" />
                                             </span>
                                             <span class="boy-baby" :class="gender == 0 ? 'active' : ''"
-                                                @click="gender = 0; result = null; letter = 'A';searchName();">
+                                                @click="gender = 0; result = null; letter = 'A'; searchName();">
                                                 <img src="/Data/icons/baby-men-s.png" alt="Erkek bebek" width="38"
                                                     hegiht="34" />
                                             </span>
@@ -194,151 +87,121 @@
 
                         <div class="row mt-4">
                             <div class="col-12" id="bebekIsimBulucuContent">
-                                <h2>Bebek İsim Bulucu Nedir?</h2>
+                                <h2>Bebek İsim Bulucu Nedir? </h2>
                                 <br>
-                                <p>
-                                    Hamileliğin en önemli aşamalarından birindesiniz. Artık bebeğinize isim seçme vakti.
+
+                                <p>Hamileliğin en önemli aşamalarından birindesiniz. Artık bebeğinize isim seçme vakti.
                                     Doğuma yakın veya uzak olmanız fark etmez, bebeğinize isim düşünmeniz son derece
-                                    önemlidir.
-                                </p>
+                                    önemlidir.</p>
                                 <br>
-                                <p>
-                                    Bebek İsim Bulucuyu kullanmak için tek yapmanız gereken bebeğinizin cinsiyetini seçmek,
+                                <p>Bebek İsim Bulucuyu kullanmak için tek yapmanız gereken bebeğinizin cinsiyetini seçmek,
                                     arından da istediğiniz baş harfi seçmektir. Karşınıza çıkan isim listesinde isimlere
                                     tıklayarak anlamlarını öğrenebilirsiniz. Diğer isimleri görmek için Daha Fazla tuşuna
                                     tıklayabilirsiniz. Dilediğiniz zaman cinsiyeti veya harfi değiştirip başka isimlere de
-                                    göz atabilirsiniz.
-                                </p>
+                                    göz atabilirsiniz.</p>
                                 <br><br>
-                                <h2>
-                                    Doğru Bebek İsmi Nasıl Seçilir?
-                                </h2>
+                                <h2>Doğru Bebek İsmi Nasıl Seçilir? </h2>
                                 <br>
-                                <p>
-                                    Bebeğinize doğru ismi seçmek her zaman zordur. Seçerken aklınıza gelecek birçok faktör
+                                <p>Bebeğinize doğru ismi seçmek her zaman zordur. Seçerken aklınıza gelecek birçok faktör
                                     bulunmaktadır. Sade ve güzel veya ihtişamlı ve yaratıcı bir isim seçerken engeller her
-                                    zaman aynıdır.
-                                </p>
+                                    zaman aynıdır.</p>
                                 <br>
-                                <p>
-                                    - Bebeğiniz büyüdüğünde bu isim nasıl duracak?
-                                </p>
-                                <p>
-                                    - Bu isim kulağınıza her zaman güzel gelecek mi yoksa zaman geçtikçe eskiyecek mi?
-                                </p>
-                                <p>
-                                    - Bebeğiniz isminin manası bebeğinizle uyuşacak mı?
-                                </p>
+                                <p>- Bebeğiniz büyüdüğünde bu isim nasıl duracak? </p>
                                 <br>
-                                <p>
-                                    Bu ve benzer sorular bir isimde karar kılmaya çalışırken aklınızı işgal ediyor olabilir.
+                                <p>- Bu isim kulağınıza her zaman güzel gelecek mi yoksa zaman geçtikçe eskiyecek mi?</p>
+                                <br>
+                                <p>- Bebeğiniz isminin manası bebeğinizle uyuşacak mı?</p>
+                                <br>
+                                <p>Bu ve benzer sorular bir isimde karar kılmaya çalışırken aklınızı işgal ediyor olabilir.
                                     Her ebeveyn aynı ikilemleri yaşamaktadır. Bu da son derece doğaldır çünkü ismimizi
-                                    ömrümüz boyunca taşırız.
-                                </p>
+                                    ömrümüz boyunca taşırız.</p>
                                 <br><br>
-                                <h2>
-                                    Bebek İsimlerinin Önemi Nedir?
-                                </h2>
+                                <h2>Bebek İsimlerinin Önemi Nedir? </h2>
                                 <br>
-                                <p>
-                                    Her ismin kendine ait hikayesi vardır. Derin anlamları bazıları için hoşken bazıları
+                                <p>Her ismin kendine ait hikayesi vardır. Derin anlamları bazıları için hoşken bazıları
                                     içinse normaldir. Bebeklerimizle bu isimler büyür ve o isme yeni anlamlar katarlar. Bu
                                     yüzden duyulduğunda herkesi etkileyen mükemmel bir isim seçmeyi istemeniz son derece
-                                    normaldir.
-                                </p>
+                                    normaldir.</p>
                                 <br>
-                                <p>
-                                    İsim seçerken şu soruları kendinize mutlaka sorun.
-                                </p>
+                                <p>İsim seçerken şu soruları kendinize mutlaka sorun.</p>
                                 <br>
-                                <p>
-                                    Köklerinize uygun bir isim mi seçmek istiyorsunuz yoksa modern bir isim mi?
-                                </p>
+                                <p>Köklerinize uygun bir isim mi seçmek istiyorsunuz yoksa modern bir isim mi?</p>
                                 <br>
-                                <p>
-                                    Klasik isimlerden mi tercih etmelisiniz yoksa yeni nesil isimler mi?
-                                </p>
+                                <p>Klasik isimlerden mi tercih etmelisiniz yoksa yeni nesil isimler mi?</p>
                                 <br>
-                                <p>
-                                    Çocuğunuzun diğer insanlarla ortak bir isme mi sahip olmasını istiyorsunuz yoksa eşsiz
-                                    mi?
-                                </p>
+                                <p>Çocuğunuzun diğer insanlarla ortak bir isme mi sahip olmasını istiyorsunuz yoksa eşsiz
+                                    mi?</p>
                                 <br>
-                                <p>
-                                    Bu soruların yanı sıra çocuğunuz ikinci bir isim bulma durumu var. Hatta çocuğunuza 3
+                                <p>Bu soruların yanı sıra çocuğunuz ikinci bir isim bulma durumu var. Hatta çocuğunuza 3
                                     isim bile verebilirsiniz. Eğer birden fazla isim verirseniz bu isimlerin birbirine
-                                    uyumlu olması da önemlidir.
-                                </p>
+                                    uyumlu olması da önemlidir.</p>
                                 <br>
-                                <p>
-                                    İsim seçerken kendinizi yormanıza gerek yok. Güzel bulduğunuz isimlerin bir listesini
-                                    çıkarın ardından yavaşça listeyi eleyin. Bebeğiniz doğana kadar hala vaktiniz var.
-                                </p>
+                                <p>İsim seçerken kendinizi yormanıza gerek yok. Güzel bulduğunuz isimlerin bir listesini
+                                    çıkarın ardından yavaşça listeyi eleyin. Bebeğiniz doğana kadar hala vaktiniz var.</p>
                                 <br><br>
-                                <h2>
-                                    Bebeğimle Hayat ile en iyi ismi nasıl bulabilirsiniz?
-                                </h2>
-                                <br>
-                                <p>
-                                    Bebeğimle Hayat ekibi olarak her ebeveynin en güzel deneyimlere ortak olmasını
-                                    istiyoruz. Bu yüzden bebeğinize eşsiz bir isim bulabilmeniz için devamlı çalışıyoruz.
-                                    İsim kütüphanemizi her gün genişletiyor ve size en güzel Bebek İsim Bulucuyu
-                                    getiriyoruz. Tek yapmanız gereken sayfamızda bulunan isimleri incelemek ve bebeğinize en
-                                    iyi isimleri seçmek.
-                                </p>
 
+                                <h2> Bebeğimle Hayat ile en iyi ismi nasıl bulabilirsiniz? </h2>
+                                <br>
+                                <p>Bebeğimle Hayat ekibi olarak her ebeveynin en güzel deneyimlere ortak olmasını istiyoruz.
+                                    Bu yüzden bebeğinize eşsiz bir isim bulabilmeniz için devamlı çalışıyoruz.</p>
+                                <br>
+                                <p>İsim kütüphanemizi her gün genişletiyor ve size en güzel Bebek İsim Bulucuyu getiriyoruz.
+                                    Tek yapmanız gereken sayfamızda bulunan isimleri incelemek ve bebeğinize en iyi isimleri
+                                    seçmek. </p>
+                                <br><br>
 
                                 <script type="application/ld+json">
                                     {
-                                        "mainEntity" : [
-                                    {
-                                    "name" : " Bebek İsim Bulucu Nedir?",
-                                    "acceptedAnswer" :
-                                    {
-                                    "text" : " Hamileliğin en önemli aşamalarından birindesiniz. Artık bebeğinize isim seçme vakti. Doğuma yakın veya uzak olmanız fark etmez, bebeğinize isim düşünmeniz son derece önemlidir.
-                                    Bebek İsim Bulucuyu kullanmak için tek yapmanız gereken bebeğinizin cinsiyetini seçmek, arından da istediğiniz baş harfi seçmektir. Karşınıza çıkan isim listesinde isimlere tıklayarak anlamlarını öğrenebilirsiniz. Diğer isimleri görmek için Daha Fazla tuşuna tıklayabilirsiniz. Dilediğiniz zaman cinsiyeti veya harfi değiştirip başka isimlere de göz atabilirsiniz.",
-                                    "@type" : "Answer"
-                                    },
-                                    "@type" : "Question"
-                                    },{
-                                    "name" : " Doğru Bebek İsmi Nasıl Seçilir?",
-                                    "acceptedAnswer" :
-                                    {
-                                    "text" : " Bebeğinize doğru ismi seçmek her zaman zordur. Seçerken aklınıza gelecek birçok faktör bulunmaktadır. Sade ve güzel veya ihtişamlı ve yaratıcı bir isim seçerken engeller her zaman aynıdır.
-                                    - Bebeğiniz büyüdüğünde bu isim nasıl duracak? 
-                                    - Bu isim kulağınıza her zaman güzel gelecek mi yoksa zaman geçtikçe eskiyecek mi?
-                                    - Bebeğiniz isminin manası bebeğinizle uyuşacak mı?
-                                    Bu ve benzer sorular bir isimde karar kılmaya çalışırken aklınızı işgal ediyor olabilir. Her ebeveyn aynı ikilemleri yaşamaktadır. Bu da son derece doğaldır çünkü ismimizi ömrümüz boyunca taşırız.",
-                                    "@type" : "Answer"
-                                    },
-                                    "@type" : "Question"
-                                    },{
-                                    "name" : " Bebek İsimlerinin Önemi Nedir?",
-                                    "acceptedAnswer" :
-                                    {
-                                    "text" : " Her ismin kendine ait hikayesi vardır. Derin anlamları bazıları için hoşken bazıları içinse normaldir. Bebeklerimizle bu isimler büyür ve o isme yeni anlamlar katarlar. Bu yüzden duyulduğunda herkesi etkileyen mükemmel bir isim seçmeyi istemeniz son derece normaldir.
-                                    İsim seçerken şu soruları kendinize mutlaka sorun.
-                                    Köklerinize uygun bir isim mi seçmek istiyorsunuz yoksa modern bir isim mi?
-                                    Klasik isimlerden mi tercih etmelisiniz yoksa yeni nesil isimler mi?
-                                    Çocuğunuzun diğer insanlarla ortak bir isme mi sahip olmasını istiyorsunuz yoksa eşsiz mi?
-                                    Bu soruların yanı sıra çocuğunuz ikinci bir isim bulma durumu var. Hatta çocuğunuza 3 isim bile verebilirsiniz. Eğer birden fazla isim verirseniz bu isimlerin birbirine uyumlu olması da önemlidir.
-                                    İsim seçerken kendinizi yormanıza gerek yok. Güzel bulduğunuz isimlerin bir listesini çıkarın ardından yavaşça listeyi eleyin. Bebeğiniz doğana kadar hala vaktiniz var.",
-                                    "@type" : "Answer"
-                                    },
-                                    "@type" : "Question"
-                                    },{
-                                    "name" : " Bebeğimle Hayat ile en iyi ismi nasıl bulabilirsiniz?",
-                                    "acceptedAnswer" :
-                                    {
-                                    "text" : " Bebeğimle Hayat ekibi olarak her ebeveynin en güzel deneyimlere ortak olmasını istiyoruz. Bu yüzden bebeğinize eşsiz bir isim bulabilmeniz için devamlı çalışıyoruz. İsim kütüphanemizi her gün genişletiyor ve size en güzel Bebek İsim Bulucuyu getiriyoruz. Tek yapmanız gereken sayfamızda bulunan isimleri incelemek ve bebeğinize en iyi isimleri seçmek.",
-                                    "@type" : "Answer"
-                                    },
-                                    "@type" : "Question"
-                                    }    ],
-                                        "@type" : "FAQPage",
-                                        "@context" : "http://schema.org"
+                                        "@context": "https://schema.org",
+                                        "@type": "FAQPage",
+                                        "mainEntity": [
+                                            {
+                                            "@type": "Question",
+                                            "name": "Bebek İsim Bulucu Nedir?",
+                                            "acceptedAnswer": {
+                                                "@type": "Answer",
+                                                "text": "Hamileliğin en önemli aşamalarından birindesiniz. Artık bebeğinize isim seçme vakti. Doğuma yakın veya uzak olmanız fark etmez, bebeğinize isim düşünmeniz son derece önemlidir.
+                                        Bebek İsim Bulucuyu kullanmak için tek yapmanız gereken bebeğinizin cinsiyetini seçmek, arından da istediğiniz baş harfi seçmektir. Karşınıza çıkan isim listesinde isimlere tıklayarak anlamlarını öğrenebilirsiniz. Diğer isimleri görmek için Daha Fazla tuşuna tıklayabilirsiniz. Dilediğiniz zaman cinsiyeti veya harfi değiştirip başka isimlere de göz atabilirsiniz."
+                                            }
+                                            },
+                                            {
+                                            "@type": "Question",
+                                            "name": "Doğru Bebek İsmi Nasıl Seçilir?",
+                                            "acceptedAnswer": {
+                                                "@type": "Answer",
+                                                "text": "Bebeğinize doğru ismi seçmek her zaman zordur. Seçerken aklınıza gelecek birçok faktör bulunmaktadır. Sade ve güzel veya ihtişamlı ve yaratıcı bir isim seçerken engeller her zaman aynıdır.
+                                        - Bebeğiniz büyüdüğünde bu isim nasıl duracak? 
+                                        - Bu isim kulağınıza her zaman güzel gelecek mi yoksa zaman geçtikçe eskiyecek mi?
+                                        - Bebeğiniz isminin manası bebeğinizle uyuşacak mı?
+                                        Bu ve benzer sorular bir isimde karar kılmaya çalışırken aklınızı işgal ediyor olabilir. Her ebeveyn aynı ikilemleri yaşamaktadır. Bu da son derece doğaldır çünkü ismimizi ömrümüz boyunca taşırız."
+                                            }
+                                            },
+                                            {
+                                            "@type": "Question",
+                                            "name": "Bebek İsimlerinin Önemi Nedir?",
+                                            "acceptedAnswer": {
+                                                "@type": "Answer",
+                                                "text": "Her ismin kendine ait hikayesi vardır. Derin anlamları bazıları için hoşken bazıları içinse normaldir. Bebeklerimizle bu isimler büyür ve o isme yeni anlamlar katarlar. Bu yüzden duyulduğunda herkesi etkileyen mükemmel bir isim seçmeyi istemeniz son derece normaldir.
+                                        İsim seçerken şu soruları kendinize mutlaka sorun.
+                                        Köklerinize uygun bir isim mi seçmek istiyorsunuz yoksa modern bir isim mi?
+                                        Klasik isimlerden mi tercih etmelisiniz yoksa yeni nesil isimler mi?
+                                        Çocuğunuzun diğer insanlarla ortak bir isme mi sahip olmasını istiyorsunuz yoksa eşsiz mi?
+                                        Bu soruların yanı sıra çocuğunuz ikinci bir isim bulma durumu var. Hatta çocuğunuza 3 isim bile verebilirsiniz. Eğer birden fazla isim verirseniz bu isimlerin birbirine uyumlu olması da önemlidir.
+                                        İsim seçerken kendinizi yormanıza gerek yok. Güzel bulduğunuz isimlerin bir listesini çıkarın ardından yavaşça listeyi eleyin. Bebeğiniz doğana kadar hala vaktiniz var."
+                                            }
+                                            },
+                                            {
+                                            "@type": "Question",
+                                            "name": "Bebeğimle Hayat ile en iyi ismi nasıl bulabilirsiniz?",
+                                            "acceptedAnswer": {
+                                                "@type": "Answer",
+                                                "text": "Bebeğimle Hayat ekibi olarak her ebeveynin en güzel deneyimlere ortak olmasını istiyoruz. Bu yüzden bebeğinize eşsiz bir isim bulabilmeniz için devamlı çalışıyoruz. İsim kütüphanemizi her gün genişletiyor ve size en güzel Bebek İsim Bulucuyu getiriyoruz. Tek yapmanız gereken sayfamızda bulunan isimleri incelemek ve bebeğinize en iyi isimleri seçmek."
+                                            }
+                                            }
+                                        ]
                                         }
                                 </script>
+
 
                             </div>
                         </div>
@@ -447,9 +310,9 @@ export default {
         },
         async generate() {
             this.isLoading = true;
-            if(process.client) {
-                let url = new URL('/Data/json/names.json' , document.location.href);
-                
+            if (process.client) {
+                let url = new URL('/Data/json/names.json', document.location.href);
+
                 await fetch(url)
                     .then(res => res.json())
                     .then(data => {
@@ -467,7 +330,7 @@ export default {
                         );
                         this.isLoading = false;
                     })
-    
+
                 setTimeout(() => {
                     this.isLoading = false;
                 }, 1000)
@@ -483,16 +346,16 @@ export default {
             else {
                 let url;
                 if (_this.gender == 0) {
-                    if(process.client) {
-                        url = new URL('/Data/json/boyNames.json' , document.location.href);
+                    if (process.client) {
+                        url = new URL('/Data/json/boyNames.json', document.location.href);
                     }
                     _this.dataGender = 0;
                 }
                 else {
-                    if(process.client) {
-                        url = new URL('/Data/json/girlNames.json' , document.location.href);
+                    if (process.client) {
+                        url = new URL('/Data/json/girlNames.json', document.location.href);
                     }
-                    
+
                     _this.dataGender = 1;
                 }
 

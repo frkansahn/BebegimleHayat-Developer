@@ -58,18 +58,10 @@ export default {
 	},
 	computed: {
 		isHaftaHaftaGebelik() {
-			if(this.blog) {
-				return this.blog?.seo_link?.indexOf('-hafta-gebelik') > -1 ? true : false
-			}
-			else
-				return false
+			return this.blog?.seo_link?.indexOf('-hafta-gebelik') > -1 ? true : false
 		},
 		kacHaftaGebelik() {
-			if(this.blog) {
-				return this.blog?.seo_link?.split('-')[0] || ""
-			}
-			else
-				return ""
+			return this.blog?.seo_link?.split('-')[0] || ""
 		},
 
 		isAylikBebekGelisimi() {

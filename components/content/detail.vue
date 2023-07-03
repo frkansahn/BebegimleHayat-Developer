@@ -43,6 +43,9 @@
                 type: String
             }
         },
+        async fetch() {
+            await this.getContentDetail();
+        },
         head() {
            return {
                 title: this.seo_title,
@@ -67,39 +70,37 @@
                 otherContents:[]
             }
         },
-        methods:{
-            getContentDetail(){            
-                var _this = this;
-                var seo_link = _this.seoLink;
-                _this.$repositories.content.getContentsBySeoLink(seo_link)
-                .then(res => {
-                    if(res.data.success == 'success')
-                    {
-                        console.log(res);
-                        _this.contents = res.data.response;
-
-                        _this.otherContents = _this.contents.other_contents;
-                        _this.seo_title = _this.contents.seo_title;
-                        _this.seo_keyword = _this.contents.seo_keyword;
-                        _this.seo_description = _this.contents.seo_description;
-                        _this.navigation = [
-                            {
-                                "name": _this.contents.subject,
-                                "url": _this.contents.seo_link
-                            }
-                        ]
-                        
-                    }
-                    else
-                    {
-                        _this.$nuxt.error({ statusCode: 404, message:"İçerik Bulunamadı"});
-                    }
-                });
+        methods: {
+            getContentDetail() {
+                return new Promise((resolve,reject) => {
+                    var _this = this;
+                    var seo_link = _this.seoLink;
+                    _this.$repositories.content.getContentsBySeoLink(seo_link)
+                    .then(res => {
+                        if(res.data.success == 'success')
+                        {
+                            _this.contents = res.data.response;
+                            _this.otherContents = _this.contents.other_contents;
+                            _this.seo_title = _this.contents.seo_title;
+                            _this.seo_keyword = _this.contents.seo_keyword;
+                            _this.seo_description = _this.contents.seo_description;
+                            _this.navigation = [
+                                {
+                                    "name": _this.contents.subject,
+                                    "url": _this.contents.seo_link
+                                }
+                            ]
+                            resolve(true);
+                            
+                        }
+                        else
+                        {
+                            _this.$router.push('/');
+                            resolve(false);
+                        }
+                    });
+                })
             }
-        },
-        created(){
-            var _this = this;
-            _this.getContentDetail();   
         }
     }
 </script>

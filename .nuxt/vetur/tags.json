@@ -104,14 +104,14 @@
   "ElementImage": {
     "description": "Auto imported from components/element/image.vue"
   },
-  "FilterCategory": {
-    "description": "Auto imported from components/filter/category.vue"
+  "ProductAddedCartProduct": {
+    "description": "Auto imported from components/product/addedCartProduct.vue"
   },
-  "FilterPriceRangeSlider": {
-    "description": "Auto imported from components/filter/priceRangeSlider.vue"
+  "ProductCart": {
+    "description": "Auto imported from components/product/cart.vue"
   },
-  "FilterTreeCategory": {
-    "description": "Auto imported from components/filter/treeCategory.vue"
+  "ProductMiniCart": {
+    "description": "Auto imported from components/product/miniCart.vue"
   },
   "HomepageBabyNames": {
     "description": "Auto imported from components/homepage/BabyNames.vue"
@@ -125,14 +125,14 @@
   "HomepagePregnancyWeekByWeek": {
     "description": "Auto imported from components/homepage/PregnancyWeekByWeek.vue"
   },
-  "ProductAddedCartProduct": {
-    "description": "Auto imported from components/product/addedCartProduct.vue"
+  "FilterCategory": {
+    "description": "Auto imported from components/filter/category.vue"
   },
-  "ProductCart": {
-    "description": "Auto imported from components/product/cart.vue"
+  "FilterPriceRangeSlider": {
+    "description": "Auto imported from components/filter/priceRangeSlider.vue"
   },
-  "ProductMiniCart": {
-    "description": "Auto imported from components/product/miniCart.vue"
+  "FilterTreeCategory": {
+    "description": "Auto imported from components/filter/treeCategory.vue"
   },
   "ShowcaseNotSliderProduct": {
     "description": "Auto imported from components/showcase/notSliderProduct.vue"
