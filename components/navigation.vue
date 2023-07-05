@@ -5,7 +5,7 @@
 				<div class="row" id="nav-content">
 					<ul class="col-12 d-flex align-items-center justify-content-md-center" itemscope itemtype="http://schema.org/BreadcrumbList">
 						<li class="float-left home-navigation" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-							<NuxtLink to="/">
+							<NuxtLink itemprop="item" to="/">
 								<span itemprop="name">
 									<b-icon-house-door-fill variant="dark" font-scale="1.2"></b-icon-house-door-fill>
 									Ana Sayfa

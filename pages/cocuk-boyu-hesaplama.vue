@@ -422,7 +422,7 @@ export default {
     left: calc(50% - 25px);
     height: 50px;
     width: 50px;
-    background: url(/Data/image/extra_small/cocuk_boyu_hesaplama-1684180646598.jpeg) no-repeat left bottom;
+    background: url(https://api.bebegimlehayat.com/Data/image/extra_small/cocuk_boyu_hesaplama-1684180646598.jpeg) no-repeat left bottom;
     background-size: 100%;
 }
 

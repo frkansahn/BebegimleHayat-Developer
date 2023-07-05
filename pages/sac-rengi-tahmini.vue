@@ -2421,7 +2421,7 @@ export default {
     left: calc(50% - 25px);
     height: 50px;
     width: 50px;
-    background: url(/Data/image/extra_small/sac_rengi_tahmin_edici-1684180646557.jpeg) no-repeat left bottom;
+    background: url(https://api.bebegimlehayat.com/Data/image/extra_small/sac_rengi_tahmin_edici-1684180646557.jpeg) no-repeat left bottom;
     background-size: 100%;
     border-radius: 50%;
 }

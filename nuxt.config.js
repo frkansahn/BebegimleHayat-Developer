@@ -153,8 +153,8 @@ export default {
         { from: '^/kullanim-sart-ve-kosullari-bebegimlehayat', to: '/kullanim-sart-ve-kosullari' },
         { from: '^/kisisel-verilerin-korunmasi-politikasi-bebegimlehayat', to: '/kisisel-verilerin-korunmasi-politikasi' },
         { from: '^/cerez-politikasi-bebegimlehayat', to: '/cerez-politikasi' },
-        { from: '^/hakkimizda-bebegimlehayat', to: '/hakkimizda' },
-        { from: '^/post-sitemap1.xml', to: '/post-sitemap.xml' },
+        { from: '^/hakkimizda-bebegimlehayat', to: '/hakkimizda' }
+        //{ from: '^/post-sitemap1.xml', to: '/post-sitemap.xml' },
     ],
     build: {
         extend(config, ctx) {

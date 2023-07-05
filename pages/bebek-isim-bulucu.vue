@@ -443,7 +443,7 @@ export default {
     left: calc(50% - 25px);
     height: 50px;
     width: 50px;
-    background: url(/Data/image/extra_small/bebekisim_bulucu-1684180646597.jpeg) no-repeat left bottom;
+    background: url(https://api.bebegimlehayat.com/Data/image/extra_small/bebekisim_bulucu-1684180646597.jpeg) no-repeat left bottom;
     background-size: 90%;
     border-radius: 50%;
 }

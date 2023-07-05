@@ -412,7 +412,7 @@ export default {
     left: calc(50% - 25px);
     height: 50px;
     width: 50px;
-    background: url(https://assets.babycenter.com/ims/2022/03/ic_tool_chineseGender.svg) no-repeat left bottom;
+    background: url(https://api.bebegimlehayat.com/Data/image/extra_small/yumurtagunuhesaplama-1684180646598.jpeg) no-repeat left bottom;
     background-size: 100%;
 }
 

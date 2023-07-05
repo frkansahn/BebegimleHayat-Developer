@@ -9,16 +9,6 @@
 								
 								<b-sidebar id="mobileMenu" title="Menü" backdrop-variant="dark" bg-variant="white" backdrop
 									shadow>
-									<!-- <template #footer>
-										<div class="bg-dark py-3" id="headerContactMobile">
-											<NuxtLink class="col-12 my-1 text-white" to="/contact"
-												title="Üye hesap sayfası">
-												<b-icon-telephone-outbound-fill variant="white"
-													font-scale=".8"></b-icon-telephone-outbound-fill>
-												İletişim
-											</NuxtLink>
-										</div>
-									</template> -->
 									<ul class="col-12 mt-4">
 										<li class="row" v-for="(M, index) in menus" :key="`headerMobileMenu${index}`">								
 											<span class="col-12 my-2 text-secondary d-flex align-items-center justify-content-between" :aria-controls="`mobile-accordion-${index}`" v-b-toggle="`mobile-accordion-${index}`" v-if="M.children && M.children.length > 0">
@@ -151,15 +141,10 @@ export default {
 		return {
 			customerAccount: false,
 			isMobile: false,
-			searchInput: "",
 			stickyActive: false,
 			backTopActive: false,
 			loading: true,
-			siteLoadedPopup: false,
-			searchResult: undefined,
-			searchInterval: undefined,
-			keyHistory: undefined,
-			languages: []
+			siteLoadedPopup: false
 		}
 	},
 	props:{
@@ -175,30 +160,11 @@ export default {
 		customer() {
 			return this.$store?.state?.customer || null;
 		},
-		getSearchProducts() {
-			try {
-				if (this.searchResult) {
-					return this.searchResult.filter(x => x.type == 'products');
-				}
-				else
-					return false;
-			}
-			catch (err) {
-				console.log(err);
-			}
-		},
 		CART() {
 			return this.$store.state.customer.cartProductDetails
 		}
 	},
 	methods: {
-		closeSearch() {
-			this.searchInput = '';
-		},
-		routeProduct(url) {
-			this.searchInput = '';
-			this.$router.push(`/product-detail/${url}`)
-		},
 		async logout() {
 			var _this = this;
 			_this.$cookiz.removeAll();
@@ -224,33 +190,6 @@ export default {
 				maxAge: 60 * 60 * 24 * 7
 			});
 		},
-		searchKeyDown() {
-			var _this = this;
-			clearInterval(_this.searchInterval);
-		},
-		searchKeyUp() {
-			var _this = this;
-			_this.searchInterval = setInterval(() => {
-				if (_this.searchInput != _this.keyHistory) {
-					_this.search();
-					_this.keyHistory = _this.searchInput;
-				}
-			}, 1000);
-		},
-		search() {
-			var _this = this;
-			if (_this.$checkIsNullOrEmpty(_this.searchInput)) {
-				_this.$repositories.search.getSearch(_this.searchInput)
-					.then(res => {
-						if (res) {
-							_this.searchResult = res.data.response;
-						}
-					});
-			}
-			else {
-				_this.searchResult = undefined;
-			}
-		},
 		getBlogCategory() {
 			return new Promise(async (resolve, reject) => {
 				const _this = this;
@@ -266,14 +205,6 @@ export default {
 					})
 			})
 		}
-	},
-	async created() {
-		var _this = this;
-		_this.loading = true;
-		_this.$repositories.language.getActive()
-			.then(res => {
-				_this.languages = res.data.response;
-			});
 	},
 	async mounted() {
 		var _this = this;

@@ -1,7 +1,6 @@
 <template>
     <div class="container px-0">
         <Navigation :nav="navigation" v-if="navigation" />
-        <imageGallery :images="sliders" @closeGallery="closeGallery" v-if="galleryActive" />
         <div class="row">
             <div class="col-12">
                 <div class="row my-4 my-md-5">
@@ -147,6 +146,12 @@ export default
                     { hid: 'og:title', property: 'og:title', content: this.seo_title },
                     { hid: 'og:description', property: 'og:description', content: this.seo_description }
                 ],
+                script: [
+                    {
+                        type: 'application/ld+json',
+                        json: this.blogPosting
+                    }
+                ]
             }
         },
         data() {
@@ -158,64 +163,6 @@ export default
                 blog: undefined,
                 sliders: undefined,
                 otherBlog: undefined,
-                galleryActive: false,
-                swiperOptionsGallery: {
-                    loop: false,
-                    autoplay: {
-                        delay: 8000,
-                        disableOnInteraction: false
-                    },
-                    pagination: {
-                        el: '.swiper-pagination',
-                        clickable: true
-                    },
-                    navigation: {
-                        nextEl: '.swiper-button-next',
-                        prevEl: '.swiper-button-prev'
-                    },
-                    breakpoints: {
-                        1024: {
-                            slidesPerView: 6,
-                            spaceBetween: 10
-                        },
-                        768: {
-                            slidesPerView: 5,
-                            spaceBetween: 8
-                        },
-                        640: {
-                            slidesPerView: 4,
-                            spaceBetween: 5
-                        },
-                        320: {
-                            slidesPerView: 3,
-                            spaceBetween: 5
-                        }
-                    }
-                },
-                swiperOptions: {
-                    loop: false,
-                    navigation: {
-                        nextEl: '.swiper-button-next',
-                        prevEl: '.swiper-button-prev'
-                    },
-                    breakpoints: {
-                        1024: {
-                            spaceBetween: 20,
-                            slidesPerView: 4,
-                        },
-                        768: {
-                            spaceBetween: 15
-                        },
-                        541: {
-                            spaceBetween: 10,
-                            slidesPerView: 3
-                        },
-                        0: {
-                            spaceBetween: 5,
-                            slidesPerView: 2
-                        }
-                    }
-                },
                 shareButtonActive: false,
                 sharing: {
                     url: "",
@@ -310,7 +257,45 @@ export default
                                         "name": _this.blog.subject,
                                         "url": _this.blog.seo_link
                                     }
-                                ]
+                                ];
+
+                                this.blogPosting = {
+                                    "@context": "http://schema.org",
+                                    "@type": "BlogPosting",
+                                    "mainEntityOfPage":{
+                                        "@type":"WebPage",
+                                        "@id": process.env.baseUrl + '/' + this.blog?.seo_link
+                                    },
+                                    "headline": this.seo_title,
+                                    "image": this.blog.images,
+                                    "datePublished": this.blog?.updatedAt.split('T')[0],
+                                    "dateModified": this.blog?.createdAt.split('T')[0],
+                                    "author": {
+                                        "@type": "Person",
+                                        "id": "https://bebegimlehayat.com/yazar/admin",
+                                        "name":"Bebegimlehayat",
+                                        "url": "https://bebegimlehayat.com/yazar/admin",
+                                        "image": {
+                                            "type":"ImageObject",
+                                            "id": "https://bebegimlehayat.com/Data/Logo%20(1)-1684804940478.png",
+                                            "url": "https://bebegimlehayat.com/Data/Logo%20(1)-1684804940478.png",
+                                            "caption": "bebegimlehayat.com",
+                                            "inLanguage": "tr"
+                                        }
+                                    },
+                                    "publisher": {
+                                        "@type": "Organization",
+                                        "name": "BebegimleHayat",
+                                        "logo": {
+                                            "@type": "ImageObject",
+                                            "url": "https://bebegimlehayat.com/Data/Logo%20(1)-1684804940478.png", 
+                                            "width": 714,
+                                            "height": 83
+                                        }
+                                    },
+                                    "description": this.seo_description,
+                                    "articleBody": this.blog.articleBody
+                                }
 
                                 resolve(true);
                             }
@@ -319,10 +304,7 @@ export default
                             }
                         });
                 })
-            },
-            closeGallery() {
-                this.galleryActive = false;
-            },
+            }
         },
         async mounted() {
             var _this = this;
@@ -446,11 +428,36 @@ export default
     color: #0196aa;
 }
 
+#blog_detail section h1 {
+    font-size: 26px;
+    font-weight: bold;
+}
+
 #blog_detail section h2 {
     font-size: 24px;
     line-height: 1.3;
     font-weight: 700;
     margin-top: 30px;
+}
+
+#blog_detail section h3 {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+#blog_detail section h4 {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+#blog_detail section h5 {
+    font-size: 18px;
+    font-weight: normal;
+}
+
+#blog_detail section h6 {
+    font-size: 16px;
+    font-weight: normal;
 }
 
 #blog_detail section h2 + p {

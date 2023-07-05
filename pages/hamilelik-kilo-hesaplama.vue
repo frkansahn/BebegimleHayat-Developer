@@ -16,7 +16,7 @@
                                     label-for="weight_input" description="">
                                     <b-input-group class="mb-2 mt-2 mr-sm-2 mb-sm-0">
                                         <b-form-input size="lg" class="border-right-0 border-dark rounded-0 px-2"
-                                            id="weight_input" v-model="beforePregnancyWeight" placeholder="0" type="number"
+                                            id="weight_input" v-model="beforePregnancyWeight" placeholder="0" :min="22" :max="204" @keypress="isNumber($event)" type="number"
                                             required></b-form-input>
                                         <template #append>
                                             <b-input-group-text class="px-3">kg</b-input-group-text>
@@ -28,7 +28,7 @@
                                     label-for="now_weight_input" description="">
                                     <b-input-group class="mb-2 mt-2 mr-sm-2 mb-sm-0">
                                         <b-form-input size="lg" class="border-right-0 border-dark rounded-0 px-2"
-                                            id="now_weight_input" v-model="nowWeight" placeholder="0" type="number"
+                                            id="now_weight_input" v-model="nowWeight" placeholder="0" :min="22" :max="204" @keypress="isNumber($event)" type="number"
                                             required></b-form-input>
                                         <template #append>
                                             <b-input-group-text class="px-3">kg</b-input-group-text>
@@ -40,7 +40,7 @@
                                     label-for="height_input" description="">
                                     <b-input-group append="cm" class="mb-2 mt-2 mr-sm-2 mb-sm-0">
                                         <b-form-input size="lg" class="border-right-0 border-dark rounded-0 px-2"
-                                            id="height_input" v-model="height" placeholder="0" type="number"
+                                            id="height_input" v-model="height" placeholder="0" :min="60" :max="244" @keypress="isNumber($event)" type="number"
                                             required></b-form-input>
                                         <template #append>
                                             <b-input-group-text class="px-3">cm</b-input-group-text>
@@ -216,84 +216,84 @@
 
                                 <script type="application/ld+json">
                                     {
-                                        "@context": "https://schema.org",
-                                        "@type": "FAQPage",
-                                        "mainEntity": [
-                                            {
-                                            "@type": "Question",
-                                            "name": "Hamilelik Kilo Hesaplayıcı Nasıl Çalışıyor?",
-                                            "acceptedAnswer": {
-                                                "@type": "Answer",
-                                                "text": "Hamilelikte kilo alımı bebeğinizin sağlıklı gelişimi için son derece önemlidir. Ancak almanız gerekenden fazla kilo almanız aynı şekilde sağlıksız bir hamilelik süreci yaratabilir. Hamilelik kilo hesaplayıcımızı kullanarak hamilelikte ne kadar kilo almanız gerektiğini öğrenebilirsiniz. Burada karşılaşacağınız sonuçlar bilgi verme amaçlı olup doktor tavsiyesi niteliğini taşımamaktadır. Farklı kilo problemleriniz varsa doktorunuzla iletişime geçmeniz tavsiye edilir."
+                                            "@context": "https://schema.org",
+                                            "@type": "FAQPage",
+                                            "mainEntity": [
+                                                {
+                                                "@type": "Question",
+                                                "name": "Hamilelik Kilo Hesaplayıcı Nasıl Çalışıyor?",
+                                                "acceptedAnswer": {
+                                                    "@type": "Answer",
+                                                    "text": "Hamilelikte kilo alımı bebeğinizin sağlıklı gelişimi için son derece önemlidir. Ancak almanız gerekenden fazla kilo almanız aynı şekilde sağlıksız bir hamilelik süreci yaratabilir. Hamilelik kilo hesaplayıcımızı kullanarak hamilelikte ne kadar kilo almanız gerektiğini öğrenebilirsiniz. Burada karşılaşacağınız sonuçlar bilgi verme amaçlı olup doktor tavsiyesi niteliğini taşımamaktadır. Farklı kilo problemleriniz varsa doktorunuzla iletişime geçmeniz tavsiye edilir."
+                                                }
+                                                },
+                                                {
+                                                "@type": "Question",
+                                                "name": "Hamilelikte ne kadar kilo almalıyım?",
+                                                "acceptedAnswer": {
+                                                    "@type": "Answer",
+                                                    "text": "Hamilelikte almanız gereken kilo miktarı, hamilelik öncesi kilonuza ve vücut kitle indeksinize göre değişmektedir. Hamilelik kilo hesaplayıcısı vücut kitle indeksinize göre ne kadar kilo almanız gerektiğini size söyleyecektir.
+                                            Hamilelik kilo hesaplayıcı bilgilendirme amaçlı bir uygulamadır ve sizin aldığınız kilo ile tam olarak eşleşmeyebilir. Eğer kiloluysanız veya obezseniz kilo alma ihtiyacınız değişebilir. En sağlıklı ve doğru sonuçlar için doktorunuza başvurmalısınız."
+                                                }
+                                                },
+                                                {
+                                                "@type": "Question",
+                                                "name": "Hamilelikte ne yemeliyim?",
+                                                "acceptedAnswer": {
+                                                    "@type": "Answer",
+                                                    "text": "Sağlıklı bir hamilelik için beslenme düzeniniz de sağlıklı olmalıdır. Bu yüzden bütün zararlı alışkanlıklardan kurtulmalısınız. Genel beslenme düzeniniz her türlü besinden oluşan dengeli bir beslenme biçimi olmalıdır.
+                                            Folik asit yemeniz gereken besinlerin en başında gelmektedir. Folik asit kendi başına doğum kusurlarını kapatmakta etkilidir ve bebeğinizin her türlü gelişim problemini engelleyecektir. Özellikle beyin gelişiminde son derece etkilidir. Erken doğum riskini azaltır. Ispanak ve lahana gibi yapraklı yeşil sebzelerde, turunçgillerde ve kuru bakliyatta bulunur.
+                                            Bebeğinizin ihtiyacı olan bir diğer mineral ise kalsiyumdur. Kalsiyum kemik ve diş gelişimini destekler ve vücudun kas gelişimine katkıda bulunur. Yoğurt, süt ve peynir gibi süt ürünlerinden kolaylıkla tüketebilirsiniz.
+                                            Hem size hem de bebeğinize iyi gelecek vitaminlerden birisi D vitaminidir. D vitamini de kemik ve diş gelişimine katkıda bulunur. Turunçgiller, balık ve yumurtadan D vitamini alabileceğiniz gibi bolca güneş ışığına da ihtiyacınız vardır.
+                                            Hamilelik sırasında en çok tüketmeniz gerekenler besinlerden biri de proteindir. Protein hem sizin sağlığınız hem de bebeğinizin sağlığı için çok önemlidir. Et, balık, süt ve yumurtadan bolca protein elde edebilirsiniz.
+                                            Hamilelikte artan kan miktarını desteklemek için bolca demir tüketmelisiniz. Kandaki oksijenin rahatlıkla taşınması demir sayesinde gerçekleşmektedir. Artık bebeğinizin de vücudu olacağı için normalden daha fazla demire ihtiyacınız olacaktır. Demiri et, balık, bakliyat ve sebzelerden rahatlıkla elde edebilirsiniz."
+                                                }
+                                                },
+                                                {
+                                                "@type": "Question",
+                                                "name": "Hamilelikte hangi yiyeceklerden uzak durmalısınız?",
+                                                "acceptedAnswer": {
+                                                    "@type": "Answer",
+                                                    "text": "Hamilelikte sağlıklı beslenmenin bir diğer kuralı da spesifik yiyeceklerden uzak durmaktır. Örneğin bazı balıklar içlerinde yüksek miktarda cıva bulundurur. Bu yüzden derin denizde yüzen balıklardan kaçınmanız sizin için yararlı olabilir. Somon, ton balığı ve alabalık gibi balık gürleri yemeniz için güvenlidir.
+                                            Çiğ süt gibi pastörize edilmemiş gıda maddeleri, yıkanmamış sebze ve meyveler ve çiğ yiyeceklerden de uzak durulmalıdır. Bu yiyecekler zararlı bakteriler ve mikroplarla dolu olabilmektedir.
+                                            Hamile kadınlar aynı zamanda aşırı kafein ve alkol tüketmemelidir. Aşırı kafeinin hamilelik üzerindeki riskleri tam olarak bilinmese de yararı da bulunmamaktadır. Alkol ise direkt olarak gelişim bozukluklarına veya düşük gebeliğe sebep olabilmektedir.
+                                            Vücuda en çok zararı olan sigara, hamilelikte ekstra riskli. Sadece hamile olunca değil, hamilelikten uzun bir süre önce bırakılması gerekmektedir. Var olan tüm sağlık problemlerinin riskini arttırır ve bebek doğsa bile sağlıksız bir hayat sürmesine sebep olur."
+                                                }
+                                                },
+                                                {
+                                                "@type": "Question",
+                                                "name": "Vücut Kitle İndeksi (VKİ - BMI) nedir?",
+                                                "acceptedAnswer": {
+                                                    "@type": "Answer",
+                                                    "text": "Vücut kitle indeksi, yani VKİ ya da İngilizce adıyla Body Mass Index (BMI) boyunuzun kilonuza olan oranıyla hesaplanır. Hesaplama sonucunda düşük kilolu, sağlıklı kiloda, aşırı kilolu, obez veya morbid obez olabilirsiniz. Her birinin farklı hamilelik üzerinde farklı etkileri vardır. Kilonuz ve hamileliğiniz arasındaki bağı daha iyi anlamak için doktorunuza başvurmalısınız."
+                                                }
+                                                },
+                                                {
+                                                "@type": "Question",
+                                                "name": "Hamilelikte aşırı kilo alırsam ne olur?",
+                                                "acceptedAnswer": {
+                                                    "@type": "Answer",
+                                                    "text": "Hamilelikte aşırı kilo alımı gestasyonel diyabet, yüksek tansiyon ve çocuğunuzun obez olmasıyla sonuçlanabilir. Kilonuzdan endişeliyseniz doktorunuza mutlaka danışmalısınız."
+                                                }
+                                                },
+                                                {
+                                                "@type": "Question",
+                                                "name": "Hamilelikte yeterince kilo almazsam ne olur?",
+                                                "acceptedAnswer": {
+                                                    "@type": "Answer",
+                                                    "text": "Hamilelikte az kilo almak erken doğum ve emzirme problemlerine yol açabilir. Aynı şekilde bebeğinizde obezite ve diyabet riskini arttırır. Kilonuzdan endişeliyseniz doktorunuza mutlaka danışmalısınız."
+                                                }
+                                                },
+                                                {
+                                                "@type": "Question",
+                                                "name": "Hamile kalmadan önce kaç kilo olduğumu bilmiyorsam ne yapmalıyım?",
+                                                "acceptedAnswer": {
+                                                    "@type": "Answer",
+                                                    "text": "Hamilelik öncesi kilonuzun net olması şart değildir. Tahmini bir değer de girebilirsiniz. Hamileliğin ilk 14 haftasındaysanız, hamileliğe bağlı olarak muhtemelen 2 kg almışsınızdır. Diğer yediklerinize göre bir tahminde bulunabilirsiniz."
+                                                }
+                                                }
+                                            ]
                                             }
-                                            },
-                                            {
-                                            "@type": "Question",
-                                            "name": "Hamilelikte ne kadar kilo almalıyım?",
-                                            "acceptedAnswer": {
-                                                "@type": "Answer",
-                                                "text": "Hamilelikte almanız gereken kilo miktarı, hamilelik öncesi kilonuza ve vücut kitle indeksinize göre değişmektedir. Hamilelik kilo hesaplayıcısı vücut kitle indeksinize göre ne kadar kilo almanız gerektiğini size söyleyecektir.
-                                        Hamilelik kilo hesaplayıcı bilgilendirme amaçlı bir uygulamadır ve sizin aldığınız kilo ile tam olarak eşleşmeyebilir. Eğer kiloluysanız veya obezseniz kilo alma ihtiyacınız değişebilir. En sağlıklı ve doğru sonuçlar için doktorunuza başvurmalısınız."
-                                            }
-                                            },
-                                            {
-                                            "@type": "Question",
-                                            "name": "Hamilelikte ne yemeliyim?",
-                                            "acceptedAnswer": {
-                                                "@type": "Answer",
-                                                "text": "Sağlıklı bir hamilelik için beslenme düzeniniz de sağlıklı olmalıdır. Bu yüzden bütün zararlı alışkanlıklardan kurtulmalısınız. Genel beslenme düzeniniz her türlü besinden oluşan dengeli bir beslenme biçimi olmalıdır.
-                                        Folik asit yemeniz gereken besinlerin en başında gelmektedir. Folik asit kendi başına doğum kusurlarını kapatmakta etkilidir ve bebeğinizin her türlü gelişim problemini engelleyecektir. Özellikle beyin gelişiminde son derece etkilidir. Erken doğum riskini azaltır. Ispanak ve lahana gibi yapraklı yeşil sebzelerde, turunçgillerde ve kuru bakliyatta bulunur.
-                                        Bebeğinizin ihtiyacı olan bir diğer mineral ise kalsiyumdur. Kalsiyum kemik ve diş gelişimini destekler ve vücudun kas gelişimine katkıda bulunur. Yoğurt, süt ve peynir gibi süt ürünlerinden kolaylıkla tüketebilirsiniz.
-                                        Hem size hem de bebeğinize iyi gelecek vitaminlerden birisi D vitaminidir. D vitamini de kemik ve diş gelişimine katkıda bulunur. Turunçgiller, balık ve yumurtadan D vitamini alabileceğiniz gibi bolca güneş ışığına da ihtiyacınız vardır.
-                                        Hamilelik sırasında en çok tüketmeniz gerekenler besinlerden biri de proteindir. Protein hem sizin sağlığınız hem de bebeğinizin sağlığı için çok önemlidir. Et, balık, süt ve yumurtadan bolca protein elde edebilirsiniz.
-                                        Hamilelikte artan kan miktarını desteklemek için bolca demir tüketmelisiniz. Kandaki oksijenin rahatlıkla taşınması demir sayesinde gerçekleşmektedir. Artık bebeğinizin de vücudu olacağı için normalden daha fazla demire ihtiyacınız olacaktır. Demiri et, balık, bakliyat ve sebzelerden rahatlıkla elde edebilirsiniz."
-                                            }
-                                            },
-                                            {
-                                            "@type": "Question",
-                                            "name": "Hamilelikte hangi yiyeceklerden uzak durmalısınız?",
-                                            "acceptedAnswer": {
-                                                "@type": "Answer",
-                                                "text": "Hamilelikte sağlıklı beslenmenin bir diğer kuralı da spesifik yiyeceklerden uzak durmaktır. Örneğin bazı balıklar içlerinde yüksek miktarda cıva bulundurur. Bu yüzden derin denizde yüzen balıklardan kaçınmanız sizin için yararlı olabilir. Somon, ton balığı ve alabalık gibi balık gürleri yemeniz için güvenlidir.
-                                        Çiğ süt gibi pastörize edilmemiş gıda maddeleri, yıkanmamış sebze ve meyveler ve çiğ yiyeceklerden de uzak durulmalıdır. Bu yiyecekler zararlı bakteriler ve mikroplarla dolu olabilmektedir.
-                                        Hamile kadınlar aynı zamanda aşırı kafein ve alkol tüketmemelidir. Aşırı kafeinin hamilelik üzerindeki riskleri tam olarak bilinmese de yararı da bulunmamaktadır. Alkol ise direkt olarak gelişim bozukluklarına veya düşük gebeliğe sebep olabilmektedir.
-                                        Vücuda en çok zararı olan sigara, hamilelikte ekstra riskli. Sadece hamile olunca değil, hamilelikten uzun bir süre önce bırakılması gerekmektedir. Var olan tüm sağlık problemlerinin riskini arttırır ve bebek doğsa bile sağlıksız bir hayat sürmesine sebep olur."
-                                            }
-                                            },
-                                            {
-                                            "@type": "Question",
-                                            "name": "Vücut Kitle İndeksi (VKİ - BMI) nedir?",
-                                            "acceptedAnswer": {
-                                                "@type": "Answer",
-                                                "text": "Vücut kitle indeksi, yani VKİ ya da İngilizce adıyla Body Mass Index (BMI) boyunuzun kilonuza olan oranıyla hesaplanır. Hesaplama sonucunda düşük kilolu, sağlıklı kiloda, aşırı kilolu, obez veya morbid obez olabilirsiniz. Her birinin farklı hamilelik üzerinde farklı etkileri vardır. Kilonuz ve hamileliğiniz arasındaki bağı daha iyi anlamak için doktorunuza başvurmalısınız."
-                                            }
-                                            },
-                                            {
-                                            "@type": "Question",
-                                            "name": "Hamilelikte aşırı kilo alırsam ne olur?",
-                                            "acceptedAnswer": {
-                                                "@type": "Answer",
-                                                "text": "Hamilelikte aşırı kilo alımı gestasyonel diyabet, yüksek tansiyon ve çocuğunuzun obez olmasıyla sonuçlanabilir. Kilonuzdan endişeliyseniz doktorunuza mutlaka danışmalısınız."
-                                            }
-                                            },
-                                            {
-                                            "@type": "Question",
-                                            "name": "Hamilelikte yeterince kilo almazsam ne olur?",
-                                            "acceptedAnswer": {
-                                                "@type": "Answer",
-                                                "text": "Hamilelikte az kilo almak erken doğum ve emzirme problemlerine yol açabilir. Aynı şekilde bebeğinizde obezite ve diyabet riskini arttırır. Kilonuzdan endişeliyseniz doktorunuza mutlaka danışmalısınız."
-                                            }
-                                            },
-                                            {
-                                            "@type": "Question",
-                                            "name": "Hamile kalmadan önce kaç kilo olduğumu bilmiyorsam ne yapmalıyım?",
-                                            "acceptedAnswer": {
-                                                "@type": "Answer",
-                                                "text": "Hamilelik öncesi kilonuzun net olması şart değildir. Tahmini bir değer de girebilirsiniz. Hamileliğin ilk 14 haftasındaysanız, hamileliğe bağlı olarak muhtemelen 2 kg almışsınızdır. Diğer yediklerinize göre bir tahminde bulunabilirsiniz."
-                                            }
-                                            }
-                                        ]
-                                        }
                                 </script>
 
                             </div>
@@ -335,26 +335,7 @@ export default {
             bodyIndex: null,
             result: false,
             isLoading: false,
-            barChartOptions: {
-                responsive: true,
-                maintainAspectRatio: false,
-                pointStyle: 'star',
-                barThickness: 3,
-                hoverOffset: 4,
-                legend: {
-                    display: true,
-                    title: ''
-                },
-                title: {
-                    display: true,
-                    text: '',
-                    fontSize: 24,
-                    fontColor: '#6b7280'
-                },
-                tooltips: {
-                    backgroundColor: '#17BF62'
-                }
-            },
+            barChartOptions: {},
             data: {
                 labels: [],
                 datasets: []
@@ -371,29 +352,98 @@ export default {
         }
     },
     methods: {
+        isNumber: function (evt) {
+            evt = (evt) ? evt : window.event;
+            var charCode = (evt.which) ? evt.which : evt.keyCode;
+            if ((charCode > 31 && (charCode < 48 || charCode > 57)) && charCode !== 46) {
+                evt.preventDefault();;
+            } else {
+                return true;
+            }
+        },
         calculate() {
             if (!this.beforePregnancyWeight) {
+                this.$bvToast.toast("Hamilelik öncesi kilonuzu girmelisiniz.", {
+                    title: `Uyarı..`,
+                    variant: 'warning',
+                    autoHideDelay: 500,
+                    solid: true
+                });
                 this.beforePregnancyWeightError = true;
                 return false;
             }
             else {
+                if(this.beforePregnancyWeight < 22 || this.beforePregnancyWeight > 204) {
+                    this.$bvToast.toast("Hamilelik öncesi kilonuz hatalıdır.", {
+                        title: `Uyarı..`,
+                        variant: 'warning',
+                        autoHideDelay: 500,
+                        solid: true
+                    }); 
+                    
+                    return false;
+                }
                 this.beforePregnancyWeightError = false;
             }
 
             if (!this.nowWeight) {
+                this.$bvToast.toast("Şu anki kilonuzu girmelisiniz.", {
+                    title: `Uyarı..`,
+                    variant: 'warning',
+                    autoHideDelay: 500,
+                    solid: true
+                });
                 this.nowWeightError = true;
                 return false;
             }
             else {
+                if(this.nowWeight < 22 || this.nowWeight > 204) {
+                    this.$bvToast.toast("Şu anki kilonuz hatalıdır.", {
+                        title: `Uyarı..`,
+                        variant: 'warning',
+                        autoHideDelay: 500,
+                        solid: true
+                    });  
+
+                    return false;
+                }
+
                 this.nowWeightError = false;
             }
 
             if (!this.height) {
+                this.$bvToast.toast("Boyunuzu girmelisiniz.", {
+                    title: `Uyarı..`,
+                    variant: 'warning',
+                    autoHideDelay: 500,
+                    solid: true
+                });
                 this.heightError = true;
                 return false;
             }
             else {
+                if(this.height < 60 || this.height > 244) {
+                    this.$bvToast.toast("Boyunuz hatalıdır.", {
+                        title: `Uyarı..`,
+                        variant: 'warning',
+                        autoHideDelay: 500,
+                        solid: true
+                    });  
+
+                    return false;
+                }
+
                 this.heightError = false;
+            }
+
+            if (!this.weekPregnancy) {
+                this.$bvToast.toast("Hamileliğinizin kaçıncı haftasında olduğunuzu seçmelisiniz.", {
+                    title: `Uyarı..`,
+                    variant: 'warning',
+                    autoHideDelay: 500,
+                    solid: true
+                });
+                return false;
             }
 
             this.isLoading = true;
@@ -421,52 +471,93 @@ export default {
                 }
 
                 (parseFloat(this.beforePregnancyWeight)) - 10, (parseFloat(this.beforePregnancyWeight) + parseFloat(this.veryAverage) + 10), ((parseFloat(this.nowWeight) + parseFloat(this.beforePregnancyWeight)) / 2), (parseFloat(this.nowWeight) + 10)
-
+                this.barChartOptions = {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        pointStyle: 'star',
+                        legend: {display: false},
+                        title: false,
+                        tooltips: {
+                            backgroundColor: '#17BF62'
+                        },
+                        scales: {
+                            x: {
+                                type: 'linear',
+                                title: {
+                                    display: true,
+                                    text: 'Value'
+                                },
+                                autoSkip: false,
+                                ticks: {
+                                    min: 0,
+                                    max: 40,
+                                    stepSize: 4
+                                }
+                            },
+                            y: {
+                                title: {
+                                    display: true,
+                                    text: 'Value'
+                                },
+                                min: this.beforePregnancyWeight-5,
+                                max: parseFloat(this.beforePregnancyWeight) + parseFloat(this.veryAverage)+10
+                            }
+                        }
+                    }
                 this.data = {
-                    labels: [0, 4, 8, 12, 16, 20, 24, 28, 32, 36, 40],
+                    labels: Array.from(Array(41).keys()),
                     datasets: [
                         {
                             label: 'Minimum',
                             borderColor: '#a52a2a',
+                            borderWidth: 3,
+                            pointBorderWidth: 8,
                             backgroundColor: '#a52a2a',
-                            data: [
-                                null,
-                                this.beforePregnancyWeight,
-                                this.beforePregnancyWeight,
-                                this.beforePregnancyWeight,
-                                this.beforePregnancyWeight,
-                                this.beforePregnancyWeight,
-                                (parseFloat(this.beforePregnancyWeight) + parseFloat(this.lessAverage / 6 * 1)),
-                                (parseFloat(this.beforePregnancyWeight) + parseFloat(this.lessAverage / 6 * 2)),
-                                (parseFloat(this.beforePregnancyWeight) + parseFloat(this.lessAverage / 6 * 3)),
-                                (parseFloat(this.beforePregnancyWeight) + parseFloat(this.lessAverage / 6 * 4)),
-                                (parseFloat(this.beforePregnancyWeight) + parseFloat(this.lessAverage / 6 * 5)),
-                                (parseFloat(this.beforePregnancyWeight) + parseFloat(this.lessAverage))
+                            data: [ 
+                                {
+                                    x: 2,
+                                    y: this.beforePregnancyWeight
+                                },
+                                {
+                                    x: 14,
+                                    y: this.beforePregnancyWeight
+                                },
+                                {
+                                    x: 40,
+                                    y: (parseFloat(this.beforePregnancyWeight) + parseFloat(this.lessAverage))
+                                }
                             ]
                         },
                         {
                             label: 'Maksimum',
                             borderColor: '#008000',
+                            borderWidth: 3,
+                            pointBorderWidth: 8,
                             backgroundColor: '#008000',
-                            data: [
-                                null,
-                                (parseFloat(this.beforePregnancyWeight) + 2),
-                                (parseFloat(this.beforePregnancyWeight) + 2),
-                                (parseFloat(this.beforePregnancyWeight) + 2),
-                                (parseFloat(this.beforePregnancyWeight) + 2),
-                                (parseFloat(this.beforePregnancyWeight) + parseFloat(this.veryAverage / 6 * 1)),
-                                (parseFloat(this.beforePregnancyWeight) + parseFloat(this.veryAverage / 6 * 2)),
-                                (parseFloat(this.beforePregnancyWeight) + parseFloat(this.veryAverage / 6 * 3)),
-                                (parseFloat(this.beforePregnancyWeight) + parseFloat(this.veryAverage / 6 * 4)),
-                                (parseFloat(this.beforePregnancyWeight) + parseFloat(this.veryAverage / 6 * 5)),
-                                (parseFloat(this.beforePregnancyWeight) + parseFloat(this.veryAverage))
+                            data: [ 
+                                {
+                                    x: 2,
+                                    y: (parseFloat(this.beforePregnancyWeight) + 2)
+                                },
+                                {
+                                    x: 14,
+                                    y: (parseFloat(this.beforePregnancyWeight) + 2)
+                                },
+                                {
+                                    x: 40,
+                                    y: (parseFloat(this.beforePregnancyWeight) + parseFloat(this.veryAverage))
+                                }
                             ]
                         },
                         {
                             label: 'Şuan ki kilonuz',
                             borderColor: '#000',
+                            borderWidth: 8,
                             backgroundColor: '#000',
-                            data: [null, this.nowWeight, null]
+                            data: [{
+                                x: this.weekPregnancy,
+                                y: this.nowWeight
+                            }]
                         }
                     ]
                 }
@@ -509,7 +600,7 @@ export default {
     left: calc(50% - 25px);
     height: 50px;
     width: 50px;
-    background: url(/Data/image/extra_small/hamilelik_kilo_hesaplama-1684180646595.jpeg) no-repeat left bottom;
+    background: url(https://api.bebegimlehayat.com/Data/image/extra_small/hamilelik_kilo_hesaplama-1684180646595.jpeg) no-repeat left bottom;
     background-size: 100%;
 }
 
@@ -562,4 +653,5 @@ export default {
 
 .vs__search {
     font-size: 18px;
-}</style>
+}
+</style>

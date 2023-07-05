@@ -75,7 +75,7 @@
                                     </button>
                                 </div>
                             </b-form>
-                            <div class="row p-5" v-else>
+                            <div class="row p-0 p-lg-5" v-else>
                                 <div class="col-12 p-4 bg-white" id="result">
                                     <div class="row">
                                         <div class="col-12 mb-4">
@@ -109,37 +109,46 @@
 
                                         <div class="col-12 mb-3 pb-3 border-bottom">
                                             <div class="row align-items-center">
-                                                <div class="col-2 weigth-content d-flex align-items-center">
+                                                <div class="col-4 col-md-2 weigth-content d-flex align-items-center">
                                                     <img src="https://assets.babycenter.com/ims/2022/02/ic_weightGain_2022.svg"
                                                         alt="Terazi" width="100" height="100" />
                                                 </div>
-                                                <div class="col-10 pl-4">
+                                                <div class="col-8 d-flex d-md-none flex-column h6 mb-0">
                                                     <h6 class="font-weight-bold mb-2">
                                                         Kilo
                                                     </h6>
                                                     <div class="d-flex align-items-center">
-                                                        <div class="d-flex align-items-center mr-5 h6 mb-0">
-                                                            <small
-                                                                class="text-white bg-secondary rounded-circle mr-1 icon-result">
-                                                                #
-                                                            </small>
-                                                            {{ weight }} kg
+                                                        <small
+                                                            class="text-white bg-secondary rounded-circle mr-1 icon-result">
+                                                            #
+                                                        </small>
+                                                        {{ weight }} kg
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-md-10">
+                                                    <div class="d-flex align-items-center">
+                                                        <div class="col-12 col-md-2 px-0 d-none d-md-flex flex-column h6 mb-0">
+                                                            <h6 class="font-weight-bold mb-2">
+                                                                Kilo
+                                                            </h6>
+                                                            <div class="d-flex align-items-center">
+                                                                <small
+                                                                    class="text-white bg-secondary rounded-circle mr-1 icon-result">
+                                                                    #
+                                                                </small>
+                                                                {{ weight }} kg
+                                                            </div>
                                                         </div>
-                                                        <div class="d-flex align-items-center mr-3 h6 mb-0">
-                                                            <span
-                                                                class="text-white bg-secondary rounded-circle mr-1 icon-result">
-                                                                <b-icon-check-all variant="white"
-                                                                    font-scale="1"></b-icon-check-all>
-                                                            </span>
-                                                            <span v-if="weightPercentile == 0">
-                                                                %3'ten az
-                                                            </span>
-                                                            <span v-if="weightPercentile == 100">
-                                                                %97'den fazla
-                                                            </span>
-                                                            <span v-if="weightPercentile < 100 && weightPercentile > 0">
-                                                                %{{ weightPercentile }}
-                                                            </span>
+                                                        <div class="col-12 col-md-10 px-0 px-md-3 mt-3 mt-md-0 d-flex align-items-center h6 mb-0">
+                                                            <small v-if="weightPercentile == 0">
+                                                                Çocuğunuz kilo açısından %97'lik dilimde. Bu da yaşındaki diğer çocukların %3’sinden daha kilolu olduğu ve kalan %97’ten zayıf olduğu anlamına geliyor.
+                                                            </small>
+                                                            <small v-if="weightPercentile == 100">
+                                                                Çocuğunuz kilo açısından %3'lük dilimde. Bu da yaşındaki diğer çocukların %97’sinden daha kilolu olduğu ve kalan %3’ten zayıf olduğu anlamına geliyor.
+                                                            </small>
+                                                            <small v-if="weightPercentile < 100 && weightPercentile > 0">
+                                                                Çocuğunuz kilo açısından %{{ weightPercentile }}'lik dilimde. Bu da yaşındaki diğer çocukların %{{ 100 - weightPercentile }}’inden daha kilolu olduğu ve kalan %{{ weightPercentile }}’ten zayıf olduğu anlamına geliyor.
+                                                            </small>
                                                         </div>
 
                                                     </div>
@@ -149,44 +158,53 @@
 
                                         <div class="col-12 mb-3">
                                             <div class="row align-items-center">
-                                                <div class="height-content col-2 d-flex align-items-center">
+                                                <div class="col-4 col-md-2 height-content d-flex align-items-center">
                                                     <img src="https://assets.babycenter.com/ims/2022/02/ic_growthChart_measuringTape.svg"
                                                         alt="Terazi" width="100" height="100" />
                                                 </div>
-                                                <div class="col-10 pl-4">
+                                                <div class="col-8 d-flex d-md-none flex-column h6 mb-0">
                                                     <h6 class="font-weight-bold mb-2">
                                                         Boy
                                                     </h6>
                                                     <div class="d-flex align-items-center">
-                                                        <div class="d-flex align-items-center mr-5 h6 mb-0">
-                                                            <small
-                                                                class="text-white bg-secondary rounded-circle mr-1 icon-result">
-                                                                #
-                                                            </small>
-                                                            {{ height }} cm
+                                                        <small
+                                                            class="text-white bg-secondary rounded-circle mr-1 icon-result">
+                                                            #
+                                                        </small>
+                                                        {{ height }} cm
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-md-10">                                                    
+                                                    <div class="d-flex align-items-center">
+                                                        <div class="col-12 col-md-2 px-0 d-none d-md-flex flex-column h6 mb-0">
+                                                            <h6 class="font-weight-bold mb-2">
+                                                                Boy
+                                                            </h6>
+                                                            <div class="d-flex align-items-center">
+                                                                <small
+                                                                    class="text-white bg-secondary rounded-circle mr-1 icon-result">
+                                                                    #
+                                                                </small>
+                                                                {{ height }} cm
+                                                            </div>
                                                         </div>
-                                                        <div class="d-flex align-items-center mr-3 h6 mb-0">
-                                                            <span
-                                                                class="text-white bg-secondary rounded-circle mr-1 icon-result">
-                                                                <b-icon-check-all variant="white"
-                                                                    font-scale=".8"></b-icon-check-all>
-                                                            </span>
-                                                            <span v-if="heightPercentile == 0">
-                                                                %3'ten az
-                                                            </span>
-                                                            <span v-if="heightPercentile == 100">
-                                                                %97'den fazla
-                                                            </span>
-                                                            <span v-if="heightPercentile < 100 && heightPercentile > 0">
-                                                                %{{ heightPercentile }}
-                                                            </span>
+                                                        <div class="col-12 col-md-10 px-0 px-md-3 mt-3 mt-md-0 d-flex align-items-center h6 mb-0">
+                                                            <small v-if="heightPercentile == 0">
+                                                                Çocuğunuz boy açısından %97'lik dilimde. Bu da yaşındaki diğer çocukların %3’inden daha uzun olduğu ve kalan %97’ten kısa olduğu anlamına geliyor.
+                                                            </small>
+                                                            <small v-if="heightPercentile == 100">
+                                                                Çocuğunuz boy açısından %3'lük dilimde. Bu da yaşındaki diğer çocukların %97’sinden daha uzun olduğu ve kalan %3’ten kısa olduğu anlamına geliyor.
+                                                            </small>
+                                                            <small v-if="heightPercentile < 100 && heightPercentile > 0">
+                                                                Çocuğunuz boy açısından %{{ heightPercentile }}'lik dilimde. Bu da yaşındaki diğer çocukların %{{ 100-heightPercentile }}’inden daha uzun olduğu ve kalan %{{ heightPercentile }}’ten kısa olduğu anlamına geliyor.
+                                                            </small>
                                                         </div>
 
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-12 mb-3 mt-4">
+                                        <div class="col-12 mb-3 mt-4 d-flex justify-content-center">
                                             <h5 role="button" class="start-over" @click="resetData();">
                                                 <small>
                                                     Tekrar Yap
@@ -848,7 +866,7 @@ export default {
     left: calc(50% - 25px);
     height: 50px;
     width: 50px;
-    background: url(/Data/image/extra_small/cocuk_gelisimi_tablosu-1684180646597.jpeg) no-repeat left bottom;
+    background: url(https://api.bebegimlehayat.com/Data/image/extra_small/cocuk_gelisimi_tablosu-1684180646597.jpeg) no-repeat left bottom;
     background-size: 100%;
 }
 
@@ -906,4 +924,16 @@ export default {
 
 .vs__search {
     font-size: 18px;
-}</style>
+}
+
+@media screen and (max-width: 768px) {
+    #cocukGelisimiForm {
+        padding: 1em;
+    }
+
+    #cocukGelisimiForm label , #cocukGelisimiForm input {
+        font-size: 16px;
+    }
+}
+
+</style>

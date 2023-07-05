@@ -3933,7 +3933,6 @@ input[type="button"].btn-block {
   position: relative;
   margin-bottom: 0;
   vertical-align: top;
-  line-height: 23px;
 }
 
 .custom-control-label::before {

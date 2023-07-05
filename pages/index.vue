@@ -149,6 +149,20 @@ export default
                     { hid: 'og:title', property: 'og:title', content: "Bebeklere Dair Her Şey Burada! | BebeğimleHayat" },
                     { hid: 'og:description', property: 'og:description', content: "Hamilelik planlama, hamilelik, doğum, çocuk ve bebeklere dair her şeyi BebeğimleHayat 'ta bulabilir, önerilerimizle daha sağlıklı bir bebeğe sahip olabilirsin!" }
                 ],
+                script: [
+                    {
+                        type: 'application/ld+json',
+                        json: this.OrganizationSchema1
+                    },
+                    {
+                        type: 'application/ld+json',
+                        json: this.OrganizationSchema2
+                    },
+                    {
+                        type: 'application/ld+json',
+                        json: this.OrganizationSchema3
+                    }
+                ]
             }
         },
         watch: {
@@ -190,6 +204,30 @@ export default
                     currentPage: 1,
                     total: undefined,
                     length: 6
+                },
+                OrganizationSchema1:{
+                    "@context": "http://schema.org/",
+                    "@type": "Organization",
+                    "name": "Bebegimlehayat",
+                    "url": "https://www.bebegimlehayat.com",
+                    "logo":
+                    {
+                    "@type": "ImageObject",
+                    "url": "https://bebegimlehayat.com/Data/Logo%20(1)-1684804940478.png", 
+                    "width": "200",
+                    "height": "23"
+                    } 
+                },
+                OrganizationSchema2:{
+                    "@context": "http://schema.org",
+                    "@type": "WebSite",
+                    "url": "https://bebegimlehayat.com/"
+                },
+                OrganizationSchema3: {
+                    "@context": "http://schema.org",
+                    "@type": "WebPage",
+                    "name": "Bebegimlehayat",
+                    "description": "Hamilelik planlama, hamilelik, doğum, çocuk ve bebeklere dair her şeyi BebeğimleHayat 'ta bulabilir, önerilerimizle daha sağlıklı bir bebeğe sahip olabilirsin!"
                 }
             }
         },
