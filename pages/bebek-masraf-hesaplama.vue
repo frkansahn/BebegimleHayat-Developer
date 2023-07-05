@@ -11,13 +11,33 @@
                     </div>
                     <div class="col-12">
                         <div class="col-12 no-result" id="bebekMasrafHesaplamaForm">
+                            <div class="row">
+                                <div class="col-12 mb-4 px-0">
+                                    <div class="h4">
+                                        Bebek Masrafı Ne Kadar Tutar?
+                                    </div>
+                                    <br>
+                                    <p class="h6 line-height-normal font-weight-normal">
+                                        Bebek yetiştirmek bir insanın hayatındaki en karmaşık eylemlerden birisi olabilir.
+                                        Birçok açıdan çeşitli ihtiyaçlara sahip olan bebeklerin masrafları da oldukça
+                                        çeşitlidir. Bebeğinizin ihtiyaçları genellikle aynı olsa da her ay yeni masraflar
+                                        bir anda ortaya çıkabilir. Bebeğinizin giyiminden bebek arabasına, bezinden
+                                        beslenmesine kadar çeşitli masrafları ortaya çıkacak. Ne tarz ve ne kadar ürün
+                                        aldığınıza göre de aylık harcadığınız miktar değişecektir. Devamlı güncellenen
+                                        fiyatlar ile ortalama bir miktar verilmesi ise imkansızdır. Bu yüzden alacağınız
+                                        ürünlere dair plan yapıp hesaplayıcımızı kullanarak kendi bütçe planlamanızı
+                                        çıkarabilirsiniz.
+                                    </p>
+                                </div>
+                            </div>
                             <b-form class="row">
                                 <div class="col-12 px-0 h6 font-weight-normal mb-5">
                                     <p class="mb-2">
                                         Bebeğinizin ilk yılı yaklaşık olarak aşağıdakilere mal olabilir:
                                     </p>
-                                    <div v-if="total > 0">
-                                        <strong class="h3">
+                                    <div class="h5 font-weight-bold" v-if="total > 0">
+                                        Toplam :
+                                        <strong class="h4">
                                             ₺ {{ total | currencyFormat }}
                                         </strong>
                                     </div>
@@ -43,7 +63,7 @@
                                                 Her ay çocuk bakıcısı tutacağım
                                             </b-form-checkbox>
                                             <div class="d-flex align-items-center">
-                                                <b-form-input size="lg" class="w-auto border-dark rounded-0 px-2"
+                                                <b-form-input size="lg" class="mw-150 w-auto border-dark rounded-0 px-2"
                                                     id="bakici_input" v-model="devamliMasraflar.bakiciFiyat" placeholder="0"
                                                     @keypress="isNumber($event)" type="number" required></b-form-input>
                                                 <div class="ml-3 h5">
@@ -57,7 +77,7 @@
                                                 Bez
                                             </div>
                                         </div>
-                                        <b-form-group class="col-12 mb-2" id="bez_group" label="" label-for="bez_input"
+                                        <b-form-group class="col-12 mb-4" id="bez_group" label="" label-for="bez_input"
                                             description="">
                                             <b-form-checkbox class="mb-2 h6 font-weight-normal" size="lg" id="checkbox-bez"
                                                 v-model="devamliMasraflar.isBez" name="checkbox-bez" :value="true"
@@ -65,7 +85,7 @@
                                                 Bez kullanacağım
                                             </b-form-checkbox>
                                             <div class="d-flex align-items-center">
-                                                <b-form-input size="lg" class="w-auto border-dark rounded-0 px-2"
+                                                <b-form-input size="lg" class="mw-150 w-auto border-dark rounded-0 px-2"
                                                     id="bez_input" v-model="devamliMasraflar.bezFiyat" placeholder="0"
                                                     @keypress="isNumber($event)" type="number" required></b-form-input>
                                                 <div class="ml-3 h5">
@@ -81,7 +101,7 @@
                                                 Islak mendil kullanacağım
                                             </b-form-checkbox>
                                             <div class="d-flex align-items-center">
-                                                <b-form-input size="lg" class="w-auto border-dark rounded-0 px-2"
+                                                <b-form-input size="lg" class="mw-150 w-auto border-dark rounded-0 px-2"
                                                     id="islak_mendil_input" v-model="devamliMasraflar.islakMendilFiyat"
                                                     placeholder="0" @keypress="isNumber($event)" type="number"
                                                     required></b-form-input>
@@ -96,7 +116,7 @@
                                                 Beslenme
                                             </div>
                                         </div>
-                                        <b-form-group class="col-12 mb-2" id="bez_group" label=""
+                                        <b-form-group class="col-12 mb-4" id="bez_group" label=""
                                             label-for="formul_mama_input" description="">
                                             <b-form-checkbox class="mb-2 h6 font-weight-normal" size="lg"
                                                 id="checkbox-formul-mama" v-model="devamliMasraflar.isFormulMama"
@@ -104,7 +124,7 @@
                                                 Formül mama kullanacağım
                                             </b-form-checkbox>
                                             <div class="d-flex align-items-center">
-                                                <b-form-input size="lg" class="w-auto border-dark rounded-0 px-2"
+                                                <b-form-input size="lg" class="mw-150 w-auto border-dark rounded-0 px-2"
                                                     id="formul_mama_input" v-model="devamliMasraflar.formulMamaFiyat"
                                                     placeholder="0" @keypress="isNumber($event)" type="number"
                                                     required></b-form-input>
@@ -121,7 +141,7 @@
                                                 Katı gıda kullanacağım
                                             </b-form-checkbox>
                                             <div class="d-flex align-items-center">
-                                                <b-form-input size="lg" class="w-auto border-dark rounded-0 px-2"
+                                                <b-form-input size="lg" class="mw-150 w-auto border-dark rounded-0 px-2"
                                                     id="kati_gida_input" v-model="devamliMasraflar.katiGidaFiyat"
                                                     placeholder="0" @keypress="isNumber($event)" type="number"
                                                     required></b-form-input>
@@ -144,7 +164,7 @@
                                                 Aylık şu kadar para harcayacağım
                                             </b-form-checkbox>
                                             <div class="d-flex align-items-center">
-                                                <b-form-input size="lg" class="w-auto border-dark rounded-0 px-2"
+                                                <b-form-input size="lg" class="mw-150 w-auto border-dark rounded-0 px-2"
                                                     id="kiyafet_fiyat_input" v-model="devamliMasraflar.kiyafetFiyat"
                                                     placeholder="0" @keypress="isNumber($event)" type="number"
                                                     required></b-form-input>
@@ -167,7 +187,7 @@
                                                 Çocuğumun geleceği için aylık birikim yapacağım
                                             </b-form-checkbox>
                                             <div class="d-flex align-items-center">
-                                                <b-form-input size="lg" class="w-auto border-dark rounded-0 px-2"
+                                                <b-form-input size="lg" class="mw-150 w-auto border-dark rounded-0 px-2"
                                                     id="birikim_fiyat_input" v-model="devamliMasraflar.birikimFiyat"
                                                     placeholder="0" @keypress="isNumber($event)" type="number"
                                                     required></b-form-input>
@@ -190,7 +210,7 @@
                                                 Aylık şu kadar harcayacağım
                                             </b-form-checkbox>
                                             <div class="d-flex align-items-center">
-                                                <b-form-input size="lg" class="w-auto border-dark rounded-0 px-2"
+                                                <b-form-input size="lg" class="mw-150 w-auto border-dark rounded-0 px-2"
                                                     id="saglik_masraf_input" v-model="devamliMasraflar.saglikMasrafFiyat"
                                                     placeholder="0" @keypress="isNumber($event)" type="number"
                                                     required></b-form-input>
@@ -213,7 +233,7 @@
                                                 Aylık şu kadar harcayacağım
                                             </b-form-checkbox>
                                             <div class="d-flex align-items-center">
-                                                <b-form-input size="lg" class="w-auto border-dark rounded-0 px-2"
+                                                <b-form-input size="lg" class="mw-150 w-auto border-dark rounded-0 px-2"
                                                     id="oyuncak_kitap_input" v-model="devamliMasraflar.oyuncakKitapFiyat"
                                                     placeholder="0" @keypress="isNumber($event)" type="number"
                                                     required></b-form-input>
@@ -243,8 +263,9 @@
                                         </div>
                                         <b-form-group class="col-12 mb-3" id="oto_koltugu_group" label=""
                                             label-for="oto_koltugu_input" description="">
-                                            <div class="d-flex align-items-center justify-content-between w-100 float-left">
-                                                <div class="float-left h-60 d-flex align-items-center">
+                                            <div
+                                                class="d-flex align-items-baseline align-items-md-center flex-column flex-md-row justify-content-between w-100 float-left">
+                                                <div class="float-left h-40 h-md-60 d-flex align-items-center">
                                                     <b-form-checkbox class="mb-2 h6 font-weight-normal" size="lg"
                                                         id="checkbox-oto-koltugu"
                                                         v-model="tekSeferlikMasraflar.isOtoKoltugu"
@@ -268,8 +289,9 @@
 
                                         <b-form-group class="col-12 mb-3" id="bebek_arabasi_group" label=""
                                             label-for="bebek_arabasi_input" description="">
-                                            <div class="d-flex align-items-center justify-content-between w-100 float-left">
-                                                <div class="float-left h-60 d-flex align-items-center">
+                                            <div
+                                                class="d-flex align-items-baseline align-items-md-center flex-column flex-md-row justify-content-between w-100 float-left">
+                                                <div class="float-left h-40 h-md-60 d-flex align-items-center">
                                                     <b-form-checkbox class="mb-2 h6 font-weight-normal" size="lg"
                                                         id="checkbox-bebek-arabasi"
                                                         v-model="tekSeferlikMasraflar.isBebekArabasi"
@@ -294,8 +316,9 @@
 
                                         <b-form-group class="col-12 mb-3" id="oyun_alani_group" label=""
                                             label-for="oyun_alani_input" description="">
-                                            <div class="d-flex align-items-center justify-content-between w-100 float-left">
-                                                <div class="float-left h-60 d-flex align-items-center">
+                                            <div
+                                                class="d-flex align-items-baseline align-items-md-center flex-column flex-md-row justify-content-between w-100 float-left">
+                                                <div class="float-left h-40 h-md-60 d-flex align-items-center">
                                                     <b-form-checkbox class="mb-2 h6 font-weight-normal" size="lg"
                                                         id="checkbox-oyun-alani" v-model="tekSeferlikMasraflar.isOyunAlani"
                                                         name="checkbox-oyun-alani" :value="true" :unchecked-value="false">
@@ -318,8 +341,9 @@
 
                                         <b-form-group class="col-12 mb-5" id="bez_cantasi_group" label=""
                                             label-for="bez_cantasi_input" description="">
-                                            <div class="d-flex align-items-center justify-content-between w-100 float-left">
-                                                <div class="float-left h-60 d-flex align-items-center">
+                                            <div
+                                                class="d-flex align-items-baseline align-items-md-center flex-column flex-md-row justify-content-between w-100 float-left">
+                                                <div class="float-left h-40 h-md-60 d-flex align-items-center">
                                                     <b-form-checkbox class="mb-2 h6 font-weight-normal" size="lg"
                                                         id="checkbox-bez-cantasi"
                                                         v-model="tekSeferlikMasraflar.isBezCantasi"
@@ -349,8 +373,9 @@
 
                                         <b-form-group class="col-12 mb-3" id="bebek_salincagi_group" label=""
                                             label-for="bebek_salincagi_input" description="">
-                                            <div class="d-flex align-items-center justify-content-between w-100 float-left">
-                                                <div class="float-left h-60 d-flex align-items-center">
+                                            <div
+                                                class="d-flex align-items-baseline align-items-md-center flex-column flex-md-row justify-content-between w-100 float-left">
+                                                <div class="float-left h-40 h-md-60 d-flex align-items-center">
                                                     <b-form-checkbox class="mb-2 h6 font-weight-normal" size="lg"
                                                         id="checkbox-bebek-salincagi"
                                                         v-model="tekSeferlikMasraflar.isBebekSalincagi"
@@ -375,8 +400,9 @@
 
                                         <b-form-group class="col-12 mb-3" id="bebek_oyun_masasi_group" label=""
                                             label-for="bebek_oyun_masasi_input" description="">
-                                            <div class="d-flex align-items-center justify-content-between w-100 float-left">
-                                                <div class="float-left h-60 d-flex align-items-center">
+                                            <div
+                                                class="d-flex align-items-baseline align-items-md-center flex-column flex-md-row justify-content-between w-100 float-left">
+                                                <div class="float-left h-40 h-md-60 d-flex align-items-center">
                                                     <b-form-checkbox class="mb-2 h6 font-weight-normal" size="lg"
                                                         id="checkbox-bebek_oyun_masasi"
                                                         v-model="tekSeferlikMasraflar.isBebekOyunMasasi"
@@ -401,8 +427,9 @@
 
                                         <b-form-group class="col-12 mb-5" id="bebek_oyun_halisi_group" label=""
                                             label-for="bebek_oyun_halisi_input" description="">
-                                            <div class="d-flex align-items-center justify-content-between w-100 float-left">
-                                                <div class="float-left h-60 d-flex align-items-center">
+                                            <div
+                                                class="d-flex align-items-baseline align-items-md-center flex-column flex-md-row justify-content-between w-100 float-left">
+                                                <div class="float-left h-40 h-md-60 d-flex align-items-center">
                                                     <b-form-checkbox class="mb-2 h6 font-weight-normal" size="lg"
                                                         id="checkbox-bebek_oyun_halisi"
                                                         v-model="tekSeferlikMasraflar.isBebekOyunHalisi"
@@ -433,8 +460,9 @@
 
                                         <b-form-group class="col-12 mb-3" id="besik_group" label="" label-for="besik_input"
                                             description="">
-                                            <div class="d-flex align-items-center justify-content-between w-100 float-left">
-                                                <div class="float-left h-60 d-flex align-items-center">
+                                            <div
+                                                class="d-flex align-items-baseline align-items-md-center flex-column flex-md-row justify-content-between w-100 float-left">
+                                                <div class="float-left h-40 h-md-60 d-flex align-items-center">
                                                     <b-form-checkbox class="mb-2 h6 font-weight-normal" size="lg"
                                                         id="checkbox-besik" v-model="tekSeferlikMasraflar.isBesik"
                                                         name="checkbox-besik" :value="true" :unchecked-value="false">
@@ -456,8 +484,9 @@
 
                                         <b-form-group class="col-12 mb-3" id="besik_yatagi_group" label=""
                                             label-for="besik_yatagi_input" description="">
-                                            <div class="d-flex align-items-center justify-content-between w-100 float-left">
-                                                <div class="float-left h-60 d-flex align-items-center">
+                                            <div
+                                                class="d-flex align-items-baseline align-items-md-center flex-column flex-md-row justify-content-between w-100 float-left">
+                                                <div class="float-left h-40 h-md-60 d-flex align-items-center">
                                                     <b-form-checkbox class="mb-2 h6 font-weight-normal" size="lg"
                                                         id="checkbox-besik_yatagi"
                                                         v-model="tekSeferlikMasraflar.isBesikYatagi"
@@ -481,8 +510,9 @@
 
                                         <b-form-group class="col-12 mb-3" id="besik_carsafi_group" label=""
                                             label-for="besik_carsafi_input" description="">
-                                            <div class="d-flex align-items-center justify-content-between w-100 float-left">
-                                                <div class="float-left h-60 d-flex align-items-center">
+                                            <div
+                                                class="d-flex align-items-baseline align-items-md-center flex-column flex-md-row justify-content-between w-100 float-left">
+                                                <div class="float-left h-40 h-md-60 d-flex align-items-center">
                                                     <b-form-checkbox class="mb-2 h6 font-weight-normal" size="lg"
                                                         id="checkbox-besik_carsafi"
                                                         v-model="tekSeferlikMasraflar.isBesikCarsafi"
@@ -507,8 +537,9 @@
 
                                         <b-form-group class="col-12 mb-3" id="alt_degistirme_masasi_group" label=""
                                             label-for="alt_degistirme_masasi_input" description="">
-                                            <div class="d-flex align-items-center justify-content-between w-100 float-left">
-                                                <div class="float-left h-60 d-flex align-items-center">
+                                            <div
+                                                class="d-flex align-items-baseline align-items-md-center flex-column flex-md-row justify-content-between w-100 float-left">
+                                                <div class="float-left h-40 h-md-60 d-flex align-items-center">
                                                     <b-form-checkbox class="mb-2 h6 font-weight-normal" size="lg"
                                                         id="checkbox-alt_degistirme_masasi"
                                                         v-model="tekSeferlikMasraflar.isAltDegistirmeMasasi"
@@ -534,8 +565,9 @@
 
                                         <b-form-group class="col-12 mb-3" id="bebek_telsizi_group" label=""
                                             label-for="bebek_telsizi_input" description="">
-                                            <div class="d-flex align-items-center justify-content-between w-100 float-left">
-                                                <div class="float-left h-60 d-flex align-items-center">
+                                            <div
+                                                class="d-flex align-items-baseline align-items-md-center flex-column flex-md-row justify-content-between w-100 float-left">
+                                                <div class="float-left h-40 h-md-60 d-flex align-items-center">
                                                     <b-form-checkbox class="mb-2 h6 font-weight-normal" size="lg"
                                                         id="checkbox-bebek_telsizi"
                                                         v-model="tekSeferlikMasraflar.isBebekTelsizi"
@@ -560,8 +592,9 @@
 
                                         <b-form-group class="col-12 mb-5" id="bebek_kamerasi_group" label=""
                                             label-for="bebek_kamerasi_input" description="">
-                                            <div class="d-flex align-items-center justify-content-between w-100 float-left">
-                                                <div class="float-left h-60 d-flex align-items-center">
+                                            <div
+                                                class="d-flex align-items-baseline align-items-md-center flex-column flex-md-row justify-content-between w-100 float-left">
+                                                <div class="float-left h-40 h-md-60 d-flex align-items-center">
                                                     <b-form-checkbox class="mb-2 h6 font-weight-normal" size="lg"
                                                         id="checkbox-bebek_kamerasi"
                                                         v-model="tekSeferlikMasraflar.isBebekKamerasi"
@@ -592,8 +625,9 @@
 
                                         <b-form-group class="col-12 mb-3" id="emzik_group" label="" label-for="emzik_input"
                                             description="">
-                                            <div class="d-flex align-items-center justify-content-between w-100 float-left">
-                                                <div class="float-left h-60 d-flex align-items-center">
+                                            <div
+                                                class="d-flex align-items-baseline align-items-md-center flex-column flex-md-row justify-content-between w-100 float-left">
+                                                <div class="float-left h-40 h-md-60 d-flex align-items-center">
                                                     <b-form-checkbox class="mb-2 h6 font-weight-normal" size="lg"
                                                         id="checkbox-besik" v-model="tekSeferlikMasraflar.isEmzik"
                                                         name="checkbox-emzik" :value="true" :unchecked-value="false">
@@ -615,8 +649,9 @@
 
                                         <b-form-group class="col-12 mb-3" id="biberon_group" label=""
                                             label-for="biberon_input" description="">
-                                            <div class="d-flex align-items-center justify-content-between w-100 float-left">
-                                                <div class="float-left h-60 d-flex align-items-center">
+                                            <div
+                                                class="d-flex align-items-baseline align-items-md-center flex-column flex-md-row justify-content-between w-100 float-left">
+                                                <div class="float-left h-40 h-md-60 d-flex align-items-center">
                                                     <b-form-checkbox class="mb-2 h6 font-weight-normal" size="lg"
                                                         id="checkbox-biberon" v-model="tekSeferlikMasraflar.isBiberon"
                                                         name="checkbox-biberon" :value="true" :unchecked-value="false">
@@ -639,8 +674,9 @@
 
                                         <b-form-group class="col-12 mb-3" id="catal_kasik_group" label=""
                                             label-for="catal_kasik_input" description="">
-                                            <div class="d-flex align-items-center justify-content-between w-100 float-left">
-                                                <div class="float-left h-60 d-flex align-items-center">
+                                            <div
+                                                class="d-flex align-items-baseline align-items-md-center flex-column flex-md-row justify-content-between w-100 float-left">
+                                                <div class="float-left h-40 h-md-60 d-flex align-items-center">
                                                     <b-form-checkbox class="mb-2 h6 font-weight-normal" size="lg"
                                                         id="checkbox-catal_kasik"
                                                         v-model="tekSeferlikMasraflar.isCatalKasik"
@@ -664,8 +700,9 @@
 
                                         <b-form-group class="col-12 mb-3" id="tabak_group" label="" label-for="tabak_input"
                                             description="">
-                                            <div class="d-flex align-items-center justify-content-between w-100 float-left">
-                                                <div class="float-left h-60 d-flex align-items-center">
+                                            <div
+                                                class="d-flex align-items-baseline align-items-md-center flex-column flex-md-row justify-content-between w-100 float-left">
+                                                <div class="float-left h-40 h-md-60 d-flex align-items-center">
                                                     <b-form-checkbox class="mb-2 h6 font-weight-normal" size="lg"
                                                         id="checkbox-tabak" v-model="tekSeferlikMasraflar.isTabak"
                                                         name="checkbox-tabak" :value="true" :unchecked-value="false">
@@ -687,8 +724,9 @@
 
                                         <b-form-group class="col-12 mb-3" id="suluk_group" label="" label-for="suluk_input"
                                             description="">
-                                            <div class="d-flex align-items-center justify-content-between w-100 float-left">
-                                                <div class="float-left h-60 d-flex align-items-center">
+                                            <div
+                                                class="d-flex align-items-baseline align-items-md-center flex-column flex-md-row justify-content-between w-100 float-left">
+                                                <div class="float-left h-40 h-md-60 d-flex align-items-center">
                                                     <b-form-checkbox class="mb-2 h6 font-weight-normal" size="lg"
                                                         id="checkbox-suluk" v-model="tekSeferlikMasraflar.isSuluk"
                                                         name="checkbox-suluk" :value="true" :unchecked-value="false">
@@ -710,8 +748,9 @@
 
                                         <b-form-group class="col-12 mb-5" id="onluk_group" label="" label-for="onluk_input"
                                             description="">
-                                            <div class="d-flex align-items-center justify-content-between w-100 float-left">
-                                                <div class="float-left h-60 d-flex align-items-center">
+                                            <div
+                                                class="d-flex align-items-baseline align-items-md-center flex-column flex-md-row justify-content-between w-100 float-left">
+                                                <div class="float-left h-40 h-md-60 d-flex align-items-center">
                                                     <b-form-checkbox class="mb-2 h6 font-weight-normal" size="lg"
                                                         id="checkbox-onluk" v-model="tekSeferlikMasraflar.isOnluk"
                                                         name="checkbox-onluk" :value="true" :unchecked-value="false">
@@ -739,8 +778,9 @@
 
                                         <b-form-group class="col-12 mb-3" id="gogus_pompasi_group" label=""
                                             label-for="gogus_pompasi_input" description="">
-                                            <div class="d-flex align-items-center justify-content-between w-100 float-left">
-                                                <div class="float-left h-60 d-flex align-items-center">
+                                            <div
+                                                class="d-flex align-items-baseline align-items-md-center flex-column flex-md-row justify-content-between w-100 float-left">
+                                                <div class="float-left h-40 h-md-60 d-flex align-items-center">
                                                     <b-form-checkbox class="mb-2 h6 font-weight-normal" size="lg"
                                                         id="checkbox-gogus_pompasi"
                                                         v-model="tekSeferlikMasraflar.isGogusPompasi"
@@ -765,8 +805,9 @@
 
                                         <b-form-group class="col-12 mb-3" id="emzirme_sutyeni_group" label=""
                                             label-for="emzirme_sutyeni_input" description="">
-                                            <div class="d-flex align-items-center justify-content-between w-100 float-left">
-                                                <div class="float-left h-60 d-flex align-items-center">
+                                            <div
+                                                class="d-flex align-items-baseline align-items-md-center flex-column flex-md-row justify-content-between w-100 float-left">
+                                                <div class="float-left h-40 h-md-60 d-flex align-items-center">
                                                     <b-form-checkbox class="mb-2 h6 font-weight-normal" size="lg"
                                                         id="checkbox-emzirme_sutyeni"
                                                         v-model="tekSeferlikMasraflar.isEmzirmeSutyeni"
@@ -791,8 +832,9 @@
 
                                         <b-form-group class="col-12 mb-5" id="emzirme_yastigi_group" label=""
                                             label-for="emzirme_yastigi_input" description="">
-                                            <div class="d-flex align-items-center justify-content-between w-100 float-left">
-                                                <div class="float-left h-60 d-flex align-items-center">
+                                            <div
+                                                class="d-flex align-items-baseline align-items-md-center flex-column flex-md-row justify-content-between w-100 float-left">
+                                                <div class="float-left h-40 h-md-60 d-flex align-items-center">
                                                     <b-form-checkbox class="mb-2 h6 font-weight-normal" size="lg"
                                                         id="checkbox-emzirme_yastigi"
                                                         v-model="tekSeferlikMasraflar.isEmzirmeYastigiisEmzirmeSutyeni"
@@ -823,8 +865,9 @@
 
                                         <b-form-group class="col-12 mb-3" id="bebek_havlusu_group" label=""
                                             label-for="bebek_havlusu_input" description="">
-                                            <div class="d-flex align-items-center justify-content-between w-100 float-left">
-                                                <div class="float-left h-60 d-flex align-items-center">
+                                            <div
+                                                class="d-flex align-items-baseline align-items-md-center flex-column flex-md-row justify-content-between w-100 float-left">
+                                                <div class="float-left h-40 h-md-60 d-flex align-items-center">
                                                     <b-form-checkbox class="mb-2 h6 font-weight-normal" size="lg"
                                                         id="checkbox-bebek_havlusu"
                                                         v-model="tekSeferlikMasraflar.isBebekHavlusu"
@@ -849,8 +892,9 @@
 
                                         <b-form-group class="col-12 mb-3" id="bebek_kuveti_group" label=""
                                             label-for="bebek_kuveti_input" description="">
-                                            <div class="d-flex align-items-center justify-content-between w-100 float-left">
-                                                <div class="float-left h-60 d-flex align-items-center">
+                                            <div
+                                                class="d-flex align-items-baseline align-items-md-center flex-column flex-md-row justify-content-between w-100 float-left">
+                                                <div class="float-left h-40 h-md-60 d-flex align-items-center">
                                                     <b-form-checkbox class="mb-2 h6 font-weight-normal" size="lg"
                                                         id="checkbox-bebek_kuveti"
                                                         v-model="tekSeferlikMasraflar.isBebekKuveti"
@@ -874,8 +918,9 @@
 
                                         <b-form-group class="col-12 mb-3" id="bebek_şampuani_group" label=""
                                             label-for="bebek_şampuani_input" description="">
-                                            <div class="d-flex align-items-center justify-content-between w-100 float-left">
-                                                <div class="float-left h-60 d-flex align-items-center">
+                                            <div
+                                                class="d-flex align-items-baseline align-items-md-center flex-column flex-md-row justify-content-between w-100 float-left">
+                                                <div class="float-left h-40 h-md-60 d-flex align-items-center">
                                                     <b-form-checkbox class="mb-2 h6 font-weight-normal" size="lg"
                                                         id="checkbox-bebek_şampuani"
                                                         v-model="tekSeferlikMasraflar.isBebekSampuani"
@@ -900,8 +945,9 @@
 
                                         <b-form-group class="col-12 mb-3" id="bebek_sabunu_group" label=""
                                             label-for="bebek_sabunu_input" description="">
-                                            <div class="d-flex align-items-center justify-content-between w-100 float-left">
-                                                <div class="float-left h-60 d-flex align-items-center">
+                                            <div
+                                                class="d-flex align-items-baseline align-items-md-center flex-column flex-md-row justify-content-between w-100 float-left">
+                                                <div class="float-left h-40 h-md-60 d-flex align-items-center">
                                                     <b-form-checkbox class="mb-2 h6 font-weight-normal" size="lg"
                                                         id="checkbox-bebek_sabunu"
                                                         v-model="tekSeferlikMasraflar.isBebekSabunu"
@@ -925,8 +971,9 @@
 
                                         <b-form-group class="col-12 mb-5" id="bebek_taragi_group" label=""
                                             label-for="bebek_taragi_input" description="">
-                                            <div class="d-flex align-items-center justify-content-between w-100 float-left">
-                                                <div class="float-left h-60 d-flex align-items-center">
+                                            <div
+                                                class="d-flex align-items-baseline align-items-md-center flex-column flex-md-row justify-content-between w-100 float-left">
+                                                <div class="float-left h-40 h-md-60 d-flex align-items-center">
                                                     <b-form-checkbox class="mb-2 h6 font-weight-normal" size="lg"
                                                         id="checkbox-bebek_taragi"
                                                         v-model="tekSeferlikMasraflar.isBebekTaragi"
@@ -956,8 +1003,9 @@
 
                                         <b-form-group class="col-12 mb-3" id="bebek_kilidi_group" label=""
                                             label-for="bebek_kilidi_input" description="">
-                                            <div class="d-flex align-items-center justify-content-between w-100 float-left">
-                                                <div class="float-left h-60 d-flex align-items-center">
+                                            <div
+                                                class="d-flex align-items-baseline align-items-md-center flex-column flex-md-row justify-content-between w-100 float-left">
+                                                <div class="float-left h-40 h-md-60 d-flex align-items-center">
                                                     <b-form-checkbox class="mb-2 h6 font-weight-normal" size="lg"
                                                         id="checkbox-bebek_kilidi"
                                                         v-model="tekSeferlikMasraflar.isBebekKilidi"
@@ -981,8 +1029,9 @@
 
                                         <b-form-group class="col-12 mb-3" id="ilk_yardim_seti_group" label=""
                                             label-for="ilk_yardim_seti_input" description="">
-                                            <div class="d-flex align-items-center justify-content-between w-100 float-left">
-                                                <div class="float-left h-60 d-flex align-items-center">
+                                            <div
+                                                class="d-flex align-items-baseline align-items-md-center flex-column flex-md-row justify-content-between w-100 float-left">
+                                                <div class="float-left h-40 h-md-60 d-flex align-items-center">
                                                     <b-form-checkbox class="mb-2 h6 font-weight-normal" size="lg"
                                                         id="checkbox-ilk_yardim_seti"
                                                         v-model="tekSeferlikMasraflar.isIlkYardimSeti"
@@ -1007,8 +1056,9 @@
 
                                         <b-form-group class="col-12 mb-5" id="bebek_citi_group" label=""
                                             label-for="bebek_citi_input" description="">
-                                            <div class="d-flex align-items-center justify-content-between w-100 float-left">
-                                                <div class="float-left h-60 d-flex align-items-center">
+                                            <div
+                                                class="d-flex align-items-baseline align-items-md-center flex-column flex-md-row justify-content-between w-100 float-left">
+                                                <div class="float-left h-40 h-md-60 d-flex align-items-center">
                                                     <b-form-checkbox class="mb-2 h6 font-weight-normal" size="lg"
                                                         id="checkbox-bebek_citi" v-model="tekSeferlikMasraflar.isBebekCiti"
                                                         name="checkbox-bebek_citi" :value="true" :unchecked-value="false">
@@ -1149,59 +1199,59 @@
 
                                 <script type="application/ld+json">
                                     {
-                                                "@context": "https://schema.org",
-                                                "@type": "FAQPage",
-                                                "mainEntity": [
-                                                    {
-                                                    "@type": "Question",
-                                                    "name": "Bebek Masrafı Hesaplayıcısı Nedir?",
-                                                    "acceptedAnswer": {
-                                                        "@type": "Answer",
-                                                        "text": "Çocuk sahibi olmak ebeveynlerin hayatındaki en önemli anlardan biridir. Hamilelikten çocuğun büyümesine kadar olan bu süreç, birçok ebeveyn için sihir gibi gelir. Ancak bu sihirli yolculuğun birçok sorumluluğu da bulunmaktadır. Özellikle doğumdan sonra çocuğunuzun sağlıklı büyümesi ve eksiklerinin kapanması çok önemlidir. Çocuğunuzu sağlıklı ve mutlu bir şekilde yetiştirmek için mamasından bezine, kıyafetinden beşiğine kadar birçok harcama yapmanız gerekebilir.
-                                                Ancak ilk defa çocuk sahibi olacak çiftler için bu tür ihtiyaçlar ve kavramlar başlangıçta yabancı gelecektir. Bu yüzden nelere sahip olmaları gerektiği konusunda ek bilgiye ihtiyaç duyacaklardır. Sadece neye sahip olacağını bilmek değil, alacağı eşyaların ne kadar tutacağını bilmek de önemlidir. 
-                                                Detaylı bir liste çıkarılması, bu listedeki eşyaların fiyatlarının belirlenmesi gibi bir görev, ileride bebeklerinin isteklerine ve ihtiyaçlarına hazırlanmalarını kolaylaştıracaktır. Ancak bu listeye nereden başlayacağını bilmek bile başlı başlına bir sorun olabilir.
-                                                Bebeğimle Hayat Bebek Masrafı Hesaplayıcısı bu noktada ebeveynlere yardımcı olmak için geliştirilmiş bir araçtır. Bebeğinize harcayabileceğiniz masraflar için önceden ayarlanmış kategorilerle size yol gösterir. Böylece nelere sahip olmanız gerektiğini öğrenebileceğiniz gibi aşağı yukarı ne kadar harcama yapmanız gerektiğini de öğrenirsiniz.
-                                                Bebek masraf hesaplayıcı devamlı masraflar ve tek seferlik masraflar olarak ikiye ayrılmaktadır. Devamlı masraflar bez, mama ve hijyen ürünleri içerirken tek seferlik masraflar oto koltuğu, bez çantası ve bebek havlusu gibi ihtiyaçlar içerir. İsmini gördüğünüz ürünün yanındaki kutucuklara ne kadar harcama yapacağınızı yazarak ne kadar harcamanız gerektiğinizi öğrenebilirsiniz.
-                                                Hangi ürünü hangi markadan alacağınızın kararını siz verdiğin için ürün fiyatına göre kendiniz bilgileri girebilir ve kendiniz için en doğru sonuca ulaşabilirsiniz. "
+                                                    "@context": "https://schema.org",
+                                                    "@type": "FAQPage",
+                                                    "mainEntity": [
+                                                        {
+                                                        "@type": "Question",
+                                                        "name": "Bebek Masrafı Hesaplayıcısı Nedir?",
+                                                        "acceptedAnswer": {
+                                                            "@type": "Answer",
+                                                            "text": "Çocuk sahibi olmak ebeveynlerin hayatındaki en önemli anlardan biridir. Hamilelikten çocuğun büyümesine kadar olan bu süreç, birçok ebeveyn için sihir gibi gelir. Ancak bu sihirli yolculuğun birçok sorumluluğu da bulunmaktadır. Özellikle doğumdan sonra çocuğunuzun sağlıklı büyümesi ve eksiklerinin kapanması çok önemlidir. Çocuğunuzu sağlıklı ve mutlu bir şekilde yetiştirmek için mamasından bezine, kıyafetinden beşiğine kadar birçok harcama yapmanız gerekebilir.
+                                                    Ancak ilk defa çocuk sahibi olacak çiftler için bu tür ihtiyaçlar ve kavramlar başlangıçta yabancı gelecektir. Bu yüzden nelere sahip olmaları gerektiği konusunda ek bilgiye ihtiyaç duyacaklardır. Sadece neye sahip olacağını bilmek değil, alacağı eşyaların ne kadar tutacağını bilmek de önemlidir. 
+                                                    Detaylı bir liste çıkarılması, bu listedeki eşyaların fiyatlarının belirlenmesi gibi bir görev, ileride bebeklerinin isteklerine ve ihtiyaçlarına hazırlanmalarını kolaylaştıracaktır. Ancak bu listeye nereden başlayacağını bilmek bile başlı başlına bir sorun olabilir.
+                                                    Bebeğimle Hayat Bebek Masrafı Hesaplayıcısı bu noktada ebeveynlere yardımcı olmak için geliştirilmiş bir araçtır. Bebeğinize harcayabileceğiniz masraflar için önceden ayarlanmış kategorilerle size yol gösterir. Böylece nelere sahip olmanız gerektiğini öğrenebileceğiniz gibi aşağı yukarı ne kadar harcama yapmanız gerektiğini de öğrenirsiniz.
+                                                    Bebek masraf hesaplayıcı devamlı masraflar ve tek seferlik masraflar olarak ikiye ayrılmaktadır. Devamlı masraflar bez, mama ve hijyen ürünleri içerirken tek seferlik masraflar oto koltuğu, bez çantası ve bebek havlusu gibi ihtiyaçlar içerir. İsmini gördüğünüz ürünün yanındaki kutucuklara ne kadar harcama yapacağınızı yazarak ne kadar harcamanız gerektiğinizi öğrenebilirsiniz.
+                                                    Hangi ürünü hangi markadan alacağınızın kararını siz verdiğin için ürün fiyatına göre kendiniz bilgileri girebilir ve kendiniz için en doğru sonuca ulaşabilirsiniz. "
+                                                        }
+                                                        },
+                                                        {
+                                                        "@type": "Question",
+                                                        "name": "Bebek Masrafını Kısmak İçin Ne Yapabilirim?",
+                                                        "acceptedAnswer": {
+                                                            "@type": "Answer",
+                                                            "text": "Bebek masraflarını hesaplarken birçok ebeveyn beklediğinden daha yüksek bir fiyatla karşılaşır. Bu fiyatların azaltılması aile ekonomisinde büyük bir yardımda bulunabilir. Bebek masrafını kısmak içinse en etkili yöntem 2. el eşyalardır. 
+                                                    2. el eşyalar başta ebeveynlere çok güvenli gelmeyebilir. Ancak belirli önlemler alındığında ve dikkatli olunduğunda 2. el bebek ürünü almanın hiçbir sorunu yoktur. Sonuçta bebekler hızlı büyüdüğü için alınan ufak zıbınlar seneler boyunca giyilip yıpranmış olmayacaktır. Bu yüzden birçok ürünün 2. el satışı son derece doğaldır.
+                                                    Bebeğinize 2. el olarak kıyafet almanızda bir sakınca yoktur. Alınan kıyafetler sağlamsa, bebeğiniz için uygun özellikleri taşıyorsa ve beden olarak uyuyorsa almayı düşünebilirsiniz. Kıyafeti aldıktan sonra hijyenik bir şekilde yıkadığınız sürece hiçbir sorun olmayacaktır.
+                                                    Bebeğiniz için 2. el olarak alabileceğiniz bir diğer şey ise biberon ve oyuncaklardır. Ancak alacağınız biberonların sağlam olduğundan çatlaklarının olmadığından emin olun. Ayrıca ucundaki kauçuk ağzı mutlaka değiştirin ve yenisini alın. Oyuncaklarda da aynı şekilde kırık veya bozuk olmadıkları sürece dilediğiniz gibi ikinci el alabilirsiniz. Aldığınız her ürünü güzelce yıkamayı ve temizlemeyi unutmayın.
+                                                    Masraf kısmak için 2. el almanızın en etkili olacağı birkaç diğer ürün ise oto koltuğu, bebek arabası ve beşiktir. 3 üründe sağlam olduğu ve gerekli güvenlik önlemlerine sahip olduğu sürece gönül rahatlığı ile alabilirsiniz. Beşiklerde iskeleti almanızda bir sorun olmasa da yatağı ayrı almanızı tavsiye ederiz. Yatak paylaşımı genellikle hijyenik değildir ve bebeğiniz için zararlı olabilir. Oto koltuğu ve bebek arabasının kumaşını, yastıklarını tamamen hijyenik olacak şekilde yıkamanız gerekiyor. Aksi takdirde aynı hijyen problemlerine takılabilirsiniz. Eğer yastıklar veya kumaş sökülüp yıkanmıyorsa direkt yeni bir oto koltuğu ya da bebek arabası almanız daha doğru olacaktır.
+                                                    Bebeğinizin kullanabileceği bir başka 2. el ütün ise kaşık çatal gibi ürünlerdir. Bu ürünler genellikle plastiktir ve kolayca yıkanabilir. Üstlerinde bir çizik ve parçalanma olmadığı sürece güzel temizleyerek kullanabilirsiniz.
+                                                    Alacağınız ürün ister yeni ister ikinci el olsun, her daim ürünleri güzelce yıkamalı ve temizlemelisiniz. Hijyen mevcut aşamada bebeğinizin sağlığını koruyan en önemli etkendir."
+                                                        }
+                                                        },
+                                                        {
+                                                        "@type": "Question",
+                                                        "name": "Bebek İçin Her Ay Ne Kadar Para Biriktirmeliyim?",
+                                                        "acceptedAnswer": {
+                                                            "@type": "Answer",
+                                                            "text": "Bebek ihtiyaçları her ay değişebilir ve artabilir. Sadece bebeklik değil, çocukluk ve ergenlik yıllarında da çeşitli ihtiyaçları bulunacaktır. Okul masrafları, dışarıya çıkıp gezmeler ve çeşitli harcamalar asla bitmeyecektir. Bu yüzden bebeğiniz doğmadan masraflar için bir para biriktirdiğiniz gibi doğduktan sonra da her ay köşeye belirli bir miktar atmanız gerekecektir. Ne kadar para biriktirdiğiniz sizin bütçenize bağlı olarak değişmelidir. Ortalama 500₺ biriktirmeniz bile ileride çocuğunuz için size fayda sağlayacaktır. Köşeye para atarken asıl önemli olan ne kadar attığınız değil istikrarlı olmanız ve o paraya amacı dışında dokunmamanızdır. Çocuğunuzun geleceği için yatırım yapmak önemlidir."
+                                                        }
+                                                        },
+                                                        {
+                                                        "@type": "Question",
+                                                        "name": "Bebek Masrafını Kısmak İçin Tavsiyeler Nelerdir?",
+                                                        "acceptedAnswer": {
+                                                            "@type": "Answer",
+                                                            "text": "Bebeğinizin ihtiyaçları gözünüzde büyüyebilir. Bundan dolayı bazı hamlelerle cebinizi rahatlatabilirsiniz. Aşağıdaki tavsiyelerle beraber bütçenizi daha iyi kurabilirsiniz.
+                                                    Devlet yardımını araştırın. Yeni doğan çocuklar için destek olmak adına devlet tarafından belirli miktarlarda para ödenir. Sahip olduğunuz çocuk sayısı ve çalışma durumunuza bağlı olarak e devlet üzerinden başvuru yapabilirsiniz. 
+                                                İş yerinizin doğum iznini araştırın. Birçok işyeri annelere ve babalara doğum döneminde ücretli izin sunmaktadır. Haklarınızı araştırın ve öğrenin. Doğum izni yasal olarak hakkınızdır.
+                                                Özel sağlık sigortanızı kontrol edin. Eğer özel sağlık sigortanız varsa bebeğinizi de kapsadığından ve ek ayrıcalıklarının olup olmadığından emin olun.
+                                                Harcamalarınızı planlayın. Bebeğin doğumuna yakın tüm her şeyi almaktansa önceden satın almaya başlamanız daha doğru olacaktır. Böylece hem bütçenizi bebeğinize göre ayarlamaya alışırsınız hem de kendinizi bir anda sıkıştırmazsınız.
+                                                Yaşadığınız şehrin çocuk masrafını araştırın. Her şehrin ekonomik durumu farklıdır. Yaşadığınız şehirde çocuk yetiştirmek diğer şehirlere göre daha ucuz ya da pahalı olabilir. Şimdiden bu miktarı araştırın ve ona göre hareket edin."
                                                     }
-                                                    },
-                                                    {
-                                                    "@type": "Question",
-                                                    "name": "Bebek Masrafını Kısmak İçin Ne Yapabilirim?",
-                                                    "acceptedAnswer": {
-                                                        "@type": "Answer",
-                                                        "text": "Bebek masraflarını hesaplarken birçok ebeveyn beklediğinden daha yüksek bir fiyatla karşılaşır. Bu fiyatların azaltılması aile ekonomisinde büyük bir yardımda bulunabilir. Bebek masrafını kısmak içinse en etkili yöntem 2. el eşyalardır. 
-                                                2. el eşyalar başta ebeveynlere çok güvenli gelmeyebilir. Ancak belirli önlemler alındığında ve dikkatli olunduğunda 2. el bebek ürünü almanın hiçbir sorunu yoktur. Sonuçta bebekler hızlı büyüdüğü için alınan ufak zıbınlar seneler boyunca giyilip yıpranmış olmayacaktır. Bu yüzden birçok ürünün 2. el satışı son derece doğaldır.
-                                                Bebeğinize 2. el olarak kıyafet almanızda bir sakınca yoktur. Alınan kıyafetler sağlamsa, bebeğiniz için uygun özellikleri taşıyorsa ve beden olarak uyuyorsa almayı düşünebilirsiniz. Kıyafeti aldıktan sonra hijyenik bir şekilde yıkadığınız sürece hiçbir sorun olmayacaktır.
-                                                Bebeğiniz için 2. el olarak alabileceğiniz bir diğer şey ise biberon ve oyuncaklardır. Ancak alacağınız biberonların sağlam olduğundan çatlaklarının olmadığından emin olun. Ayrıca ucundaki kauçuk ağzı mutlaka değiştirin ve yenisini alın. Oyuncaklarda da aynı şekilde kırık veya bozuk olmadıkları sürece dilediğiniz gibi ikinci el alabilirsiniz. Aldığınız her ürünü güzelce yıkamayı ve temizlemeyi unutmayın.
-                                                Masraf kısmak için 2. el almanızın en etkili olacağı birkaç diğer ürün ise oto koltuğu, bebek arabası ve beşiktir. 3 üründe sağlam olduğu ve gerekli güvenlik önlemlerine sahip olduğu sürece gönül rahatlığı ile alabilirsiniz. Beşiklerde iskeleti almanızda bir sorun olmasa da yatağı ayrı almanızı tavsiye ederiz. Yatak paylaşımı genellikle hijyenik değildir ve bebeğiniz için zararlı olabilir. Oto koltuğu ve bebek arabasının kumaşını, yastıklarını tamamen hijyenik olacak şekilde yıkamanız gerekiyor. Aksi takdirde aynı hijyen problemlerine takılabilirsiniz. Eğer yastıklar veya kumaş sökülüp yıkanmıyorsa direkt yeni bir oto koltuğu ya da bebek arabası almanız daha doğru olacaktır.
-                                                Bebeğinizin kullanabileceği bir başka 2. el ütün ise kaşık çatal gibi ürünlerdir. Bu ürünler genellikle plastiktir ve kolayca yıkanabilir. Üstlerinde bir çizik ve parçalanma olmadığı sürece güzel temizleyerek kullanabilirsiniz.
-                                                Alacağınız ürün ister yeni ister ikinci el olsun, her daim ürünleri güzelce yıkamalı ve temizlemelisiniz. Hijyen mevcut aşamada bebeğinizin sağlığını koruyan en önemli etkendir."
                                                     }
-                                                    },
-                                                    {
-                                                    "@type": "Question",
-                                                    "name": "Bebek İçin Her Ay Ne Kadar Para Biriktirmeliyim?",
-                                                    "acceptedAnswer": {
-                                                        "@type": "Answer",
-                                                        "text": "Bebek ihtiyaçları her ay değişebilir ve artabilir. Sadece bebeklik değil, çocukluk ve ergenlik yıllarında da çeşitli ihtiyaçları bulunacaktır. Okul masrafları, dışarıya çıkıp gezmeler ve çeşitli harcamalar asla bitmeyecektir. Bu yüzden bebeğiniz doğmadan masraflar için bir para biriktirdiğiniz gibi doğduktan sonra da her ay köşeye belirli bir miktar atmanız gerekecektir. Ne kadar para biriktirdiğiniz sizin bütçenize bağlı olarak değişmelidir. Ortalama 500₺ biriktirmeniz bile ileride çocuğunuz için size fayda sağlayacaktır. Köşeye para atarken asıl önemli olan ne kadar attığınız değil istikrarlı olmanız ve o paraya amacı dışında dokunmamanızdır. Çocuğunuzun geleceği için yatırım yapmak önemlidir."
-                                                    }
-                                                    },
-                                                    {
-                                                    "@type": "Question",
-                                                    "name": "Bebek Masrafını Kısmak İçin Tavsiyeler Nelerdir?",
-                                                    "acceptedAnswer": {
-                                                        "@type": "Answer",
-                                                        "text": "Bebeğinizin ihtiyaçları gözünüzde büyüyebilir. Bundan dolayı bazı hamlelerle cebinizi rahatlatabilirsiniz. Aşağıdaki tavsiyelerle beraber bütçenizi daha iyi kurabilirsiniz.
-                                                Devlet yardımını araştırın. Yeni doğan çocuklar için destek olmak adına devlet tarafından belirli miktarlarda para ödenir. Sahip olduğunuz çocuk sayısı ve çalışma durumunuza bağlı olarak e devlet üzerinden başvuru yapabilirsiniz. 
-                                            İş yerinizin doğum iznini araştırın. Birçok işyeri annelere ve babalara doğum döneminde ücretli izin sunmaktadır. Haklarınızı araştırın ve öğrenin. Doğum izni yasal olarak hakkınızdır.
-                                            Özel sağlık sigortanızı kontrol edin. Eğer özel sağlık sigortanız varsa bebeğinizi de kapsadığından ve ek ayrıcalıklarının olup olmadığından emin olun.
-                                            Harcamalarınızı planlayın. Bebeğin doğumuna yakın tüm her şeyi almaktansa önceden satın almaya başlamanız daha doğru olacaktır. Böylece hem bütçenizi bebeğinize göre ayarlamaya alışırsınız hem de kendinizi bir anda sıkıştırmazsınız.
-                                            Yaşadığınız şehrin çocuk masrafını araştırın. Her şehrin ekonomik durumu farklıdır. Yaşadığınız şehirde çocuk yetiştirmek diğer şehirlere göre daha ucuz ya da pahalı olabilir. Şimdiden bu miktarı araştırın ve ona göre hareket edin."
+                                                ]
                                                 }
-                                                }
-                                            ]
-                                            }
                                 </script>
 
                             </div>
@@ -1315,15 +1365,15 @@ export default {
             total: null
         }
     },
-    watch : {
+    watch: {
         devamliMasraflar: {
-            handler(val){
+            handler(val) {
                 this.calculate();
             },
             deep: true
         },
         tekSeferlikMasraflar: {
-            handler(val){
+            handler(val) {
                 this.calculate();
             },
             deep: true
@@ -1342,124 +1392,124 @@ export default {
         calculate() {
             let total = 0;
 
-            if(this.devamliMasraflar.isBakici)
-                total += parseFloat(this.devamliMasraflar.bakiciFiyat || 0); 
+            if (this.devamliMasraflar.isBakici)
+                total += parseFloat(this.devamliMasraflar.bakiciFiyat || 0)*12;
 
-            if(this.devamliMasraflar.isBez)
-                total += parseFloat(this.devamliMasraflar.bezFiyat || 0); 
+            if (this.devamliMasraflar.isBez)
+                total += parseFloat(this.devamliMasraflar.bezFiyat || 0)*12;
 
-            if(this.devamliMasraflar.isIslakMendil)
-                total += parseFloat(this.devamliMasraflar.islakMendilFiyat || 0); 
+            if (this.devamliMasraflar.isIslakMendil)
+                total += parseFloat(this.devamliMasraflar.islakMendilFiyat || 0)*12;
 
-            if(this.devamliMasraflar.isFormulMama)
-                total += parseFloat(this.devamliMasraflar.formulMamaFiyat || 0); 
-            
-            if(this.devamliMasraflar.isKatiGida)
-                total += parseFloat(this.devamliMasraflar.katiGidaFiyat || 0); 
-            
-            if(this.devamliMasraflar.isKiyafet)
-                total += parseFloat(this.devamliMasraflar.kiyafetFiyat || 0); 
-            
-            if(this.devamliMasraflar.isBirikim)
-                total += parseFloat(this.devamliMasraflar.birikimFiyat || 0); 
+            if (this.devamliMasraflar.isFormulMama)
+                total += parseFloat(this.devamliMasraflar.formulMamaFiyat || 0)*9;
 
-            if(this.devamliMasraflar.isSaglikMasraf)
-                total += parseFloat(this.devamliMasraflar.saglikMasrafFiyat || 0);
-                
-            if(this.devamliMasraflar.isOyuncakKitap)
-                total += parseFloat(this.devamliMasraflar.oyuncakKitapFiyat || 0); 
+            if (this.devamliMasraflar.isKatiGida)
+                total += parseFloat(this.devamliMasraflar.katiGidaFiyat || 0)*6;
+
+            if (this.devamliMasraflar.isKiyafet)
+                total += parseFloat(this.devamliMasraflar.kiyafetFiyat || 0)*12;
+
+            if (this.devamliMasraflar.isBirikim)
+                total += parseFloat(this.devamliMasraflar.birikimFiyat || 0)*12;
+
+            if (this.devamliMasraflar.isSaglikMasraf)
+                total += parseFloat(this.devamliMasraflar.saglikMasrafFiyat || 0)*12;
+
+            if (this.devamliMasraflar.isOyuncakKitap)
+                total += parseFloat(this.devamliMasraflar.oyuncakKitapFiyat || 0)*12;
 
 
-            if(this.devamliMasraflar.isOtoKoltugu)
-                total += parseFloat(this.devamliMasraflar.otoKoltuguFiyat || 0); 
-            
-            if(this.devamliMasraflar.isBebekArabasi)
-                total += parseFloat(this.devamliMasraflar.bebekArabasiFiyat || 0); 
-            
-            if(this.devamliMasraflar.isOyunAlani)
-                total += parseFloat(this.devamliMasraflar.oyunAlaniFiyat || 0); 
-            
-            if(this.devamliMasraflar.isBezCantasi)
-                total += parseFloat(this.devamliMasraflar.bezCantasiFiyat || 0); 
-            
-            if(this.devamliMasraflar.isBebekSalincagi)
-                total += parseFloat(this.devamliMasraflar.bebekSalincagiFiyat || 0); 
-            
-            if(this.devamliMasraflar.isBebekOyunMasasi)
-                total += parseFloat(this.devamliMasraflar.bebekOyunMasasiFiyat || 0); 
-            
-            if(this.devamliMasraflar.isBebekOyunHalisi)
-                total += parseFloat(this.devamliMasraflar.bebekOyunHalisiFiyat || 0); 
-            
-            if(this.devamliMasraflar.isBesik)
-                total += parseFloat(this.devamliMasraflar.besikFiyat || 0); 
-            
-            if(this.devamliMasraflar.isBesikYatagi)
-                total += parseFloat(this.devamliMasraflar.besikYatagiFiyat || 0); 
-            
-            if(this.devamliMasraflar.isBesikCarsafi)
-                total += parseFloat(this.devamliMasraflar.besikCarsafiFiyat || 0); 
-            
-            if(this.devamliMasraflar.isAltDegistirmeMasasi)
-                total += parseFloat(this.devamliMasraflar.altDegistirmeMasasiFiyat || 0); 
-            
-            if(this.devamliMasraflar.isBebekTelsizi)
-                total += parseFloat(this.devamliMasraflar.bebekTelsiziFiyat || 0); 
-            
-            if(this.devamliMasraflar.isBebekKamerasi)
-                total += parseFloat(this.devamliMasraflar.bebekKamerasiFiyat || 0); 
-            
-            if(this.devamliMasraflar.isEmzik)
-                total += parseFloat(this.devamliMasraflar.emzikFiyat || 0); 
-            
-            if(this.devamliMasraflar.isBiberon)
-                total += parseFloat(this.devamliMasraflar.biberonFiyat || 0); 
-            
-            if(this.devamliMasraflar.isCatalKasik)
-                total += parseFloat(this.devamliMasraflar.catalKasikFiyat || 0); 
-            
-            if(this.devamliMasraflar.isTabak)
-                total += parseFloat(this.devamliMasraflar.tabakFiyat || 0); 
-            
-            if(this.devamliMasraflar.isSuluk)
-                total += parseFloat(this.devamliMasraflar.sulukFiyat || 0); 
-            
-            if(this.devamliMasraflar.isOnluk)
-                total += parseFloat(this.devamliMasraflar.onlukFiyat || 0); 
-            
-            if(this.devamliMasraflar.isGogusPompasi)
-                total += parseFloat(this.devamliMasraflar.gogusPompasiFiyat || 0); 
-            
-            if(this.devamliMasraflar.isEmzirmeSutyeni)
-                total += parseFloat(this.devamliMasraflar.emzirmeSutyeniFiyat || 0); 
-            
-            if(this.devamliMasraflar.isEmzirmeYastigi)
-                total += parseFloat(this.devamliMasraflar.emzirmeYastigiFiyat || 0); 
-            
-            if(this.devamliMasraflar.isBebekHavlusu)
-                total += parseFloat(this.devamliMasraflar.bebekHavlusuFiyat || 0); 
-            
-            if(this.devamliMasraflar.isBebekKuveti)
-                total += parseFloat(this.devamliMasraflar.bebekKuvetiFiyat || 0); 
-            
-            if(this.devamliMasraflar.isBebekSampuani)
-                total += parseFloat(this.devamliMasraflar.bebekSampuaniFiyat || 0); 
-            
-            if(this.devamliMasraflar.isBebekSabunu)
-                total += parseFloat(this.devamliMasraflar.bebekSabunuFiyat || 0); 
-            
-            if(this.devamliMasraflar.isBebekTaragi)
-                total += parseFloat(this.devamliMasraflar.bebekTaragiFiyat || 0); 
-            
-            if(this.devamliMasraflar.isBebekKilidi)
-                total += parseFloat(this.devamliMasraflar.bebekKilidiFiyat || 0); 
-            
-            if(this.devamliMasraflar.isIlkYardimSeti)
-                total += parseFloat(this.devamliMasraflar.ilkYardimSetiFiyat || 0); 
-            
-            if(this.devamliMasraflar.isBebekCiti)
-                total += parseFloat(this.devamliMasraflar.bebekCitiFiyat || 0); 
-            
+            if (this.tekSeferlikMasraflar.isOtoKoltugu)
+                total += parseFloat(this.tekSeferlikMasraflar.otoKoltuguFiyat || 0);
+
+            if (this.tekSeferlikMasraflar.isBebekArabasi)
+                total += parseFloat(this.tekSeferlikMasraflar.bebekArabasiFiyat || 0);
+
+            if (this.tekSeferlikMasraflar.isOyunAlani)
+                total += parseFloat(this.tekSeferlikMasraflar.oyunAlaniFiyat || 0);
+
+            if (this.tekSeferlikMasraflar.isBezCantasi)
+                total += parseFloat(this.tekSeferlikMasraflar.bezCantasiFiyat || 0);
+
+            if (this.tekSeferlikMasraflar.isBebekSalincagi)
+                total += parseFloat(this.tekSeferlikMasraflar.bebekSalincagiFiyat || 0);
+
+            if (this.tekSeferlikMasraflar.isBebekOyunMasasi)
+                total += parseFloat(this.tekSeferlikMasraflar.bebekOyunMasasiFiyat || 0);
+
+            if (this.tekSeferlikMasraflar.isBebekOyunHalisi)
+                total += parseFloat(this.tekSeferlikMasraflar.bebekOyunHalisiFiyat || 0);
+
+            if (this.tekSeferlikMasraflar.isBesik)
+                total += parseFloat(this.tekSeferlikMasraflar.besikFiyat || 0);
+
+            if (this.tekSeferlikMasraflar.isBesikYatagi)
+                total += parseFloat(this.tekSeferlikMasraflar.besikYatagiFiyat || 0);
+
+            if (this.tekSeferlikMasraflar.isBesikCarsafi)
+                total += parseFloat(this.tekSeferlikMasraflar.besikCarsafiFiyat || 0);
+
+            if (this.tekSeferlikMasraflar.isAltDegistirmeMasasi)
+                total += parseFloat(this.tekSeferlikMasraflar.altDegistirmeMasasiFiyat || 0);
+
+            if (this.tekSeferlikMasraflar.isBebekTelsizi)
+                total += parseFloat(this.tekSeferlikMasraflar.bebekTelsiziFiyat || 0);
+
+            if (this.tekSeferlikMasraflar.isBebekKamerasi)
+                total += parseFloat(this.tekSeferlikMasraflar.bebekKamerasiFiyat || 0);
+
+            if (this.tekSeferlikMasraflar.isEmzik)
+                total += parseFloat(this.tekSeferlikMasraflar.emzikFiyat || 0);
+
+            if (this.tekSeferlikMasraflar.isBiberon)
+                total += parseFloat(this.tekSeferlikMasraflar.biberonFiyat || 0);
+
+            if (this.tekSeferlikMasraflar.isCatalKasik)
+                total += parseFloat(this.tekSeferlikMasraflar.catalKasikFiyat || 0);
+
+            if (this.tekSeferlikMasraflar.isTabak)
+                total += parseFloat(this.tekSeferlikMasraflar.tabakFiyat || 0);
+
+            if (this.tekSeferlikMasraflar.isSuluk)
+                total += parseFloat(this.tekSeferlikMasraflar.sulukFiyat || 0);
+
+            if (this.tekSeferlikMasraflar.isOnluk)
+                total += parseFloat(this.tekSeferlikMasraflar.onlukFiyat || 0);
+
+            if (this.tekSeferlikMasraflar.isGogusPompasi)
+                total += parseFloat(this.tekSeferlikMasraflar.gogusPompasiFiyat || 0);
+
+            if (this.tekSeferlikMasraflar.isEmzirmeSutyeni)
+                total += parseFloat(this.tekSeferlikMasraflar.emzirmeSutyeniFiyat || 0);
+
+            if (this.tekSeferlikMasraflar.isEmzirmeYastigi)
+                total += parseFloat(this.tekSeferlikMasraflar.emzirmeYastigiFiyat || 0);
+
+            if (this.tekSeferlikMasraflar.isBebekHavlusu)
+                total += parseFloat(this.tekSeferlikMasraflar.bebekHavlusuFiyat || 0);
+
+            if (this.tekSeferlikMasraflar.isBebekKuveti)
+                total += parseFloat(this.tekSeferlikMasraflar.bebekKuvetiFiyat || 0);
+
+            if (this.tekSeferlikMasraflar.isBebekSampuani)
+                total += parseFloat(this.tekSeferlikMasraflar.bebekSampuaniFiyat || 0);
+
+            if (this.tekSeferlikMasraflar.isBebekSabunu)
+                total += parseFloat(this.tekSeferlikMasraflar.bebekSabunuFiyat || 0);
+
+            if (this.tekSeferlikMasraflar.isBebekTaragi)
+                total += parseFloat(this.tekSeferlikMasraflar.bebekTaragiFiyat || 0);
+
+            if (this.tekSeferlikMasraflar.isBebekKilidi)
+                total += parseFloat(this.tekSeferlikMasraflar.bebekKilidiFiyat || 0);
+
+            if (this.tekSeferlikMasraflar.isIlkYardimSeti)
+                total += parseFloat(this.tekSeferlikMasraflar.ilkYardimSetiFiyat || 0);
+
+            if (this.tekSeferlikMasraflar.isBebekCiti)
+                total += parseFloat(this.tekSeferlikMasraflar.bebekCitiFiyat || 0);
+
             this.total = total;
 
         }
@@ -1483,12 +1533,22 @@ export default {
     border-top: 11px solid rgb(216, 240, 245);
 }
 
+.line-height-normal {
+    line-height:normal;
+}
+
 .mw-150 {
     max-width: 150px;
 }
 
-.h-60 {
-    height: 60px;
+.h-40 {
+    height: 40px;
+}
+
+@media screen and (min-width: 768px) {
+    .h-md-60 {
+        height: 60px;
+    }
 }
 
 #bebekMasrafHesaplamaContent h2 {
@@ -1559,4 +1619,16 @@ export default {
 
 .vs__search {
     font-size: 18px;
+}
+
+@media screen and (max-width: 768px) {
+    #bebekMasrafHesaplamaForm form label {
+        font-size: 14px;
+        line-height: 31px;
+    }
+
+    #bebekMasrafHesaplamaForm form input {
+        height: 35px;
+        font-size: 15px;
+    }
 }</style>

@@ -50,11 +50,11 @@
   "Weather": {
     "description": "Auto imported from components/weather.vue"
   },
-  "ContentDetail": {
-    "description": "Auto imported from components/content/detail.vue"
-  },
   "AdminHeader": {
     "description": "Auto imported from components/admin/header.vue"
+  },
+  "ContentDetail": {
+    "description": "Auto imported from components/content/detail.vue"
   },
   "BlogBabyDictionary": {
     "description": "Auto imported from components/blog/babyDictionary.vue"
@@ -143,9 +143,6 @@
   "Showcase": {
     "description": "Auto imported from components/showcase/showcase.vue"
   },
-  "ProductListPagination": {
-    "description": "Auto imported from components/product/list/pagination.vue"
-  },
   "SliderAdvertCart": {
     "description": "Auto imported from components/slider/advertCart.vue"
   },
@@ -166,5 +163,8 @@
   },
   "SliderType1": {
     "description": "Auto imported from components/slider/type1.vue"
+  },
+  "ProductListPagination": {
+    "description": "Auto imported from components/product/list/pagination.vue"
   }
 }

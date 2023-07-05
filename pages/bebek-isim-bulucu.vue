@@ -398,7 +398,7 @@ export default {
     async created() {
         this.navigation = [
             {
-                "name": "Bebek isim bulucu",
+                "name": "Bebek İsim Bulucu",
                 "url": "/bebek-isim-bulucu"
             }
         ]

@@ -471,6 +471,18 @@ export default {
                 }
 
                 (parseFloat(this.beforePregnancyWeight)) - 10, (parseFloat(this.beforePregnancyWeight) + parseFloat(this.veryAverage) + 10), ((parseFloat(this.nowWeight) + parseFloat(this.beforePregnancyWeight)) / 2), (parseFloat(this.nowWeight) + 10)
+                
+                let smallestWeight ,biggestWeight;
+                if(this.beforePregnancyWeight > this.nowWeight)
+                    smallestWeight = parseFloat(this.nowWeight)
+                else
+                    smallestWeight = parseFloat(this.beforePregnancyWeight)
+
+                if((parseFloat(this.beforePregnancyWeight) + parseFloat(this.veryAverage)) > this.nowWeight)
+                    biggestWeight = parseFloat(this.beforePregnancyWeight) + parseFloat(this.veryAverage);
+                else
+                    biggestWeight = this.nowWeight
+
                 this.barChartOptions = {
                         responsive: true,
                         maintainAspectRatio: false,
@@ -499,11 +511,13 @@ export default {
                                     display: true,
                                     text: 'Value'
                                 },
-                                min: this.beforePregnancyWeight-5,
-                                max: parseFloat(this.beforePregnancyWeight) + parseFloat(this.veryAverage)+10
+                                min: parseFloat(smallestWeight)-5,
+                                max: parseFloat(biggestWeight)+10
                             }
                         }
                     }
+
+                console.log(this.barChartOptions);
                 this.data = {
                     labels: Array.from(Array(41).keys()),
                     datasets: [

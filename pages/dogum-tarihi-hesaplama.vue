@@ -53,7 +53,7 @@
                                     <div class="row">
                                         <div class="col-12 mb-3">
                                             <img class="mw-80px" loading="lazy"
-                                                src="/Data/image/extra_small/dogum_tarihi_hesaplama-1684180646598.jpeg"
+                                                src="https://api.bebegimlehayat.com/Data/image/extra_small/dogum_tarihi_hesaplama-1684180646598.jpeg"
                                                 alt="Hesaplama" width="50" height="70" />
                                         </div>
 

@@ -121,7 +121,8 @@ export default {
                     '/cocuk-boyu-hesaplama',
                     '/cin-takvimiyle-cinsiyet-hesaplama',
                     '/bebek-isim-bulucu',
-                    '/bebek-asi-takvimi-hesaplama'
+                    '/bebek-asi-takvimi-hesaplama',
+                    '/bebek-masraf-hesaplama'
                 ]
             }
         ]

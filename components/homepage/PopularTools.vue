@@ -59,7 +59,7 @@ export default {
                 },
                 {
                     "name":"Bebek Masraf Hesaplama",
-                    "url":"#",
+                    "url":"/bebek-masraf-hesaplama",
                     "image":"https://api.bebegimlehayat.com/Data/image/extra_small/bebek_maliyeti_hesaplama-1684180646596.jpeg"
                 },
                 {

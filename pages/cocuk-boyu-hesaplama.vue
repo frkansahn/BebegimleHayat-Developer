@@ -384,7 +384,7 @@ export default {
             }, 2000)
         },
         doAgain() {
-            this.result = 1;
+            this.result = null;
             this.motherHeight = null;
             this.fatherHeight = null;
         }

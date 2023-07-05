@@ -15,8 +15,8 @@ export { default as TreeBlogCategory } from '../..\\components\\treeBlogCategory
 export { default as TreeCategory } from '../..\\components\\treeCategory.vue'
 export { default as TreeMenu } from '../..\\components\\treeMenu.vue'
 export { default as Weather } from '../..\\components\\weather.vue'
-export { default as ContentDetail } from '../..\\components\\content\\detail.vue'
 export { default as AdminHeader } from '../..\\components\\admin\\header.vue'
+export { default as ContentDetail } from '../..\\components\\content\\detail.vue'
 export { default as BlogBabyDictionary } from '../..\\components\\blog\\babyDictionary.vue'
 export { default as BlogBabyDictionaryParentCategory } from '../..\\components\\blog\\babyDictionaryParentCategory.vue'
 export { default as BlogCart } from '../..\\components\\blog\\cart.vue'
@@ -46,7 +46,6 @@ export { default as ProductMiniCart } from '../..\\components\\product\\miniCart
 export { default as ShowcaseNotSliderProduct } from '../..\\components\\showcase\\notSliderProduct.vue'
 export { default as ShowcaseSameProduct } from '../..\\components\\showcase\\sameProduct.vue'
 export { default as Showcase } from '../..\\components\\showcase\\showcase.vue'
-export { default as ProductListPagination } from '../..\\components\\product\\list\\pagination.vue'
 export { default as SliderAdvertCart } from '../..\\components\\slider\\advertCart.vue'
 export { default as SliderFooterLinks } from '../..\\components\\slider\\footerLinks.vue'
 export { default as SliderHome } from '../..\\components\\slider\\home.vue'
@@ -54,6 +53,7 @@ export { default as Slider } from '../..\\components\\slider\\index.vue'
 export { default as SliderOtherCategories } from '../..\\components\\slider\\otherCategories.vue'
 export { default as SliderPregnancyWeekByWeek } from '../..\\components\\slider\\PregnancyWeekByWeek.vue'
 export { default as SliderType1 } from '../..\\components\\slider\\type1.vue'
+export { default as ProductListPagination } from '../..\\components\\product\\list\\pagination.vue'
 
 // nuxt/nuxt.js#8607
 function wrapFunctional(options) {
