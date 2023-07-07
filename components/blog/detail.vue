@@ -3,8 +3,74 @@
         <Navigation :nav="navigation" v-if="navigation" />
         <div class="row">
             <div class="col-12">
-                <div class="row my-4 my-md-5">
-                    
+                <div class="row my-4 my-md-5" v-if="loading">
+                    <div class="col-12 col-lg-8 mb-4 mb-md-0">
+                        <div class="row ">
+                            <div class="col-12 mb-2 mb-md-4">
+                                <b-skeleton width="100%" height="30px"></b-skeleton>
+                            </div>
+                            <div class="col-12 mb-4">
+                                <b-skeleton-img no-aspect height="200px"></b-skeleton-img>
+                            </div>
+                            <div class="col-12 mb-5">
+                                <b-skeleton class="mb-2" width="100%" height="15px"></b-skeleton>
+                                <b-skeleton class="mb-2" width="100%" height="15px"></b-skeleton>
+                                <b-skeleton class="mb-2" width="100%" height="15px"></b-skeleton>
+                                <b-skeleton class="mb-2" width="100%" height="15px"></b-skeleton>
+                                <b-skeleton class="mb-2" width="100%" height="15px"></b-skeleton>
+                                <b-skeleton class="mb-2" width="100%" height="15px"></b-skeleton>
+                                <b-skeleton class="mb-2" width="100%" height="15px"></b-skeleton>
+                                <b-skeleton class="mb-2" width="100%" height="15px"></b-skeleton>
+                                <b-skeleton class="mb-2" width="100%" height="15px"></b-skeleton>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4 pl-lg-5">
+                        <div class="row">
+                            <div class="col-12" id="interestYou">
+                                <div class="row">
+                                    <div class="col-12 mb-3">
+                                        <b-skeleton width="100%" height="25px"></b-skeleton>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="row">
+                                            <div class="col-12 mb-3">
+                                                <b-skeleton-img no-aspect height="150px"></b-skeleton-img>
+                                            </div>
+                                            <div class="col-12">
+                                                <b-skeleton class="mb-2" width="100%" height="15px"></b-skeleton>
+                                                <b-skeleton class="mb-2" width="100%" height="15px"></b-skeleton>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="row">
+                                            <div class="col-12 mb-3">
+                                                <b-skeleton-img no-aspect height="150px"></b-skeleton-img>
+                                            </div>
+                                            <div class="col-12">
+                                                <b-skeleton class="mb-2" width="100%" height="15px"></b-skeleton>
+                                                <b-skeleton class="mb-2" width="100%" height="15px"></b-skeleton>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="row">
+                                            <div class="col-12 mb-3">
+                                                <b-skeleton-img no-aspect height="150px"></b-skeleton-img>
+                                            </div>
+                                            <div class="col-12">
+                                                <b-skeleton class="mb-2" width="100%" height="15px"></b-skeleton>
+                                                <b-skeleton class="mb-2" width="100%" height="15px"></b-skeleton>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row my-4 my-md-5" v-else>                    
                     <div class="col-12 col-lg-8 mb-4 mb-md-0">
                         <div class="row">
                             <div class="col-12 mb-2 mb-md-4 blog-title">
@@ -156,6 +222,7 @@ export default
         },
         data() {
             return {
+                loading:true,
                 seo_title: 'Blog Detay',
                 seo_keyword: 'blog',
                 seo_description: 'Blog Detay',
@@ -190,6 +257,7 @@ export default
         },
         async fetch() {           
 			await this.getBlogDetail();
+            this.loading = false;
         },
         props: {
             seoLink: {

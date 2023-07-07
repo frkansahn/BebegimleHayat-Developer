@@ -607,15 +607,24 @@ body form.hnarac > fieldset > legend
     border-radius: 8px;
 }
 
-.image-wrapper > span > img{
+.image-wrapper > span > img , .image-wrapper > span > picture > img{
     max-width: 100%;
     max-height: 100%;
     transition: all 1s ease;
 }
 
-.image-wrapper:hover > span > img {
+.image-wrapper:hover > span > img , .image-wrapper:hover > span > picture > img {
     transform: scale(1.1);
     transition: all 1s ease;
+}
+
+.image-wrapper > span > picture {
+    height: 100%;
+}
+
+.image-wrapper > span > picture > img {
+    height: 100%;
+    object-fit:cover;
 }
 
 

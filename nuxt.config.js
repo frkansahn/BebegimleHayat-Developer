@@ -83,8 +83,29 @@ export default {
         'nuxt-purgecss',
         'vue-social-sharing/nuxt',
         '@nuxtjs/sitemap',
-        '@nuxtjs/redirect-module'
+        '@nuxtjs/redirect-module',
+        '@nuxt/image'
     ],
+    image: {
+        inject: true,
+        quality: 90,
+        format: ['webp'],
+        screens: {
+            xs: 320,
+            sm: 640,
+            md: 768,
+            lg: 1024,
+            xl: 1280,
+            xxl: 1536,
+            '2xl': 1536
+        },
+        domains: [
+            'api.bebegimlehayat.com'
+        ],
+        alias: {
+            unsplash: 'https://api.bebegimlehayat.com'
+        }
+    },
     sitemap:{
         hostname: 'https://bebegimlehayat.com',
         cacheTime : 1000 * 60 * 60,

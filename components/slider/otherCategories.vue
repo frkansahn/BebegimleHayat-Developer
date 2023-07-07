@@ -62,6 +62,7 @@ export default {
 		width: 100%;
 		border-radius: 10px;
 		border: 3px solid transparent;
+		height:0;
 
 		@media screen and (max-width: 768px) {
 			padding-bottom: 90px;

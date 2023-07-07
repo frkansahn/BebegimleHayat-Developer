@@ -3,7 +3,7 @@
 		<NuxtLink :to="`/${blog.seo_link}`" class="row bg-white">
 			<div class="col-5 col-lg-6 p-0">
 				<div class="float-left w-100 image-wrapper"
-					:style='`padding-bottom: 87%;`' :title="blog.seo_title">
+					:style='`padding-bottom: 80%;`' :title="blog.seo_title">
 					<span :id="isHaftaHaftaGebelik ? 'hafta-hafta-gebelik-cart' : isAylikBebekGelisimi ? 'aylik-bebek-gelisimi-cart' : ''">
 						<ElementImage :src="`/Data/image/small/${blog.image}`" :alt="blog.seo_title"/>
 						<div v-if="isHaftaHaftaGebelik">
