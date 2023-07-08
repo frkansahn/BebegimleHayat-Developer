@@ -20,9 +20,6 @@
   "Navigation": {
     "description": "Auto imported from components/navigation.vue"
   },
-  "NoticesShowcase": {
-    "description": "Auto imported from components/noticesShowcase.vue"
-  },
   "OtherContents": {
     "description": "Auto imported from components/otherContents.vue"
   },
@@ -125,15 +122,6 @@
   "HomepagePregnancyWeekByWeek": {
     "description": "Auto imported from components/homepage/PregnancyWeekByWeek.vue"
   },
-  "ProductAddedCartProduct": {
-    "description": "Auto imported from components/product/addedCartProduct.vue"
-  },
-  "ProductCart": {
-    "description": "Auto imported from components/product/cart.vue"
-  },
-  "ProductMiniCart": {
-    "description": "Auto imported from components/product/miniCart.vue"
-  },
   "ShowcaseNotSliderProduct": {
     "description": "Auto imported from components/showcase/notSliderProduct.vue"
   },
@@ -142,6 +130,15 @@
   },
   "Showcase": {
     "description": "Auto imported from components/showcase/showcase.vue"
+  },
+  "ProductAddedCartProduct": {
+    "description": "Auto imported from components/product/addedCartProduct.vue"
+  },
+  "ProductCart": {
+    "description": "Auto imported from components/product/cart.vue"
+  },
+  "ProductMiniCart": {
+    "description": "Auto imported from components/product/miniCart.vue"
   },
   "SliderAdvertCart": {
     "description": "Auto imported from components/slider/advertCart.vue"

@@ -5,7 +5,7 @@
 				<div class="float-left w-100 image-wrapper"
 					:style='`padding-bottom: 87%;`' :title="blog.seo_title">
 					<span :id="isHaftaHaftaGebelik ? 'hafta-hafta-gebelik-cart' : isAylikBebekGelisimi ? 'aylik-bebek-gelisimi-cart' : ''">
-						<ElementImage :src="`/Data/image/small/${blog.image}`" :alt="blog.seo_title"/>
+						<ElementImage :src="`/Data/image/small/${blog.image}`" :alt="blog.seo_title" width="308" height="268"/>
 						<div v-if="isHaftaHaftaGebelik">
 							<span>
 								{{ kacHaftaGebelik }}. HAFTA <br> GEBELİK

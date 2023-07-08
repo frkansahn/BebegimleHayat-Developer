@@ -15,13 +15,13 @@ import { createStore } from './store.js'
 
 import nuxt_plugin_plugin_89ad18e8 from 'nuxt_plugin_plugin_89ad18e8' // Source: .\\components\\plugin.js (mode: 'all')
 import nuxt_plugin_bootstrapvue_b7bece44 from 'nuxt_plugin_bootstrapvue_b7bece44' // Source: .\\bootstrap-vue.js (mode: 'all')
+import nuxt_plugin_workbox_faacc1ea from 'nuxt_plugin_workbox_faacc1ea' // Source: .\\workbox.js (mode: 'client')
+import nuxt_plugin_metaplugin_3676588b from 'nuxt_plugin_metaplugin_3676588b' // Source: .\\pwa\\meta.plugin.js (mode: 'all')
+import nuxt_plugin_iconplugin_3b1dfdff from 'nuxt_plugin_iconplugin_3b1dfdff' // Source: .\\pwa\\icon.plugin.js (mode: 'all')
 import nuxt_plugin_image_32afd6aa from 'nuxt_plugin_image_32afd6aa' // Source: .\\image.js (mode: 'all')
 import nuxt_plugin_vuesocialsharingplugin_1c5131b0 from 'nuxt_plugin_vuesocialsharingplugin_1c5131b0' // Source: .\\vue-social-sharing-plugin.js (mode: 'all')
 import nuxt_plugin_cookieuniversalnuxt_e4218952 from 'nuxt_plugin_cookieuniversalnuxt_e4218952' // Source: .\\cookie-universal-nuxt.js (mode: 'all')
 import nuxt_plugin_axios_47a8d9af from 'nuxt_plugin_axios_47a8d9af' // Source: .\\axios.js (mode: 'all')
-import nuxt_plugin_workbox_faacc1ea from 'nuxt_plugin_workbox_faacc1ea' // Source: .\\workbox.js (mode: 'client')
-import nuxt_plugin_metaplugin_3676588b from 'nuxt_plugin_metaplugin_3676588b' // Source: .\\pwa\\meta.plugin.js (mode: 'all')
-import nuxt_plugin_iconplugin_3b1dfdff from 'nuxt_plugin_iconplugin_3b1dfdff' // Source: .\\pwa\\icon.plugin.js (mode: 'all')
 import nuxt_plugin_repositories_a519ad4e from 'nuxt_plugin_repositories_a519ad4e' // Source: ..\\plugins\\repositories.js (mode: 'all')
 import nuxt_plugin_vueawesomeswiper_0f4ed586 from 'nuxt_plugin_vueawesomeswiper_0f4ed586' // Source: ..\\plugins\\vue-awesome-swiper (mode: 'all')
 import nuxt_plugin_checkIsNullOrEmpty_19b18ee5 from 'nuxt_plugin_checkIsNullOrEmpty_19b18ee5' // Source: ..\\plugins\\checkIsNullOrEmpty (mode: 'all')
@@ -102,7 +102,7 @@ async function createApp(ssrContext, config = {}) {
   // here we inject the router and store to all child components,
   // making them available everywhere as `this.$router` and `this.$store`.
   const app = {
-    head: {"title":"Bebeklere Dair Her Şey Burada! | BebeğimleHayat","htmlAttrs":{"lang":"tr"},"meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"},{"name":"author","content":"Bebeklere Dair Her Şey Burada! | BebeğimleHayat"},{"hid":"keywords","name":"keywords","content":"bebegimlehayat"},{"hid":"description","name":"description","content":"Bebeklere Dair Her Şey Burada! | BebeğimleHayat"},{"hid":"copyright","name":"copyright","content":"Bebeklere Dair Her Şey Burada! | BebeğimleHayat"},{"hid":"robots","name":"robots","content":"index,follow"},{"property":"og:image","content":"\u002FData\u002Fbebegimlehayat-logo.svg"},{"name":"twitter:image","content":"\u002FData\u002Fbebegimlehayat-logo-svg"},{"property":"og:type","content":"website"},{"hid":"og:title","property":"og:title","content":"Bebeklere Dair Her Şey Burada! | BebeğimleHayat"},{"hid":"og:description","property":"og:description","content":"Bebeklere Dair Her Şey Burada! | BebeğimleHayat"},{"property":"og:url","content":"https:\u002F\u002Fbebegimlehayat.com\u002F"},{"property":"og:site_name","content":"https:\u002F\u002Fbebegimlehayat.com\u002F"},{"name":"twitter:card","content":"summary"},{"name":"twitter:title","content":"Bebeklere Dair Her Şey Burada! | BebeğimleHayat"},{"name":"twitter:description","content":"Bebeklere Dair Her Şey Burada! | BebeğimleHayat"}],"script":[{"innerHTML":"(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':\n                    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],\n                    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=\n                    'https:\u002F\u002Fwww.googletagmanager.com\u002Fgtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);\n                    })(window,document,'script','dataLayer','GTM-KM2FC8D');\n                "}],"link":[],"style":[]},
+    head: {"title":"Bebeklere Dair Her Şey Burada! | BebeğimleHayat","htmlAttrs":{"lang":"tr"},"meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"},{"name":"author","content":"Bebeklere Dair Her Şey Burada! | BebeğimleHayat"},{"hid":"keywords","name":"keywords","content":"bebegimlehayat"},{"hid":"description","name":"description","content":"Bebeklere Dair Her Şey Burada! | BebeğimleHayat"},{"hid":"copyright","name":"copyright","content":"Bebeklere Dair Her Şey Burada! | BebeğimleHayat"},{"hid":"robots","name":"robots","content":"index,follow"},{"property":"og:image","content":"\u002FData\u002Fbebegimlehayat-logo.svg"},{"name":"twitter:image","content":"\u002FData\u002Fbebegimlehayat-logo-svg"},{"property":"og:type","content":"website"},{"hid":"og:title","property":"og:title","content":"Bebeklere Dair Her Şey Burada! | BebeğimleHayat"},{"hid":"og:description","property":"og:description","content":"Bebeklere Dair Her Şey Burada! | BebeğimleHayat"},{"property":"og:url","content":"https:\u002F\u002Fbebegimlehayat.com\u002F"},{"property":"og:site_name","content":"https:\u002F\u002Fbebegimlehayat.com\u002F"},{"name":"twitter:card","content":"summary"},{"name":"twitter:title","content":"Bebeklere Dair Her Şey Burada! | BebeğimleHayat"},{"name":"twitter:description","content":"Bebeklere Dair Her Şey Burada! | BebeğimleHayat"},{"hid":"charset","charset":"utf-8"},{"hid":"mobile-web-app-capable","name":"mobile-web-app-capable","content":"yes"},{"hid":"apple-mobile-web-app-title","name":"apple-mobile-web-app-title","content":"Bebeğimle hayat"},{"hid":"og:type","name":"og:type","property":"og:type","content":"website"},{"hid":"og:site_name","name":"og:site_name","property":"og:site_name","content":"Bebeğimle hayat"}],"link":[{"hid":"shortcut-icon","rel":"shortcut icon","href":"\u002F_nuxt\u002Ficons\u002Ficon_64x64.f10208.png"},{"hid":"apple-touch-icon","rel":"apple-touch-icon","href":"\u002F_nuxt\u002Ficons\u002Ficon_512x512.f10208.png","sizes":"512x512"},{"rel":"manifest","href":"\u002F_nuxt\u002Fmanifest.de079c51.json","hid":"manifest"}],"script":[{"innerHTML":"(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':\n                    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],\n                    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=\n                    'https:\u002F\u002Fwww.googletagmanager.com\u002Fgtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);\n                    })(window,document,'script','dataLayer','GTM-KM2FC8D');\n                "}],"style":[]},
 
     store,
     router,
@@ -240,6 +240,18 @@ async function createApp(ssrContext, config = {}) {
     await nuxt_plugin_bootstrapvue_b7bece44(app.context, inject)
   }
 
+  if (process.client && typeof nuxt_plugin_workbox_faacc1ea === 'function') {
+    await nuxt_plugin_workbox_faacc1ea(app.context, inject)
+  }
+
+  if (typeof nuxt_plugin_metaplugin_3676588b === 'function') {
+    await nuxt_plugin_metaplugin_3676588b(app.context, inject)
+  }
+
+  if (typeof nuxt_plugin_iconplugin_3b1dfdff === 'function') {
+    await nuxt_plugin_iconplugin_3b1dfdff(app.context, inject)
+  }
+
   if (typeof nuxt_plugin_image_32afd6aa === 'function') {
     await nuxt_plugin_image_32afd6aa(app.context, inject)
   }
@@ -254,18 +266,6 @@ async function createApp(ssrContext, config = {}) {
 
   if (typeof nuxt_plugin_axios_47a8d9af === 'function') {
     await nuxt_plugin_axios_47a8d9af(app.context, inject)
-  }
-
-  if (process.client && typeof nuxt_plugin_workbox_faacc1ea === 'function') {
-    await nuxt_plugin_workbox_faacc1ea(app.context, inject)
-  }
-
-  if (typeof nuxt_plugin_metaplugin_3676588b === 'function') {
-    await nuxt_plugin_metaplugin_3676588b(app.context, inject)
-  }
-
-  if (typeof nuxt_plugin_iconplugin_3b1dfdff === 'function') {
-    await nuxt_plugin_iconplugin_3b1dfdff(app.context, inject)
   }
 
   if (typeof nuxt_plugin_repositories_a519ad4e === 'function') {

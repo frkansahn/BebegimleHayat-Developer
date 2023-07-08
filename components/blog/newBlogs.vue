@@ -24,9 +24,17 @@
 		name:'NewBlogs',
 	    data() {
 	        return {
+				blogs:[],
+				paging:{
+                    currentPage: 1,
+                    total: undefined,
+                    length: 6
+                }
 	        }
 	    },
-	    props:["blogs","paging"],
+	    async fetch() {
+			await this.getBlogs();
+		},
 	    methods:{
 			showMore() {
 				if((this.paging.currentPage*this.paging.length) < this.paging.total) {
@@ -35,20 +43,24 @@
 				}
 			},
 			getBlogs() {
-				const _this = this;
-				let reqData = {
-					"paging": {
-						"start": (_this.paging.currentPage - 1) * _this.paging.length,
-						"end": _this.paging.length
+				return new Promise((resolve,reject) => {
+					const _this = this;
+					let reqData = {
+						"paging": {
+							"start": (_this.paging.currentPage - 1) * _this.paging.length,
+							"end": _this.paging.length
+						}
 					}
-				}
-				_this.$repositories.blog.getNewBlogs(reqData)
-				.then(res => {
-					if(res && res.data) {
-						_this.blogs.push(...res.data.response.blogs);
-						_this.paging.total = res.data.response.total;
-					}
-				});	
+					_this.$repositories.blog.getNewBlogs(reqData)
+					.then(res => {
+						if(res && res.data) {
+							_this.blogs.push(...res.data.response.blogs);
+							_this.paging.total = res.data.response.total;
+						}
+
+						resolve(true)
+					});	
+				})
 			}
 	    }
 	}

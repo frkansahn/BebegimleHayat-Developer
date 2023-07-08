@@ -4,7 +4,6 @@ const fs = require('fs')
 
 export default {
     ssr: true,
-    target: 'server',
     server: {
         port: 3000, 
         host: '0.0.0.0',
@@ -42,6 +41,8 @@ export default {
             { name: 'twitter:card', content: 'summary' },
             { name: 'twitter:title', content: 'Bebeklere Dair Her Şey Burada! | BebeğimleHayat' },
             { name: 'twitter:description', content: 'Bebeklere Dair Her Şey Burada! | BebeğimleHayat' }
+        ],
+        link: [
         ],
         script: [
             {
@@ -100,6 +101,7 @@ export default {
         }
     },
     image: {
+        lazy: true,
         inject: true,
         quality: 90,
         format: ['webp'],

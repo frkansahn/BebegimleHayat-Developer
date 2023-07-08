@@ -63,7 +63,7 @@
                             <div class="container">
                                 <div class="row">
                                     <div class="col-12">
-                                        <BlogNewBlogs :blogs="newBlogsData" :paging="pagingNewBlogs"/>
+                                        <BlogNewBlogs/>
                                     </div>
                                 </div>
                             </div>
@@ -168,22 +168,7 @@ export default
         watch: {
             '$route.query': '$fetch'
         },
-        async fetch() {           
-			let reqData = {
-				"paging": {
-					"start": 0,
-					"end": 6
-				}
-			}
-			
-            await this.$axios.post('/api/v1/blog/get_new_blogs' , reqData)
-			.then(res => {
-				if(res && res.data) {
-					this.newBlogsData = res.data.response.blogs;
-					this.pagingNewBlogs.total = res.data.response.total;
-				}
-			});
-
+        async fetch() {   
             if (this.$store.state.config) {
                 if (this.$store.state.config.home_page_slider) {
                     this.homeSlider = JSON.parse(this.$store.state.config.home_page_slider)
@@ -192,19 +177,13 @@ export default
                 if (this.$store.state.config.home_page_slider_2) {
                     this.herkesOnuKonusuyorSlider = JSON.parse(this.$store.state.config.home_page_slider_2)
                 }
-            }
+            }            
         },
         data() {
             return {
                 isMobile: false,
                 homeSlider:[],
                 herkesOnuKonusuyorSlider:[],
-                newBlogsData:[],
-                pagingNewBlogs: {
-                    currentPage: 1,
-                    total: undefined,
-                    length: 6
-                },
                 OrganizationSchema1:{
                     "@context": "http://schema.org/",
                     "@type": "Organization",
