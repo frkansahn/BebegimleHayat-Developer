@@ -106,18 +106,6 @@
 </script>
 
 <style>
-    #otherContents ul li {
-        list-style-type: none;
-        border-bottom: 1px solid;
-    }
-
-    #otherContents ul li a {
-        color: #000000;
-        font-size: 14px;
-        font-weight: 400;
-        line-height: 3em;
-    }
-
     @media screen and (max-width: 768px)
     {
     }

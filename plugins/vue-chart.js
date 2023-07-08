@@ -6,24 +6,14 @@ import {
   Title,
   Tooltip,
   Legend,
-  BarElement,
-  CategoryScale,
-  LinearScale,
-  LineElement,
-  PointElement,
-  ArcElement
+  LineElement
 } from 'chart.js'
 
 ChartJS.register(
   Title,
   Tooltip,
   Legend,
-  PointElement,
-  BarElement,
-  CategoryScale,
-  LinearScale,
-  LineElement,
-  ArcElement
+  LineElement
 )
 
 Vue.component('LineChart', {

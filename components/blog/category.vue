@@ -22,6 +22,11 @@
                 </div>
             </div>
         </div>
+        <div class="row" v-else>
+            <div class="col-12">
+                <b-skeleton-img no-aspect height="400px"></b-skeleton-img>
+            </div>
+        </div>
 
         <div class="row" v-if="blog_category && blog_category.url != 'bebek-sozlugu'">
             <div class="container">
@@ -65,7 +70,6 @@
                 </div>
             </div>
         </div>
-
         <div class="row" v-else>
             <div class="container">
                 <Navigation :nav="navigation" v-if="navigation" />
@@ -74,6 +78,37 @@
                 </div>
             </div>
         </div>
+
+        <div class="row" v-if="!blog_category">
+            <div class="container">
+                <div class="row my-3 my-md-5" >
+                    <div class="col-12 col-sm-6 col-md-3 col-lg-2">
+                        <b-skeleton-img no-aspect height="110px"></b-skeleton-img>
+                        <b-skeleton class="mt-2" width="100%" height="15px"></b-skeleton>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-3 col-lg-2">
+                        <b-skeleton-img no-aspect height="110px"></b-skeleton-img>
+                        <b-skeleton class="mt-2" width="100%" height="15px"></b-skeleton>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-3 col-lg-2">
+                        <b-skeleton-img no-aspect height="110px"></b-skeleton-img>
+                        <b-skeleton class="mt-2" width="100%" height="15px"></b-skeleton>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-3 col-lg-2">
+                        <b-skeleton-img no-aspect height="110px"></b-skeleton-img>
+                        <b-skeleton class="mt-2" width="100%" height="15px"></b-skeleton>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-3 col-lg-2">
+                        <b-skeleton-img no-aspect height="110px"></b-skeleton-img>
+                        <b-skeleton class="mt-2" width="100%" height="15px"></b-skeleton>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-3 col-lg-2">
+                        <b-skeleton-img no-aspect height="110px"></b-skeleton-img>
+                        <b-skeleton class="mt-2" width="100%" height="15px"></b-skeleton>
+                    </div>
+                </div>
+            </div>
+        </div>        
     </div>
 </template>
 

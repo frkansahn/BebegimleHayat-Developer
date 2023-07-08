@@ -43,7 +43,7 @@
         color: #000000;
         font-size: 14px;
         font-weight: 400;
-        line-height: 1.5em;
+        line-height: normal;
         margin: 0.5em 0;
         display: block;
     }

@@ -84,8 +84,21 @@ export default {
         'vue-social-sharing/nuxt',
         '@nuxtjs/sitemap',
         '@nuxtjs/redirect-module',
-        '@nuxt/image'
+        '@nuxt/image',
+        '@nuxtjs/pwa'
     ],
+    pwa: {
+        icon: {
+            source: 'static/Data/favicon-128.png',
+            fileName: 'favicon-128.png'
+        },
+        manifest: {
+            name: 'Bebeğimle hayat',
+            short_name: 'Bebeğimle hayat',
+            lang: 'tr',
+            display: 'standalone',
+        }
+    },
     image: {
         inject: true,
         quality: 90,
@@ -143,7 +156,8 @@ export default {
                     '/cin-takvimiyle-cinsiyet-hesaplama',
                     '/bebek-isim-bulucu',
                     '/bebek-asi-takvimi-hesaplama',
-                    '/bebek-masraf-hesaplama'
+                    '/bebek-masraf-hesaplama',
+                    ''
                 ]
             }
         ]

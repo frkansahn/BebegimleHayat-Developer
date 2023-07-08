@@ -47,6 +47,9 @@
 	        }
 	    },
 	    props:["seoLink" ,"blogCategory"],
+        async fetch() {
+            await this.getCategoryBlogs(); 
+        },
         watch: {
             async $route(to, from) {
                 this.blogs = [];
@@ -75,44 +78,47 @@
 				}
 			},
             getCategoryBlogs(){
-                var _this = this;
-                if(_this.seoLink) {
-                    _this.categoryBlogOverlay = true;
-                    let reqData = {
-                        "seo_link": _this.seoLink,
-                        "filters": {
-                            "property1": _this.$route.query?.p1 || "",
-                            "property2": _this.$route.query?.p2 || "",
-                            "brands": _this.$route.query?.brand || "",
-                            "attributes":"",
-                            "price":_this.$route.query?.price || "",
-                            "categories":""
-                        },
-                        "sort": _this.sort || "",
-                        "paging": {
-                            "start": (_this.paging.currentPage - 1) * _this.paging.length,
-                            "end": _this.paging.length
+                return new Promise((resolve, reject) => {
+                    var _this = this;
+                    if(_this.seoLink) {
+                        _this.categoryBlogOverlay = true;
+                        let reqData = {
+                            "seo_link": _this.seoLink,
+                            "filters": {
+                                "property1": _this.$route.query?.p1 || "",
+                                "property2": _this.$route.query?.p2 || "",
+                                "brands": _this.$route.query?.brand || "",
+                                "attributes":"",
+                                "price":_this.$route.query?.price || "",
+                                "categories":""
+                            },
+                            "sort": _this.sort || "",
+                            "paging": {
+                                "start": (_this.paging.currentPage - 1) * _this.paging.length,
+                                "end": _this.paging.length
+                            }
                         }
+                        _this.$repositories.blog.getBlogsByCategory(reqData)
+                        .then(res => {
+                            if(this.paging.currentPage == 1) {
+                                this.blogs = [];
+                            }
+                            _this.blogs.push(...res.data.response.blogs);
+                            _this.paging.total = res.data.response.total;
+                            _this.categoryBlogOverlay = false;
+                            resolve(true);
+                        });
                     }
-                    _this.$repositories.blog.getBlogsByCategory(reqData)
-                    .then(res => {
-                        if(this.paging.currentPage == 1) {
-                            this.blogs = [];
-                        }
-                        _this.blogs.push(...res.data.response.blogs);
-                        _this.paging.total = res.data.response.total;
-                        _this.categoryBlogOverlay = false;
-                    });
-                }
+                    else {
+                        resolve(false);
+                    }
+                });
                 
             }
 	    },
         mounted(){
             this.selectedSort = this.$route.query?.sort || null;
-        },
-	    created(){
-	    	this.getCategoryBlogs();			
-		}
+        }
 	}
 </script>
 
