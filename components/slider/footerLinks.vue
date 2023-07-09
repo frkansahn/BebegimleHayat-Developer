@@ -6,7 +6,12 @@
 					<swiper-slide v-for="(slide, index) in sliders" v-bind:key="`Slider${index}`">
 						<a class="d-flex flex-column" :href="slide.url" :id="`slider${index}`" :title="slide.name">
 							<span class="blog-image" v-if="slide.image">
-								<ElementImage :src="`${slide.image}`" width="158" height="112" :alt="slide.name"/>
+								<!-- <ElementImage :src="`${slide.image}`" width="158" height="112" :alt="slide.name"/> -->
+
+								<picture>
+									<source type="image/jpeg" :srcset="slide.image" />
+									<img :src="slide.image" :alt="slide.name" width="158" height="112"/>
+								</picture>
 							</span>
 							<p class="mt-2 text-white h6">
 								<small>

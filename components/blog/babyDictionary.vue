@@ -9,7 +9,12 @@
 			<div class="col-12 col-md-4 p-0 mb-3 mb-md-0">
 				<NuxtLink :to="`/${blog_category.url}`" class="float-left w-100" :title="blog_category.seo_title">
 					<span>
-						<ElementImage :src="`/Data/image/medium/${blog_category.image}`" :alt="blog_category.seo_title"/>
+						<!-- <ElementImage :src="`/Data/image/medium/${blog_category.image}`" :alt="blog_category.seo_title"/> -->
+
+						<picture>
+							<source type="image/webp" :srcset="`https://api.bebegimlehayat.com/Data/image/medium/${blog_category.image}.webp`" />
+							<img :src="`https://api.bebegimlehayat.com/Data/image/medium/${blog_category.image}.jpeg`" :alt="blog_category.seo_title" width="400" height="300"/>
+						</picture>
 					</span>
 				</NuxtLink>
 			</div>

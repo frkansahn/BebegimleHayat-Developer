@@ -4,12 +4,27 @@
             <div class="col-12 mw-1440 mx-auto px-0 px-md-3 mb-1">
                 <div class="position-relative" id="blog_category">
                     <div class="pic category-pic" v-if="blog_category.image">
-                        <ElementImage v-desktop :src="`/Data/image/extra_big/${blog_category.image}`"
+                        <!-- <ElementImage v-desktop :src="`/Data/image/extra_big/${blog_category.image}`"
                             :alt="blog_category.category_name" />
                         <ElementImage v-tablet :src="`/Data/image/medium/${blog_category.image}`"
                             :alt="blog_category.category_name" />
                         <ElementImage v-mobile :src="`/Data/image/medium/${blog_category.image}`"
-                            :alt="blog_category.category_name" />
+                            :alt="blog_category.category_name" /> -->
+
+                        <picture v-desktop>
+							<source type="image/webp" :srcset="`https://api.bebegimlehayat.com/Data/image/extra_big/${blog_category.image}.webp`" />
+							<img :src="`https://api.bebegimlehayat.com/Data/image/extra_big/${blog_category.image}.jpeg`" :alt="blog_category.category_name" :width="1408" :height="493"  />
+						</picture>
+
+                        <picture v-tablet>
+							<source type="image/webp" :srcset="`https://api.bebegimlehayat.com/Data/image/medium/${blog_category.image}.webp`" />
+							<img :src="`https://api.bebegimlehayat.com/Data/image/medium/${blog_category.image}.jpeg`" :alt="blog_category.category_name" :width="704" :height="246"  />
+						</picture>
+
+                        <picture v-mobile>
+							<source type="image/webp" :srcset="`https://api.bebegimlehayat.com/Data/image/medium/${blog_category.image}.webp`" />
+							<img :src="`https://api.bebegimlehayat.com/Data/image/medium/${blog_category.image}.jpeg`" :alt="blog_category.category_name" :width="704" :height="246"  />
+						</picture>
                     </div>
                     <div class="txt">
                         <div class="center">

@@ -70,21 +70,37 @@
                                             <tbody>
                                                 <tr v-for="(image, index) in resultImages">
                                                     <td>
-                                                        <ElementImage v-if="image" :src="`/Data/image/small/${image}`"/>
+                                                        <!-- <ElementImage v-if="image" :src="`/Data/image/small/${image}`"/> -->
+                                                        <picture v-if="image">
+                                                            <source type="image/webp" :srcset="`https://api.bebegimlehayat.com/Data/image/small/${image}.webp`" />
+                                                            <img :src="`https://api.bebegimlehayat.com/Data/image/small/${image}.jpeg`" />
+                                                        </picture>
                                                         <button :id="`imageCopyBtn${index}S`" class="btn btn-sm btn-light ml-1" v-b-tooltip.click.top="'Kopyalandı'" @click="copyLink($event,`${urlOrigin}/Data/image/small/${image}.jpeg`,`imageCopyBtn${index}S`)">
                                                             <b-icon-files variant="secondary" scale=".7"></b-icon-files>
                                                             Küçük Resim Kopyala
                                                         </button>
                                                     </td>
                                                     <td>
-                                                        <ElementImage v-if="image" :src="`/Data/image/medium/${image}`"/>
+                                                        <!-- <ElementImage v-if="image" :src="`/Data/image/medium/${image}`"/> -->
+
+                                                        <picture v-if="image">
+                                                            <source type="image/webp" :srcset="`https://api.bebegimlehayat.com/Data/image/medium/${image}.webp`" />
+                                                            <img :src="`https://api.bebegimlehayat.com/Data/image/medium/${image}.jpeg`" />
+                                                        </picture>
+
                                                         <button :id="`imageCopyBtn${index}M`" class="btn btn-sm btn-light ml-1" v-b-tooltip.click.top="'Kopyalandı'" @click="copyLink($event,`${urlOrigin}/Data/image/medium/${image}.jpeg`,`imageCopyBtn${index}M`)">
                                                             <b-icon-files variant="secondary" scale=".7"></b-icon-files>
                                                             Orta Resim Kopyala
                                                         </button>
                                                     </td>
                                                     <td>
-                                                        <ElementImage v-if="image" :src="`/Data/image/big/${image}`"/>
+                                                        <!-- <ElementImage v-if="image" :src="`/Data/image/big/${image}`"/> -->
+
+                                                        <picture v-if="image">
+                                                            <source type="image/webp" :srcset="`https://api.bebegimlehayat.com/Data/image/big/${image}.webp`" />
+                                                            <img :src="`https://api.bebegimlehayat.com/Data/image/big/${image}.jpeg`" />
+                                                        </picture>
+
                                                         <button :id="`imageCopyBtn${index}B`" class="btn btn-sm btn-light ml-1" v-b-tooltip.click.top="'Kopyalandı'" @click="copyLink($event,`${urlOrigin}/Data/image/big/${image}.jpeg`,`imageCopyBtn${index}B`)">
                                                             <b-icon-files variant="secondary" scale=".7"></b-icon-files>
                                                             Büyük Resim Kopyala

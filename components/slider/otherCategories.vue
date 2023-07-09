@@ -6,7 +6,13 @@
 					<swiper-slide v-for="(slide, index) in sliders" v-bind:key="`Slider${index}`">
 						<NuxtLink class="d-flex flex-column" :to="slide.url" :id="`slider${index}`" :title="slide.category_name">
 							<span class="blog-image" v-if="slide.image">
-								<ElementImage :src="`/Data/image/small/${slide.image}`" :alt="slide.category_name"/>								
+								<!-- <ElementImage :src="`/Data/image/small/${slide.image}`" :alt="slide.category_name"/>			 -->
+								
+								<picture>
+									<source type="image/webp" :srcset="`https://api.bebegimlehayat.com/Data/image/small/${slide.image}.webp`" />
+									<img :src="`https://api.bebegimlehayat.com/Data/image/small/${slide.image}.jpeg`" :alt="slide.category_name" :width="186" :height="112"  />
+								</picture>
+
 								<div class="check-icon position-absolute w-100 h-100 align-items-center justify-content-center">
 									<b-icon-check-circle variant="white" scale="4"></b-icon-check-circle>
 								</div>

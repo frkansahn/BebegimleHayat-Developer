@@ -83,7 +83,7 @@
                                 <div id="hafta-hafta-gebelik">
                                     <!-- <ElementImage :src="`/Data/hafta-hafta-gebelik`" alt="Hafta hafta gebelik" /> -->
                                     <picture >
-                                        <source type="image/jpeg" :srcset="`https://api.bebegimlehayat.com/Data/hafta-hafta-gebelik.webp`" />
+                                        <source type="image/webp" :srcset="`https://api.bebegimlehayat.com/Data/hafta-hafta-gebelik.webp`" />
                                         <img :src="`https://api.bebegimlehayat.com/Data/hafta-hafta-gebelik.jpeg`" :alt="'Hafta hafta gebelik'" :width="500" :height="500"  />
                                     </picture>
                                     <div>
@@ -98,7 +98,7 @@
                                 <div id="aylik-bebek-gelisimi">
                                     <!-- <ElementImage :src="`/Data/bebekgelisimi-temp`" alt="Aylık Bebek Gelişimi" /> -->
                                     <picture >
-                                        <source type="image/jpeg" :srcset="`https://api.bebegimlehayat.com/Data/bebekgelisimi-temp.webp`" />
+                                        <source type="image/webp" :srcset="`https://api.bebegimlehayat.com/Data/bebekgelisimi-temp.webp`" />
                                         <img :src="`https://api.bebegimlehayat.com/Data/bebekgelisimi-temp.jpeg`" :alt="'Aylık Bebek Gelişimi'" :width="500" :height="500"  />
                                     </picture>
                                     <div>
@@ -113,7 +113,7 @@
                             <div class="col-12 mb-4" v-if="blog && blog.image && !isHaftaHaftaGebelik && !isAylikBebekGelisimi">
                                 <!-- <ElementImage :src="`/Data/image/medium/${blog.image}`" :alt="blog.subject" /> -->
                                 <picture >
-                                    <source type="image/jpeg" :srcset="`https://api.bebegimlehayat.com/Data/image/medium/${blog.image}.webp`" />
+                                    <source type="image/webp" :srcset="`https://api.bebegimlehayat.com/Data/image/medium/${blog.image}.webp`" />
                                     <img :src="`https://api.bebegimlehayat.com/Data/image/medium/${blog.image}.jpeg`" :alt="blog.subject" :width="500" :height="500"  />
                                 </picture>
                             </div>

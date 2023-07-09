@@ -53,7 +53,13 @@
                            </div>
                         </div>
                         <div class="col-md-3 mb-2 px-4">
-                           <ElementImage v-if="blog.image" :src="`/Data/image/small/${blog.image}`" :alt="blog.subject" />
+                           <!-- <ElementImage v-if="blog.image" :src="`/Data/image/small/${blog.image}`" :alt="blog.subject" /> -->
+
+                           <picture v-if="blog.image">
+                              <source type="image/webp" :srcset="`https://api.bebegimlehayat.com/Data/image/small/${blog.image}.webp`" />
+                              <img :src="`https://api.bebegimlehayat.com/Data/image/small/${blog.image}.jpeg`" :alt="blog.subject"/>
+                           </picture>
+
                            <span class="row mt-3" v-else>
                               <b-alert show variant="warning" class="px-3 py-2">
                                  <small>Eklenmiş resim bulunmamaktadır.</small>

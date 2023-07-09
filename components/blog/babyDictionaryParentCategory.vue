@@ -12,7 +12,12 @@
                         <div class="row align-items-center">
                             <div class="col-12 col-lg-3 pr-0">
                                 <div class="hover-image">
-                                    <ElementImage :src="`/Data/image/small/${category.image}`" :alt="category.category_name"/>
+                                    <!-- <ElementImage :src="`/Data/image/small/${category.image}`" :alt="category.category_name"/> -->
+
+                                    <picture>
+                                        <source type="image/webp" :srcset="`https://api.bebegimlehayat.com/Data/image/small/${category.image}.webp`" />
+                                        <img :src="`https://api.bebegimlehayat.com/Data/image/small/${category.image}.jpeg`" :alt="category.category_name" width="1402" height="482"/>
+                                    </picture>
                                 </div>
                             </div>
                             <div class="col-12 col-lg-9">

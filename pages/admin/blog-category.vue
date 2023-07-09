@@ -122,7 +122,13 @@
                                                         <b-button @click="deleteCategoryImage" class="w-100" variant="danger" size="md" v-else>Sil</b-button>                    
                                                     </div>
                                                     <div class="col-md-8">
-                                                        <ElementImage v-if="category.image" :src="`/Data/image/small/${category.image}`" :alt="category.category_name"/>
+                                                        <!-- <ElementImage v-if="category.image" :src="`/Data/image/small/${category.image}`" :alt="category.category_name"/> -->
+                                                        
+                                                        <picture v-if="category.image">
+                                                            <source type="image/webp" :srcset="`https://api.bebegimlehayat.com/Data/image/small/${category.image}.webp`" />
+                                                            <img :src="`https://api.bebegimlehayat.com/Data/image/small/${category.image}.jpeg`" :alt="category.category_name"/>
+                                                        </picture>
+
                                                         <span class="float-left w-100" v-else>
                                                             <b-alert show variant="warning" class="px-3 py-2">
                                                                 Eklenmiş resim bulunmamaktadır.

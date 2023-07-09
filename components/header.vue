@@ -28,7 +28,11 @@
 																		:to="`/${ChildMenu.url}`"
 																		:title="ChildMenu.category_name">
 																		<span class="col-2 px-0 menu-image mr-2">
-																			<ElementImage :src="`/Data/image/extra_small/${ChildMenu.image}`" width="100" height="100" :alt="ChildMenu.category_name"/>
+																			<!-- <ElementImage :src="`/Data/image/extra_small/${ChildMenu.image}`" width="100" height="100" :alt="ChildMenu.category_name"/> -->
+																			<picture >
+																				<source type="image/webp" :srcset="`https://api.bebegimlehayat.com/Data/image/extra_small/${ChildMenu.image}.webp`" />
+																				<img :src="`https://api.bebegimlehayat.com/Data/image/extra_small/${ChildMenu.image}.jpeg`" :alt="ChildMenu.category_name" :width="100" :height="100"  />
+																			</picture>
 																		</span>
 																		<small class="">
 																			{{ ChildMenu.category_name }}
@@ -67,7 +71,11 @@
 																	:to="`/${ChildMenu.url}`"
 																	:title="ChildMenu.category_name">
 																	<span class="menu-image">
-																		<ElementImage :src="`/Data/image/small/${ChildMenu.image}`" width="100" height="100" :alt="ChildMenu.category_name"/>
+																		<!-- <ElementImage :src="`/Data/image/small/${ChildMenu.image}`" width="100" height="100" :alt="ChildMenu.category_name"/> -->
+																		<picture >
+																			<source type="image/webp" :srcset="`https://api.bebegimlehayat.com/Data/image/small/${ChildMenu.image}.webp`" />
+																			<img :src="`https://api.bebegimlehayat.com/Data/image/small/${ChildMenu.image}.jpeg`" :alt="ChildMenu.category_name" :width="100" :height="100"  />
+																		</picture>
 																	</span>
 																	<span class="">
 																		{{ ChildMenu.category_name }}

@@ -10,7 +10,12 @@
                 <div class="col-lg-8">
                     <div class="row">
                         <div class="col-12 mb-4" v-if="blog.showcase_image">
-                            <ElementImage :src="`/Data/image/big/${blog.showcase_image}`" :alt="blog.subject"/>
+                            <!-- <ElementImage :src="`/Data/image/big/${blog.showcase_image}`" :alt="blog.subject"/> -->
+
+                            <picture>
+                                <source type="image/webp" :srcset="`https://api.bebegimlehayat.com/Data/image/big/${blog.showcase_image}.webp`" />
+                                <img :src="`https://api.bebegimlehayat.com/Data/image/big/${blog.showcase_image}.jpeg`" :alt="blog.subject" :width="400" :height="300"  />
+                            </picture>
                         </div>
 
                         <div class="col-12 mb-5">
