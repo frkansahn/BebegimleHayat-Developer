@@ -10,6 +10,31 @@
                             <small>+ Ekle</small>
                         </NuxtLink>
                     </h3>
+                    <div class="row">
+                        <b-form-group class="col-3 mb-3" id="categories_group" label="Kategori"
+                            label-for="categories_input" description="">
+                            <v-select v-model="search.categories" placeholder="Kategori seç" multiple :options="categories" label="category_name" :reduce="c => c.id"></v-select>
+                        </b-form-group>
+
+                        <b-form-group class="col-3 mb-3" id="search_text_group" label="Konu veya İçerik"
+                            label-for="search_text_input" description="">
+                            <b-form-input class="border-dark"
+                                id="search_text_input" v-model="search.text" type="text" name="text" placeholder="Konu veya içerik içinde ara"></b-form-input>
+                        </b-form-group>
+
+                        <b-form-group class="col-2 mb-3" id="status_group" label="Durum"
+                            label-for="status_input" description="">
+                            <v-select v-model="search.status" placeholder="Aktif/Pasif seç" :options="statusData" label="name" :reduce="s => s.value"></v-select>
+                        </b-form-group>
+
+                        <b-form-group class="col-1 mb-3" id="search_group" label="Ara"
+                            label-for="search_input" description="">
+                            <button class="w-100 btn btn-success btn-sm py-1 d-flex align-items-center justify-content-center" @click="getBlogByAdmin">
+                                <b-icon icon="search" variant="white" class="mr-1" scale=".8"></b-icon>
+                                Ara
+                            </button>
+                        </b-form-group>
+                    </div>
                     <table class="table table-sm" id="adminBlogsTable">
                         <thead>
                             <tr>
@@ -50,7 +75,7 @@
                                 </td>
                                 <td>
                                     <NuxtLink :to="`/${B.seo_link}`" id="blogDetail"
-                                        class="btn btn-sm btn-outline-secondary px-4">
+                                        class="btn btn-sm btn-outline-secondary px-4" v-if="B.is_active == 1">
                                         Git
                                     </NuxtLink>
                                 </td>
@@ -82,6 +107,26 @@ export default
         },
         data() {
             return {
+                search : {
+                    categories:null,
+                    text:null,
+                    status:null
+                },
+                categories: [],
+                statusData: [
+                    {
+                        name:'Aktif',
+                        value:1
+                    }, 
+                    {
+                        name:'Pasif',
+                        value:0
+                    },
+                    {
+                        name:'Tümü',
+                        value:null
+                    },
+                ],
                 pageLoading: false,
                 blogs: [],
                 paging: {
@@ -150,9 +195,14 @@ export default
             async getBlogByAdmin() {
                 var _this = this;
                 let reqData = {
-                    "paging": {
-                        "start": (_this.paging.currentPage - 1) * _this.paging.length,
-                        "end": _this.paging.length
+                    paging: {
+                        start: (_this.paging.currentPage - 1) * _this.paging.length,
+                        end: _this.paging.length
+                    },
+                    filter : {
+                        categories : this.search.categories ,
+                        text : this.search.text ,
+                        status : this.search.status 
                     }
                 }
                 _this.$repositories.blog.getAllForAdmin(reqData)
@@ -163,10 +213,17 @@ export default
                         }
 
                     });
+            },
+            async getBlogCategories() {
+                var _this = this;
+                _this.$repositories.blog_category.get().then(res => {
+                    this.categories = res.data.response;
+                });
             }
         },
         async created() {
             this.getBlogByAdmin();
+            this.getBlogCategories();
         },
     }
 </script>

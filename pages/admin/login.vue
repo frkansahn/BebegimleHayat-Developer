@@ -12,7 +12,7 @@
                </b-form-group>
 
                <b-form-group class="position-relative" id="password_group" label="Şifre" label-for="password_input" description="">
-                  <b-form-input :class="[loginError.password ? 'border-danger':'border-dark']" id="password_input" v-model="login.password" :type="passwordType" placeholder="Şirfe" @click="loginError.password=false" required>
+                  <b-form-input :class="[loginError.password ? 'border-danger':'border-dark']" id="password_input" v-model="login.password" :type="passwordType" placeholder="Şifre" @click="loginError.password=false" required>
                    
                   </b-form-input>
                   <b-icon-eye-fill variant="secondary" font-scale="1" @click="passwordType='text'" v-if="passwordType=='password'">
