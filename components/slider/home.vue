@@ -2,28 +2,14 @@
 	<div class="slider" id="slider">
 		<div class="row">
 			<div class="col-12 px-0 px-md-3">
-				<b-carousel
-					id="carousel-home"
-					:interval="4000"
-					controls
-					indicators
-				>
-					<b-carousel-slide v-for="(slide,index) in slidersData" v-bind:key="`Slider${index}`">
-						<template #img>
-							<div :id="`slider${index}`" v-html="decodeURIComponent(slide.image)" :title="slide.title">
-							</div>
-						</template>
-					</b-carousel-slide>
-				</b-carousel>
-
-				<!-- <swiper ref="mySwiper" :options="swiperOptions">
+				<swiper ref="mySwiper" :options="swiperOptions">
 					<swiper-slide v-for="(slide,index) in slidersData" v-bind:key="`Slider${index}`">
 						<div :id="`slider${index}`" v-html="decodeURIComponent(slide.image)" :title="slide.title">
 						</div>
 					</swiper-slide>
 					<div class="swiper-button-prev swiper-button-prev-index" slot="button-prev"></div>
                     <div class="swiper-button-next swiper-button-next-index" slot="button-next"></div>
-				</swiper> -->
+				</swiper>
 			</div>
 		</div>
 	</div>

@@ -9,9 +9,6 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^6.4.0",
-    "@fortawesome/free-solid-svg-icons": "^6.4.0",
-    "@fortawesome/vue-fontawesome": "^2.0.10",
     "@googlemaps/js-api-loader": "^1.13.1",
     "@nuxtjs/axios": "^5.13.6",
     "@nuxtjs/gtm": "^2.4.0",
@@ -19,7 +16,6 @@
     "@nuxtjs/recaptcha": "^1.0.4",
     "@nuxtjs/redirect-module": "^0.3.1",
     "@nuxtjs/sitemap": "^2.4.0",
-    "@nuxtjs/vercel-builder": "^0.24.0",
     "@tinymce/tinymce-vue": "^3.2.8",
     "bootstrap-vue": "2.21.2",
     "browserslist": "^4.19.1",
@@ -50,19 +46,13 @@
   },
   "devDependencies": {
     "@nuxt/image": "^0.7.1",
-    "@nuxtjs/pwa": "^3.3.5",
     "@vue/test-utils": "^1.1.2",
     "autoprefixer": "^10.4.14",
     "babel-core": "7.0.0-bridge.0",
     "babel-jest": "^26.6.3",
-    "eslint": "^8.44.0",
-    "eslint-plugin-vue": "^9.15.1",
     "jest": "^26.6.3",
     "sass": "^1.46.0",
     "sass-loader": "10.1.1",
     "vue-jest": "^3.0.4"
-  },
-  "overrides": {
-    "autoprefixer": "10.4.5"
   }
 }

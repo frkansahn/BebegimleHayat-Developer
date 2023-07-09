@@ -11,9 +11,9 @@
 					title="Vitamin ve Mineraller">
 					<span>
 						<picture>
-							<source srcset="https://api.bebegimlehayat.com/Data/image/medium/vitamin-ve-mineraller-1685811217185.jpeg">
-							<img src="https://api.bebegimlehayat.com/Data/image/medium/vitamin-ve-mineraller-1685811217185.jpeg" width="300px"
-								height="300px" />
+							<source srcset="https://api.bebegimlehayat.com/Data/image/small/vitamin-ve-mineraller-1685811217185.jpeg">
+							<img src="https://api.bebegimlehayat.com/Data/image/small/vitamin-ve-mineraller-1685811217185.jpeg" width="300px"
+								height="300px" loading="lazy"/>
 						</picture>
 					</span>
 				</div>

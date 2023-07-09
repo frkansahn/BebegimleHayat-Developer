@@ -8,15 +8,6 @@
   "Header": {
     "description": "Auto imported from components/header.vue"
   },
-  "HomeTabContent": {
-    "description": "Auto imported from components/homeTabContent.vue"
-  },
-  "ImageGallery": {
-    "description": "Auto imported from components/imageGallery.vue"
-  },
-  "Logo": {
-    "description": "Auto imported from components/Logo.vue"
-  },
   "Navigation": {
     "description": "Auto imported from components/navigation.vue"
   },
@@ -29,9 +20,6 @@
   "RenderOnScroll": {
     "description": "Auto imported from components/render-on-scroll.vue"
   },
-  "Sss": {
-    "description": "Auto imported from components/sss.vue"
-  },
   "TableList": {
     "description": "Auto imported from components/tableList.vue"
   },
@@ -43,12 +31,6 @@
   },
   "TreeMenu": {
     "description": "Auto imported from components/treeMenu.vue"
-  },
-  "Weather": {
-    "description": "Auto imported from components/weather.vue"
-  },
-  "AdminHeader": {
-    "description": "Auto imported from components/admin/header.vue"
   },
   "BlogBabyDictionary": {
     "description": "Auto imported from components/blog/babyDictionary.vue"
@@ -92,14 +74,14 @@
   "ContentDetail": {
     "description": "Auto imported from components/content/detail.vue"
   },
+  "AdminHeader": {
+    "description": "Auto imported from components/admin/header.vue"
+  },
   "CustomerAddressList": {
     "description": "Auto imported from components/customer/addressList.vue"
   },
   "CustomerFavorites": {
     "description": "Auto imported from components/customer/favorites.vue"
-  },
-  "ElementImage": {
-    "description": "Auto imported from components/element/image.vue"
   },
   "FilterCategory": {
     "description": "Auto imported from components/filter/category.vue"
@@ -122,15 +104,6 @@
   "HomepagePregnancyWeekByWeek": {
     "description": "Auto imported from components/homepage/PregnancyWeekByWeek.vue"
   },
-  "ShowcaseNotSliderProduct": {
-    "description": "Auto imported from components/showcase/notSliderProduct.vue"
-  },
-  "ShowcaseSameProduct": {
-    "description": "Auto imported from components/showcase/sameProduct.vue"
-  },
-  "Showcase": {
-    "description": "Auto imported from components/showcase/showcase.vue"
-  },
   "ProductAddedCartProduct": {
     "description": "Auto imported from components/product/addedCartProduct.vue"
   },
@@ -139,6 +112,15 @@
   },
   "ProductMiniCart": {
     "description": "Auto imported from components/product/miniCart.vue"
+  },
+  "ShowcaseNotSliderProduct": {
+    "description": "Auto imported from components/showcase/notSliderProduct.vue"
+  },
+  "ShowcaseSameProduct": {
+    "description": "Auto imported from components/showcase/sameProduct.vue"
+  },
+  "Showcase": {
+    "description": "Auto imported from components/showcase/showcase.vue"
   },
   "SliderAdvertCart": {
     "description": "Auto imported from components/slider/advertCart.vue"
@@ -163,5 +145,8 @@
   },
   "ProductListPagination": {
     "description": "Auto imported from components/product/list/pagination.vue"
+  },
+  "ElementImage": {
+    "description": "Auto imported from components/element/image.vue"
   }
 }

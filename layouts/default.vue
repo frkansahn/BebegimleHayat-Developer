@@ -12,9 +12,7 @@
         </div>
         <Nuxt/>
         <div class="container-fluid">
-            <render-on-scroll :offset-y="1">
-                <Footer/>
-            </render-on-scroll>
+            <Footer />
         </div>
     </div>
 </template>

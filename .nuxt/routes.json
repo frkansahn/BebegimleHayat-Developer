@@ -176,14 +176,6 @@
     "_name": "_860d4222"
   },
   {
-    "name": "admin-brand",
-    "path": "/admin/brand",
-    "component": "C:\\\\Users\\\\Piksel\\\\Desktop\\\\BebegimleHayat\\\\Software\\\\Frontend-Dev\\\\pages\\\\admin\\\\brand.vue",
-    "chunkName": "pages/admin/brand",
-    "url": "/admin/brand",
-    "_name": "_52c7ba65"
-  },
-  {
     "name": "admin-category",
     "path": "/admin/category",
     "component": "C:\\\\Users\\\\Piksel\\\\Desktop\\\\BebegimleHayat\\\\Software\\\\Frontend-Dev\\\\pages\\\\admin\\\\category\\\\index.vue",
@@ -206,14 +198,6 @@
     "chunkName": "pages/admin/contents-category",
     "url": "/admin/contents-category",
     "_name": "_39d4432f"
-  },
-  {
-    "name": "admin-customers",
-    "path": "/admin/customers",
-    "component": "C:\\\\Users\\\\Piksel\\\\Desktop\\\\BebegimleHayat\\\\Software\\\\Frontend-Dev\\\\pages\\\\admin\\\\customers.vue",
-    "chunkName": "pages/admin/customers",
-    "url": "/admin/customers",
-    "_name": "_791d8133"
   },
   {
     "name": "admin-file-manager",
@@ -240,60 +224,12 @@
     "_name": "_1b3a9d47"
   },
   {
-    "name": "admin-model",
-    "path": "/admin/model",
-    "component": "C:\\\\Users\\\\Piksel\\\\Desktop\\\\BebegimleHayat\\\\Software\\\\Frontend-Dev\\\\pages\\\\admin\\\\model.vue",
-    "chunkName": "pages/admin/model",
-    "url": "/admin/model",
-    "_name": "_09dcc907"
-  },
-  {
-    "name": "admin-order",
-    "path": "/admin/order",
-    "component": "C:\\\\Users\\\\Piksel\\\\Desktop\\\\BebegimleHayat\\\\Software\\\\Frontend-Dev\\\\pages\\\\admin\\\\order\\\\index.vue",
-    "chunkName": "pages/admin/order/index",
-    "url": "/admin/order",
-    "_name": "_0b398056"
-  },
-  {
-    "name": "admin-product",
-    "path": "/admin/product",
-    "component": "C:\\\\Users\\\\Piksel\\\\Desktop\\\\BebegimleHayat\\\\Software\\\\Frontend-Dev\\\\pages\\\\admin\\\\product\\\\index.vue",
-    "chunkName": "pages/admin/product/index",
-    "url": "/admin/product",
-    "_name": "_2dffa595"
-  },
-  {
     "name": "admin-settings",
     "path": "/admin/settings",
     "component": "C:\\\\Users\\\\Piksel\\\\Desktop\\\\BebegimleHayat\\\\Software\\\\Frontend-Dev\\\\pages\\\\admin\\\\settings.vue",
     "chunkName": "pages/admin/settings",
     "url": "/admin/settings",
     "_name": "_240d2096"
-  },
-  {
-    "name": "admin-sub-product",
-    "path": "/admin/sub-product",
-    "component": "C:\\\\Users\\\\Piksel\\\\Desktop\\\\BebegimleHayat\\\\Software\\\\Frontend-Dev\\\\pages\\\\admin\\\\sub-product.vue",
-    "chunkName": "pages/admin/sub-product",
-    "url": "/admin/sub-product",
-    "_name": "_f19d6980"
-  },
-  {
-    "name": "admin-supplier",
-    "path": "/admin/supplier",
-    "component": "C:\\\\Users\\\\Piksel\\\\Desktop\\\\BebegimleHayat\\\\Software\\\\Frontend-Dev\\\\pages\\\\admin\\\\supplier.vue",
-    "chunkName": "pages/admin/supplier",
-    "url": "/admin/supplier",
-    "_name": "_45b9b0de"
-  },
-  {
-    "name": "admin-theme",
-    "path": "/admin/theme",
-    "component": "C:\\\\Users\\\\Piksel\\\\Desktop\\\\BebegimleHayat\\\\Software\\\\Frontend-Dev\\\\pages\\\\admin\\\\theme.vue",
-    "chunkName": "pages/admin/theme",
-    "url": "/admin/theme",
-    "_name": "_fa8418b2"
   },
   {
     "name": "admin-users",
@@ -304,36 +240,12 @@
     "_name": "_d2065734"
   },
   {
-    "name": "admin-xml",
-    "path": "/admin/xml",
-    "component": "C:\\\\Users\\\\Piksel\\\\Desktop\\\\BebegimleHayat\\\\Software\\\\Frontend-Dev\\\\pages\\\\admin\\\\xml.vue",
-    "chunkName": "pages/admin/xml",
-    "url": "/admin/xml",
-    "_name": "_aa8c9f16"
-  },
-  {
     "name": "yazar-admin",
     "path": "/yazar/admin",
     "component": "C:\\\\Users\\\\Piksel\\\\Desktop\\\\BebegimleHayat\\\\Software\\\\Frontend-Dev\\\\pages\\\\yazar\\\\admin.vue",
     "chunkName": "pages/yazar/admin",
     "url": "/yazar/admin",
     "_name": "_83e30a4e"
-  },
-  {
-    "name": "admin-product-add",
-    "path": "/admin/product/add",
-    "component": "C:\\\\Users\\\\Piksel\\\\Desktop\\\\BebegimleHayat\\\\Software\\\\Frontend-Dev\\\\pages\\\\admin\\\\product\\\\add\\\\index.vue",
-    "chunkName": "pages/admin/product/add/index",
-    "url": "/admin/product/add",
-    "_name": "_63464f5e"
-  },
-  {
-    "name": "admin-product-edit",
-    "path": "/admin/product/edit",
-    "component": "C:\\\\Users\\\\Piksel\\\\Desktop\\\\BebegimleHayat\\\\Software\\\\Frontend-Dev\\\\pages\\\\admin\\\\product\\\\edit\\\\index.vue",
-    "chunkName": "pages/admin/product/edit/index",
-    "url": "/admin/product/edit",
-    "_name": "_3e82858b"
   },
   {
     "name": "admin-sliders-editorlerimizin-sectikleri",
@@ -376,13 +288,6 @@
     "_name": "_1bf6ee15"
   },
   {
-    "name": "admin-order-detail-id",
-    "path": "/admin/order/detail/:id?",
-    "component": "C:\\\\Users\\\\Piksel\\\\Desktop\\\\BebegimleHayat\\\\Software\\\\Frontend-Dev\\\\pages\\\\admin\\\\order\\\\detail\\\\_id.vue",
-    "chunkName": "pages/admin/order/detail/_id",
-    "_name": "_a2d0a8e6"
-  },
-  {
     "name": "admin-blog-detail-id",
     "path": "/admin/blog-detail/:id?",
     "component": "C:\\\\Users\\\\Piksel\\\\Desktop\\\\BebegimleHayat\\\\Software\\\\Frontend-Dev\\\\pages\\\\admin\\\\blog-detail\\\\_id.vue",
@@ -395,13 +300,6 @@
     "component": "C:\\\\Users\\\\Piksel\\\\Desktop\\\\BebegimleHayat\\\\Software\\\\Frontend-Dev\\\\pages\\\\admin\\\\contents-detail\\\\_id.vue",
     "chunkName": "pages/admin/contents-detail/_id",
     "_name": "_3a273968"
-  },
-  {
-    "name": "admin-customer-detail-id",
-    "path": "/admin/customer-detail/:id?",
-    "component": "C:\\\\Users\\\\Piksel\\\\Desktop\\\\BebegimleHayat\\\\Software\\\\Frontend-Dev\\\\pages\\\\admin\\\\customer-detail\\\\_id.vue",
-    "chunkName": "pages/admin/customer-detail/_id",
-    "_name": "_015f562c"
   },
   {
     "name": "seoLink",

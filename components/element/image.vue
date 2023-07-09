@@ -1,15 +1,16 @@
 <template>
-    <nuxt-picture v-if="!isOtherSource && getImageJpgUrl != null" fit="cover" loading="lazy" quality="100" preload format="avif,webp" placeholder="/Data/loading.gif" :src="getImageJpgUrl" />
-    <nuxt-picture v-else-if="isOtherSource && src != null" fit="cover" loading="lazy" quality="100" preload format="avif,webp" placeholder="/Data/loading.gif" :src="src" />    
-    
-    <!-- <picture v-if="!isOtherSource && getImageJpgUrl != null">
+    <!-- <nuxt-picture v-if="!isOtherSource && getImageJpgUrl != null" fit="cover" format="webp" placeholder="/Data/loading.gif" :src="getImageJpgUrl" :width="width" :height="height"/>
+    <nuxt-picture v-else-if="isOtherSource && src != null" fit="cover" format="webp" placeholder="/Data/loading.gif" :src="src" :width="width" :height="height"/>    
+     -->
+     
+    <picture v-if="!isOtherSource && getImageJpgUrl != null">
         <source type="image/jpeg" :srcset="getImageJpgUrl" />
         <img :src="getImageWebpUrl" :alt="alt || 'Resim'" :width="width" :height="height"  />
     </picture>
     <picture v-else-if="isOtherSource && src != null">
         <source :srcset="src" type="" />
         <img :src="src" :alt="alt || 'Resim'" :width="width" :height="height"  />
-    </picture> -->
+    </picture>
 </template>
 
 <script>
@@ -25,12 +26,10 @@
                 default:"image"
             },
             width: {
-                type:String,
-                default:"300px"
+                type:String
             },
             height: {
-                type:String,
-                default:"300px"
+                type:String
             }
         },
         data() {
@@ -40,7 +39,7 @@
         },
         computed: {
             isOtherSource() {
-                if(this.src.indexOf('http') > -1)
+                if(this.src?.indexOf('http') > -1)
                     return true
                 else
                     return false

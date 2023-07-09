@@ -7,7 +7,7 @@
 						<div class="col-12 position-static">
 							<div class="row align-items-center mb-3 mb-md-0 py-3 py-lg-0">
 								
-								<b-sidebar id="mobileMenu" title="Menü" backdrop-variant="dark" bg-variant="white" backdrop
+								<b-sidebar v-if="isMobileMenuSidebar" id="mobileMenu" title="Menü" backdrop-variant="dark" bg-variant="white" backdrop
 									shadow>
 									<ul class="col-12 mt-4">
 										<li class="row" v-for="(M, index) in menus" :key="`headerMobileMenu${index}`">								
@@ -52,11 +52,12 @@
 										<ul class="col-12 d-flex align-items-center justify-content-end text-center m-0 position-static">
 											<li class="text-left list-unstyled" v-for="(M, index) in menus"
 												:key="`headerMenu${index}`"
-												:class="[M.children && M.children.length > 0 ? 'parentChild' : '']">
+												:class="[M.children && M.children.length > 0 ? 'parentChild' : '']"
+												@mouseover="headerIndex = index" @mouseleave="headerIndex = null">
 												<NuxtLink :to="`/${M.url}`" class="float-left">
 													{{ M.category_name }}
 												</NuxtLink>
-												<div class="child-menu" v-if="M.children && M.children.length > 0">
+												<div class="child-menu" v-if="index == headerIndex &&  M.children && M.children.length > 0">
 													<div class="container">
 														<ul class="row pl-0">
 															<li class="col-12 col-md-4 col-lg-3"
@@ -123,7 +124,7 @@
 										</ul>
 									</div>
 								</div>
-								<div class="col-1 px-0 d-flex align-items-center mobile-menu d-lg-none" v-b-toggle.mobileMenu>
+								<div class="col-1 px-0 d-flex align-items-center mobile-menu d-lg-none" @click="isMobileMenuSidebar = true" v-b-toggle.mobileMenu>
 									<b-icon-list variant="secondary" font-scale="2.5"></b-icon-list>
 								</div>
 							</div>
@@ -144,7 +145,9 @@ export default {
 			stickyActive: false,
 			backTopActive: false,
 			loading: true,
-			siteLoadedPopup: false
+			siteLoadedPopup: false,
+			headerIndex:null,
+			isMobileMenuSidebar:false
 		}
 	},
 	props:{
@@ -405,12 +408,6 @@ export default {
 		transition: all .5s ease;
 	}
 
-	#headerMenu li.parentChild:hover .child-menu {
-		opacity: 1;
-		visibility: visible;
-		display:block;
-	}
-
 	#headerMenu li.parentChild .child-menu {
 		z-index: 9;
 		position: absolute;
@@ -419,10 +416,7 @@ export default {
 		width: 100%;
 		background-color: #fff;
 		padding: 1em 1.5em;
-		opacity: 0;
-		visibility: hidden;
 		box-shadow: 0 15px 15px rgba(0, 0, 0, .1);
-		display:none;
 	}
 
 	#headerMenu li.parentChild .child-menu ul li {

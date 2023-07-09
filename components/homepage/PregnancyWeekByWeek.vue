@@ -6,8 +6,8 @@
             </h2>
             <div class="slider" id="sliderPregnancyWeekByWeek">
                 <div class="row">
-                    <div class="col-12">
-                        <swiper ref="mySwiper" :options="swiperOptions" @ready="handleSwiperReadied">
+                    <div class="col-12" v-show="loading">
+                        <swiper ref="mySwiper"  :options="swiperOptions" @ready="handleSwiperReadied">
                             <swiper-slide :class="!loading ? 'col-6 col-sm-4 col-md-3 col-lg-2':''" v-for="(slide, index) in pregnancies" v-bind:key="`Slider${index}`">
                                 <NuxtLink class="d-flex align-items-center justify-content-between" :to="slide.url" :id="`slider${index}`">
                                     <div class="d-flex flex-column">
@@ -20,7 +20,7 @@
                                         </span>
                                     </div>
                                     <span v-if="slide.image">
-                                        <nuxt-picture fit="cover" loading="lazy" quality="100" preload format="avif,webp"  width="140" height="140" placeholder="/Data/loading.gif" :src="slide.image" />
+                                        <img loading="lazy" width="140" height="140" :src="slide.image" />
                                     </span>
                                 </NuxtLink>
                             </swiper-slide>

@@ -59,7 +59,7 @@ export default {
         baseUrl: process.env.NODE_ENV == 'development' ? process.env.BASE_URL : process.env.BASE_PROD_URL
     },
     css: [
-        '@fortawesome/fontawesome-svg-core/styles.css','~/assets/scss/fonts.scss', '~/assets/bootstrap.css' ,'~/assets/main.css',
+        '~/assets/scss/fonts.scss', '~/assets/bootstrap.css' ,'~/assets/main.css',
     ],
     plugins: [
         '~/plugins/repositories.js',
@@ -86,34 +86,11 @@ export default {
         '@nuxtjs/sitemap',
         '@nuxtjs/redirect-module',
         '@nuxt/image',
-        '@nuxtjs/pwa'
+        'nuxt-lazy-load'
     ],
-    pwa: {
-        icon: {
-            source: 'static/Data/favicon-128.png',
-            fileName: 'favicon-128.png'
-        },
-        manifest: {
-            name: 'Bebeğimle hayat',
-            short_name: 'Bebeğimle hayat',
-            lang: 'tr',
-            display: 'standalone',
-        }
-    },
     image: {
         lazy: true,
-        inject: true,
-        quality: 90,
         format: ['webp'],
-        screens: {
-            xs: 320,
-            sm: 640,
-            md: 768,
-            lg: 1024,
-            xl: 1280,
-            xxl: 1536,
-            '2xl': 1536
-        },
         domains: [
             'api.bebegimlehayat.com'
         ],
