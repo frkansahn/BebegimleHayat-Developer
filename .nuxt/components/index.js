@@ -9,6 +9,7 @@ export { default as TableList } from '../..\\components\\tableList.vue'
 export { default as TreeBlogCategory } from '../..\\components\\treeBlogCategory.vue'
 export { default as TreeCategory } from '../..\\components\\treeCategory.vue'
 export { default as TreeMenu } from '../..\\components\\treeMenu.vue'
+export { default as AdminHeader } from '../..\\components\\admin\\header.vue'
 export { default as BlogBabyDictionary } from '../..\\components\\blog\\babyDictionary.vue'
 export { default as BlogBabyDictionaryParentCategory } from '../..\\components\\blog\\babyDictionaryParentCategory.vue'
 export { default as BlogCart } from '../..\\components\\blog\\cart.vue'
@@ -23,9 +24,9 @@ export { default as BlogReadMoreBlogs } from '../..\\components\\blog\\readMoreB
 export { default as BlogShowcase } from '../..\\components\\blog\\showcase.vue'
 export { default as BlogToolNewBlogs } from '../..\\components\\blog\\toolNewBlogs.vue'
 export { default as ContentDetail } from '../..\\components\\content\\detail.vue'
-export { default as AdminHeader } from '../..\\components\\admin\\header.vue'
 export { default as CustomerAddressList } from '../..\\components\\customer\\addressList.vue'
 export { default as CustomerFavorites } from '../..\\components\\customer\\favorites.vue'
+export { default as ElementImage } from '../..\\components\\element\\image.vue'
 export { default as FilterCategory } from '../..\\components\\filter\\category.vue'
 export { default as FilterPriceRangeSlider } from '../..\\components\\filter\\priceRangeSlider.vue'
 export { default as FilterTreeCategory } from '../..\\components\\filter\\treeCategory.vue'
@@ -47,7 +48,6 @@ export { default as SliderOtherCategories } from '../..\\components\\slider\\oth
 export { default as SliderPregnancyWeekByWeek } from '../..\\components\\slider\\PregnancyWeekByWeek.vue'
 export { default as SliderType1 } from '../..\\components\\slider\\type1.vue'
 export { default as ProductListPagination } from '../..\\components\\product\\list\\pagination.vue'
-export { default as ElementImage } from '../..\\components\\element\\image.vue'
 
 // nuxt/nuxt.js#8607
 function wrapFunctional(options) {

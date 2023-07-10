@@ -4,7 +4,7 @@
         <div class="admin-content-wrapper">
             <div class="row mt-4">
                 <div class="col-12 mb-4">
-                    <iframe src="/filemanager/dialog.php?type=4&descending=false&lang=tr&akey=fkod_12345." data-alloy-tabstop="true" tabindex="-1" width="100%" style="width: 100%;height: 100vh;"></iframe>
+                    <iframe :src="`${url}/elfinder`" data-alloy-tabstop="true" tabindex="-1" width="100%" style="width: 100%;height: 100vh;"></iframe>
                 </div>
             </div>
         </div>
@@ -23,7 +23,8 @@
         },
         data() {
             return {
-                managerUrl:undefined
+                managerUrl:undefined,
+                url: process.env.baseUrl
             }
         },
         methods:{

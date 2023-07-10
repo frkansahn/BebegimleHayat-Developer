@@ -206,13 +206,17 @@ export default
                     plugins: 'link image media autolink lists advlist media table fullscreen lists directionality emoticons wordcount preview tabfocus template anchor autoresize code filemanager',
                     menubar: 'file edit insert view format table tools help',
                     toolbar: 'undo redo | styleselect | fullscreen | forecolor  | bold italic underline italic | alignleft aligncenter alignright alignjustify | outdent indent | link image media| code table | numlist bullist | ltr rtl | emoticons | wordcount | anchor | responsivefilemanager | template | preview | grid_insert',
-                    external_filemanager_path: '/filemanager/',
-                    filemanager_title: 'Responsive Filemanager',
-                    external_plugins: {
-                        'responsivefilemanager': '/filemanager/plugin.min.js',
-                        'filemanager': '/filemanager/plugin.min.js'
+                    file_picker_callback: (cb, v, m) => {
+                        window.tinymce.activeEditor.windowManager.openUrl({
+                            url: process.env.baseUrl + '/elfinder/',
+                            title: "File Manager",
+                            onMessage: (api, message) => {
+                                console.log(message);
+                                api.close();
+                                cb(message.data.customField);
+                            },
+                        });
                     },
-                    filemanager_access_key: "fkod_12345.",
                     grid_preset: 'Bootstrap3',
                     toolbar_mode: 'wrap',
                     image_title: true,

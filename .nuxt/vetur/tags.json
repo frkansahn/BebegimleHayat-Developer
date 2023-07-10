@@ -32,6 +32,9 @@
   "TreeMenu": {
     "description": "Auto imported from components/treeMenu.vue"
   },
+  "AdminHeader": {
+    "description": "Auto imported from components/admin/header.vue"
+  },
   "BlogBabyDictionary": {
     "description": "Auto imported from components/blog/babyDictionary.vue"
   },
@@ -74,14 +77,14 @@
   "ContentDetail": {
     "description": "Auto imported from components/content/detail.vue"
   },
-  "AdminHeader": {
-    "description": "Auto imported from components/admin/header.vue"
-  },
   "CustomerAddressList": {
     "description": "Auto imported from components/customer/addressList.vue"
   },
   "CustomerFavorites": {
     "description": "Auto imported from components/customer/favorites.vue"
+  },
+  "ElementImage": {
+    "description": "Auto imported from components/element/image.vue"
   },
   "FilterCategory": {
     "description": "Auto imported from components/filter/category.vue"
@@ -145,8 +148,5 @@
   },
   "ProductListPagination": {
     "description": "Auto imported from components/product/list/pagination.vue"
-  },
-  "ElementImage": {
-    "description": "Auto imported from components/element/image.vue"
   }
 }

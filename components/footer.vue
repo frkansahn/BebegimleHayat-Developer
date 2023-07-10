@@ -421,11 +421,14 @@ export default {
 			catch (error) {
 				console.log(error);
 			}
-		}
+		},
+		eventWindowResize() {
+			this.isMobile = window.screen.width > 768 ? false : true;
+		},
 	},
 	async mounted() {
-
 		this.isMobile = window.screen.width > 768 ? false : true;
+		window.addEventListener("resize", this.eventWindowResize);
 	},
 	computed: {
 		sortedFooterMenu: function () {

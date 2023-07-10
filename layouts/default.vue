@@ -25,7 +25,7 @@ export default
                 { rel: "icon", type: "image/x-icon", href: "/Data/favicon-128.png" },
                 {
                     rel: 'canonical',
-                    href: 'https://www.bebegimlehayat.com' + this.$route.path
+                    href: 'https://bebegimlehayat.com' + this.$route.path
                 }
             ]
         };
