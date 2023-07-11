@@ -63,7 +63,7 @@ export default {
     ],
     plugins: [
         '~/plugins/repositories.js',
-        '@/plugins/vue-awesome-swiper',
+        //'@/plugins/vue-awesome-swiper',
         '@/plugins/checkIsNullOrEmpty',
         '@/plugins/dateFormat',
         '@/plugins/checkEmail',
@@ -168,8 +168,9 @@ export default {
         { from: '^/kullanim-sart-ve-kosullari-bebegimlehayat', to: '/kullanim-sart-ve-kosullari' },
         { from: '^/kisisel-verilerin-korunmasi-politikasi-bebegimlehayat', to: '/kisisel-verilerin-korunmasi-politikasi' },
         { from: '^/cerez-politikasi-bebegimlehayat', to: '/cerez-politikasi' },
-        { from: '^/hakkimizda-bebegimlehayat', to: '/hakkimizda' }
-        //{ from: '^/post-sitemap1.xml', to: '/post-sitemap.xml' },
+        { from: '^/hakkimizda-bebegimlehayat', to: '/hakkimizda' },
+        { from: '^/goz-rengi-hesaplama', to: '/goz-rengi-tahmini' },
+        { from: '^/sac-rengi-hesaplama', to: '/sac-rengi-tahmini' }
     ],
     build: {
         extend(config, ctx) {

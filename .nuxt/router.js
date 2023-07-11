@@ -4,7 +4,6 @@ import { normalizeURL, decode } from 'ufo'
 import { interopDefault } from './utils'
 import scrollBehavior from './router.scrollBehavior.js'
 
-const _5192fa30 = () => interopDefault(import('..\\pages\\admin\\index.vue' /* webpackChunkName: "pages/admin/index" */))
 const _119e3b33 = () => interopDefault(import('..\\pages\\bebek-asi-takvimi-hesaplama.vue' /* webpackChunkName: "pages/bebek-asi-takvimi-hesaplama" */))
 const _0d1cef70 = () => interopDefault(import('..\\pages\\bebek-isim-bulucu.vue' /* webpackChunkName: "pages/bebek-isim-bulucu" */))
 const _0eb7910e = () => interopDefault(import('..\\pages\\bebek-masraf-hesaplama.vue' /* webpackChunkName: "pages/bebek-masraf-hesaplama" */))
@@ -21,27 +20,8 @@ const _24b51831 = () => interopDefault(import('..\\pages\\uye-giris.vue' /* webp
 const _add1b8f6 = () => interopDefault(import('..\\pages\\uye-kayit.vue' /* webpackChunkName: "pages/uye-kayit" */))
 const _f156b2c6 = () => interopDefault(import('..\\pages\\uye-sifremi-unuttum.vue' /* webpackChunkName: "pages/uye-sifremi-unuttum" */))
 const _479ab8f7 = () => interopDefault(import('..\\pages\\yumurtlama-gunu-hesaplama.vue' /* webpackChunkName: "pages/yumurtlama-gunu-hesaplama" */))
-const _370e3b60 = () => interopDefault(import('..\\pages\\admin\\add-blog.vue' /* webpackChunkName: "pages/admin/add-blog" */))
-const _47a767d8 = () => interopDefault(import('..\\pages\\admin\\add-contents.vue' /* webpackChunkName: "pages/admin/add-contents" */))
-const _3ec8810d = () => interopDefault(import('..\\pages\\admin\\add-image.vue' /* webpackChunkName: "pages/admin/add-image" */))
-const _0b8942b2 = () => interopDefault(import('..\\pages\\admin\\blog-category.vue' /* webpackChunkName: "pages/admin/blog-category" */))
-const _860d4222 = () => interopDefault(import('..\\pages\\admin\\blogs.vue' /* webpackChunkName: "pages/admin/blogs" */))
-const _b349911c = () => interopDefault(import('..\\pages\\admin\\category\\index.vue' /* webpackChunkName: "pages/admin/category/index" */))
-const _00bfbb2c = () => interopDefault(import('..\\pages\\admin\\contents.vue' /* webpackChunkName: "pages/admin/contents" */))
-const _39d4432f = () => interopDefault(import('..\\pages\\admin\\contents-category.vue' /* webpackChunkName: "pages/admin/contents-category" */))
-const _535a6324 = () => interopDefault(import('..\\pages\\admin\\file-manager.vue' /* webpackChunkName: "pages/admin/file-manager" */))
-const _dd2c5a36 = () => interopDefault(import('..\\pages\\admin\\header-menu\\index.vue' /* webpackChunkName: "pages/admin/header-menu/index" */))
-const _1b3a9d47 = () => interopDefault(import('..\\pages\\admin\\login.vue' /* webpackChunkName: "pages/admin/login" */))
-const _240d2096 = () => interopDefault(import('..\\pages\\admin\\settings.vue' /* webpackChunkName: "pages/admin/settings" */))
-const _d2065734 = () => interopDefault(import('..\\pages\\admin\\users.vue' /* webpackChunkName: "pages/admin/users" */))
 const _83e30a4e = () => interopDefault(import('..\\pages\\yazar\\admin.vue' /* webpackChunkName: "pages/yazar/admin" */))
-const _8ef535e8 = () => interopDefault(import('..\\pages\\admin\\sliders\\editorlerimizin-sectikleri.vue' /* webpackChunkName: "pages/admin/sliders/editorlerimizin-sectikleri" */))
-const _29a8ef3f = () => interopDefault(import('..\\pages\\admin\\sliders\\herkes-onu-konusuyor.vue' /* webpackChunkName: "pages/admin/sliders/herkes-onu-konusuyor" */))
-const _48190b9b = () => interopDefault(import('..\\pages\\admin\\sliders\\slider-page.vue' /* webpackChunkName: "pages/admin/sliders/slider-page" */))
-const _086b0c4b = () => interopDefault(import('..\\pages\\admin\\sliders\\surdurulebilir-yasam.vue' /* webpackChunkName: "pages/admin/sliders/surdurulebilir-yasam" */))
 const _1bf6ee15 = () => interopDefault(import('..\\pages\\index.vue' /* webpackChunkName: "pages/index" */))
-const _58dccaf0 = () => interopDefault(import('..\\pages\\admin\\blog-detail\\_id.vue' /* webpackChunkName: "pages/admin/blog-detail/_id" */))
-const _3a273968 = () => interopDefault(import('..\\pages\\admin\\contents-detail\\_id.vue' /* webpackChunkName: "pages/admin/contents-detail/_id" */))
 const _31dc9076 = () => interopDefault(import('..\\pages\\_seoLink.vue' /* webpackChunkName: "pages/_seoLink" */))
 
 const emptyFn = () => {}
@@ -56,10 +36,6 @@ export const routerOptions = {
   scrollBehavior,
 
   routes: [{
-    path: "/admin",
-    component: _5192fa30,
-    name: "admin"
-  }, {
     path: "/bebek-asi-takvimi-hesaplama",
     component: _119e3b33,
     name: "bebek-asi-takvimi-hesaplama"
@@ -124,89 +100,13 @@ export const routerOptions = {
     component: _479ab8f7,
     name: "yumurtlama-gunu-hesaplama"
   }, {
-    path: "/admin/add-blog",
-    component: _370e3b60,
-    name: "admin-add-blog"
-  }, {
-    path: "/admin/add-contents",
-    component: _47a767d8,
-    name: "admin-add-contents"
-  }, {
-    path: "/admin/add-image",
-    component: _3ec8810d,
-    name: "admin-add-image"
-  }, {
-    path: "/admin/blog-category",
-    component: _0b8942b2,
-    name: "admin-blog-category"
-  }, {
-    path: "/admin/blogs",
-    component: _860d4222,
-    name: "admin-blogs"
-  }, {
-    path: "/admin/category",
-    component: _b349911c,
-    name: "admin-category"
-  }, {
-    path: "/admin/contents",
-    component: _00bfbb2c,
-    name: "admin-contents"
-  }, {
-    path: "/admin/contents-category",
-    component: _39d4432f,
-    name: "admin-contents-category"
-  }, {
-    path: "/admin/file-manager",
-    component: _535a6324,
-    name: "admin-file-manager"
-  }, {
-    path: "/admin/header-menu",
-    component: _dd2c5a36,
-    name: "admin-header-menu"
-  }, {
-    path: "/admin/login",
-    component: _1b3a9d47,
-    name: "admin-login"
-  }, {
-    path: "/admin/settings",
-    component: _240d2096,
-    name: "admin-settings"
-  }, {
-    path: "/admin/users",
-    component: _d2065734,
-    name: "admin-users"
-  }, {
     path: "/yazar/admin",
     component: _83e30a4e,
     name: "yazar-admin"
   }, {
-    path: "/admin/sliders/editorlerimizin-sectikleri",
-    component: _8ef535e8,
-    name: "admin-sliders-editorlerimizin-sectikleri"
-  }, {
-    path: "/admin/sliders/herkes-onu-konusuyor",
-    component: _29a8ef3f,
-    name: "admin-sliders-herkes-onu-konusuyor"
-  }, {
-    path: "/admin/sliders/slider-page",
-    component: _48190b9b,
-    name: "admin-sliders-slider-page"
-  }, {
-    path: "/admin/sliders/surdurulebilir-yasam",
-    component: _086b0c4b,
-    name: "admin-sliders-surdurulebilir-yasam"
-  }, {
     path: "/",
     component: _1bf6ee15,
     name: "index"
-  }, {
-    path: "/admin/blog-detail/:id?",
-    component: _58dccaf0,
-    name: "admin-blog-detail-id"
-  }, {
-    path: "/admin/contents-detail/:id?",
-    component: _3a273968,
-    name: "admin-contents-detail-id"
   }, {
     path: "/:seoLink",
     component: _31dc9076,
