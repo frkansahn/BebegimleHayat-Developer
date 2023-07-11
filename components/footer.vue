@@ -35,14 +35,13 @@
 											Sana özel içerik ve ipuçlarını görebilmek için hemen üye ol!
 										</h5>
 										<div class="w-100 position-relative">
-											<b-form-group class="w-100" id="email_group" label="" label-for="email_input"
-												description="">
+											<div class="w-100" id="email_group">
 												<b-form-input size="lg"
 													class="border-top-0 border-right-0 border-left-0 pl-0 rounded-0 border-bottom border-white bg-transparent text-white"
 													id="email_subscription_input" v-model="email" type="email"
 													placeholder="E-posta adresin"
 													@keyup.enter="sendEmailSubscription"></b-form-input>
-											</b-form-group>
+											</div>
 											<b-button class="btn" id="sendEmailSubscription" @click="sendEmailSubscription">
 												ÜYE OL
 											</b-button>
@@ -284,6 +283,11 @@
 	</div>
 </template>
 <script>
+import Vue from 'vue'
+import { FormInputPlugin, ButtonPlugin, CollapsePlugin  } from 'bootstrap-vue'
+Vue.use(FormInputPlugin);
+Vue.use(ButtonPlugin);
+Vue.use(CollapsePlugin);
 
 export default {
 	name: 'Footer',
@@ -300,32 +304,32 @@ export default {
 				{
 					name: "Adet (Regl) Kanamasının Az Olmasının Nedenleri",
 					url: "https://bebegimlehayat.com/adet-regl-kanamasinin-az-olmasinin-nedenleri",
-					image: "https://api.bebegimlehayat.com/Data/image/small/adet-kanamam-az-1684260822427.jpeg"
+					image: "adet-kanamam-az-1684260822427"
 				},
 				{
 					name: "Bebek Cinsiyeti Anne Karnında Belirlenebilir Mi? Bebek Cinsiyeti Belirleme Yöntemleri",
 					url: "https://bebegimlehayat.com/bebek-cinsiyeti-anne-karninda-belirlenebilir-mi-bebek-cinsiyeti-belirleme-yontemleri",
-					image: "https://api.bebegimlehayat.com/Data/image/small/bebek-cinsiyeti-nasil-belirlenir-1684932798765.jpeg"
+					image: "bebek-cinsiyeti-nasil-belirlenir-1684932798765"
 				},
 				{
 					name: "Progestan Nedir? Progesteron Hormonunun Yan Etkileri Nelerdir?",
 					url: "https://bebegimlehayat.com/progestan-nedir-progesteron-hormonunun-yan-etkileri-nelerdir",
-					image: "https://api.bebegimlehayat.com/Data/image/small/progestan-yan-etkileri-nelerdir-1684932532365.jpeg"
+					image: "progestan-yan-etkileri-nelerdir-1684932532365"
 				},
 				{
 					name: "Hamilelikte Adet Görülür Mü?",
 					url: "https://bebegimlehayat.com/hamilelikte-adet-gorulur-mu",
-					image: "https://api.bebegimlehayat.com/Data/image/small/WhatsApp%20Image%202023-05-23%20at%2018-1684874422133.jpeg"
+					image: "WhatsApp%20Image%202023-05-23%20at%2018-1684874422133"
 				},
 				{
 					name: "Bebeklerde Kuru Öksürük",
 					url: "https://bebegimlehayat.com/bebeklerde-kuru-oksuruk",
-					image: "https://api.bebegimlehayat.com/Data/image/small/bebeklerde-kuru-oksuruk-1684275123747.jpeg"
+					image: "bebeklerde-kuru-oksuruk-1684275123747"
 				},
 				{
 					name: "Gebelikte Bebeğin Gelişmesi ve Kilo Alması İçin Uygulanması Gereken Beslenme Düzeni",
 					url: "https://bebegimlehayat.com/gebelikte-bebegin-gelismesi-ve-kilo-almasi-icin-uygulanmasi-gereken-beslenme-duzeni",
-					image: "https://api.bebegimlehayat.com/Data/image/small/hamilelikte-bebek-gelisimi-icin-ne-yemeli-1684932682612.jpeg"
+					image: "hamilelikte-bebek-gelisimi-icin-ne-yemeli-1684932682612"
 				}
 			],
 			isCookiePolitical: false
@@ -621,7 +625,7 @@ export default {
 	}
 
 	#footer #links ul li {
-		width: 768px;
+		width: 100%;
 	}
 }
 

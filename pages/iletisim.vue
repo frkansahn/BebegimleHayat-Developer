@@ -65,6 +65,11 @@
 </template>
 
 <script>
+import Vue from 'vue'
+import { OverlayPlugin, ButtonPlugin  } from 'bootstrap-vue'
+Vue.use(OverlayPlugin)
+Vue.use(ButtonPlugin)
+
 export default
     {
         name: 'Contact',

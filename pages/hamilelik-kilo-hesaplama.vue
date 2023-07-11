@@ -107,7 +107,7 @@
                                         </div>
                                     </div>
                                     <div class="row mt-4">
-                                        <div class="col-12">
+                                        <div class="col-12 hamilelik-chart">
                                             <LineChart :chart-options="barChartOptions" :chart-data="data" class="w-100"
                                                 chart-id="lineChart" />
                                         </div>
@@ -306,8 +306,42 @@
     </div>
 </template>
 <script>
+import Vue from "vue";
+import vSelect from "vue-select";
+import "vue-select/dist/vue-select.css";
+Vue.component("v-select", vSelect);
+
+import {
+    Chart as ChartJS,
+    Title,
+    Tooltip,
+    Legend,
+    LinearScale,
+    PointElement,
+    LineElement
+} from 'chart.js'
+import { Line as LineChart } from 'vue-chartjs'
+
+ChartJS.register(
+  Title,
+  Tooltip,
+  Legend,
+  LinearScale,
+  PointElement,
+  LineElement
+)
+
+
+import { FormPlugin, FormInputPlugin, InputGroupPlugin , FormGroupPlugin, SpinnerPlugin  } from 'bootstrap-vue'
+Vue.use(FormPlugin);
+Vue.use(FormInputPlugin);
+Vue.use(InputGroupPlugin);
+Vue.use(FormGroupPlugin);
+Vue.use(SpinnerPlugin);
+
 export default {
     name: 'HamilelikKiloHesaplama',
+    components: { LineChart },
     head() {
         return {
             title: "Hamilelik Kilo Hesaplama - BebeğimleHayat",
@@ -517,7 +551,6 @@ export default {
                         }
                     }
 
-                console.log(this.barChartOptions);
                 this.data = {
                     labels: Array.from(Array(41).keys()),
                     datasets: [
@@ -593,6 +626,9 @@ export default {
 </script>
 
 <style>
+.hamilelik-chart canvas {
+    height: 300px !important;
+}
 #hamilelikKiloForm {
     background-color: rgb(235, 247, 250);
     padding: 3em;
@@ -662,7 +698,8 @@ export default {
 }
 
 .vs__dropdown-toggle {
-    padding: .6em;
+    padding: .6em !important;
+    border: 0 !important;
 }
 
 .vs__search {

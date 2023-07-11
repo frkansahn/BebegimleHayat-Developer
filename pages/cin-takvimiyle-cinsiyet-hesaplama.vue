@@ -197,6 +197,17 @@
     </div>
 </template>
 <script>
+import Vue from "vue";
+import vSelect from "vue-select";
+import "vue-select/dist/vue-select.css";
+Vue.component("v-select", vSelect);
+
+
+import { FormPlugin, FormGroupPlugin,SpinnerPlugin } from 'bootstrap-vue'
+Vue.use(SpinnerPlugin);
+Vue.use(FormPlugin);
+Vue.use(FormGroupPlugin);
+
 export default {
     name: 'CinsiyetTahmini',
     head() {
@@ -409,7 +420,8 @@ export default {
 }
 
 .vs__dropdown-toggle {
-    padding: .6em;
+    padding: .6em !important;
+    border: 0 !important;
 }
 
 .vs__search {

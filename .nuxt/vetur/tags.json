@@ -14,12 +14,6 @@
   "OtherContents": {
     "description": "Auto imported from components/otherContents.vue"
   },
-  "OtherPages": {
-    "description": "Auto imported from components/otherPages.vue"
-  },
-  "RenderOnScroll": {
-    "description": "Auto imported from components/render-on-scroll.vue"
-  },
   "TableList": {
     "description": "Auto imported from components/tableList.vue"
   },
@@ -28,6 +22,9 @@
   },
   "TreeCategory": {
     "description": "Auto imported from components/treeCategory.vue"
+  },
+  "ElementImage": {
+    "description": "Auto imported from components/element/image.vue"
   },
   "ContentDetail": {
     "description": "Auto imported from components/content/detail.vue"
@@ -71,9 +68,6 @@
   "BlogToolNewBlogs": {
     "description": "Auto imported from components/blog/toolNewBlogs.vue"
   },
-  "ElementImage": {
-    "description": "Auto imported from components/element/image.vue"
-  },
   "HomepageBabyNames": {
     "description": "Auto imported from components/homepage/BabyNames.vue"
   },
@@ -85,9 +79,6 @@
   },
   "HomepagePregnancyWeekByWeek": {
     "description": "Auto imported from components/homepage/PregnancyWeekByWeek.vue"
-  },
-  "SliderAdvertCart": {
-    "description": "Auto imported from components/slider/advertCart.vue"
   },
   "SliderFooterLinks": {
     "description": "Auto imported from components/slider/footerLinks.vue"

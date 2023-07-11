@@ -212,6 +212,16 @@
     </div>
 </template>
 <script>
+import Vue from 'vue'
+import { FormPlugin, FormDatepickerPlugin , FormInputPlugin, FormGroupPlugin, FormRadioPlugin , ModalPlugin, SpinnerPlugin  } from 'bootstrap-vue'
+Vue.use(FormPlugin);
+Vue.use(FormDatepickerPlugin);
+Vue.use(FormInputPlugin);
+Vue.use(FormGroupPlugin);
+Vue.use(FormRadioPlugin);
+Vue.use(ModalPlugin);
+Vue.use(SpinnerPlugin);
+
 export default {
     name: 'BebekIsimBulucu',
     head() {
@@ -504,8 +514,8 @@ export default {
 }
 
 .vs__dropdown-toggle {
-    padding: 2px 0.2em;
-    border: 0;
+    padding: 2px 0.2em !important;
+    border: 0 !important;
 }
 
 .vs__search {

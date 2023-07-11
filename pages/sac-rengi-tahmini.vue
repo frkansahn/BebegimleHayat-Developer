@@ -1994,6 +1994,11 @@
     </div>
 </template>
 <script>
+import Vue from 'vue'
+import { FormPlugin , FormGroupPlugin,SpinnerPlugin } from 'bootstrap-vue'
+Vue.use(FormPlugin);
+Vue.use(FormGroupPlugin);
+Vue.use(SpinnerPlugin);
 export default {
     name: 'SacRengiTahmini',
     head() {
@@ -2482,7 +2487,8 @@ export default {
 }
 
 .vs__dropdown-toggle {
-    padding: .6em;
+    padding: .6em !important;
+    border: 0 !important;
 }
 
 .vs__search {

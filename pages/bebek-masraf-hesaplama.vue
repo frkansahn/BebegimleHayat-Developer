@@ -1264,6 +1264,15 @@
     </div>
 </template>
 <script>
+import Vue from 'vue'
+import { FormPlugin , FormInputPlugin, FormGroupPlugin, FormCheckboxPlugin, InputGroupPlugin,SpinnerPlugin } from 'bootstrap-vue'
+Vue.use(FormPlugin);
+Vue.use(InputGroupPlugin);
+Vue.use(FormInputPlugin);
+Vue.use(FormGroupPlugin);
+Vue.use(FormCheckboxPlugin);
+Vue.use(SpinnerPlugin);
+
 export default {
     name: 'BebekMasrafHesaplama',
     head() {
@@ -1614,7 +1623,8 @@ export default {
 }
 
 .vs__dropdown-toggle {
-    padding: .6em;
+    padding: .6em !important;
+    border: 0 !important;
 }
 
 .vs__search {

@@ -290,6 +290,18 @@
 </template>
 
 <script>
+import Vue from 'vue'
+import { FormPlugin, ModalPlugin , FormInputPlugin, FormGroupPlugin, FormCheckboxPlugin, SpinnerPlugin , ButtonPlugin,ToastPlugin, OverlayPlugin  } from 'bootstrap-vue'
+Vue.use(FormPlugin);
+Vue.use(ModalPlugin);
+Vue.use(FormInputPlugin);
+Vue.use(FormGroupPlugin);
+Vue.use(FormCheckboxPlugin);
+Vue.use(SpinnerPlugin);
+Vue.use(ButtonPlugin);
+Vue.use(ToastPlugin);
+Vue.use(OverlayPlugin);
+
 export default
     {
         name: 'CustomerLogin',
@@ -439,8 +451,6 @@ export default
                                     maxAge: 60 * 60 * 24 * 1
                                 });
 
-                                _this.$cookiz.remove('g_u_guest_code');
-                                _this.$store.commit("customer/guest_code", null);
                                 _this.$store.commit("customer/token", res.data.result.token);
                                 _this.$store.commit("customer/user", res.data.result.user);
                                 _this.$store.commit("customer/userLoggedIn", res.data.result.user);
@@ -452,30 +462,11 @@ export default
                                     solid: true
                                 });
 
-                                if (guest_code) {
-                                    _this.$repositories.customer.cartGuestToCustomer({
-                                        token: res.data.result.token,
-                                        guest_code: guest_code
-                                    })
-                                        .then(() => {
-                                            _this.loginOverlay = false;
-                                            _this.$store.dispatch('customer/getCart');
-
-                                            if (_this.$route.query.r)
-                                                _this.$router.push(_this.$route.query.r);
-                                            else
-                                                _this.$router.push("/");
-
-                                        })
-                                }
-                                else {
-                                    _this.loginOverlay = false;
-                                    _this.$store.dispatch('customer/getCart');
-                                    if (_this.$route.query.r)
-                                        _this.$router.push(_this.$route.query.r);
-                                    else
-                                        _this.$router.push("/");
-                                }
+                                _this.loginOverlay = false;
+                                if (_this.$route.query.r)
+                                    _this.$router.push(_this.$route.query.r);
+                                else
+                                    _this.$router.push("/");
                             }
                             else if (res.data.code == "no_user") {
                                 _this.$bvToast.toast('Kullanıcı bulunamadı', {

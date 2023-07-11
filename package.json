@@ -6,7 +6,8 @@
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
-    "generate": "nuxt generate"
+    "generate": "nuxt generate",
+    "deploy": "nuxt build && pm2 start"
   },
   "dependencies": {
     "@googlemaps/js-api-loader": "^1.13.1",

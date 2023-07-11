@@ -59,45 +59,27 @@ export default {
         baseUrl: process.env.NODE_ENV == 'development' ? process.env.BASE_URL : process.env.BASE_PROD_URL
     },
     css: [
-        '~/assets/scss/fonts.scss', '~/assets/bootstrap.css' ,'~/assets/main.css',
+        '~/assets/scss/fonts.scss', '~/assets/bootstrap.css', '~/assets/bootstrap-vue.css' ,'~/assets/main.css',
     ],
     plugins: [
         '~/plugins/repositories.js',
-        //'@/plugins/vue-awesome-swiper',
         '@/plugins/checkIsNullOrEmpty',
         '@/plugins/dateFormat',
         '@/plugins/checkEmail',
         '@/plugins/currency',
-        '@/plugins/vue-select',
-        '@/plugins/vue-draggable',
         '@/plugins/directives',
-        '@/plugins/vue-material-tabs',
         '@/plugins/vue-numeric-directive.js',
-        {src:'@/plugins/vue-datetime-picker.js',mode: 'client'},        
-        {src:'@/plugins/vue-chart.js',mode: 'client'}
+        {src:'@/plugins/vue-datetime-picker.js' , mode:'client'}
     ],
     components: true,
     modules: [
-        'bootstrap-vue/nuxt',
         '@nuxtjs/axios',
         ['cookie-universal-nuxt', { alias: 'cookiz' }],
         'nuxt-purgecss',
-        'vue-social-sharing/nuxt',
         '@nuxtjs/sitemap',
         '@nuxtjs/redirect-module',
-        '@nuxt/image',
         'nuxt-lazy-load'
     ],
-    image: {
-        lazy: true,
-        format: ['webp'],
-        domains: [
-            'api.bebegimlehayat.com'
-        ],
-        alias: {
-            unsplash: 'https://api.bebegimlehayat.com'
-        }
-    },
     sitemap:{
         hostname: 'https://bebegimlehayat.com',
         cacheTime : 1000 * 60 * 60,
@@ -213,10 +195,5 @@ export default {
             video: ({ isDev }) =>
                 isDev ? '[path][name].[ext]' : 'videos/[hash:7].[ext]',
         },
-    },
-    bootstrapVue: {
-        icons: true,
-        bootstrapCSS: false,
-        bootstrapVueCSS: true
     }
 }

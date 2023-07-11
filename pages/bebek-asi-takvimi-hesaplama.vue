@@ -869,6 +869,15 @@
     </div>
 </template>
 <script>
+import Vue from 'vue'
+import { FormPlugin, FormDatepickerPlugin , FormInputPlugin, FormGroupPlugin, FormRadioPlugin, SpinnerPlugin  } from 'bootstrap-vue'
+Vue.use(FormPlugin);
+Vue.use(FormDatepickerPlugin);
+Vue.use(FormInputPlugin);
+Vue.use(FormGroupPlugin);
+Vue.use(FormRadioPlugin);
+Vue.use(SpinnerPlugin);
+
 export default {
     name: 'BebekAsiTakvimi',
     head() {
@@ -1092,7 +1101,8 @@ export default {
 }
 
 .vs__dropdown-toggle {
-    padding: .6em;
+    padding: .6em !important;
+    border: 0 !important;
 }
 
 .vs__search {

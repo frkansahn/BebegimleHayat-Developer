@@ -46,6 +46,18 @@
 </template>
 
 <script>
+import Vue from 'vue'
+import { FormPlugin, ModalPlugin , FormInputPlugin, FormGroupPlugin, FormCheckboxPlugin, SpinnerPlugin , ButtonPlugin,ToastPlugin,OverlayPlugin } from 'bootstrap-vue'
+Vue.use(FormPlugin);
+Vue.use(ModalPlugin);
+Vue.use(FormInputPlugin);
+Vue.use(FormGroupPlugin);
+Vue.use(FormCheckboxPlugin);
+Vue.use(SpinnerPlugin);
+Vue.use(ButtonPlugin);
+Vue.use(ToastPlugin);
+Vue.use(OverlayPlugin);
+
 export default
    {
       name: 'CustomerForgotPassword',

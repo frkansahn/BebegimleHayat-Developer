@@ -20,6 +20,8 @@ const _24b51831 = () => interopDefault(import('..\\pages\\uye-giris.vue' /* webp
 const _add1b8f6 = () => interopDefault(import('..\\pages\\uye-kayit.vue' /* webpackChunkName: "pages/uye-kayit" */))
 const _f156b2c6 = () => interopDefault(import('..\\pages\\uye-sifremi-unuttum.vue' /* webpackChunkName: "pages/uye-sifremi-unuttum" */))
 const _479ab8f7 = () => interopDefault(import('..\\pages\\yumurtlama-gunu-hesaplama.vue' /* webpackChunkName: "pages/yumurtlama-gunu-hesaplama" */))
+const _04568598 = () => interopDefault(import('..\\pages\\account\\change-password.vue' /* webpackChunkName: "pages/account/change-password" */))
+const _5f45cb62 = () => interopDefault(import('..\\pages\\account\\personal-information.vue' /* webpackChunkName: "pages/account/personal-information" */))
 const _83e30a4e = () => interopDefault(import('..\\pages\\yazar\\admin.vue' /* webpackChunkName: "pages/yazar/admin" */))
 const _1bf6ee15 = () => interopDefault(import('..\\pages\\index.vue' /* webpackChunkName: "pages/index" */))
 const _31dc9076 = () => interopDefault(import('..\\pages\\_seoLink.vue' /* webpackChunkName: "pages/_seoLink" */))
@@ -99,6 +101,14 @@ export const routerOptions = {
     path: "/yumurtlama-gunu-hesaplama",
     component: _479ab8f7,
     name: "yumurtlama-gunu-hesaplama"
+  }, {
+    path: "/account/change-password",
+    component: _04568598,
+    name: "account-change-password"
+  }, {
+    path: "/account/personal-information",
+    component: _5f45cb62,
+    name: "account-personal-information"
   }, {
     path: "/yazar/admin",
     component: _83e30a4e,

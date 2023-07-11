@@ -70,7 +70,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="row my-4 my-md-5" v-else>                    
+                <div class="row my-4 my-md-5" v-else>
                     <div class="col-12 col-lg-8 mb-4 mb-md-0">
                         <div class="row">
                             <div class="col-12 mb-2 mb-md-4 blog-title">
@@ -78,13 +78,15 @@
                                     {{ blog?.subject }}
                                 </h1>
                             </div>
-                            
+
                             <div class="col-12 mb-4" v-if="isHaftaHaftaGebelik">
                                 <div id="hafta-hafta-gebelik">
                                     <!-- <ElementImage :src="`/Data/hafta-hafta-gebelik`" alt="Hafta hafta gebelik" /> -->
-                                    <picture >
-                                        <source type="image/webp" :srcset="`https://api.bebegimlehayat.com/Data/hafta-hafta-gebelik.webp`" />
-                                        <img :src="`https://api.bebegimlehayat.com/Data/hafta-hafta-gebelik.jpeg`" :alt="'Hafta hafta gebelik'" :width="500" :height="500"  />
+                                    <picture>
+                                        <source type="image/webp"
+                                            :srcset="`https://api.bebegimlehayat.com/Data/hafta-hafta-gebelik.webp`" />
+                                        <img :src="`https://api.bebegimlehayat.com/Data/hafta-hafta-gebelik.jpeg`"
+                                            :alt="'Hafta hafta gebelik'" :width="500" :height="500" />
                                     </picture>
                                     <div>
                                         <span>
@@ -97,9 +99,11 @@
                             <div class="col-12 mb-4" v-if="isAylikBebekGelisimi">
                                 <div id="aylik-bebek-gelisimi">
                                     <!-- <ElementImage :src="`/Data/bebekgelisimi-temp`" alt="Aylık Bebek Gelişimi" /> -->
-                                    <picture >
-                                        <source type="image/webp" :srcset="`https://api.bebegimlehayat.com/Data/bebekgelisimi-temp.webp`" />
-                                        <img :src="`https://api.bebegimlehayat.com/Data/bebekgelisimi-temp.jpeg`" :alt="'Aylık Bebek Gelişimi'" :width="500" :height="500"  />
+                                    <picture>
+                                        <source type="image/webp"
+                                            :srcset="`https://api.bebegimlehayat.com/Data/bebekgelisimi-temp.webp`" />
+                                        <img :src="`https://api.bebegimlehayat.com/Data/bebekgelisimi-temp.jpeg`"
+                                            :alt="'Aylık Bebek Gelişimi'" :width="500" :height="500" />
                                     </picture>
                                     <div>
                                         <span>
@@ -108,13 +112,16 @@
                                     </div>
                                 </div>
                             </div>
-                            
 
-                            <div class="col-12 mb-4" v-if="blog && blog.image && !isHaftaHaftaGebelik && !isAylikBebekGelisimi">
+
+                            <div class="col-12 mb-4"
+                                v-if="blog && blog.image && !isHaftaHaftaGebelik && !isAylikBebekGelisimi">
                                 <!-- <ElementImage :src="`/Data/image/medium/${blog.image}`" :alt="blog.subject" /> -->
-                                <picture >
-                                    <source type="image/webp" :srcset="`https://api.bebegimlehayat.com/Data/image/medium/${blog.image}.webp`" />
-                                    <img :src="`https://api.bebegimlehayat.com/Data/image/medium/${blog.image}.jpeg`" :alt="blog.subject" :width="500" :height="500"  />
+                                <picture>
+                                    <source type="image/webp"
+                                        :srcset="`https://api.bebegimlehayat.com/Data/image/medium/${blog.image}.webp`" />
+                                    <img :src="`https://api.bebegimlehayat.com/Data/image/medium/${blog.image}.jpeg`"
+                                        :alt="blog.subject" :width="500" :height="500" />
                                 </picture>
                             </div>
 
@@ -129,15 +136,53 @@
                                     </div>
                                     <transition name="fade">
                                         <div id="share-network-list" v-show="shareButtonActive">
-                                            <ShareNetwork v-for="network in networks" :name="network.name"
-                                                :network="network.network" :key="network.network"
-                                                :style="{ backgroundColor: network.color }" :url="sharing.url"
-                                                :title="sharing.title" :description="sharing.description"
-                                                :quote="sharing.quote" :hashtags="sharing.hashtags"
-                                                :twitterUser="sharing.twitterUser">
-                                                <i :class="network.icon"></i>
-                                                <span>{{ network.name }}</span>
-                                            </ShareNetwork>
+                                            <a :href="`https://www.facebook.com/sharer/sharer.php?u=${href}`"
+                                                target="_blank"
+                                                class="d-flex align-items-center justify-content-center border border-dark p-2 rounded-circle mr-2">
+                                                <svg xmlns="http://www.w3.org/2000/svg"
+                                                    xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000" version="1.1"
+                                                    width="25" height="25" viewBox="0 0 512 512" xml:space="preserve">
+                                                    <g id="7935ec95c421cee6d86eb22ecd11b7e3">
+                                                        <path style="display: inline;"
+                                                            d="M283.122,122.174c0,5.24,0,22.319,0,46.583h83.424l-9.045,74.367h-74.379   c0,114.688,0,268.375,0,268.375h-98.726c0,0,0-151.653,0-268.375h-51.443v-74.367h51.443c0-29.492,0-50.463,0-56.302   c0-27.82-2.096-41.02,9.725-62.578C205.948,28.32,239.308-0.174,297.007,0.512c57.713,0.711,82.04,6.263,82.04,6.263   l-12.501,79.257c0,0-36.853-9.731-54.942-6.263C293.539,83.238,283.122,94.366,283.122,122.174z">
+
+                                                        </path>
+                                                    </g>
+                                                </svg>
+                                            </a>
+                                            <a :href="`http://twitter.com/share?text=Bebegimle&url=${href}&hashtags=baby`"
+                                                target="_blank"
+                                                class="d-flex align-items-center justify-content-center border border-dark p-2 rounded-circle mr-2">
+                                                <svg xmlns="http://www.w3.org/2000/svg"
+                                                    xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="25"
+                                                    viewBox="0 -2 20 20" version="1.1">
+                                                    <g id="Page-1" stroke="none" stroke-width="1" fill="none"
+                                                        fill-rule="evenodd">
+                                                        <g id="Dribbble-Light-Preview"
+                                                            transform="translate(-60.000000, -7521.000000)" fill="#000000">
+                                                            <g id="icons" transform="translate(56.000000, 160.000000)">
+                                                                <path
+                                                                    d="M10.29,7377 C17.837,7377 21.965,7370.84365 21.965,7365.50546 C21.965,7365.33021 21.965,7365.15595 21.953,7364.98267 C22.756,7364.41163 23.449,7363.70276 24,7362.8915 C23.252,7363.21837 22.457,7363.433 21.644,7363.52751 C22.5,7363.02244 23.141,7362.2289 23.448,7361.2926 C22.642,7361.76321 21.761,7362.095 20.842,7362.27321 C19.288,7360.64674 16.689,7360.56798 15.036,7362.09796 C13.971,7363.08447 13.518,7364.55538 13.849,7365.95835 C10.55,7365.79492 7.476,7364.261 5.392,7361.73762 C4.303,7363.58363 4.86,7365.94457 6.663,7367.12996 C6.01,7367.11125 5.371,7366.93797 4.8,7366.62489 L4.8,7366.67608 C4.801,7368.5989 6.178,7370.2549 8.092,7370.63591 C7.488,7370.79836 6.854,7370.82199 6.24,7370.70483 C6.777,7372.35099 8.318,7373.47829 10.073,7373.51078 C8.62,7374.63513 6.825,7375.24554 4.977,7375.24358 C4.651,7375.24259 4.325,7375.22388 4,7375.18549 C5.877,7376.37088 8.06,7377 10.29,7376.99705"
+                                                                    id="twitter-[#154]">
+
+                                                                </path>
+                                                            </g>
+                                                        </g>
+                                                    </g>
+                                                </svg>
+                                            </a>
+                                            <a :href="`https://api.whatsapp.com/send?text=${href}`" target="_blank"
+                                                class="d-flex align-items-center justify-content-center border border-dark p-2 rounded-circle mr-2">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                                                    viewBox="0 0 24 24" fill="none">
+                                                    <path
+                                                        d="M6.014 8.00613C6.12827 7.1024 7.30277 5.87414 8.23488 6.01043L8.23339 6.00894C9.14051 6.18132 9.85859 7.74261 10.2635 8.44465C10.5504 8.95402 10.3641 9.4701 10.0965 9.68787C9.7355 9.97883 9.17099 10.3803 9.28943 10.7834C9.5 11.5 12 14 13.2296 14.7107C13.695 14.9797 14.0325 14.2702 14.3207 13.9067C14.5301 13.6271 15.0466 13.46 15.5548 13.736C16.3138 14.178 17.0288 14.6917 17.69 15.27C18.0202 15.546 18.0977 15.9539 17.8689 16.385C17.4659 17.1443 16.3003 18.1456 15.4542 17.9421C13.9764 17.5868 8 15.27 6.08033 8.55801C5.97237 8.24048 5.99955 8.12044 6.014 8.00613Z"
+                                                        fill="#0F0F0F" />
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M12 23C10.7764 23 10.0994 22.8687 9 22.5L6.89443 23.5528C5.56462 24.2177 4 23.2507 4 21.7639V19.5C1.84655 17.492 1 15.1767 1 12C1 5.92487 5.92487 1 12 1C18.0751 1 23 5.92487 23 12C23 18.0751 18.0751 23 12 23ZM6 18.6303L5.36395 18.0372C3.69087 16.4772 3 14.7331 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12C21 16.9706 16.9706 21 12 21C11.0143 21 10.552 20.911 9.63595 20.6038L8.84847 20.3397L6 21.7639V18.6303Z"
+                                                        fill="#0F0F0F" />
+                                                </svg>
+                                            </a>
                                         </div>
                                     </transition>
                                 </div>
@@ -146,11 +191,13 @@
                             <div class="col-12 mb-5" v-if="getBlogTitleList && getBlogTitleList.length > 0">
                                 <div class="float-left w-100 p-3 border rounded" id="blog-detail-short-link">
                                     <a class="float-left w-100 h6 font-weight-normal my-1"
-                                        v-for="(section, index) in getBlogTitleList" :href="`#blog_detail_${section.unique}`">
+                                        v-for="(section, index) in getBlogTitleList"
+                                        :href="`#blog_detail_${section.unique}`">
                                         <span>
                                             {{ index + 1 }}.
                                         </span>
-                                        {{ section.name }} <b-icon-arrow-down scale=".8" class="font-weight-bold ml-2"></b-icon-arrow-down>
+                                        {{ section.name }} <b-icon-arrow-down scale=".8"
+                                            class="font-weight-bold ml-2"></b-icon-arrow-down>
                                     </a>
                                 </div>
                             </div>
@@ -173,15 +220,53 @@
                                     </div>
                                     <transition name="fade">
                                         <div id="share-network-list" v-show="shareButtonActive">
-                                            <ShareNetwork v-for="network in networks" :name="network.name"
-                                                :network="network.network" :key="network.network"
-                                                :style="{ backgroundColor: network.color }" :url="sharing.url"
-                                                :title="sharing.title" :description="sharing.description"
-                                                :quote="sharing.quote" :hashtags="sharing.hashtags"
-                                                :twitterUser="sharing.twitterUser">
-                                                <i :class="network.icon"></i>
-                                                <span>{{ network.name }}</span>
-                                            </ShareNetwork>
+                                            <a :href="`https://www.facebook.com/sharer/sharer.php?u=${href}`"
+                                                target="_blank"
+                                                class="d-flex align-items-center justify-content-center border border-dark p-2 rounded-circle mr-2">
+                                                <svg xmlns="http://www.w3.org/2000/svg"
+                                                    xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000" version="1.1"
+                                                    width="25" height="25" viewBox="0 0 512 512" xml:space="preserve">
+                                                    <g id="7935ec95c421cee6d86eb22ecd11b7e3">
+                                                        <path style="display: inline;"
+                                                            d="M283.122,122.174c0,5.24,0,22.319,0,46.583h83.424l-9.045,74.367h-74.379   c0,114.688,0,268.375,0,268.375h-98.726c0,0,0-151.653,0-268.375h-51.443v-74.367h51.443c0-29.492,0-50.463,0-56.302   c0-27.82-2.096-41.02,9.725-62.578C205.948,28.32,239.308-0.174,297.007,0.512c57.713,0.711,82.04,6.263,82.04,6.263   l-12.501,79.257c0,0-36.853-9.731-54.942-6.263C293.539,83.238,283.122,94.366,283.122,122.174z">
+
+                                                        </path>
+                                                    </g>
+                                                </svg>
+                                            </a>
+                                            <a :href="`http://twitter.com/share?text=Bebegimle&url=${href}&hashtags=baby`"
+                                                target="_blank"
+                                                class="d-flex align-items-center justify-content-center border border-dark p-2 rounded-circle mr-2">
+                                                <svg xmlns="http://www.w3.org/2000/svg"
+                                                    xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="25"
+                                                    viewBox="0 -2 20 20" version="1.1">
+                                                    <g id="Page-1" stroke="none" stroke-width="1" fill="none"
+                                                        fill-rule="evenodd">
+                                                        <g id="Dribbble-Light-Preview"
+                                                            transform="translate(-60.000000, -7521.000000)" fill="#000000">
+                                                            <g id="icons" transform="translate(56.000000, 160.000000)">
+                                                                <path
+                                                                    d="M10.29,7377 C17.837,7377 21.965,7370.84365 21.965,7365.50546 C21.965,7365.33021 21.965,7365.15595 21.953,7364.98267 C22.756,7364.41163 23.449,7363.70276 24,7362.8915 C23.252,7363.21837 22.457,7363.433 21.644,7363.52751 C22.5,7363.02244 23.141,7362.2289 23.448,7361.2926 C22.642,7361.76321 21.761,7362.095 20.842,7362.27321 C19.288,7360.64674 16.689,7360.56798 15.036,7362.09796 C13.971,7363.08447 13.518,7364.55538 13.849,7365.95835 C10.55,7365.79492 7.476,7364.261 5.392,7361.73762 C4.303,7363.58363 4.86,7365.94457 6.663,7367.12996 C6.01,7367.11125 5.371,7366.93797 4.8,7366.62489 L4.8,7366.67608 C4.801,7368.5989 6.178,7370.2549 8.092,7370.63591 C7.488,7370.79836 6.854,7370.82199 6.24,7370.70483 C6.777,7372.35099 8.318,7373.47829 10.073,7373.51078 C8.62,7374.63513 6.825,7375.24554 4.977,7375.24358 C4.651,7375.24259 4.325,7375.22388 4,7375.18549 C5.877,7376.37088 8.06,7377 10.29,7376.99705"
+                                                                    id="twitter-[#154]">
+
+                                                                </path>
+                                                            </g>
+                                                        </g>
+                                                    </g>
+                                                </svg>
+                                            </a>
+                                            <a :href="`https://api.whatsapp.com/send?text=${href}`" target="_blank"
+                                                class="d-flex align-items-center justify-content-center border border-dark p-2 rounded-circle mr-2">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                                                    viewBox="0 0 24 24" fill="none">
+                                                    <path
+                                                        d="M6.014 8.00613C6.12827 7.1024 7.30277 5.87414 8.23488 6.01043L8.23339 6.00894C9.14051 6.18132 9.85859 7.74261 10.2635 8.44465C10.5504 8.95402 10.3641 9.4701 10.0965 9.68787C9.7355 9.97883 9.17099 10.3803 9.28943 10.7834C9.5 11.5 12 14 13.2296 14.7107C13.695 14.9797 14.0325 14.2702 14.3207 13.9067C14.5301 13.6271 15.0466 13.46 15.5548 13.736C16.3138 14.178 17.0288 14.6917 17.69 15.27C18.0202 15.546 18.0977 15.9539 17.8689 16.385C17.4659 17.1443 16.3003 18.1456 15.4542 17.9421C13.9764 17.5868 8 15.27 6.08033 8.55801C5.97237 8.24048 5.99955 8.12044 6.014 8.00613Z"
+                                                        fill="#0F0F0F" />
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M12 23C10.7764 23 10.0994 22.8687 9 22.5L6.89443 23.5528C5.56462 24.2177 4 23.2507 4 21.7639V19.5C1.84655 17.492 1 15.1767 1 12C1 5.92487 5.92487 1 12 1C18.0751 1 23 5.92487 23 12C23 18.0751 18.0751 23 12 23ZM6 18.6303L5.36395 18.0372C3.69087 16.4772 3 14.7331 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12C21 16.9706 16.9706 21 12 21C11.0143 21 10.552 20.911 9.63595 20.6038L8.84847 20.3397L6 21.7639V18.6303Z"
+                                                        fill="#0F0F0F" />
+                                                </svg>
+                                            </a>
                                         </div>
                                     </transition>
                                 </div>
@@ -212,6 +297,7 @@
 </template>
 
 <script>
+
 export default
     {
         name: 'MakaleDetay',
@@ -234,7 +320,7 @@ export default
         },
         data() {
             return {
-                loading:true,
+                loading: true,
                 seo_title: 'Blog Detay',
                 seo_keyword: 'blog',
                 seo_description: 'Blog Detay',
@@ -242,33 +328,12 @@ export default
                 blog: undefined,
                 sliders: undefined,
                 otherBlog: undefined,
-                shareButtonActive: false,
-                sharing: {
-                    url: "",
-                    title: 'Paylaşım',
-                    description: 'Paylaşım',
-                    quote: '',
-                    hashtags: 'eticaret,satis,shop',
-                    twitterUser: 'youyuxi'
-                },
-                networks: [
-                    { network: 'email', name: 'Email', icon: 'far fah fa-lg fa-envelope', color: '#333333' },
-                    { network: 'facebook', name: 'Facebook', icon: 'fab fah fa-lg fa-facebook-f', color: '#1877f2' },
-                    { network: 'linkedin', name: 'LinkedIn', icon: 'fab fah fa-lg fa-linkedin', color: '#007bb5' },
-                    { network: 'messenger', name: 'Messenger', icon: 'fab fah fa-lg fa-facebook-messenger', color: '#0084ff' },
-                    { network: 'pinterest', name: 'Pinterest', icon: 'fab fah fa-lg fa-pinterest', color: '#bd081c' },
-                    { network: 'reddit', name: 'Reddit', icon: 'fab fah fa-lg fa-reddit-alien', color: '#ff4500' },
-                    { network: 'skype', name: 'Skype', icon: 'fab fah fa-lg fa-skype', color: '#00aff0' },
-                    { network: 'telegram', name: 'Telegram', icon: 'fab fah fa-lg fa-telegram-plane', color: '#0088cc' },
-                    { network: 'tumblr', name: 'Tumblr', icon: 'fab fah fa-lg fa-tumblr', color: '#35465c' },
-                    { network: 'twitter', name: 'Twitter', icon: 'fab fah fa-lg fa-twitter', color: '#1da1f2' },
-                    { network: 'viber', name: 'Viber', icon: 'fab fah fa-lg fa-viber', color: '#59267c' },
-                    { network: 'whatsapp', name: 'Whatsapp', icon: 'fab fah fa-lg fa-whatsapp', color: '#25d366' }
-                ]
+                href: null,
+                shareButtonActive: false
             }
         },
-        async fetch() {           
-			await this.getBlogDetail();
+        async fetch() {
+            await this.getBlogDetail();
             this.loading = false;
         },
         props: {
@@ -305,17 +370,17 @@ export default
                     });
             },
             getBlogDetail() {
-                return new Promise((resolve,reject) => {
+                return new Promise((resolve, reject) => {
                     var _this = this;
                     var seo_link = _this.seoLink;
                     _this.$repositories.blog.show(seo_link)
                         .then(res => {
                             if (res) {
                                 _this.blog = res.data.response;
-    
+
                                 if (_this.blog.sections && _this.blog.sections.length > 0) {
-                                    _this.blog.sections.map((item,index) => {
-                                        if(_this.$checkIsNullOrEmpty(item.name)) {
+                                    _this.blog.sections.map((item, index) => {
+                                        if (_this.$checkIsNullOrEmpty(item.name)) {
                                             item["unique"] = 'blog_' + index;
                                         }
                                         else {
@@ -323,7 +388,7 @@ export default
                                         }
                                     })
                                 }
-    
+                                _this.href = "https://bebegimlehayat.com/" + _this.blog.seo_link;
                                 _this.seo_title = _this.blog.seo_title;
                                 _this.seo_keyword = _this.blog.seo_keyword;
                                 _this.seo_description = _this.blog.seo_description;
@@ -342,8 +407,8 @@ export default
                                 this.blogPosting = {
                                     "@context": "http://schema.org",
                                     "@type": "BlogPosting",
-                                    "mainEntityOfPage":{
-                                        "@type":"WebPage",
+                                    "mainEntityOfPage": {
+                                        "@type": "WebPage",
                                         "@id": process.env.baseUrl + '/' + this.blog?.seo_link
                                     },
                                     "headline": this.seo_title,
@@ -353,10 +418,10 @@ export default
                                     "author": {
                                         "@type": "Person",
                                         "id": "https://bebegimlehayat.com/yazar/admin",
-                                        "name":"Bebegimlehayat",
+                                        "name": "Bebegimlehayat",
                                         "url": "https://bebegimlehayat.com/yazar/admin",
                                         "image": {
-                                            "type":"ImageObject",
+                                            "type": "ImageObject",
                                             "id": "https://bebegimlehayat.com/Data/Logo%20(1)-1684804940478.png",
                                             "url": "https://bebegimlehayat.com/Data/Logo%20(1)-1684804940478.png",
                                             "caption": "bebegimlehayat.com",
@@ -368,7 +433,7 @@ export default
                                         "name": "BebegimleHayat",
                                         "logo": {
                                             "@type": "ImageObject",
-                                            "url": "https://bebegimlehayat.com/Data/Logo%20(1)-1684804940478.png", 
+                                            "url": "https://bebegimlehayat.com/Data/Logo%20(1)-1684804940478.png",
                                             "width": 714,
                                             "height": 83
                                         }
@@ -387,9 +452,7 @@ export default
             }
         },
         async mounted() {
-            var _this = this;
-            _this.sharing.url = window.location.href;
-            _this.blogViewed();
+            this.blogViewed();
         }
     }
 </script>
@@ -430,10 +493,10 @@ export default
 
     @media screen and (max-width: 769px) {
         font-size: 35px;
-        line-height: 35px;	
+        line-height: 35px;
     }
 
-    @media screen and (max-width: 541px) {			
+    @media screen and (max-width: 541px) {
         font-size: 23px;
         line-height: 23px;
     }
@@ -445,7 +508,7 @@ export default
     font-weight: 700;
     margin-top: 3.2em;
 
-    
+
 }
 
 #aylik-bebek-gelisimi div {
@@ -483,10 +546,10 @@ export default
 
     @media screen and (max-width: 769px) {
         font-size: 33px;
-        line-height: 35px;	
+        line-height: 35px;
     }
 
-    @media screen and (max-width: 541px) {			
+    @media screen and (max-width: 541px) {
         font-size: 19px;
         line-height: 23px;
     }
@@ -496,7 +559,7 @@ export default
     text-align: center;
     line-height: 45px;
     font-weight: 700;
-    margin-bottom: 2.2em;    
+    margin-bottom: 2.2em;
 }
 
 #interestYou {
@@ -540,12 +603,11 @@ export default
     font-weight: normal;
 }
 
-#blog_detail section h2 + p {
+#blog_detail section h2+p {
     margin-top: 15px;
 }
 
 #blog_detail section p {
-    font-family: Merriweather,serif;
     line-height: 1.8;
     letter-spacing: .2px;
     font-size: 17px;
@@ -572,9 +634,6 @@ export default
     }
 }
 
-@media screen and (max-width: 420px) {
-}
+@media screen and (max-width: 420px) {}
 
-@media screen and (max-width: 360px) {
-}
-</style>
+@media screen and (max-width: 360px) {}</style>

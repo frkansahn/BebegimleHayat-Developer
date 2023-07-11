@@ -128,6 +128,22 @@
     "_name": "_479ab8f7"
   },
   {
+    "name": "account-change-password",
+    "path": "/account/change-password",
+    "component": "C:\\\\Users\\\\Piksel\\\\Desktop\\\\BebegimleHayat\\\\Software\\\\Frontend-Dev\\\\pages\\\\account\\\\change-password.vue",
+    "chunkName": "pages/account/change-password",
+    "url": "/account/change-password",
+    "_name": "_04568598"
+  },
+  {
+    "name": "account-personal-information",
+    "path": "/account/personal-information",
+    "component": "C:\\\\Users\\\\Piksel\\\\Desktop\\\\BebegimleHayat\\\\Software\\\\Frontend-Dev\\\\pages\\\\account\\\\personal-information.vue",
+    "chunkName": "pages/account/personal-information",
+    "url": "/account/personal-information",
+    "_name": "_5f45cb62"
+  },
+  {
     "name": "yazar-admin",
     "path": "/yazar/admin",
     "component": "C:\\\\Users\\\\Piksel\\\\Desktop\\\\BebegimleHayat\\\\Software\\\\Frontend-Dev\\\\pages\\\\yazar\\\\admin.vue",

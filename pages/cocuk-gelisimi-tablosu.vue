@@ -522,6 +522,17 @@
     </div>
 </template>
 <script>
+import Vue from 'vue'
+import { FormPlugin , FormInputPlugin, InputGroupPlugin, FormDatepickerPlugin , FormGroupPlugin, FormRadioPlugin, SpinnerPlugin,TabsPlugin } from 'bootstrap-vue'
+Vue.use(FormPlugin);
+Vue.use(FormInputPlugin);
+Vue.use(InputGroupPlugin);
+Vue.use(FormDatepickerPlugin);
+Vue.use(FormGroupPlugin);
+Vue.use(FormRadioPlugin);
+Vue.use(SpinnerPlugin);
+Vue.use(TabsPlugin);
+
 export default {
     name: 'CocukGelisimiTablosu',
     head() {
@@ -813,7 +824,6 @@ export default {
         }
     },
     async created() {
-        console.log("assa")
         this.navigation = [
             {
                 "name": "Çocuk Gelişimi Tablosu",
@@ -919,7 +929,8 @@ export default {
 }
 
 .vs__dropdown-toggle {
-    padding: .6em;
+    padding: .6em !important;
+    border: 0 !important;
 }
 
 .vs__search {

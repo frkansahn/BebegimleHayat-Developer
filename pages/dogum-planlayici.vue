@@ -10,7 +10,7 @@
                         </h1>
                     </div>
                     <div class="col-12">
-                        <div class="col-12" :class="result ? 'result' : 'no-result'" id="dogumPlanlayiciForm">
+                        <div class="col-12 no-result" id="dogumPlanlayiciForm">
                             <form class="row">
                                 <div class="col-12">
                                     <h2>

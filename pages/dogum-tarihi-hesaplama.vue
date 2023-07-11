@@ -194,6 +194,18 @@
     </div>
 </template>
 <script>
+import Vue from "vue";
+import vSelect from "vue-select";
+import "vue-select/dist/vue-select.css";
+Vue.component("v-select", vSelect);
+
+import { FormPlugin, FormDatepickerPlugin , FormGroupPlugin, FormRadioPlugin, SpinnerPlugin } from 'bootstrap-vue'
+Vue.use(FormPlugin);
+Vue.use(FormDatepickerPlugin);
+Vue.use(FormGroupPlugin);
+Vue.use(FormRadioPlugin);
+Vue.use(SpinnerPlugin);
+
 export default {
     name: 'DogumTarihiHesaplama',
     head() {
@@ -363,7 +375,8 @@ export default {
 }
 
 .vs__dropdown-toggle {
-    padding: .6em;
+    padding: .6em !important;
+    border: 0 !important;
 }
 
 .vs__search {
