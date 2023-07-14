@@ -88,7 +88,7 @@
 										</ul>
 									</div>
 								</div>
-								<div class="col-5 col-lg-1">
+								<div class="col-4 col-lg-1 px-0">
 									<div class="d-flex align-items-center justify-content-end justify-content-lg-center mx-lg-5" id="headerAccount" v-if="customer && customer.userLoggedIn">
 										<span class="title d-flex align-items-center justify-content-center flex-column">
 											<b-icon-person variant="secondary" font-scale="1.4"></b-icon-person>
@@ -115,7 +115,7 @@
 									</div>
 									<div class="d-flex align-items-center justify-content-end justify-content-lg-center mx-lg-5" id="headerAccount" v-if="!(customer && customer.userLoggedIn)">
 										<span class="title d-flex align-items-center justify-content-center flex-column">
-											<b-icon-person variant="secondary" font-scale="2.5"></b-icon-person>
+											<b-icon-person variant="secondary" font-scale="3"></b-icon-person>
 										</span>	
 										<ul>
 											<li class="float-left w-100">
@@ -131,8 +131,8 @@
 										</ul>
 									</div>
 								</div>
-								<div class="col-1 px-0 d-flex align-items-center mobile-menu d-lg-none" @click="isMobileMenuSidebar = true" v-b-toggle.mobileMenu>
-									<b-icon-list variant="secondary" font-scale="3"></b-icon-list>
+								<div class="col-2 px-0 d-flex align-items-center justify-content-end mobile-menu d-lg-none" @click="isMobileMenuSidebar = true" v-b-toggle.mobileMenu>
+									<b-icon-list variant="secondary" font-scale="3.8"></b-icon-list>
 								</div>
 							</div>
 						</div>
@@ -399,9 +399,9 @@ export default {
 	}
 
 	#headerMenu a {
-		font-size: 18px;
+		font-size: 20px;
 		font-weight: 500;
-		padding: 2.5em 1.5em;
+		padding: 2.2em 1.5em;
 		position: relative;
 		-webkit-transition: all .1s ease;
 		-moz-transition: all .1s ease;
