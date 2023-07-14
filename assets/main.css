@@ -27,9 +27,6 @@ body{
 *:not(input,textarea),
 *::before:not(input,textarea),
 *::after:not(input,textarea) {
-    -webkit-user-select: none; /* Safari */
-    -ms-user-select: none; /* IE 10 and IE 11 */
-    user-select: none; /* Standard syntax */
     box-sizing: border-box;
     margin: 0;
     outline: none;

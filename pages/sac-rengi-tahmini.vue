@@ -1805,7 +1805,7 @@
                                     saç rengi, ebeveynler tarafından merak edilen noktalardan biridir. Peki, bebeklerin saç
                                     rengi tahmin edilebilir mi? Bebeklerin saç rengi hangi faktörlere bağlıdır ve
                                     bebeğinizin saç rengi ilerleyen dönemde değişebilir mi? Sorularınızın cevabı için
-                                    okumaya devam edin! </p>
+                                    okumaya devam edin!</p>
                                 <br><br>
                                 <h2>Bebeklerin Saç Rengi Tahmin Edilebilir Mi?</h2>
                                 <br>
@@ -1815,31 +1815,31 @@
                                     bağlamda annenin ve babanın fiziksel özelliklerini göz önünde bulundurarak bebeklerin
                                     saç rengine dair bir çıkarımda bulunmak mümkündür. Tahminler kesin sonuç veremese de en
                                     azından bebeğinizin görünüşüne dair fikir edinmeniz için geçerli bir yöntemdir. Bu
-                                    sayede bebeğinizle tanıştığınız gün tahmininizin doğruluğunu da sınayabilirsiniz. </p>
-                                <br>
+                                    sayede bebeğinizle tanıştığınız gün tahmininizin doğruluğunu da sınayabilirsiniz.</p>
+                                <br><br>
                                 <h2>Bebeklerin Saç Rengini Hangi Faktörler Etkiler?</h2>
                                 <br>
                                 <p>Anneden ve babadan gelen genler, binlerce farklı kombinasyon oluşturarak bebeklerin
                                     görünüşünü oluşturabilir. Bebeklerin saç rengi ise çeşitli faktörler doğrultusunda
-                                    oluşan bir fiziksel özelliktir. Gelin, bu faktörleri yakından inceleyelim! </p>
+                                    oluşan bir fiziksel özelliktir. Gelin, bu faktörleri yakından inceleyelim!</p>
                                 <br><br>
-                                <h2>Baskın ve Çekinik Genler</h2>
+                                <strong>Baskın ve Çekinik Genler</strong>
                                 <br>
                                 <p>Genler, ebeveynlerden gelen kalıtsal özellikleri taşıyan yapı birimleridir. Genleri
                                     kromozomlar taşır ve her kromozomda çeşitli özelliklere dair verileri taşıyan aleller
                                     bulunur. Alel genler saç rengi, göz rengi gibi özelliklere dair verileri bulundurur. Bu
                                     noktada baskın genler ve çekinik genler söz konusu hale gelir. Anneden ve babadan
                                     aktarılan genler arasında baskın genlerin bebeklerin görünüşü üzerinde yüksek etki
-                                    sahibi olması daha olasıdır. </p>
+                                    sahibi olması daha olasıdır.</p>
                                 <br>
                                 <p>Annenin ve babanın ebeveynlerinin saç renkleri göz önünde bulundurulduğunda bebeğin
                                     ebeveynlerin taşıdığı renk genleri tespit edilebilir. Bu sayede bebeğin olası saç
-                                    rengine dair tahminde bulunulabilir. </p>
-                                    <br>
+                                    rengine dair tahminde bulunulabilir.</p>
+                                <br>
                                 <p>Siyah renk, dünya üzerinde en yaygın olan saç rengidir. Bunun sebebi siyah saç renginin
                                     baskın bir gen olmasıdır. Dolayısıyla siyah saç rengi geni diğer saç renklerine dair
                                     genleri elimine edebilir. Ebeveynlerden herhangi biri siyah saçlıysa bebeğin siyah saçlı
-                                    olma olasılığı oldukça yüksek olacaktır. </p>
+                                    olma olasılığı oldukça yüksek olacaktır.</p>
                                 <br>
                                 <p>Kahverengi de yaygın görülen saç renklerinden biridir ve baskın özelliklidir. Kahverengi
                                     saç renginde önemli olan, taşıyıcının ebeveynleridir. Taşıyıcının ebeveynlerinin her
@@ -1848,20 +1848,20 @@
                                     çiftlerin ebeveynlerinin saç renkleri göz önünde bulundurularak tahmin
                                     gerçekleştirilebilir. Kahverengi saçlı ebeveynlerin çocukları kahverengi saçlı
                                     olabileceği gibi kumral gibi daha ara tonlara da kayabilir. Kahverengi, siyahla
-                                    karşılaştığında çekinik kalabilir ve bebek siyah saçlı da doğabilir. </p>
+                                    karşılaştığında çekinik kalabilir ve bebek siyah saçlı da doğabilir.</p>
                                 <br>
                                 <p>Sarı saç, çekinik özelliğe sahip genlerden biridir. Bu durumda sarı saç geni için
                                     kahverengi ya da siyah saç genleriyle karşılaştığında kendi özelliklerini bebeğin
                                     görünüşüne aktaramama olasılığı oldukça yüksektir. Bebeğin sarı saçlı olabilmesi için
                                     her iki ebeveynin de sarı saç geni taşıması ve bu genlerin ihtimaller arasında
-                                    birbiriyle eşleşebilmesi gerekir. </p>
+                                    birbiriyle eşleşebilmesi gerekir.</p>
                                 <br>
                                 <p>Dünya üzerinde en nadir görülen doğal saç renklerinden biri olan kızıl saç, baskın ya da
                                     çekinik özellik göstermeyen özel bir gendir. Ebeveynlerden birinde kızıl saç geni
                                     bulunuyorsa diğer ebeveynin gen özelliklerine göre bebekte kumral, kızıl ve kızıl-kahve
-                                    renkler görülebilir. </p>
+                                    renkler görülebilir.</p>
                                 <br><br>
-                                <h2>Pigment Özellikleri</h2>
+                                <strong>Pigment Özellikleri</strong>
                                 <br>
                                 <p>Fiziksel özelliklerimize dair renk özelliklerinin görülmesini sağlayan temel birimlere
                                     “pigment” adı verilir. Saçımızda ve cildimizde yer alan pigment ise “melanin”dir. Saç
@@ -1873,7 +1873,7 @@
                                     gerçekleştirilmesini sağlar. Ömelanin üretimi durumunda bebeklerde daha koyu saç
                                     renkleri görülür. Feomelanin üretimi durumunda açık renk ve kimi zaman kızıl yansımalı
                                     saç renkleri oluşabilir. Melanoksitlerin bloke edilmesi durumunda ise bebeklerde kızıl
-                                    saç görülür. Bu pigmentlerin oranları zaman içerisinde değişebilir. </p>
+                                    saç görülür. Bu pigmentlerin oranları zaman içerisinde değişebilir.</p>
                                 <br><br>
                                 <h2>Bebeklerin Saç Rengi Değişir Mi?</h2>
                                 <br>
@@ -1886,7 +1886,7 @@
                                     da değişmesi, hormonlar ve çevresel etkenler gibi birçok faktör saç renginin değişmesine
                                     sebep olabilir. Sarı saçlar kumral ve kahveye dönüşebileceği gibi ilerleyen zamanda
                                     siyah renge de evrilebilir. Diğer saç renklerinde de çeşitli dönüşümler gözlemlemek
-                                    mümkündür. </p>
+                                    mümkündür.</p>
                                 <br><br>
                                 <h2>Bebeklerin Saç Renklerinde İstisnai Durumlar Nelerdir?</h2>
                                 <br>
@@ -1895,7 +1895,7 @@
                                     saç tellerinden oluşur. Genellikle alın bölgesinde, bir perçem şeklinde görülen bu durum
                                     saçın yalnızca belli bir bölümünü etkiler ve eşsiz bir görünüm oluşturur. “Poliosis”
                                     çeşitli genetik durumlara bağlı olarak ortaya çıkabilir. Aynı zamanda kaşları ve
-                                    kirpikleri de etkileyerek bu kılların da beyaz olmasına sebep olabilir. </p>
+                                    kirpikleri de etkileyerek bu kılların da beyaz olmasına sebep olabilir.</p>
                                 <br>
                                 <p>Nadir görülen genetik durumlardan biri olan “albinizm” de saç rengini etkileyen bir başka
                                     faktördür. “Albinoluk” adıyla da bilinen bu özel durumda ciltte, saçlarda ve gözlerde
@@ -1918,70 +1918,72 @@
 
                                 <script type="application/ld+json">
                                     {
-                                        "@context": "https://schema.org",
-                                        "@type": "FAQPage",
-                                        "mainEntity": [
-                                            {
-                                            "@type": "Question",
-                                            "name": "Bebeğinizin Saç Rengini Nasıl Tahmin Edersiniz?",
-                                            "acceptedAnswer": {
-                                                "@type": "Answer",
-                                                "text": "Hamilelik süreci ebeveynler için birçok merak unsuru barındırır. Bebekleriyle tanışacakları anı iple çeken ebeveynler, bebeklerinin görünüşünü de merak eder. Bebeğin saç rengi, ebeveynler tarafından merak edilen noktalardan biridir. Peki, bebeklerin saç rengi tahmin edilebilir mi? Bebeklerin saç rengi hangi faktörlere bağlıdır ve bebeğinizin saç rengi ilerleyen dönemde değişebilir mi? Sorularınızın cevabı için okumaya devam edin!"
-                                            }
-                                            },
-                                            {
-                                            "@type": "Question",
-                                            "name": "Bebeklerin Saç Rengi Tahmin Edilebilir Mi?",
-                                            "acceptedAnswer": {
-                                                "@type": "Answer",
-                                                "text": "Bebekler ten rengi, göz rengi ve saç rengi gibi özelliklerini ebeveynlerinden gelen genlerden alırlar. Sperm ve yumurta birleşip zigotu oluşturduğunda 23’ü anneden ve 23’ü de babadan gelen toplamda 46 kromozom, bebeğin fiziksel özelliklerini de taşır. Bu bağlamda annenin ve babanın fiziksel özelliklerini göz önünde bulundurarak bebeklerin saç rengine dair bir çıkarımda bulunmak mümkündür. Tahminler kesin sonuç veremese de en azından bebeğinizin görünüşüne dair fikir edinmeniz için geçerli bir yöntemdir. Bu sayede bebeğinizle tanıştığınız gün tahmininizin doğruluğunu da sınayabilirsiniz."
-                                            }
-                                            },
-                                            {
-                                            "@type": "Question",
-                                            "name": "Bebeklerin Saç Rengini Hangi Faktörler Etkiler?",
-                                            "acceptedAnswer": {
-                                                "@type": "Answer",
-                                                "text": "Anneden ve babadan gelen genler, binlerce farklı kombinasyon oluşturarak bebeklerin görünüşünü oluşturabilir. Bebeklerin saç rengi ise çeşitli faktörler doğrultusunda oluşan bir fiziksel özelliktir. Gelin, bu faktörleri yakından inceleyelim!
-                                        Baskın ve Çekinik Genler
+                                            "mainEntity" : [
+                                        {
+                                        "name" : "Bebeğinizin Saç Rengini Nasıl Tahmin Edersiniz?",
+                                        "acceptedAnswer" :
+                                        {
+                                        "text" : "Hamilelik süreci ebeveynler için birçok merak unsuru barındırır. Bebekleriyle tanışacakları anı iple çeken ebeveynler, bebeklerinin görünüşünü de merak eder. Bebeğin saç rengi, ebeveynler tarafından merak edilen noktalardan biridir. Peki, bebeklerin saç rengi tahmin edilebilir mi? Bebeklerin saç rengi hangi faktörlere bağlıdır ve bebeğinizin saç rengi ilerleyen dönemde değişebilir mi? Sorularınızın cevabı için okumaya devam edin!",
+                                        "@type" : "Answer"
+                                        },
+                                        "@type" : "Question"
+                                        },{
+                                        "name" : "Bebeklerin Saç Rengi Tahmin Edilebilir Mi?",
+                                        "acceptedAnswer" :
+                                        {
+                                        "text" : "Bebekler ten rengi, göz rengi ve saç rengi gibi özelliklerini ebeveynlerinden gelen genlerden alırlar. Sperm ve yumurta birleşip zigotu oluşturduğunda 23’ü anneden ve 23’ü de babadan gelen toplamda 46 kromozom, bebeğin fiziksel özelliklerini de taşır. Bu bağlamda annenin ve babanın fiziksel özelliklerini göz önünde bulundurarak bebeklerin saç rengine dair bir çıkarımda bulunmak mümkündür. Tahminler kesin sonuç veremese de en azından bebeğinizin görünüşüne dair fikir edinmeniz için geçerli bir yöntemdir. Bu sayede bebeğinizle tanıştığınız gün tahmininizin doğruluğunu da sınayabilirsiniz.",
+                                        "@type" : "Answer"
+                                        },
+                                        "@type" : "Question"
+                                        },{
+                                        "name" : "Bebeklerin Saç Rengini Hangi Faktörler Etkiler?",
+                                        "acceptedAnswer" :
+                                        {
+                                        "text" : "Anneden ve babadan gelen genler, binlerce farklı kombinasyon oluşturarak bebeklerin görünüşünü oluşturabilir. Bebeklerin saç rengi ise çeşitli faktörler doğrultusunda oluşan bir fiziksel özelliktir. Gelin, bu faktörleri yakından inceleyelim!
+                                        <strong>Baskın ve Çekinik Genler</strong>
                                         Genler, ebeveynlerden gelen kalıtsal özellikleri taşıyan yapı birimleridir. Genleri kromozomlar taşır ve her kromozomda çeşitli özelliklere dair verileri taşıyan aleller bulunur. Alel genler saç rengi, göz rengi gibi özelliklere dair verileri bulundurur. Bu noktada baskın genler ve çekinik genler söz konusu hale gelir. Anneden ve babadan aktarılan genler arasında baskın genlerin bebeklerin görünüşü üzerinde yüksek etki sahibi olması daha olasıdır.
                                         Annenin ve babanın ebeveynlerinin saç renkleri göz önünde bulundurulduğunda bebeğin ebeveynlerin taşıdığı renk genleri tespit edilebilir. Bu sayede bebeğin olası saç rengine dair tahminde bulunulabilir.
                                         Siyah renk, dünya üzerinde en yaygın olan saç rengidir. Bunun sebebi siyah saç renginin baskın bir gen olmasıdır. Dolayısıyla siyah saç rengi geni diğer saç renklerine dair genleri elimine edebilir. Ebeveynlerden herhangi biri siyah saçlıysa bebeğin siyah saçlı olma olasılığı oldukça yüksek olacaktır.
                                         Kahverengi de yaygın görülen saç renklerinden biridir ve baskın özelliklidir. Kahverengi saç renginde önemli olan, taşıyıcının ebeveynleridir. Taşıyıcının ebeveynlerinin her ikisi de kahverengi saçlıysa bebeğe kahverengi saç geni aktarılabilir. Taşıyıcının ebeveynlerinden biri sarı saçlıysa bebeğe sarı saç geni de geçebilir. Bu noktada çiftlerin ebeveynlerinin saç renkleri göz önünde bulundurularak tahmin gerçekleştirilebilir. Kahverengi saçlı ebeveynlerin çocukları kahverengi saçlı olabileceği gibi kumral gibi daha ara tonlara da kayabilir. Kahverengi, siyahla karşılaştığında çekinik kalabilir ve bebek siyah saçlı da doğabilir.
                                         Sarı saç, çekinik özelliğe sahip genlerden biridir. Bu durumda sarı saç geni için kahverengi ya da siyah saç genleriyle karşılaştığında kendi özelliklerini bebeğin görünüşüne aktaramama olasılığı oldukça yüksektir. Bebeğin sarı saçlı olabilmesi için her iki ebeveynin de sarı saç geni taşıması ve bu genlerin ihtimaller arasında birbiriyle eşleşebilmesi gerekir.
                                         Dünya üzerinde en nadir görülen doğal saç renklerinden biri olan kızıl saç, baskın ya da çekinik özellik göstermeyen özel bir gendir. Ebeveynlerden birinde kızıl saç geni bulunuyorsa diğer ebeveynin gen özelliklerine göre bebekte kumral, kızıl ve kızıl-kahve renkler görülebilir.
-                                        Pigment Özellikleri
-                                        Fiziksel özelliklerimize dair renk özelliklerinin görülmesini sağlayan temel birimlere “pigment” adı verilir. Saçımızda ve cildimizde yer alan pigment ise “melanin”dir. Saç rengi konusunda iki tip melanin pigmenti bulunur. Bunlar “ömelanin” adı verilen ve kahve-siyah tonları taşıyan pigment ile kızıl tonları taşıyan “feomelanin” adlı pigmenttir. Melanin pigmentinin yapı taşı olan “melanoksit”lerin kontrolü “MC1R” adlı gen tarafından sağlanır. Bu gen, proteinlerin salgısını kontrol eder. Anne ve babadan gelen genlerin özelliklerine göre MC1R “ömelanin” ya da “feomelanin” üretiminin gerçekleştirilmesini sağlar. Ömelanin üretimi durumunda bebeklerde daha koyu saç renkleri görülür. Feomelanin üretimi durumunda açık renk ve kimi zaman kızıl yansımalı saç renkleri oluşabilir. Melanoksitlerin bloke edilmesi durumunda ise bebeklerde kızıl saç görülür. Bu pigmentlerin oranları zaman içerisinde değişebilir."
+                                        <strong>Pigment Özellikleri</strong>
+                                        Fiziksel özelliklerimize dair renk özelliklerinin görülmesini sağlayan temel birimlere \“pigment\” adı verilir. Saçımızda ve cildimizde yer alan pigment ise \“melanin\”dir. Saç rengi konusunda iki tip melanin pigmenti bulunur. Bunlar \“ömelanin\” adı verilen ve kahve-siyah tonları taşıyan pigment ile kızıl tonları taşıyan \“feomelanin\” adlı pigmenttir. Melanin pigmentinin yapı taşı olan \“melanoksit\”lerin kontrolü \“MC1R\” adlı gen tarafından sağlanır. Bu gen, proteinlerin salgısını kontrol eder. Anne ve babadan gelen genlerin özelliklerine göre MC1R \“ömelanin\” ya da \“feomelanin\” üretiminin gerçekleştirilmesini sağlar. Ömelanin üretimi durumunda bebeklerde daha koyu saç renkleri görülür. Feomelanin üretimi durumunda açık renk ve kimi zaman kızıl yansımalı saç renkleri oluşabilir. Melanoksitlerin bloke edilmesi durumunda ise bebeklerde kızıl saç görülür. Bu pigmentlerin oranları zaman içerisinde değişebilir.",
+                                        "@type" : "Answer"
+                                        },
+                                        "@type" : "Question"
+                                        },{
+                                        "name" : "Bebeklerin Saç Rengi Değişir Mi?",
+                                        "acceptedAnswer" :
+                                        {
+                                        "text" : "Ebeveynlerin merak ettiği konulardan biri de bebeklerinin saç renginin zaman içerisinde değişip değişmeyeceğidir. Birçoğumuz bebeklik fotoğraflarımızdaki saç rengimizle yetişkin halimizde sahip olduğumuz saç renginin birbirinden farklı olduğunu görürüz. Bu bağlamda bebeklerin saç renginin değişebileceğini söylemek de mümkündür. Bebeklerin saç rengine dair genler doğumdan sonra ortalama 6 yıl boyunca gelişmeye devam eder. Bu durum, saç rengi değişimine sebep olabilir. Pigment özelliklerinin zamanla oturması ya da değişmesi, hormonlar ve çevresel etkenler gibi birçok faktör saç renginin değişmesine sebep olabilir. Sarı saçlar kumral ve kahveye dönüşebileceği gibi ilerleyen zamanda siyah renge de evrilebilir. Diğer saç renklerinde de çeşitli dönüşümler gözlemlemek mümkündür.",
+                                        "@type" : "Answer"
+                                        },
+                                        "@type" : "Question"
+                                        },{
+                                        "name" : "Bebeklerin Saç Renklerinde İstisnai Durumlar Nelerdir?",
+                                        "acceptedAnswer" :
+                                        {
+                                        "text" : "Bebeklerin saç renkleri her zaman tahmin edilebilir olmayabilir. \“Poliosis\” adı verilen özel bir durumda saçın belli bir bölümünde melanin eksikliği dolayısıyla tamamen beyaz saç tellerinden oluşur. Genellikle alın bölgesinde, bir perçem şeklinde görülen bu durum saçın yalnızca belli bir bölümünü etkiler ve eşsiz bir görünüm oluşturur. \“Poliosis\” çeşitli genetik durumlara bağlı olarak ortaya çıkabilir. Aynı zamanda kaşları ve kirpikleri de etkileyerek bu kılların da beyaz olmasına sebep olabilir.
+                                        Nadir görülen genetik durumlardan biri olan \“albinizm\” de saç rengini etkileyen bir başka faktördür. \“Albinoluk\” adıyla da bilinen bu özel durumda ciltte, saçlarda ve gözlerde melanin eksikliği meydana gelir. Bu durumda cilt tonu oldukça açık bir renk alırken saçlar, kaşlar ve kirpikler beyazlar. Albinizm görme bozukluklarına da yol açabilir. Hayati tehlike oluşturmayan ve genellikle annenin albinoluk geni taşıması sonucu oluşan bu özel durumda bebeklerin ömür boyu güneşin zararlı etkilerine karşı korunması gerekir.",
+                                        "@type" : "Answer"
+                                        },
+                                        "@type" : "Question"
+                                        },{
+                                        "name" : "Bebeğinizin Saç Rengini Bebeğimlehayat’ta Nasıl Tahmin Edebilirsiniz?",
+                                        "acceptedAnswer" :
+                                        {
+                                        "text" : "Bebeklerin belirgin fiziksel özelliklerinden biri olan saç rengini hangi faktörlerin etkilediğini öğrendiniz. Eğer bebeğinizin saç rengi hakkında fikir sahibi olmak istiyorsanız, ailenizin ve sizin saç renklerinizi göz önünde bulundurarak bir çıkarım yapabilirsiniz. Bununla birlikte bazı pratik hesaplama araçlarını da kullanabilirsiniz. Kesin sonuca sahip olmasa da bu araçlar, bebeğinizin saç rengine dair tahmini bilgi edinmenize yardımcı olur. Bebeğimlehayat olarak bebeğinizin saç rengini tahmin edebilmeniz için sizin yanınızdayız!",
+                                        "@type" : "Answer"
+                                        },
+                                        "@type" : "Question"
+                                        }    ],
+                                            "@type" : "FAQPage",
+                                            "@context" : "http://schema.org"
                                             }
-                                            },
-                                            {
-                                            "@type": "Question",
-                                            "name": "Bebeklerin Saç Rengi Değişir Mi?",
-                                            "acceptedAnswer": {
-                                                "@type": "Answer",
-                                                "text": "Ebeveynlerin merak ettiği konulardan biri de bebeklerinin saç renginin zaman içerisinde değişip değişmeyeceğidir. Birçoğumuz bebeklik fotoğraflarımızdaki saç rengimizle yetişkin halimizde sahip olduğumuz saç renginin birbirinden farklı olduğunu görürüz. Bu bağlamda bebeklerin saç renginin değişebileceğini söylemek de mümkündür. Bebeklerin saç rengine dair genler doğumdan sonra ortalama 6 yıl boyunca gelişmeye devam eder. Bu durum, saç rengi değişimine sebep olabilir. Pigment özelliklerinin zamanla oturması ya da değişmesi, hormonlar ve çevresel etkenler gibi birçok faktör saç renginin değişmesine sebep olabilir. Sarı saçlar kumral ve kahveye dönüşebileceği gibi ilerleyen zamanda siyah renge de evrilebilir. Diğer saç renklerinde de çeşitli dönüşümler gözlemlemek mümkündür."
-                                            }
-                                            },
-                                            {
-                                            "@type": "Question",
-                                            "name": "Bebeklerin Saç Renklerinde İstisnai Durumlar Nelerdir?",
-                                            "acceptedAnswer": {
-                                                "@type": "Answer",
-                                                "text": "Bebeklerin saç renkleri her zaman tahmin edilebilir olmayabilir. “Poliosis” adı verilen özel bir durumda saçın belli bir bölümünde melanin eksikliği dolayısıyla tamamen beyaz saç tellerinden oluşur. Genellikle alın bölgesinde, bir perçem şeklinde görülen bu durum saçın yalnızca belli bir bölümünü etkiler ve eşsiz bir görünüm oluşturur. “Poliosis” çeşitli genetik durumlara bağlı olarak ortaya çıkabilir. Aynı zamanda kaşları ve kirpikleri de etkileyerek bu kılların da beyaz olmasına sebep olabilir.
-                                        Nadir görülen genetik durumlardan biri olan “albinizm” de saç rengini etkileyen bir başka faktördür. “Albinoluk” adıyla da bilinen bu özel durumda ciltte, saçlarda ve gözlerde melanin eksikliği meydana gelir. Bu durumda cilt tonu oldukça açık bir renk alırken saçlar, kaşlar ve kirpikler beyazlar. Albinizm görme bozukluklarına da yol açabilir. Hayati tehlike oluşturmayan ve genellikle annenin albinoluk geni taşıması sonucu oluşan bu özel durumda bebeklerin ömür boyu güneşin zararlı etkilerine karşı korunması gerekir."
-                                            }
-                                            },
-                                            {
-                                            "@type": "Question",
-                                            "name": "Bebeğinizin Saç Rengini Bebeğimlehayat’ta Nasıl Tahmin Edebilirsiniz?",
-                                            "acceptedAnswer": {
-                                                "@type": "Answer",
-                                                "text": "Bebeklerin belirgin fiziksel özelliklerinden biri olan saç rengini hangi faktörlerin etkilediğini öğrendiniz. Eğer bebeğinizin saç rengi hakkında fikir sahibi olmak istiyorsanız, ailenizin ve sizin saç renklerinizi göz önünde bulundurarak bir çıkarım yapabilirsiniz. Bununla birlikte bazı pratik hesaplama araçlarını da kullanabilirsiniz. Kesin sonuca sahip olmasa da bu araçlar, bebeğinizin saç rengine dair tahmini bilgi edinmenize yardımcı olur. Bebeğimlehayat olarak bebeğinizin saç rengini tahmin edebilmeniz için sizin yanınızdayız!"
-                                            }
-                                            }
-                                        ]
-                                        }
                                 </script>
+
+
 
 
                             </div>
@@ -1995,7 +1997,7 @@
 </template>
 <script>
 import Vue from 'vue'
-import { FormPlugin , FormGroupPlugin,SpinnerPlugin } from 'bootstrap-vue'
+import { FormPlugin, FormGroupPlugin, SpinnerPlugin } from 'bootstrap-vue'
 Vue.use(FormPlugin);
 Vue.use(FormGroupPlugin);
 Vue.use(SpinnerPlugin);

@@ -111,179 +111,144 @@
                             <div class="col-12" id="cocukBoyuHesaplamaContent">
                                 <h2>Bebek Boy Hesaplaması Nasıl Yapılır?</h2>
                                 <br>
-
                                 <p>Ebeveynler için bebeklerinin gelişim özelliklerini takip edebilmek fazlasıyla önemlidir.
                                     Bununla birlikte ilerleyen dönemlerde ebeveynlerin çocuklarından “boyum ne kadar
                                     uzayacak?” sorusunu duymaları da muhtemeldir. Bu noktada boy hesaplama yöntemleri ve
                                     araçları devreye girer. Peki, boy hesaplaması neden önemlidir ve boy hesabı için hangi
-                                    yöntemlerden faydalanılabilir? Konuyla ilgili merak ettikleriniz Bebeğimlehayat’ta!</p>
-
+                                    yöntemlerden faydalanılabilir? Konuyla ilgili merak ettikleriniz Bebeğimlehayat’ta! </p>
                                 <br><br>
-
                                 <h2>Bebek Boy Hesaplaması Neden Önemlidir?</h2>
                                 <br>
-
                                 <p>Bebek boy hesaplaması, gelişim takibi için oldukça önemli veriler sağlar. Aynı cinsiyet
                                     ve yaştaki çocukların ortalama ve ideal boy, kilo ve baş çevresi ölçümleriyle belirlenen
                                     persentil eğrilerinin altında ya da üstünde olmak, bebeğinizin gelişim problemleri
                                     yaşadığını gösterebilir. Bu sebeple bebeğinizin gelişim sürecini takip edebilmek için
-                                    boy takibi ve hesabı yapmanız gerekir.</p>
-
-                                <br>
-
+                                    boy takibi ve hesabı yapmanız gerekir. </p>
+                                    <br>
                                 <p>Boy tahmini, eğlenceli bir etkinlik olarak da değerlendirilebilir. Çocuklar için
                                     gelecekte kazanacakları fiziksel görünüm önemlidir. Bu sebeple boy hesaplama aracı bir
                                     etkinlik aracına da dönüşebilir.</p>
-
                                 <br><br>
-
                                 <h2>Bebeklerin Boyu Hangi Etkenlere Bağlıdır?</h2>
                                 <br>
-
                                 <p>Bebeklerin boy uzunluğu çeşitli etkenlere bağlı olarak gelişir. Bu etkenlerin başında
                                     genetik özellikler yatar. Anne ve babanın boyu, bebeğin boyunu doğrudan etkileyen
                                     faktörler arasında yer alır.</p>
-
                                 <br>
-
                                 <p>Bebeklerin boy uzunluğunu etkileyen bir diğer faktör ise cinsiyettir. Kız bebeklerde ve
                                     erkek bebeklerde gelişim süreçleri birbirinden farklı ilerler ve dolayısıyla boy
                                     uzunluğu takibi de farklı kriterler dahilinde gerçekleştirilir.</p>
-
                                 <br>
-
                                 <p>Bebeklerin boy uzunluğunu etkileyen etkenlerden bir diğeri de beslenme ve egzersizdir.
                                     Dengeli ve düzenli beslenme, ihtiyaç duyulan tüm besin gruplarının sağlıklı şekilde
                                     alınması boy uzamasını destekler. Özellikle kalsiyum ve magnezyum mineralleri kemikleri
                                     güçlendirerek hızlı boy uzamasına yardımcı olur. Egzersiz de kemikleri güçlendirir ve
                                     destek sistemini geliştirir.</p>
-
                                 <br>
-
                                 <p>Kemik yaşı da boy uzunluğunu ve uzama miktarını etkileyen faktörler arasında yer alır.
                                     Kemik yaşı röntgen gibi çeşitli görüntüleme yöntemleriyle öğrenilebilir.</p>
-
                                 <br><br>
-
                                 <h2>Bebek Boy Hesaplaması İçin Hangi Veriler Kullanılır?</h2>
                                 <br>
-
                                 <p>Bebek boy hesaplamasında kullanılan en temel veri cinsiyettir. Kız ve erkek bebeklerin
-                                    boy uzunlukları, uzama dönemleri ve uzama miktarları birbirinden farklıdır. </p>
-
-                                <br>
-
-                                <p>Bebek boy hesaplamasında anne ve babanın boy uzunlukları da kullanılan veriler arasında
-                                    yer alır.</p>
-
+                                    boy uzunlukları, uzama dönemleri ve uzama miktarları birbirinden farklıdır. Bebek boy
+                                    hesaplamasında anne ve babanın boy uzunlukları da kullanılan veriler arasında yer alır.
+                                </p>
                                 <br><br>
-
                                 <h2>Bebek Boy Hesaplamasında Hangi Yöntemler Kullanılır?</h2>
                                 <br>
-
                                 <p>Boy hesaplama ve tahmin etme yöntemleri arasında en yaygın kullanılan yöntem Khamis-
                                     Roche yöntemidir. Bu yöntem 1990’lı yıllarda geniş bir katılımcı kitlesi yardımıyla
                                     geliştirilmiştir. Khamis- Roche yöntemide çocuğun boyu ve kilosu ile ebeveynlerin boy
                                     bilgileri gereklidir. Daha kesin bir tahmin yapabilmek için röntgen filmi de
                                     kullanılabilir.</p>
-
                                 <br>
-
                                 <p>Bebeklerin boy uzunluğunu tahmin etmek için kullanılan bir diğer yöntem ise “ikiyle
                                     çarpma” yöntemidir. Bu yöntem, bebeklerin hızlı gelişim özelliklerinden yola çıkılarak
                                     geliştirilmiştir. Bu yönteme göre erkek bebeklerin 24 aylıkken ve kız bebeklerin 18
                                     aylıkken boyları ölçülür ve ikiyle çarpılır. Bu yöntemde elde edilen veriler kesinlik
                                     bakımından tartışılabilir.</p>
-
                                 <br>
-
                                 <p>Bebeklerin yetişkinlikte erişecekleri boyu tahmin etmek için yaygın şekilde kullanılan
                                     ancak bilimsel açıdan sağlam temellendirilmeyen bir diğer yöntem de “ortalama”
                                     yöntemidir. Buna göre anne ve babanın boyları toplanıp ikiye bölünerek bebeğin
-                                    yetişkinliğe eriştiğinde ulaşacağı boy uzunluğu tahmin edilebilir.
-                                    Temellendirilmeyen ve kesinliği olmayan boy tahmin etme yöntemlerinden bir diğerinde ise
+                                    yetişkinliğe eriştiğinde ulaşacağı boy uzunluğu tahmin edilebilir.</p>
+                                <br>
+                                <p>Temellendirilmeyen ve kesinliği olmayan boy tahmin etme yöntemlerinden bir diğerinde ise
                                     erkek bebekler için ebeveynlerinin boy ortalamasına 7.6 santimetre eklemek ve kız
                                     bebekler için ise ebeveynlerinin boy ortalamasından 7.6 santimetre çıkarmaktır.</p>
-
                                 <br><br>
-
                                 <h2>Bebeğimlehayat Bebek Boy Hesaplama Aracını Nasıl Kullanabilirsiniz?</h2>
                                 <br>
-
                                 <p>Bebeklerin boyu, gelişim takibi açısından oldukça önemli bir veridir. Ebeveynlerin boyu
                                     ve bebeğin gelişim özellikleri göz önünde bulundurularak basit bir boy hesaplaması
                                     yapılabilir. Bebeğimlehayat bebek boy hesaplama aracı sayesinde bebeğinizin boyunu
                                     pratik şekilde hesaplamanız mümkündür! </p>
-
-
                                 <br><br>
-
 
                                 <script type="application/ld+json">
                                     {
-                                        "@context": "https://schema.org",
-                                        "@type": "FAQPage",
-                                        "mainEntity": [
-                                            {
-                                            "@type": "Question",
-                                            "name": "Bebek Boy Hesaplaması Nasıl Yapılır?",
-                                            "acceptedAnswer": {
-                                                "@type": "Answer",
-                                                "text": "Ebeveynler için bebeklerinin gelişim özelliklerini takip edebilmek fazlasıyla önemlidir. Bununla birlikte ilerleyen dönemlerde ebeveynlerin çocuklarından “boyum ne kadar uzayacak?” sorusunu duymaları da muhtemeldir. Bu noktada boy hesaplama yöntemleri ve araçları devreye girer. Peki, boy hesaplaması neden önemlidir ve boy hesabı için hangi yöntemlerden faydalanılabilir? Konuyla ilgili merak ettikleriniz Bebeğimlehayat’ta!"
-                                            }
-                                            },
-                                            {
-                                            "@type": "Question",
-                                            "name": "Bebek Boy Hesaplaması Neden Önemlidir?",
-                                            "acceptedAnswer": {
-                                                "@type": "Answer",
-                                                "text": "Bebek boy hesaplaması, gelişim takibi için oldukça önemli veriler sağlar. Aynı cinsiyet ve yaştaki çocukların ortalama ve ideal boy, kilo ve baş çevresi ölçümleriyle belirlenen persentil eğrilerinin altında ya da üstünde olmak, bebeğinizin gelişim problemleri yaşadığını gösterebilir. Bu sebeple bebeğinizin gelişim sürecini takip edebilmek için boy takibi ve hesabı yapmanız gerekir.
-                                        Boy tahmini, eğlenceli bir etkinlik olarak da değerlendirilebilir. Çocuklar için gelecekte kazanacakları fiziksel görünüm önemlidir. Bu sebeple boy hesaplama aracı bir etkinlik aracına da dönüşebilir."
-                                            }
-                                            },
-                                            {
-                                            "@type": "Question",
-                                            "name": "Bebeklerin Boyu Hangi Etkenlere Bağlıdır?",
-                                            "acceptedAnswer": {
-                                                "@type": "Answer",
-                                                "text": "Bebeklerin boy uzunluğu çeşitli etkenlere bağlı olarak gelişir. Bu etkenlerin başında genetik özellikler yatar. Anne ve babanın boyu, bebeğin boyunu doğrudan etkileyen faktörler arasında yer alır.
-                                        Bebeklerin boy uzunluğunu etkileyen bir diğer faktör ise cinsiyettir. Kız bebeklerde ve erkek bebeklerde gelişim süreçleri birbirinden farklı ilerler ve dolayısıyla boy uzunluğu takibi de farklı kriterler dahilinde gerçekleştirilir.
-                                        Bebeklerin boy uzunluğunu etkileyen etkenlerden bir diğeri de beslenme ve egzersizdir. Dengeli ve düzenli beslenme, ihtiyaç duyulan tüm besin gruplarının sağlıklı şekilde alınması boy uzamasını destekler. Özellikle kalsiyum ve magnezyum mineralleri kemikleri güçlendirerek hızlı boy uzamasına yardımcı olur. Egzersiz de kemikleri güçlendirir ve destek sistemini geliştirir.
-                                        Kemik yaşı da boy uzunluğunu ve uzama miktarını etkileyen faktörler arasında yer alır. Kemik yaşı röntgen gibi çeşitli görüntüleme yöntemleriyle öğrenilebilir."
-                                            }
-                                            },
-                                            {
-                                            "@type": "Question",
-                                            "name": "Bebek Boy Hesaplaması İçin Hangi Veriler Kullanılır?",
-                                            "acceptedAnswer": {
-                                                "@type": "Answer",
-                                                "text": "Bebek boy hesaplamasında kullanılan en temel veri cinsiyettir. Kız ve erkek bebeklerin boy uzunlukları, uzama dönemleri ve uzama miktarları birbirinden farklıdır. Bebek boy hesaplamasında anne ve babanın boy uzunlukları da kullanılan veriler arasında yer alır."
-                                            }
-                                            },
-                                            {
-                                            "@type": "Question",
-                                            "name": "Bebek Boy Hesaplamasında Hangi Yöntemler Kullanılır?",
-                                            "acceptedAnswer": {
-                                                "@type": "Answer",
-                                                "text": "Boy hesaplama ve tahmin etme yöntemleri arasında en yaygın kullanılan yöntem Khamis- Roche yöntemidir. Bu yöntem 1990’lı yıllarda geniş bir katılımcı kitlesi yardımıyla geliştirilmiştir. Khamis- Roche yöntemide çocuğun boyu ve kilosu ile ebeveynlerin boy bilgileri gereklidir. Daha kesin bir tahmin yapabilmek için röntgen filmi de kullanılabilir.
-                                        Bebeklerin boy uzunluğunu tahmin etmek için kullanılan bir diğer yöntem ise “ikiyle çarpma” yöntemidir. Bu yöntem, bebeklerin hızlı gelişim özelliklerinden yola çıkılarak geliştirilmiştir. Bu yönteme göre erkek bebeklerin 24 aylıkken ve kız bebeklerin 18 aylıkken boyları ölçülür ve ikiyle çarpılır. Bu yöntemde elde edilen veriler kesinlik bakımından tartışılabilir.
-                                        Bebeklerin yetişkinlikte erişecekleri boyu tahmin etmek için yaygın şekilde kullanılan ancak bilimsel açıdan sağlam temellendirilmeyen bir diğer yöntem de “ortalama” yöntemidir. Buna göre anne ve babanın boyları toplanıp ikiye bölünerek bebeğin yetişkinliğe eriştiğinde ulaşacağı boy uzunluğu tahmin edilebilir.
-                                        Temellendirilmeyen ve kesinliği olmayan boy tahmin etme yöntemlerinden bir diğerinde ise erkek bebekler için ebeveynlerinin boy ortalamasına 7.6 santimetre eklemek ve kız bebekler için ise ebeveynlerinin boy ortalamasından 7.6 santimetre çıkarmaktır."
-                                            }
-                                            },
-                                            {
-                                            "@type": "Question",
-                                            "name": " Bebeğimlehayat Bebek Boy Hesaplama Aracını Nasıl Kullanabilirsiniz?",
-                                            "acceptedAnswer": {
-                                                "@type": "Answer",
-                                                "text": "Bebeklerin boyu, gelişim takibi açısından oldukça önemli bir veridir. Ebeveynlerin boyu ve bebeğin gelişim özellikleri göz önünde bulundurularak basit bir boy hesaplaması yapılabilir. Bebeğimlehayat bebek boy hesaplama aracı sayesinde bebeğinizin boyunu pratik şekilde hesaplamanız mümkündür!"
-                                            }
-                                            }
-                                        ]
+                                            "@context": "https://schema.org",
+                                            "@type": "FAQPage",
+                                            "mainEntity": [
+                                                {
+                                                "@type": "Question",
+                                                "name": "Bebek Boy Hesaplaması Nasıl Yapılır?",
+                                                "acceptedAnswer": {
+                                                    "@type": "Answer",
+                                                    "text": "Ebeveynler için bebeklerinin gelişim özelliklerini takip edebilmek fazlasıyla önemlidir. Bununla birlikte ilerleyen dönemlerde ebeveynlerin çocuklarından \“boyum ne kadar uzayacak?\” sorusunu duymaları da muhtemeldir. Bu noktada boy hesaplama yöntemleri ve araçları devreye girer. Peki, boy hesaplaması neden önemlidir ve boy hesabı için hangi yöntemlerden faydalanılabilir? Konuyla ilgili merak ettikleriniz Bebeğimlehayat’ta!"
+                                                }
+                                                },
+                                                {
+                                                "@type": "Question",
+                                                "name": "Bebek Boy Hesaplaması Neden Önemlidir?",
+                                                "acceptedAnswer": {
+                                                    "@type": "Answer",
+                                                    "text": "Bebek boy hesaplaması, gelişim takibi için oldukça önemli veriler sağlar. Aynı cinsiyet ve yaştaki çocukların ortalama ve ideal boy, kilo ve baş çevresi ölçümleriyle belirlenen persentil eğrilerinin altında ya da üstünde olmak, bebeğinizin gelişim problemleri yaşadığını gösterebilir. Bu sebeple bebeğinizin gelişim sürecini takip edebilmek için boy takibi ve hesabı yapmanız gerekir.
+                                            Boy tahmini, eğlenceli bir etkinlik olarak da değerlendirilebilir. Çocuklar için gelecekte kazanacakları fiziksel görünüm önemlidir. Bu sebeple boy hesaplama aracı bir etkinlik aracına da dönüşebilir."
+                                                }
+                                                },
+                                                {
+                                                "@type": "Question",
+                                                "name": "Bebeklerin Boyu Hangi Etkenlere Bağlıdır?",
+                                                "acceptedAnswer": {
+                                                    "@type": "Answer",
+                                                    "text": "Bebeklerin boy uzunluğu çeşitli etkenlere bağlı olarak gelişir. Bu etkenlerin başında genetik özellikler yatar. Anne ve babanın boyu, bebeğin boyunu doğrudan etkileyen faktörler arasında yer alır.
+                                            Bebeklerin boy uzunluğunu etkileyen bir diğer faktör ise cinsiyettir. Kız bebeklerde ve erkek bebeklerde gelişim süreçleri birbirinden farklı ilerler ve dolayısıyla boy uzunluğu takibi de farklı kriterler dahilinde gerçekleştirilir.
+                                            Bebeklerin boy uzunluğunu etkileyen etkenlerden bir diğeri de beslenme ve egzersizdir. Dengeli ve düzenli beslenme, ihtiyaç duyulan tüm besin gruplarının sağlıklı şekilde alınması boy uzamasını destekler. Özellikle kalsiyum ve magnezyum mineralleri kemikleri güçlendirerek hızlı boy uzamasına yardımcı olur. Egzersiz de kemikleri güçlendirir ve destek sistemini geliştirir.
+                                            Kemik yaşı da boy uzunluğunu ve uzama miktarını etkileyen faktörler arasında yer alır. Kemik yaşı röntgen gibi çeşitli görüntüleme yöntemleriyle öğrenilebilir."
+                                                }
+                                                },
+                                                {
+                                                "@type": "Question",
+                                                "name": "Bebek Boy Hesaplaması İçin Hangi Veriler Kullanılır?",
+                                                "acceptedAnswer": {
+                                                    "@type": "Answer",
+                                                    "text": "Bebek boy hesaplamasında kullanılan en temel veri cinsiyettir. Kız ve erkek bebeklerin boy uzunlukları, uzama dönemleri ve uzama miktarları birbirinden farklıdır. Bebek boy hesaplamasında anne ve babanın boy uzunlukları da kullanılan veriler arasında yer alır."
+                                                }
+                                                },
+                                                {
+                                                "@type": "Question",
+                                                "name": "Bebek Boy Hesaplamasında Hangi Yöntemler Kullanılır?",
+                                                "acceptedAnswer": {
+                                                    "@type": "Answer",
+                                                    "text": "Boy hesaplama ve tahmin etme yöntemleri arasında en yaygın kullanılan yöntem Khamis- Roche yöntemidir. Bu yöntem 1990’lı yıllarda geniş bir katılımcı kitlesi yardımıyla geliştirilmiştir. Khamis- Roche yöntemide çocuğun boyu ve kilosu ile ebeveynlerin boy bilgileri gereklidir. Daha kesin bir tahmin yapabilmek için röntgen filmi de kullanılabilir.
+                                            Bebeklerin boy uzunluğunu tahmin etmek için kullanılan bir diğer yöntem ise \“ikiyle çarpma\” yöntemidir. Bu yöntem, bebeklerin hızlı gelişim özelliklerinden yola çıkılarak geliştirilmiştir. Bu yönteme göre erkek bebeklerin 24 aylıkken ve kız bebeklerin 18 aylıkken boyları ölçülür ve ikiyle çarpılır. Bu yöntemde elde edilen veriler kesinlik bakımından tartışılabilir.
+                                            Bebeklerin yetişkinlikte erişecekleri boyu tahmin etmek için yaygın şekilde kullanılan ancak bilimsel açıdan sağlam temellendirilmeyen bir diğer yöntem de \“ortalama\” yöntemidir. Buna göre anne ve babanın boyları toplanıp ikiye bölünerek bebeğin yetişkinliğe eriştiğinde ulaşacağı boy uzunluğu tahmin edilebilir.
+                                            Temellendirilmeyen ve kesinliği olmayan boy tahmin etme yöntemlerinden bir diğerinde ise erkek bebekler için ebeveynlerinin boy ortalamasına 7.6 santimetre eklemek ve kız bebekler için ise ebeveynlerinin boy ortalamasından 7.6 santimetre çıkarmaktır."
+                                                }
+                                                },
+                                                {
+                                                "@type": "Question",
+                                                "name": "Bebeğimlehayat Bebek Boy Hesaplama Aracını Nasıl Kullanabilirsiniz?",
+                                                "acceptedAnswer": {
+                                                    "@type": "Answer",
+                                                    "text": "Bebeklerin boyu, gelişim takibi açısından oldukça önemli bir veridir. Ebeveynlerin boyu ve bebeğin gelişim özellikleri göz önünde bulundurularak basit bir boy hesaplaması yapılabilir. Bebeğimlehayat bebek boy hesaplama aracı sayesinde bebeğinizin boyunu pratik şekilde hesaplamanız mümkündür!"
+                                                }
+                                                }
+                                            ]
                                         }
                                 </script>
-
-
                             </div>
                         </div>
                     </div>
@@ -295,7 +260,7 @@
 </template>
 <script>
 import Vue from 'vue'
-import { FormPlugin , FormInputPlugin, InputGroupPlugin, FormGroupPlugin, FormRadioPlugin, SpinnerPlugin  } from 'bootstrap-vue'
+import { FormPlugin, FormInputPlugin, InputGroupPlugin, FormGroupPlugin, FormRadioPlugin, SpinnerPlugin } from 'bootstrap-vue'
 Vue.use(FormPlugin);
 Vue.use(FormInputPlugin);
 Vue.use(InputGroupPlugin);

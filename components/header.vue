@@ -5,8 +5,7 @@
 				<div class="container">
 					<div class="row pl-md-3">
 						<div class="col-12 position-static">
-							<div class="row align-items-center mb-3 mb-md-0 py-3 py-lg-0">
-								
+							<div class="row align-items-center mb-0 py-0">								
 								<b-sidebar v-if="isMobileMenuSidebar" id="mobileMenu" title="Menü" backdrop-variant="dark" bg-variant="white" backdrop
 									shadow>
 									<ul class="col-12 mt-4">
@@ -116,7 +115,7 @@
 									</div>
 									<div class="d-flex align-items-center justify-content-end justify-content-lg-center mx-lg-5" id="headerAccount" v-if="!(customer && customer.userLoggedIn)">
 										<span class="title d-flex align-items-center justify-content-center flex-column">
-											<b-icon-person variant="secondary" font-scale="1.8"></b-icon-person>
+											<b-icon-person variant="secondary" font-scale="2.5"></b-icon-person>
 										</span>	
 										<ul>
 											<li class="float-left w-100">
@@ -133,7 +132,7 @@
 									</div>
 								</div>
 								<div class="col-1 px-0 d-flex align-items-center mobile-menu d-lg-none" @click="isMobileMenuSidebar = true" v-b-toggle.mobileMenu>
-									<b-icon-list variant="secondary" font-scale="2.5"></b-icon-list>
+									<b-icon-list variant="secondary" font-scale="3"></b-icon-list>
 								</div>
 							</div>
 						</div>
@@ -145,8 +144,9 @@
 </template>
 <script>
 import Vue from 'vue'
-import { IconsPlugin } from 'bootstrap-vue'
-Vue.use(IconsPlugin)
+import { IconsPlugin,BSidebar } from 'bootstrap-vue'
+Vue.use(IconsPlugin);
+Vue.component('b-sidebar', BSidebar)
 
 export default {
 	name: 'Header',
@@ -373,7 +373,9 @@ export default {
 		margin: 0;
 		display: flex;
 		align-items: center;
-		max-height: 64px;
+		max-height: 115px;
+    	height: 115px;
+    	float: left;
 	}
 
 	#headerWrapper.sticky #logo img {
@@ -386,7 +388,7 @@ export default {
 	}
 
 	#logo img {
-		max-height: 65px;
+		max-height: 115px;
 		-webkit-transition: all .5s ease;
 		-moz-transition: all .5s ease;
 		-o-transition: all .5s ease;
@@ -397,7 +399,7 @@ export default {
 	}
 
 	#headerMenu a {
-		font-size: 16px;
+		font-size: 18px;
 		font-weight: 500;
 		padding: 2.5em 1.5em;
 		position: relative;
@@ -583,6 +585,10 @@ export default {
 
 		.mobile-child-menu {
 			font-size: 12px;
+		}
+
+		#logo p {
+			height: 80px;
 		}
 	}
 

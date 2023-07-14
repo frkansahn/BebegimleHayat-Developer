@@ -80,6 +80,27 @@ export default {
         '@nuxtjs/redirect-module',
         'nuxt-lazy-load'
     ],
+    lazyLoad: {
+        // These are the default values
+        images: true,
+        videos: true,
+        audios: true,
+        iframes: true,
+        native: false,
+        directiveOnly: false,
+        
+        // Default image must be in the public folder
+        defaultImage: '/Data/default.jpg',
+      
+        // To remove class set value to false
+        loadingClass: 'isLoading',
+        loadedClass: 'isLoaded',
+        appendClass: 'lazyLoad',
+        
+        observerConfig: {
+          // See IntersectionObserver documentation
+        }
+    },
     sitemap:{
         hostname: 'https://bebegimlehayat.com',
         cacheTime : 1000 * 60 * 60,
