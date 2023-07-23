@@ -618,116 +618,6 @@
                                     göz renginin değiştiğine şahit olacaksınız. Eğer bebeğiniz göz rengi kahverengiyse
                                     muhtemelen çok fazla değişime uğramayacaktır. En doğru sonuçları 6 – 9 aylıkken
                                     alabilirsiniz. </p>
-
-
-
-                                <script type="application/ld+json">
-                                    {
-                                        "@context": "https://schema.org",
-                                        "@type": "FAQPage",
-                                        "mainEntity": [
-                                            {
-                                            "@type": "Question",
-                                            "name": "Bebek Göz Rengi Tahmin Edici Nedir?",
-                                            "acceptedAnswer": {
-                                                "@type": "Answer",
-                                                "text": "İnsan genetiği mucizevidir. Her sene yapılan binlerce çalışma insanları daha çok anlamak için vardır. Ebeveynlerinizin genetiğinin sizi etkilemesi, göz renginize kadar en ufak ayrıntının genetiklerinizde yazılı olması şahane bir bilimsel konudur.
-                                        Yapılan araştırmalar artık genetik konusunu daha iyi anlamamızı sağlıyor. Bu sayede bebeklerimizin göz renginin neden ve hangi sebeple mevcut renklerini aldığını anlıyoruz. Elbette hala keşfetmemiz gereken çok şey var. 
-                                        Bebeğinizin göz renginin ne olabileceğini merak ediyorsanız bebek göz rengi tahmin edicimizi kullanabilirsiniz. Bebek göz rengi tahmin edici bebeğiniz gözlerinin renk olduğunu tahmin etmeniz için özel olarak tasarlanmıştır. Bebek Göz Rengi Tahmin Ediciyi kullanmak için tek yapmanız gereken ailenizdeki göz renklerini girmek ve Tahmin Et tuşuna basmaktır."
-                                            }
-                                            },
-                                            {
-                                            "@type": "Question",
-                                            "name": "Göz Rengi Nedir?",
-                                            "acceptedAnswer": {
-                                                "@type": "Answer",
-                                                "text": "Bebeğinizin göz bebeğinin etrafında bulunan renkli halka, melanin ve lipokrom adı verilen pigment hücrelerini üreten melanosit tarafından yönetilir. Gözlerinizde bulunan melanin oranına göre gözlerinizin rengi koyulaşır. Yani koyu mavi ve kahverengi gibi renkler elde edilir. Eğer melanin azsa gözleriniz açık bir renge bürünür. Gözlerinizdeki lipokrom arttıkça da yeşil ve ela gözlü olma olasılığınız artar. Bu iki pigmentin dengesi ve ne kadar bulunduğu gibi oranlar göz renginizi belirlemektedir."
-                                            }
-                                            },
-                                            {
-                                            "@type": "Question",
-                                            "name": "Bebeğin Göz Rengini Ne Belirler?",
-                                            "acceptedAnswer": {
-                                                "@type": "Answer",
-                                                "text": "Doğacak olan bir bebeğin göz renginin belirlenmesinde 15 farklı gen rol oynamaktadır. Bu yüzden yüksek doğrulukla göz rengini tahmin etmek son derece karmaşıktır. Bu yüzden bazen şaşırtıcı sonuçlar ortaya çıkabilir. 
-                                        Çocuklar normal şartlarda anne ve babanın genlerinden yola çıkacağı için onların göz rengine veya karışımına sahip olurlar. Genler birleştiğinde çekinik ve baskın genlere göre bebeğin de göz rengi ortaya çıkar. Ancak göz rengi polijeniktir. Yani daha önce de bahsettiğimiz üzere 15 genin tamamına göre belirlenir. Bu yüzden ebeveynlerin göz rengi, belirli bir renk için homozigot ya da heterozigot olmaları veya genlerin baskın ve çekinik olma durumu bebeğin göz renginde rol oynayacaktır."
-                                            }
-                                            },
-                                            {
-                                            "@type": "Question",
-                                            "name": "Baskın ve Çekinik Genler Nedir?",
-                                            "acceptedAnswer": {
-                                                "@type": "Answer",
-                                                "text": "Genler vücudumuzu tasarlayan, karmaşık yapıda bilgilerden oluşan bir kalıtım birimidir. Genler içlerinde birçok farklı karakteristik özellik taşımaktadır. Genler içerisindeki karakteristik özellikleri alel olarak tutmaktadırlar. Yani göz renginizin ne olacağını belirleyen gen içerisinde mavi, ela ve yeşil gibi aleller bulunmaktadır.
-                                        Aleller birbirleriyle karşılaştırıldığında baskın ve çekinik olarak değişmektedir. Baskın olan alel genetik çaprazlamada çekinik ile eşleştiğinde öne çıkıp göze kendine ait rengini verecektir. Yani kahverengi ve mavi gözlü bir çiftin çocuğunun kahverengi gözlü olma olasılığı daha yüksektir. Çünkü kahverengi mavi gözlere göre genellikle daha baskındır."
-                                            }
-                                                },
-                                            {
-                                            "@type": "Question",
-                                            "name": "Bebeğinizin Göz Rengini Tahmin Edebilir misiniz?",
-                                            "acceptedAnswer": {
-                                                "@type": "Answer",
-                                                "text": "Hem evet hem de hayır. Bebek göz rengi tahmin edici verilen verilere göre istikrarlı bir tahmin sunabilir. Ancak gerçek hayatta genlerin karmaşıklığı farklı sonuçlar ortaya koyacaktır. Ayrıca birçok bebeğin gözü çeşitli sebeplerle ilk 1 sene boyunda değişebilmektedir. 
-                                        Yani bebek göz rengi tahmin edici size istatiksel olarak en doğru sonuçları verecek olsa da genleriniz büyük değişiklik gösterebilir. Çünkü sadece sahip olduğunuz göz renginin genine sahip değilsiniz."
-                                            }
-                                            },
-                                            {
-                                            "@type": "Question",
-                                            "name": " Mavi Göz ve Kahverengi Göz Tahmini Nasıl Yapılır?",
-                                            "acceptedAnswer": {
-                                                "@type": "Answer",
-                                                "text": "Amsterdam’da yapılan genom araştırmaları bebeklerin göz renginin mavi mi yoksa kahverengi mi olacağını %90 doğrulukla seçebilmelerini sağlıyor. Aile geçmişi ile birleştiğinde bebeklerin göz rengini neye daha yakın olacağı bulunsa da %100 kesinlik henüz mümkün değil."
-                                            }
-                                            },
-                                            {
-                                            "@type": "Question",
-                                            "name": " Ela Göz Tahmini Nasıl Yapılır?",
-                                            "acceptedAnswer": {
-                                                "@type": "Answer",
-                                                "text": "Ela gözleri tahmin açısından en zor gözlerdir. Çünkü teknik olarak kahverengi, yeşil ve kehribar renklerinin bir karışımıdır. Eğer iki ebeveyn de ela gözlüyse çocukları da %99 olasılıkla ela gözlü olacaktır. Eğer ebeveynlerin ikisi de kahverengi gözlüyse %75 olasılıkla çocuk da kahverengi gözlü olacaktır. Eğer iki ebeveyn de yeşil gözlüyse %99 olasılıkla çocuk da yeşil gözlü olacaktır.
-                                        Elbette bu renklerin tonu, ela gözün düzeni ve yapısı değişiklik göstermektedir. Birçok gene ve şansa bağlı olduğu için asla %100 kesinlikten söz edemeyiz."
-                                            }
-                                            },
-                                            {
-                                            "@type": "Question",
-                                            "name": "Heterokromi Nedir?",
-                                            "acceptedAnswer": {
-                                                "@type": "Answer",
-                                                "text": "Heterokromi iki gözün de farklı renkte olması durumudur. Örneğin bir göz mavi olabilirken diğer göz kahverengi olabilmektedir. Bazı durumlarda heterokromi, tek bir gözün kendi içinde iki renge sahip olabilmesini ve diğer gözün farklı bir renk kombinasyonuna sahip olmasını sağlayabilir. Yani bir gözünüzün üst kısmı mavi, alt kısmı yeşil ve diğer gözünüz ise üst kısmı kahverengi, alt kısmı mavi olabilir. Tabi bunlar örneklerden sadece birkaçı. Heterokromi çok daha farklı şekillerde ortaya çıkabilmektedir.
-                                        Heterokromi sadece gözlerde değil, vücudun farklı yerlerinde, özellikle de saçlarda da görülebilmektedir. Heterokromi vücuttaki melanin pigmentinin dağılımının farklı olması sonucu ortaya çıkan bir mutasyondur.
-                                        Sadece insanlar değil, hayvanlar da heterokromi yaşayabilir. Ancak hayvanların renkleri ve tüylerinin desenleri farklı olduğu için ciltte heterokromi olup olmadığını anlamak zor olacaktır. Heterokromi yaşayan en ünlü hayvan örneği van kedileridir. Gözlerinin farklı renkte olmasıyla ünlenen bu kediler geçirdikleri mutasyon sayesinde ün salmışlardır.
-                                        Heterokromi genellikle doğuştan olsa da bazen daha sonra da gerçekleşebilmektedir. Bu durumda bir hastalığın ya da travmanın belirtisi olabilir. Şimdiye kadar resmileşen vakalar arasında heterokromi laucoma, incontinentia pigmenti, Parry-Romberg Sendromu, Neurofibromatosis, Kromozom 8 Trizomisi, Göz Hemorajı ve Göz Hasarı hastalıklarında bir belirti olarak yer almıştır. Dolayısıyla bebeğinizin gözleri hakkında doktorunuzla mutlaka konuşmalısınız."
-                                            }
-                                            },
-                                            {
-                                            "@type": "Question",
-                                            "name": "Kahverengi gözlü ebeveynlerin mavi gözlü çocuğu olabilir mi?",
-                                            "acceptedAnswer": {
-                                                "@type": "Answer",
-                                                "text": "Kahverengi gözler normal şartlarda baskın genlerdir. Ancak kahverengi gözlü ebeveynlerin kesinlikle mavi gözlü bir çocuğu olabilir. Ancak olasılığı değişmektedir. Eğer iki ebeveyn de çekinik mavi göz geni, taşıyorsa %25 olasılıkla çocuğunuz mavi gözlü olacaktır. Eğer ebeveynlerden biri çekinik mavi göz geni taşıyor ve diğeri baskın kahverengi göz taşıyorsa %1’den az bir ihtimalle mavi gözlü bir çocuk olabilir."
-                                            }
-                                            },
-                                            {
-                                            "@type": "Question",
-                                            "name": "Büyükbaba ve büyükannenin göz rengine etkisi var mı?",
-                                            "acceptedAnswer": {
-                                                "@type": "Answer",
-                                                "text": "Elbette! Sonuç olarak ebeveynlerin göz renklerinin genleri aile büyüklerinden gelmekte. Büyük anne ve büyükbabanın doğrudan bir etkisi olmasa bile tahmin ederken daha iyi anlamamızı sağlayabilmekteler. Örneğin kahverengi gözlü biri baskın kahverengi gen ve çekinik başka bir renk geni taşıyabilir. Bu durumda çekinik genin ne olduğunu öğrenmek için büyük anne ve büyük babaya bakmak bize bir fikir verebilir."
-                                            }
-                                            },
-                                            {
-                                            "@type": "Question",
-                                            "name": "Yenidoğan bebeğimin gözleri hep aynı renk mi kalacak?",
-                                            "acceptedAnswer": {
-                                                "@type": "Answer",
-                                                "text": "Yeni doğan bebeklerin gözlerindeki melanin miktarı başlangıçta daha fazla olabilir. Yani bebeğiniz mavi gözlüyse yüksek melanin azaldıkça rengin değişmesi de mümkündür. Zamanla göz renginin değiştiğine şahit olacaksınız. Eğer bebeğiniz göz rengi kahverengiyse muhtemelen çok fazla değişime uğramayacaktır. En doğru sonuçları 6 – 9 aylıkken alabilirsiniz."
-                                            }
-                                            }
-                                        ]
-                                        }
-                                </script>
-
-
                             </div>
                         </div>
                     </div>
@@ -740,7 +630,7 @@
 <script>
 
 import Vue from 'vue'
-import { FormPlugin , FormGroupPlugin,SpinnerPlugin } from 'bootstrap-vue'
+import { FormPlugin, FormGroupPlugin, SpinnerPlugin } from 'bootstrap-vue'
 Vue.use(FormPlugin);
 Vue.use(FormGroupPlugin);
 Vue.use(SpinnerPlugin);
@@ -754,6 +644,106 @@ export default {
                 { hid: 'description', name: 'description', content: "Bebek göz rengi ebeveynler tarafından merak edilen konulardan biridir. Bebeğimlehayat göz rengi tahmin edici sayesinde bebeğinizin göz rengini pratik şekilde tahmin edebilirsiniz!" },
                 { hid: 'og:title', property: 'og:title', content: "Bebek göz rengi ebeveynler tarafından merak edilen konulardan biridir. Bebeğimlehayat göz rengi tahmin edici sayesinde bebeğinizin göz rengini pratik şekilde tahmin edebilirsiniz!" }
             ],
+            script: [
+                {
+                    body: true,
+                    type: 'application/ld+json',
+                    json: {
+                        "@context": "https://schema.org",
+                        "@type": "FAQPage",
+                        "mainEntity": [
+                            {
+                                "@type": "Question",
+                                "name": "Bebek Göz Rengi Tahmin Edici Nedir?",
+                                "acceptedAnswer": {
+                                    "@type": "Answer",
+                                    "text": "İnsan genetiği mucizevidir. Her sene yapılan binlerce çalışma insanları daha çok anlamak için vardır. Ebeveynlerinizin genetiğinin sizi etkilemesi, göz renginize kadar en ufak ayrıntının genetiklerinizde yazılı olması şahane bir bilimsel konudur.Yapılan araştırmalar artık genetik konusunu daha iyi anlamamızı sağlıyor. Bu sayede bebeklerimizin göz renginin neden ve hangi sebeple mevcut renklerini aldığını anlıyoruz. Elbette hala keşfetmemiz gereken çok şey var. Bebeğinizin göz renginin ne olabileceğini merak ediyorsanız bebek göz rengi tahmin edicimizi kullanabilirsiniz. Bebek göz rengi tahmin edici bebeğiniz gözlerinin renk olduğunu tahmin etmeniz için özel olarak tasarlanmıştır. Bebek Göz Rengi Tahmin Ediciyi kullanmak için tek yapmanız gereken ailenizdeki göz renklerini girmek ve Tahmin Et tuşuna basmaktır."
+                                }
+                            },
+                            {
+                                "@type": "Question",
+                                "name": "Göz Rengi Nedir?",
+                                "acceptedAnswer": {
+                                    "@type": "Answer",
+                                    "text": "Bebeğinizin göz bebeğinin etrafında bulunan renkli halka, melanin ve lipokrom adı verilen pigment hücrelerini üreten melanosit tarafından yönetilir. Gözlerinizde bulunan melanin oranına göre gözlerinizin rengi koyulaşır. Yani koyu mavi ve kahverengi gibi renkler elde edilir. Eğer melanin azsa gözleriniz açık bir renge bürünür. Gözlerinizdeki lipokrom arttıkça da yeşil ve ela gözlü olma olasılığınız artar. Bu iki pigmentin dengesi ve ne kadar bulunduğu gibi oranlar göz renginizi belirlemektedir."
+                                }
+                            },
+                            {
+                                "@type": "Question",
+                                "name": "Bebeğin Göz Rengini Ne Belirler?",
+                                "acceptedAnswer": {
+                                    "@type": "Answer",
+                                    "text": "Doğacak olan bir bebeğin göz renginin belirlenmesinde 15 farklı gen rol oynamaktadır. Bu yüzden yüksek doğrulukla göz rengini tahmin etmek son derece karmaşıktır. Bu yüzden bazen şaşırtıcı sonuçlar ortaya çıkabilir. Çocuklar normal şartlarda anne ve babanın genlerinden yola çıkacağı için onların göz rengine veya karışımına sahip olurlar. Genler birleştiğinde çekinik ve baskın genlere göre bebeğin de göz rengi ortaya çıkar. Ancak göz rengi polijeniktir. Yani daha önce de bahsettiğimiz üzere 15 genin tamamına göre belirlenir. Bu yüzden ebeveynlerin göz rengi, belirli bir renk için homozigot ya da heterozigot olmaları veya genlerin baskın ve çekinik olma durumu bebeğin göz renginde rol oynayacaktır."
+                                }
+                            },
+                            {
+                                "@type": "Question",
+                                "name": "Baskın ve Çekinik Genler Nedir?",
+                                "acceptedAnswer": {
+                                    "@type": "Answer",
+                                    "text": "Genler vücudumuzu tasarlayan, karmaşık yapıda bilgilerden oluşan bir kalıtım birimidir. Genler içlerinde birçok farklı karakteristik özellik taşımaktadır. Genler içerisindeki karakteristik özellikleri alel olarak tutmaktadırlar. Yani göz renginizin ne olacağını belirleyen gen içerisinde mavi, ela ve yeşil gibi aleller bulunmaktadır.Aleller birbirleriyle karşılaştırıldığında baskın ve çekinik olarak değişmektedir. Baskın olan alel genetik çaprazlamada çekinik ile eşleştiğinde öne çıkıp göze kendine ait rengini verecektir. Yani kahverengi ve mavi gözlü bir çiftin çocuğunun kahverengi gözlü olma olasılığı daha yüksektir. Çünkü kahverengi mavi gözlere göre genellikle daha baskındır."
+                                }
+                            },
+                            {
+                                "@type": "Question",
+                                "name": "Bebeğinizin Göz Rengini Tahmin Edebilir misiniz?",
+                                "acceptedAnswer": {
+                                    "@type": "Answer",
+                                    "text": "Hem evet hem de hayır. Bebek göz rengi tahmin edici verilen verilere göre istikrarlı bir tahmin sunabilir. Ancak gerçek hayatta genlerin karmaşıklığı farklı sonuçlar ortaya koyacaktır. Ayrıca birçok bebeğin gözü çeşitli sebeplerle ilk 1 sene boyunda değişebilmektedir. Yani bebek göz rengi tahmin edici size istatiksel olarak en doğru sonuçları verecek olsa da genleriniz büyük değişiklik gösterebilir. Çünkü sadece sahip olduğunuz göz renginin genine sahip değilsiniz."
+                                }
+                            },
+                            {
+                                "@type": "Question",
+                                "name": " Mavi Göz ve Kahverengi Göz Tahmini Nasıl Yapılır?",
+                                "acceptedAnswer": {
+                                    "@type": "Answer",
+                                    "text": "Amsterdam’da yapılan genom araştırmaları bebeklerin göz renginin mavi mi yoksa kahverengi mi olacağını %90 doğrulukla seçebilmelerini sağlıyor. Aile geçmişi ile birleştiğinde bebeklerin göz rengini neye daha yakın olacağı bulunsa da %100 kesinlik henüz mümkün değil."
+                                }
+                            },
+                            {
+                                "@type": "Question",
+                                "name": " Ela Göz Tahmini Nasıl Yapılır?",
+                                "acceptedAnswer": {
+                                    "@type": "Answer",
+                                    "text": "Ela gözleri tahmin açısından en zor gözlerdir. Çünkü teknik olarak kahverengi, yeşil ve kehribar renklerinin bir karışımıdır. Eğer iki ebeveyn de ela gözlüyse çocukları da %99 olasılıkla ela gözlü olacaktır. Eğer ebeveynlerin ikisi de kahverengi gözlüyse %75 olasılıkla çocuk da kahverengi gözlü olacaktır. Eğer iki ebeveyn de yeşil gözlüyse %99 olasılıkla çocuk da yeşil gözlü olacaktır.Elbette bu renklerin tonu, ela gözün düzeni ve yapısı değişiklik göstermektedir. Birçok gene ve şansa bağlı olduğu için asla %100 kesinlikten söz edemeyiz."
+                                }
+                            },
+                            {
+                                "@type": "Question",
+                                "name": "Heterokromi Nedir?",
+                                "acceptedAnswer": {
+                                    "@type": "Answer",
+                                    "text": "Heterokromi iki gözün de farklı renkte olması durumudur. Örneğin bir göz mavi olabilirken diğer göz kahverengi olabilmektedir. Bazı durumlarda heterokromi, tek bir gözün kendi içinde iki renge sahip olabilmesini ve diğer gözün farklı bir renk kombinasyonuna sahip olmasını sağlayabilir. Yani bir gözünüzün üst kısmı mavi, alt kısmı yeşil ve diğer gözünüz ise üst kısmı kahverengi, alt kısmı mavi olabilir. Tabi bunlar örneklerden sadece birkaçı. Heterokromi çok daha farklı şekillerde ortaya çıkabilmektedir.Heterokromi sadece gözlerde değil, vücudun farklı yerlerinde, özellikle de saçlarda da görülebilmektedir. Heterokromi vücuttaki melanin pigmentinin dağılımının farklı olması sonucu ortaya çıkan bir mutasyondur.Sadece insanlar değil, hayvanlar da heterokromi yaşayabilir. Ancak hayvanların renkleri ve tüylerinin desenleri farklı olduğu için ciltte heterokromi olup olmadığını anlamak zor olacaktır. Heterokromi yaşayan en ünlü hayvan örneği van kedileridir. Gözlerinin farklı renkte olmasıyla ünlenen bu kediler geçirdikleri mutasyon sayesinde ün salmışlardır.Heterokromi genellikle doğuştan olsa da bazen daha sonra da gerçekleşebilmektedir. Bu durumda bir hastalığın ya da travmanın belirtisi olabilir. Şimdiye kadar resmileşen vakalar arasında heterokromi laucoma, incontinentia pigmenti, Parry-Romberg Sendromu, Neurofibromatosis, Kromozom 8 Trizomisi, Göz Hemorajı ve Göz Hasarı hastalıklarında bir belirti olarak yer almıştır. Dolayısıyla bebeğinizin gözleri hakkında doktorunuzla mutlaka konuşmalısınız."
+                                }
+                            },
+                            {
+                                "@type": "Question",
+                                "name": "Kahverengi gözlü ebeveynlerin mavi gözlü çocuğu olabilir mi?",
+                                "acceptedAnswer": {
+                                    "@type": "Answer",
+                                    "text": "Kahverengi gözler normal şartlarda baskın genlerdir. Ancak kahverengi gözlü ebeveynlerin kesinlikle mavi gözlü bir çocuğu olabilir. Ancak olasılığı değişmektedir. Eğer iki ebeveyn de çekinik mavi göz geni, taşıyorsa %25 olasılıkla çocuğunuz mavi gözlü olacaktır. Eğer ebeveynlerden biri çekinik mavi göz geni taşıyor ve diğeri baskın kahverengi göz taşıyorsa %1’den az bir ihtimalle mavi gözlü bir çocuk olabilir."
+                                }
+                            },
+                            {
+                                "@type": "Question",
+                                "name": "Büyükbaba ve büyükannenin göz rengine etkisi var mı?",
+                                "acceptedAnswer": {
+                                    "@type": "Answer",
+                                    "text": "Elbette! Sonuç olarak ebeveynlerin göz renklerinin genleri aile büyüklerinden gelmekte. Büyük anne ve büyükbabanın doğrudan bir etkisi olmasa bile tahmin ederken daha iyi anlamamızı sağlayabilmekteler. Örneğin kahverengi gözlü biri baskın kahverengi gen ve çekinik başka bir renk geni taşıyabilir. Bu durumda çekinik genin ne olduğunu öğrenmek için büyük anne ve büyük babaya bakmak bize bir fikir verebilir."
+                                }
+                            },
+                            {
+                                "@type": "Question",
+                                "name": "Yenidoğan bebeğimin gözleri hep aynı renk mi kalacak?",
+                                "acceptedAnswer": {
+                                    "@type": "Answer",
+                                    "text": "Yeni doğan bebeklerin gözlerindeki melanin miktarı başlangıçta daha fazla olabilir. Yani bebeğiniz mavi gözlüyse yüksek melanin azaldıkça rengin değişmesi de mümkündür. Zamanla göz renginin değiştiğine şahit olacaksınız. Eğer bebeğiniz göz rengi kahverengiyse muhtemelen çok fazla değişime uğramayacaktır. En doğru sonuçları 6 – 9 aylıkken alabilirsiniz."
+                                }
+                            }
+                        ]
+                    }
+                }
+            ]
         }
     },
     data() {
@@ -980,7 +970,8 @@ export default {
 }
 </script>
 
-<style>#gozRengiTahminiForm {
+<style>
+#gozRengiTahminiForm {
     background-color: rgb(235, 247, 250);
     padding: 3em;
     border-top: 11px solid rgb(216, 240, 245);
@@ -1204,4 +1195,5 @@ export default {
 
 .vs__search {
     font-size: 18px;
-}</style>
+}
+</style>

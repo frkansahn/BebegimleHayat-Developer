@@ -199,7 +199,7 @@ export async function setContext (app, context) {
       payload: context.payload,
       error: context.error,
       base: app.router.options.base,
-      env: {"baseUrl":"https://api.bebegimlehayat.com"}
+      env: {"baseUrl":"http://localhost:4001"}
     }
     // Only set once
 

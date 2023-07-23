@@ -289,7 +289,7 @@ export default {
                 { hid: 'keywords', name: 'keywords', content: 'bebegimlehayat,dogum,planlayici' },
                 { hid: 'description', name: 'description', content: "Doğum süreci oldukça heyecanlı bir süreçtir ancak karışıklıkların engellenmesi için planlı olmak gerekir. Bebeğimlehayat doğum planlayıcısı sayesinde her şey dilediğiniz gibi ilerler!" },
                 { hid: 'og:title', property: 'og:title', content: "Doğum süreci oldukça heyecanlı bir süreçtir ancak karışıklıkların engellenmesi için planlı olmak gerekir. Bebeğimlehayat doğum planlayıcısı sayesinde her şey dilediğiniz gibi ilerler!" }
-            ],
+            ]
         }
     },
     data() {

@@ -23,6 +23,24 @@
   "TreeCategory": {
     "description": "Auto imported from components/treeCategory.vue"
   },
+  "ContentDetail": {
+    "description": "Auto imported from components/content/detail.vue"
+  },
+  "ElementImage": {
+    "description": "Auto imported from components/element/image.vue"
+  },
+  "HomepageBabyNames": {
+    "description": "Auto imported from components/homepage/BabyNames.vue"
+  },
+  "HomepageOneBlog": {
+    "description": "Auto imported from components/homepage/oneBlog.vue"
+  },
+  "HomepagePopularTools": {
+    "description": "Auto imported from components/homepage/PopularTools.vue"
+  },
+  "HomepagePregnancyWeekByWeek": {
+    "description": "Auto imported from components/homepage/PregnancyWeekByWeek.vue"
+  },
   "BlogBabyDictionary": {
     "description": "Auto imported from components/blog/babyDictionary.vue"
   },
@@ -61,24 +79,6 @@
   },
   "BlogToolNewBlogs": {
     "description": "Auto imported from components/blog/toolNewBlogs.vue"
-  },
-  "ContentDetail": {
-    "description": "Auto imported from components/content/detail.vue"
-  },
-  "ElementImage": {
-    "description": "Auto imported from components/element/image.vue"
-  },
-  "HomepageBabyNames": {
-    "description": "Auto imported from components/homepage/BabyNames.vue"
-  },
-  "HomepageOneBlog": {
-    "description": "Auto imported from components/homepage/oneBlog.vue"
-  },
-  "HomepagePopularTools": {
-    "description": "Auto imported from components/homepage/PopularTools.vue"
-  },
-  "HomepagePregnancyWeekByWeek": {
-    "description": "Auto imported from components/homepage/PregnancyWeekByWeek.vue"
   },
   "SliderFooterLinks": {
     "description": "Auto imported from components/slider/footerLinks.vue"

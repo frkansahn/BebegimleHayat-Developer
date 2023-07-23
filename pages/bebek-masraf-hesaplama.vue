@@ -1195,65 +1195,6 @@
                                     Yaşadığınız şehirde çocuk yetiştirmek diğer şehirlere göre daha ucuz ya da pahalı
                                     olabilir. Şimdiden bu miktarı araştırın ve ona göre hareket edin. </p>
                                 <br><br>
-
-
-                                <script type="application/ld+json">
-                                    {
-                                                    "@context": "https://schema.org",
-                                                    "@type": "FAQPage",
-                                                    "mainEntity": [
-                                                        {
-                                                        "@type": "Question",
-                                                        "name": "Bebek Masrafı Hesaplayıcısı Nedir?",
-                                                        "acceptedAnswer": {
-                                                            "@type": "Answer",
-                                                            "text": "Çocuk sahibi olmak ebeveynlerin hayatındaki en önemli anlardan biridir. Hamilelikten çocuğun büyümesine kadar olan bu süreç, birçok ebeveyn için sihir gibi gelir. Ancak bu sihirli yolculuğun birçok sorumluluğu da bulunmaktadır. Özellikle doğumdan sonra çocuğunuzun sağlıklı büyümesi ve eksiklerinin kapanması çok önemlidir. Çocuğunuzu sağlıklı ve mutlu bir şekilde yetiştirmek için mamasından bezine, kıyafetinden beşiğine kadar birçok harcama yapmanız gerekebilir.
-                                                    Ancak ilk defa çocuk sahibi olacak çiftler için bu tür ihtiyaçlar ve kavramlar başlangıçta yabancı gelecektir. Bu yüzden nelere sahip olmaları gerektiği konusunda ek bilgiye ihtiyaç duyacaklardır. Sadece neye sahip olacağını bilmek değil, alacağı eşyaların ne kadar tutacağını bilmek de önemlidir. 
-                                                    Detaylı bir liste çıkarılması, bu listedeki eşyaların fiyatlarının belirlenmesi gibi bir görev, ileride bebeklerinin isteklerine ve ihtiyaçlarına hazırlanmalarını kolaylaştıracaktır. Ancak bu listeye nereden başlayacağını bilmek bile başlı başlına bir sorun olabilir.
-                                                    Bebeğimle Hayat Bebek Masrafı Hesaplayıcısı bu noktada ebeveynlere yardımcı olmak için geliştirilmiş bir araçtır. Bebeğinize harcayabileceğiniz masraflar için önceden ayarlanmış kategorilerle size yol gösterir. Böylece nelere sahip olmanız gerektiğini öğrenebileceğiniz gibi aşağı yukarı ne kadar harcama yapmanız gerektiğini de öğrenirsiniz.
-                                                    Bebek masraf hesaplayıcı devamlı masraflar ve tek seferlik masraflar olarak ikiye ayrılmaktadır. Devamlı masraflar bez, mama ve hijyen ürünleri içerirken tek seferlik masraflar oto koltuğu, bez çantası ve bebek havlusu gibi ihtiyaçlar içerir. İsmini gördüğünüz ürünün yanındaki kutucuklara ne kadar harcama yapacağınızı yazarak ne kadar harcamanız gerektiğinizi öğrenebilirsiniz.
-                                                    Hangi ürünü hangi markadan alacağınızın kararını siz verdiğin için ürün fiyatına göre kendiniz bilgileri girebilir ve kendiniz için en doğru sonuca ulaşabilirsiniz. "
-                                                        }
-                                                        },
-                                                        {
-                                                        "@type": "Question",
-                                                        "name": "Bebek Masrafını Kısmak İçin Ne Yapabilirim?",
-                                                        "acceptedAnswer": {
-                                                            "@type": "Answer",
-                                                            "text": "Bebek masraflarını hesaplarken birçok ebeveyn beklediğinden daha yüksek bir fiyatla karşılaşır. Bu fiyatların azaltılması aile ekonomisinde büyük bir yardımda bulunabilir. Bebek masrafını kısmak içinse en etkili yöntem 2. el eşyalardır. 
-                                                    2. el eşyalar başta ebeveynlere çok güvenli gelmeyebilir. Ancak belirli önlemler alındığında ve dikkatli olunduğunda 2. el bebek ürünü almanın hiçbir sorunu yoktur. Sonuçta bebekler hızlı büyüdüğü için alınan ufak zıbınlar seneler boyunca giyilip yıpranmış olmayacaktır. Bu yüzden birçok ürünün 2. el satışı son derece doğaldır.
-                                                    Bebeğinize 2. el olarak kıyafet almanızda bir sakınca yoktur. Alınan kıyafetler sağlamsa, bebeğiniz için uygun özellikleri taşıyorsa ve beden olarak uyuyorsa almayı düşünebilirsiniz. Kıyafeti aldıktan sonra hijyenik bir şekilde yıkadığınız sürece hiçbir sorun olmayacaktır.
-                                                    Bebeğiniz için 2. el olarak alabileceğiniz bir diğer şey ise biberon ve oyuncaklardır. Ancak alacağınız biberonların sağlam olduğundan çatlaklarının olmadığından emin olun. Ayrıca ucundaki kauçuk ağzı mutlaka değiştirin ve yenisini alın. Oyuncaklarda da aynı şekilde kırık veya bozuk olmadıkları sürece dilediğiniz gibi ikinci el alabilirsiniz. Aldığınız her ürünü güzelce yıkamayı ve temizlemeyi unutmayın.
-                                                    Masraf kısmak için 2. el almanızın en etkili olacağı birkaç diğer ürün ise oto koltuğu, bebek arabası ve beşiktir. 3 üründe sağlam olduğu ve gerekli güvenlik önlemlerine sahip olduğu sürece gönül rahatlığı ile alabilirsiniz. Beşiklerde iskeleti almanızda bir sorun olmasa da yatağı ayrı almanızı tavsiye ederiz. Yatak paylaşımı genellikle hijyenik değildir ve bebeğiniz için zararlı olabilir. Oto koltuğu ve bebek arabasının kumaşını, yastıklarını tamamen hijyenik olacak şekilde yıkamanız gerekiyor. Aksi takdirde aynı hijyen problemlerine takılabilirsiniz. Eğer yastıklar veya kumaş sökülüp yıkanmıyorsa direkt yeni bir oto koltuğu ya da bebek arabası almanız daha doğru olacaktır.
-                                                    Bebeğinizin kullanabileceği bir başka 2. el ütün ise kaşık çatal gibi ürünlerdir. Bu ürünler genellikle plastiktir ve kolayca yıkanabilir. Üstlerinde bir çizik ve parçalanma olmadığı sürece güzel temizleyerek kullanabilirsiniz.
-                                                    Alacağınız ürün ister yeni ister ikinci el olsun, her daim ürünleri güzelce yıkamalı ve temizlemelisiniz. Hijyen mevcut aşamada bebeğinizin sağlığını koruyan en önemli etkendir."
-                                                        }
-                                                        },
-                                                        {
-                                                        "@type": "Question",
-                                                        "name": "Bebek İçin Her Ay Ne Kadar Para Biriktirmeliyim?",
-                                                        "acceptedAnswer": {
-                                                            "@type": "Answer",
-                                                            "text": "Bebek ihtiyaçları her ay değişebilir ve artabilir. Sadece bebeklik değil, çocukluk ve ergenlik yıllarında da çeşitli ihtiyaçları bulunacaktır. Okul masrafları, dışarıya çıkıp gezmeler ve çeşitli harcamalar asla bitmeyecektir. Bu yüzden bebeğiniz doğmadan masraflar için bir para biriktirdiğiniz gibi doğduktan sonra da her ay köşeye belirli bir miktar atmanız gerekecektir. Ne kadar para biriktirdiğiniz sizin bütçenize bağlı olarak değişmelidir. Ortalama 500₺ biriktirmeniz bile ileride çocuğunuz için size fayda sağlayacaktır. Köşeye para atarken asıl önemli olan ne kadar attığınız değil istikrarlı olmanız ve o paraya amacı dışında dokunmamanızdır. Çocuğunuzun geleceği için yatırım yapmak önemlidir."
-                                                        }
-                                                        },
-                                                        {
-                                                        "@type": "Question",
-                                                        "name": "Bebek Masrafını Kısmak İçin Tavsiyeler Nelerdir?",
-                                                        "acceptedAnswer": {
-                                                            "@type": "Answer",
-                                                            "text": "Bebeğinizin ihtiyaçları gözünüzde büyüyebilir. Bundan dolayı bazı hamlelerle cebinizi rahatlatabilirsiniz. Aşağıdaki tavsiyelerle beraber bütçenizi daha iyi kurabilirsiniz.
-                                                    Devlet yardımını araştırın. Yeni doğan çocuklar için destek olmak adına devlet tarafından belirli miktarlarda para ödenir. Sahip olduğunuz çocuk sayısı ve çalışma durumunuza bağlı olarak e devlet üzerinden başvuru yapabilirsiniz. 
-                                                İş yerinizin doğum iznini araştırın. Birçok işyeri annelere ve babalara doğum döneminde ücretli izin sunmaktadır. Haklarınızı araştırın ve öğrenin. Doğum izni yasal olarak hakkınızdır.
-                                                Özel sağlık sigortanızı kontrol edin. Eğer özel sağlık sigortanız varsa bebeğinizi de kapsadığından ve ek ayrıcalıklarının olup olmadığından emin olun.
-                                                Harcamalarınızı planlayın. Bebeğin doğumuna yakın tüm her şeyi almaktansa önceden satın almaya başlamanız daha doğru olacaktır. Böylece hem bütçenizi bebeğinize göre ayarlamaya alışırsınız hem de kendinizi bir anda sıkıştırmazsınız.
-                                                Yaşadığınız şehrin çocuk masrafını araştırın. Her şehrin ekonomik durumu farklıdır. Yaşadığınız şehirde çocuk yetiştirmek diğer şehirlere göre daha ucuz ya da pahalı olabilir. Şimdiden bu miktarı araştırın ve ona göre hareket edin."
-                                                    }
-                                                    }
-                                                ]
-                                                }
-                                </script>
-
                             </div>
                         </div>
                     </div>
@@ -1265,7 +1206,7 @@
 </template>
 <script>
 import Vue from 'vue'
-import { FormPlugin , FormInputPlugin, FormGroupPlugin, FormCheckboxPlugin, InputGroupPlugin,SpinnerPlugin } from 'bootstrap-vue'
+import { FormPlugin, FormInputPlugin, FormGroupPlugin, FormCheckboxPlugin, InputGroupPlugin, SpinnerPlugin } from 'bootstrap-vue'
 Vue.use(FormPlugin);
 Vue.use(InputGroupPlugin);
 Vue.use(FormInputPlugin);
@@ -1283,6 +1224,50 @@ export default {
                 { hid: 'description', name: 'description', content: "Hamilelikte kaç kilo alacağınızı merak ediyorsanız Bebeğimlehayat hamilelik kilo hesaplama aracımızdan faydalanabilir, pratik bir hesap yapabilirsiniz!" },
                 { hid: 'og:title', property: 'og:title', content: "Hamilelikte kaç kilo alacağınızı merak ediyorsanız Bebeğimlehayat hamilelik kilo hesaplama aracımızdan faydalanabilir, pratik bir hesap yapabilirsiniz!" }
             ],
+            script: [
+                {
+                    body: true,
+                    type: 'application/ld+json',
+                    json: {
+                        "@context": "https://schema.org",
+                        "@type": "FAQPage",
+                        "mainEntity": [
+                            {
+                                "@type": "Question",
+                                "name": "Bebek Masrafı Hesaplayıcısı Nedir?",
+                                "acceptedAnswer": {
+                                    "@type": "Answer",
+                                    "text": "Çocuk sahibi olmak ebeveynlerin hayatındaki en önemli anlardan biridir. Hamilelikten çocuğun büyümesine kadar olan bu süreç, birçok ebeveyn için sihir gibi gelir. Ancak bu sihirli yolculuğun birçok sorumluluğu da bulunmaktadır. Özellikle doğumdan sonra çocuğunuzun sağlıklı büyümesi ve eksiklerinin kapanması çok önemlidir. Çocuğunuzu sağlıklı ve mutlu bir şekilde yetiştirmek için mamasından bezine, kıyafetinden beşiğine kadar birçok harcama yapmanız gerekebilir.Ancak ilk defa çocuk sahibi olacak çiftler için bu tür ihtiyaçlar ve kavramlar başlangıçta yabancı gelecektir. Bu yüzden nelere sahip olmaları gerektiği konusunda ek bilgiye ihtiyaç duyacaklardır. Sadece neye sahip olacağını bilmek değil, alacağı eşyaların ne kadar tutacağını bilmek de önemlidir. Detaylı bir liste çıkarılması, bu listedeki eşyaların fiyatlarının belirlenmesi gibi bir görev, ileride bebeklerinin isteklerine ve ihtiyaçlarına hazırlanmalarını kolaylaştıracaktır. Ancak bu listeye nereden başlayacağını bilmek bile başlı başlına bir sorun olabilir.Bebeğimle Hayat Bebek Masrafı Hesaplayıcısı bu noktada ebeveynlere yardımcı olmak için geliştirilmiş bir araçtır. Bebeğinize harcayabileceğiniz masraflar için önceden ayarlanmış kategorilerle size yol gösterir. Böylece nelere sahip olmanız gerektiğini öğrenebileceğiniz gibi aşağı yukarı ne kadar harcama yapmanız gerektiğini de öğrenirsiniz.Bebek masraf hesaplayıcı devamlı masraflar ve tek seferlik masraflar olarak ikiye ayrılmaktadır. Devamlı masraflar bez, mama ve hijyen ürünleri içerirken tek seferlik masraflar oto koltuğu, bez çantası ve bebek havlusu gibi ihtiyaçlar içerir. İsmini gördüğünüz ürünün yanındaki kutucuklara ne kadar harcama yapacağınızı yazarak ne kadar harcamanız gerektiğinizi öğrenebilirsiniz.Hangi ürünü hangi markadan alacağınızın kararını siz verdiğin için ürün fiyatına göre kendiniz bilgileri girebilir ve kendiniz için en doğru sonuca ulaşabilirsiniz. "
+                                }
+                            },
+                            {
+                                "@type": "Question",
+                                "name": "Bebek Masrafını Kısmak İçin Ne Yapabilirim?",
+                                "acceptedAnswer": {
+                                    "@type": "Answer",
+                                    "text": "Bebek masraflarını hesaplarken birçok ebeveyn beklediğinden daha yüksek bir fiyatla karşılaşır. Bu fiyatların azaltılması aile ekonomisinde büyük bir yardımda bulunabilir. Bebek masrafını kısmak içinse en etkili yöntem 2. el eşyalardır. 2. el eşyalar başta ebeveynlere çok güvenli gelmeyebilir. Ancak belirli önlemler alındığında ve dikkatli olunduğunda 2. el bebek ürünü almanın hiçbir sorunu yoktur. Sonuçta bebekler hızlı büyüdüğü için alınan ufak zıbınlar seneler boyunca giyilip yıpranmış olmayacaktır. Bu yüzden birçok ürünün 2. el satışı son derece doğaldır.Bebeğinize 2. el olarak kıyafet almanızda bir sakınca yoktur. Alınan kıyafetler sağlamsa, bebeğiniz için uygun özellikleri taşıyorsa ve beden olarak uyuyorsa almayı düşünebilirsiniz. Kıyafeti aldıktan sonra hijyenik bir şekilde yıkadığınız sürece hiçbir sorun olmayacaktır.Bebeğiniz için 2. el olarak alabileceğiniz bir diğer şey ise biberon ve oyuncaklardır. Ancak alacağınız biberonların sağlam olduğundan çatlaklarının olmadığından emin olun. Ayrıca ucundaki kauçuk ağzı mutlaka değiştirin ve yenisini alın. Oyuncaklarda da aynı şekilde kırık veya bozuk olmadıkları sürece dilediğiniz gibi ikinci el alabilirsiniz. Aldığınız her ürünü güzelce yıkamayı ve temizlemeyi unutmayın.Masraf kısmak için 2. el almanızın en etkili olacağı birkaç diğer ürün ise oto koltuğu, bebek arabası ve beşiktir. 3 üründe sağlam olduğu ve gerekli güvenlik önlemlerine sahip olduğu sürece gönül rahatlığı ile alabilirsiniz. Beşiklerde iskeleti almanızda bir sorun olmasa da yatağı ayrı almanızı tavsiye ederiz. Yatak paylaşımı genellikle hijyenik değildir ve bebeğiniz için zararlı olabilir. Oto koltuğu ve bebek arabasının kumaşını, yastıklarını tamamen hijyenik olacak şekilde yıkamanız gerekiyor. Aksi takdirde aynı hijyen problemlerine takılabilirsiniz. Eğer yastıklar veya kumaş sökülüp yıkanmıyorsa direkt yeni bir oto koltuğu ya da bebek arabası almanız daha doğru olacaktır.Bebeğinizin kullanabileceği bir başka 2. el ütün ise kaşık çatal gibi ürünlerdir. Bu ürünler genellikle plastiktir ve kolayca yıkanabilir. Üstlerinde bir çizik ve parçalanma olmadığı sürece güzel temizleyerek kullanabilirsiniz.Alacağınız ürün ister yeni ister ikinci el olsun, her daim ürünleri güzelce yıkamalı ve temizlemelisiniz. Hijyen mevcut aşamada bebeğinizin sağlığını koruyan en önemli etkendir."
+                                }
+                            },
+                            {
+                                "@type": "Question",
+                                "name": "Bebek İçin Her Ay Ne Kadar Para Biriktirmeliyim?",
+                                "acceptedAnswer": {
+                                    "@type": "Answer",
+                                    "text": "Bebek ihtiyaçları her ay değişebilir ve artabilir. Sadece bebeklik değil, çocukluk ve ergenlik yıllarında da çeşitli ihtiyaçları bulunacaktır. Okul masrafları, dışarıya çıkıp gezmeler ve çeşitli harcamalar asla bitmeyecektir. Bu yüzden bebeğiniz doğmadan masraflar için bir para biriktirdiğiniz gibi doğduktan sonra da her ay köşeye belirli bir miktar atmanız gerekecektir. Ne kadar para biriktirdiğiniz sizin bütçenize bağlı olarak değişmelidir. Ortalama 500₺ biriktirmeniz bile ileride çocuğunuz için size fayda sağlayacaktır. Köşeye para atarken asıl önemli olan ne kadar attığınız değil istikrarlı olmanız ve o paraya amacı dışında dokunmamanızdır. Çocuğunuzun geleceği için yatırım yapmak önemlidir."
+                                }
+                            },
+                            {
+                                "@type": "Question",
+                                "name": "Bebek Masrafını Kısmak İçin Tavsiyeler Nelerdir?",
+                                "acceptedAnswer": {
+                                    "@type": "Answer",
+                                    "text": "Bebeğinizin ihtiyaçları gözünüzde büyüyebilir. Bundan dolayı bazı hamlelerle cebinizi rahatlatabilirsiniz. Aşağıdaki tavsiyelerle beraber bütçenizi daha iyi kurabilirsiniz.Devlet yardımını araştırın. Yeni doğan çocuklar için destek olmak adına devlet tarafından belirli miktarlarda para ödenir. Sahip olduğunuz çocuk sayısı ve çalışma durumunuza bağlı olarak e devlet üzerinden başvuru yapabilirsiniz. İş yerinizin doğum iznini araştırın. Birçok işyeri annelere ve babalara doğum döneminde ücretli izin sunmaktadır. Haklarınızı araştırın ve öğrenin. Doğum izni yasal olarak hakkınızdır.Özel sağlık sigortanızı kontrol edin. Eğer özel sağlık sigortanız varsa bebeğinizi de kapsadığından ve ek ayrıcalıklarının olup olmadığından emin olun.Harcamalarınızı planlayın. Bebeğin doğumuna yakın tüm her şeyi almaktansa önceden satın almaya başlamanız daha doğru olacaktır. Böylece hem bütçenizi bebeğinize göre ayarlamaya alışırsınız hem de kendinizi bir anda sıkıştırmazsınız.Yaşadığınız şehrin çocuk masrafını araştırın. Her şehrin ekonomik durumu farklıdır. Yaşadığınız şehirde çocuk yetiştirmek diğer şehirlere göre daha ucuz ya da pahalı olabilir. Şimdiden bu miktarı araştırın ve ona göre hareket edin."
+                                }
+                            }
+                        ]
+                    }
+                }
+            ]
         }
     },
     data() {
@@ -1402,31 +1387,31 @@ export default {
             let total = 0;
 
             if (this.devamliMasraflar.isBakici)
-                total += parseFloat(this.devamliMasraflar.bakiciFiyat || 0)*12;
+                total += parseFloat(this.devamliMasraflar.bakiciFiyat || 0) * 12;
 
             if (this.devamliMasraflar.isBez)
-                total += parseFloat(this.devamliMasraflar.bezFiyat || 0)*12;
+                total += parseFloat(this.devamliMasraflar.bezFiyat || 0) * 12;
 
             if (this.devamliMasraflar.isIslakMendil)
-                total += parseFloat(this.devamliMasraflar.islakMendilFiyat || 0)*12;
+                total += parseFloat(this.devamliMasraflar.islakMendilFiyat || 0) * 12;
 
             if (this.devamliMasraflar.isFormulMama)
-                total += parseFloat(this.devamliMasraflar.formulMamaFiyat || 0)*9;
+                total += parseFloat(this.devamliMasraflar.formulMamaFiyat || 0) * 9;
 
             if (this.devamliMasraflar.isKatiGida)
-                total += parseFloat(this.devamliMasraflar.katiGidaFiyat || 0)*6;
+                total += parseFloat(this.devamliMasraflar.katiGidaFiyat || 0) * 6;
 
             if (this.devamliMasraflar.isKiyafet)
-                total += parseFloat(this.devamliMasraflar.kiyafetFiyat || 0)*12;
+                total += parseFloat(this.devamliMasraflar.kiyafetFiyat || 0) * 12;
 
             if (this.devamliMasraflar.isBirikim)
-                total += parseFloat(this.devamliMasraflar.birikimFiyat || 0)*12;
+                total += parseFloat(this.devamliMasraflar.birikimFiyat || 0) * 12;
 
             if (this.devamliMasraflar.isSaglikMasraf)
-                total += parseFloat(this.devamliMasraflar.saglikMasrafFiyat || 0)*12;
+                total += parseFloat(this.devamliMasraflar.saglikMasrafFiyat || 0) * 12;
 
             if (this.devamliMasraflar.isOyuncakKitap)
-                total += parseFloat(this.devamliMasraflar.oyuncakKitapFiyat || 0)*12;
+                total += parseFloat(this.devamliMasraflar.oyuncakKitapFiyat || 0) * 12;
 
 
             if (this.tekSeferlikMasraflar.isOtoKoltugu)
@@ -1543,7 +1528,7 @@ export default {
 }
 
 .line-height-normal {
-    line-height:normal;
+    line-height: normal;
 }
 
 .mw-150 {
@@ -1641,4 +1626,5 @@ export default {
         height: 35px;
         font-size: 15px;
     }
-}</style>
+}
+</style>

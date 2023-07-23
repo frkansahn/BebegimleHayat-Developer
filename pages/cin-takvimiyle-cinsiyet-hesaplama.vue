@@ -129,64 +129,6 @@
                                     ve keyif almak için Çin Takvimini kullanabilirsiniz. Ancak sonuca göre herhangi bir
                                     kesin hükümde bulunmamalısınız. </p>
                                 <br><br>
-
-
-                                <script type="application/ld+json">
-                                    {
-                                        "@context": "https://schema.org",
-                                        "@type": "FAQPage",
-                                        "mainEntity": [
-                                            {
-                                            "@type": "Question",
-                                            "name": "Çin Takvimi Cinsiyet Hesaplayıcısı Nedir?",
-                                            "acceptedAnswer": {
-                                                "@type": "Answer",
-                                                "text": "Bebeğinizin cinsiyetini merak mı ediyorsunuz? Çin Takvimi Cinsiyet Hesaplayıcımızı kullanarak Kadim Çin Ay Takvimine göre bebeğinizin cinsiyetini tahmin edebilirsiniz.
-                                        Çin Takvimi Cinsiyet Hesaplayıcı bilimsel bir araç değildir. Eskiden gerçek bir yöntem olarak kullanılmış olsa da günümüzde sadece eğlenceli amaçlıdır. Elbette tahmin olarak kız ve erkek seçenekleri olduğu için doğru tahmin etme şansı %50!
-                                        Çin Takvimi Cinsiyet Hesaplayıcıyı kullanmak için tek yapman gereken yukarıdaki bilgileri doldurmak ve Tahmin Et tuşuna tıklamak."
-                                            }
-                                            },
-                                            {
-                                            "@type": "Question",
-                                            "name": "Çin Takvimine Göre Cinsiyet Tahmin Etme Nedir?",
-                                            "acceptedAnswer": {
-                                                "@type": "Answer",
-                                                "text": "Çin takvimine göre cinsiyet tahmin etme yaklaşık 700 senelik bir yöntemdir. Efsanelere göre kraliyet ailesinin mezarında keşfedilmiştir. Çinli Astrologlar Çin takvimine göre cinsiyet hesaplamayı önermektedir. Ancak bu yöntemin nereden çıktığına dair kesin kanıt bulunmamaktadır.
-                                        Çin takvimine göre cinsiyet hesaplamada annenin yaşı ve hamile kaldığı aya göre Çin Ay Takviminin karşılaştırılması bebeğin cinsiyetini vermektedir."
-                                            }
-                                            },
-                                            {
-                                            "@type": "Question",
-                                            "name": "Çin Takvimine Göre Cinsiyet Tahmini Ne Kadar Tutarlıdır?",
-                                            "acceptedAnswer": {
-                                                "@type": "Answer",
-                                                "text": "Michigan Üniversitesi araştırmacıları Çin Ay Takviminin doğruluğu üzerine bir araştırma yürüttü. Araştırmada İsveç’e ait 2,8 milyon doğum verisi kullanıldı. Her annenin yaşı, ne zaman hamile kaldığı özel algoritma ile birleştirildi.
-                                        Araştırmalar sonuçlandığında Çin takviminin başarı oranı %50’ydi. Yani eğlence amaçlı kullanılan bu yöntem %50 ihtimalle tesadüfi doğru sonuçlar vermektedir."
-                                            }
-                                            },
-                                            {
-                                            "@type": "Question",
-                                            "name": "Bebeğimin Cinsiyetini Kesin Olarak Nasıl Öğrenebilirim?",
-                                            "acceptedAnswer": {
-                                                "@type": "Answer",
-                                                "text": "Bebeğinizin cinsiyetini bilimsel olarak öğrenmenin birkaç yolu bulunmaktadır. 10. haftadan itibaren uygulanılmaya başlayan NIPT ile bebeğinizin cinsiyetini öğrenebilirsiniz. NIPT normalde Down Sendromu ve diğer kromozomal hastalıkları test etmek için kullanılır.
-                                        Bir başka yöntem ise 18. haftadan itibaren ultrasonlardır. Doktorunuz bebeğinizin cinsel organını ultrason üzerinden saptayarak size en doğru bilgiyi verebilir.
-                                        Bir başka yöntem ise koryonik villus ve amniyosentez testleridir. Bu testler de bebeğinizin sahip olduğu diğer genetik hastalıkları saptamak için yapılan testlerdir. Tabi bu süreçte bebeğinizin cinsiyetini de ortaya çıkarırlar.
-                                        Eğer tüp bebek (IVF) sahibi olacaksanız bebeğinizin cinsiyetini çok daha önceden bile öğrenebilirsiniz. Hatta bazı inovasyonlar sayesinde bebeğinizin cinsiyetini bile seçebilirsiniz."
-                                            }
-                                            },
-                                            {
-                                            "@type": "Question",
-                                            "name": "Bebeğimin Cinsiyetini Tahmin Etmek İçin Çin Takvimini Kullanmalı mıyım?",
-                                            "acceptedAnswer": {
-                                                "@type": "Answer",
-                                                "text": "Bebeğinizin cinsiyetini öğrenmek sizin için heyecan verici bir dönüm noktası olabilir. Ancak Çin Takviminin eğlence amaçlı bir tahmin etme olduğunu unutmamalısınız. Eğlenmek ve keyif almak için Çin Takvimini kullanabilirsiniz. Ancak sonuca göre herhangi bir kesin hükümde bulunmamalısınız."
-                                            }
-                                            }
-                                        ]
-                                        }
-                                </script>
-
                             </div>
                         </div>
                     </div>
@@ -203,7 +145,7 @@ import "vue-select/dist/vue-select.css";
 Vue.component("v-select", vSelect);
 
 
-import { FormPlugin, FormGroupPlugin,SpinnerPlugin } from 'bootstrap-vue'
+import { FormPlugin, FormGroupPlugin, SpinnerPlugin } from 'bootstrap-vue'
 Vue.use(SpinnerPlugin);
 Vue.use(FormPlugin);
 Vue.use(FormGroupPlugin);
@@ -218,6 +160,58 @@ export default {
                 { hid: 'description', name: 'description', content: "Bebek cinsiyeti öğrenme ebeveynler için bir merak kaynağıdır. Çin takvimine göre bebek cinsiyeti belirleme yaygın bir yöntemdir. Bebeğimlehayat'ta Çin takvimine göre bebek cinsiyeti hesaplama uygulamasını kullanabilirsiniz!" },
                 { hid: 'og:title', property: 'og:title', content: "Bebek cinsiyeti öğrenme ebeveynler için bir merak kaynağıdır. Çin takvimine göre bebek cinsiyeti belirleme yaygın bir yöntemdir. Bebeğimlehayat'ta Çin takvimine göre bebek cinsiyeti hesaplama uygulamasını kullanabilirsiniz!" }
             ],
+            script: [
+                {
+                    body: true,
+                    type: 'application/ld+json',
+                    json: {
+                        "@context": "https://schema.org",
+                        "@type": "FAQPage",
+                        "mainEntity": [
+                            {
+                                "@type": "Question",
+                                "name": "Çin Takvimi Cinsiyet Hesaplayıcısı Nedir?",
+                                "acceptedAnswer": {
+                                    "@type": "Answer",
+                                    "text": "Bebeğinizin cinsiyetini merak mı ediyorsunuz? Çin Takvimi Cinsiyet Hesaplayıcımızı kullanarak Kadim Çin Ay Takvimine göre bebeğinizin cinsiyetini tahmin edebilirsiniz.Çin Takvimi Cinsiyet Hesaplayıcı bilimsel bir araç değildir. Eskiden gerçek bir yöntem olarak kullanılmış olsa da günümüzde sadece eğlenceli amaçlıdır. Elbette tahmin olarak kız ve erkek seçenekleri olduğu için doğru tahmin etme şansı %50!Çin Takvimi Cinsiyet Hesaplayıcıyı kullanmak için tek yapman gereken yukarıdaki bilgileri doldurmak ve Tahmin Et tuşuna tıklamak."
+                                }
+                            },
+                            {
+                                "@type": "Question",
+                                "name": "Çin Takvimine Göre Cinsiyet Tahmin Etme Nedir?",
+                                "acceptedAnswer": {
+                                    "@type": "Answer",
+                                    "text": "Çin takvimine göre cinsiyet tahmin etme yaklaşık 700 senelik bir yöntemdir. Efsanelere göre kraliyet ailesinin mezarında keşfedilmiştir. Çinli Astrologlar Çin takvimine göre cinsiyet hesaplamayı önermektedir. Ancak bu yöntemin nereden çıktığına dair kesin kanıt bulunmamaktadır.Çin takvimine göre cinsiyet hesaplamada annenin yaşı ve hamile kaldığı aya göre Çin Ay Takviminin karşılaştırılması bebeğin cinsiyetini vermektedir."
+                                }
+                            },
+                            {
+                                "@type": "Question",
+                                "name": "Çin Takvimine Göre Cinsiyet Tahmini Ne Kadar Tutarlıdır?",
+                                "acceptedAnswer": {
+                                    "@type": "Answer",
+                                    "text": "Michigan Üniversitesi araştırmacıları Çin Ay Takviminin doğruluğu üzerine bir araştırma yürüttü. Araştırmada İsveç’e ait 2,8 milyon doğum verisi kullanıldı. Her annenin yaşı, ne zaman hamile kaldığı özel algoritma ile birleştirildi.Araştırmalar sonuçlandığında Çin takviminin başarı oranı %50’ydi. Yani eğlence amaçlı kullanılan bu yöntem %50 ihtimalle tesadüfi doğru sonuçlar vermektedir."
+                                }
+                            },
+                            {
+                                "@type": "Question",
+                                "name": "Bebeğimin Cinsiyetini Kesin Olarak Nasıl Öğrenebilirim?",
+                                "acceptedAnswer": {
+                                    "@type": "Answer",
+                                    "text": "Bebeğinizin cinsiyetini bilimsel olarak öğrenmenin birkaç yolu bulunmaktadır. 10. haftadan itibaren uygulanılmaya başlayan NIPT ile bebeğinizin cinsiyetini öğrenebilirsiniz. NIPT normalde Down Sendromu ve diğer kromozomal hastalıkları test etmek için kullanılır.Bir başka yöntem ise 18. haftadan itibaren ultrasonlardır. Doktorunuz bebeğinizin cinsel organını ultrason üzerinden saptayarak size en doğru bilgiyi verebilir.Bir başka yöntem ise koryonik villus ve amniyosentez testleridir. Bu testler de bebeğinizin sahip olduğu diğer genetik hastalıkları saptamak için yapılan testlerdir. Tabi bu süreçte bebeğinizin cinsiyetini de ortaya çıkarırlar.Eğer tüp bebek (IVF) sahibi olacaksanız bebeğinizin cinsiyetini çok daha önceden bile öğrenebilirsiniz. Hatta bazı inovasyonlar sayesinde bebeğinizin cinsiyetini bile seçebilirsiniz."
+                                }
+                            },
+                            {
+                                "@type": "Question",
+                                "name": "Bebeğimin Cinsiyetini Tahmin Etmek İçin Çin Takvimini Kullanmalı mıyım?",
+                                "acceptedAnswer": {
+                                    "@type": "Answer",
+                                    "text": "Bebeğinizin cinsiyetini öğrenmek sizin için heyecan verici bir dönüm noktası olabilir. Ancak Çin Takviminin eğlence amaçlı bir tahmin etme olduğunu unutmamalısınız. Eğlenmek ve keyif almak için Çin Takvimini kullanabilirsiniz. Ancak sonuca göre herhangi bir kesin hükümde bulunmamalısınız."
+                                }
+                            }
+                        ]
+                    }
+                }
+            ]
         }
     },
     data() {
@@ -426,4 +420,5 @@ export default {
 
 .vs__search {
     font-size: 18px;
-}</style>
+}
+</style>

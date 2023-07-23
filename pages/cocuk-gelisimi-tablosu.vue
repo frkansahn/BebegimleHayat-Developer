@@ -398,94 +398,6 @@
                                     ölçümlerini gerçekleştirdikten sonra Bebeğimlehayat bebek gelişim hesaplama aracı
                                     sayesinde pratik şekilde gelişim takibi gerçekleştirebilirsiniz! </p>
                                 <br><br>
-
-                                <script type="application/ld+json">
-                                    {
-                                            "@context": "https://schema.org",
-                                            "@type": "FAQPage",
-                                            "mainEntity": [
-                                                {
-                                                "@type": "Question",
-                                                "name": "Bebek Gelişim Tablosu Nedir?",
-                                                "acceptedAnswer": {
-                                                    "@type": "Answer",
-                                                    "text": "Ebeveynler için minik yavrularının sağlığı oldukça önemlidir. Bu noktada evrensel bazı değerler üzerinden hesaplanan gelişim tablolarından faydalanılır. Bebek gelişim tabloları, çeşitli fiziksel özellikler dahilinde ideal gelişim sürecini planlamayı ve takip etmeyi sağlar. Peki, bebek gelişim tablosu neden önemlidir ve bebek gelişim tablosunda hangi veriler yer alır? Bebeğinizin ideal gelişimini takip etmek için kullanabileceğiniz bebek gelişim tabloları hakkında merak ettiğiniz her şey Bebeğimlehayat’ta!"
-                                                }
-                                                },
-                                                {
-                                                "@type": "Question",
-                                                "name": "Bebek Gelişim Tablosu Neden Önemlidir?",
-                                                "acceptedAnswer": {
-                                                    "@type": "Answer",
-                                                    "text": "Anne karnından itibaren bebeklerin fiziksel gelişimlerinin takip edilmesi olası problemlere dair fikir sahibi olmak ve erken tanı ihtimalini artırmak için önemlidir. Bebek gelişim tablosu bebeklerin çeşitli fiziksel verileri kullanılarak oluşturulmuştur ve \“ideal gelişim özellikleri\” ile bebeğinizin gelişim özelliklerini karşılaştırmanıza olanak tanır. Gelişim tablosundaki ideal değerler çeşitli etkenler bağlamında değişiklik gösterebilir ancak bebeklerin gelişimleriyle ilgili yeterli bilgiyi verir. Bebeklerin ideal boy uzunluğunun altında ya da üstünde olması, kilo kontrolü, kilo ve boy oranı gibi verileri ışığında çeşitli gelişimsel sorunlar ya da hastalıklar olup olmadığının tespit edilebilmesi için bu tablolar büyük önem taşır.
-                                            Bebeğinizin gelişim değerlerinin ideal bebek gelişim tablosundaki değerlerle uyuşmaması her zaman ciddi bir problemin varlığına işaret etmeyebilir. Gelişim tabloları yalnızca fikir edinmek üzere tasarlanmıştır. En doğru bilgiyi çocuk doktorunuzdan alabilirsiniz."
-                                                }
-                                                },
-                                                {
-                                                "@type": "Question",
-                                                "name": "Bebek Gelişim Tablosunda Hangi Veriler Yer Alır?",
-                                                "acceptedAnswer": {
-                                                    "@type": "Answer",
-                                                    "text": "Bebek gelişim tabloları çeşitli veriler ve özellikler bağlamında geliştirilmiştir. Bu noktada ilk önemli faktör cinsiyettir. Kızlar ve erkekler gelişimsel açıdan birbirinden farklı ilerler. Bu sebeple her cinsiyet için ideal gelişim değerleri farklılık gösterir.
-                                            Bebek gelişim tablosunda önemli bir diğer değer ise doğum tarihidir. Bebeğin ideal gelişiminin takip edilebilmesi için tam yaş değerinin gün, ay ve yıl olarak girilmesi oldukça önemlidir.
-                                            Bebeğin gelişim tablosunu doğru şekilde kullanabilmek için verilerin son ölçüm tarihi de oldukça önemlidir. Ölçümler doktor kontrollerinde yapılabileceği gibi hassas araçlar yardımıyla ev ortamında da gerçekleştirilebilir.
-                                            Bebeklerin baş çevresi de gelişim takibinde kullanılan verilerden biridir. Baş çevresi ölçüsü, beyin gelişimiyle ilgili veriler edinmek için kullanılır."
-                                                }
-                                                },
-                                                {
-                                                "@type": "Question",
-                                                "name": "Bebeklerde Kilo, Boy ve Baş Çevresi Ölçümü Nasıl Yapılır?",
-                                                "acceptedAnswer": {
-                                                    "@type": "Answer",
-                                                    "text": "Bebek gelişim tablosunda en doğru verilerin girilebilmesi ve takibin doğru şekilde yapılabilmesi için ölçüm tekniklerine dikkat edilmesi gerekir. Doktor kontrollerinde bebekler hassas bebek tartıları ve özel cetvellerle ölçülür. Kilo ölçümü esnasında bebeğin ayakkabılarının ve kıyafetlerinin çıkartılmış olması gerekir.
-                                            Evde ölçüm yapmak istiyorsanız en doğru veriler için bir hassas bebek tartısı edinmeniz önerilir. Hassas bebek tartınız yoksa uygulayabileceğiniz basit bir yöntem daha bulunur. Bu yöntemde öncelikle bebeğinizin üzerindeki her şeyi çıkarmanız gerekir. Ardından bebeğinizi kucağınıza alarak tartıya çıkmanız ve gördüğünüz değeri not etmeniz gerekir. Sonraki adım ise bebeğinizi kucağınızdan indirip tartıya tekrar çıktığınızda gördüğünüz değeri not almanızdır. Bebeğinizle birlikte gerçekleştirdiğiniz ölçüm değerinden tek başınıza gerçekleştirdiğiniz ölçüm değerini çıkardığınızda bebeğinizin ağırlığını yaklaşık olarak tespit etmiş olursunuz.
-                                            Bebeklerin boyu hastane ortamında özel cetveller yardımıyla ölçülür. Evde ölçüm yapmak için ise basit bir mezura kullanabilirsiniz. Bu noktada bebeğinizi tamamen uzanmış şekilde sabit tutması için bir başkasının yardımına ihtiyaç duyabilirsiniz. Mezuranın başlangıç noktasını bebeğinizin başına gelecek şekilde tutup ayak parmaklarına kadar esneterek bebeğinizin boyunu tespit edebilirsiniz. Bu noktada bebeğin düz bir zeminde, düz uzanmış şekilde yatması sağlıklı bir ölçüm yapılabilmesi açısından elzemdir.
-                                            Baş çevresi ölçümü de en sağlıklı şekilde hastane ortamında yapılabilir ancak esnek bir mezura yardımıyla evde ölçüm yapmak da ihtiyaç duyulan verileri sağlayacaktır. Mezurayı bebeğinizin başının en geniş yerine, yani kulakların ve kaşların hemen üzerine yerleştirerek baş çevresi ölçümü yapabilirsiniz. Bu noktada ölçümü birkaç kez tekrarlamanız, alacağınız değerin güvenilirliği açısından önemlidir."
-                                                }
-                                                },
-                                                {
-                                                "@type": "Question",
-                                                "name": "Bebeklerde Ölçüm Sıklığı Nasıl Olmalıdır?",
-                                                "acceptedAnswer": {
-                                                    "@type": "Answer",
-                                                    "text": "Bebeklerde gelişim takibi için yapılması gereken ölçümlerin sıklığı da merak edilen konular arasında yer alır. En doğru takip için ilk 1 ay boyunca her hafta ölçüm yapmanız önerilir. Sonraki altı aylık süreçte her ay bir kez ölçüm yapılması gelişim takibi için idealdir. Bir yaşına ilerlerken her ay ölçüm yapmaya devam edilebileceği gibi iki ayda bir ölçüm yapmak da gelişim takibi için yeterli olur."
-                                                }
-                                                },
-                                                {
-                                                "@type": "Question",
-                                                "name": "Persentil Nedir?",
-                                                "acceptedAnswer": {
-                                                    "@type": "Answer",
-                                                    "text": "Persentil bebeklerin kilo, boy ve baş çevresi değerlerinin onlarla yaşıt bebeklerdeki ortalama ve ideal değerlere göre nasıl ilerlediğini takip etmeye yarayan eğrilerdir. Persentil eğrileri aynı zamanda \“büyüme eğrileri\” adıyla da bilinir. Bebeğinizin gelişim geriliği gösterip göstermediğini, ideal gelişim sürecinin hangi evresinde olduğunu tespit etmek için persentil eğrilerinden faydalanabilirsiniz."
-                                                }
-                                                },
-                                                {
-                                                "@type": "Question",
-                                                "name": "Persentil Nasıl Hesaplanır?",
-                                                "acceptedAnswer": {
-                                                    "@type": "Answer",
-                                                    "text": "Persentil değerleri farklı dönemlerde bebeklerin ortalama ve ideal kilo, boy ve baş çevresi ölçüleri baz alınarak oluşturulan tablolardır. Kız ve erkek bebekler için farklı değerlerle oluşturulan bu tablolarda gelişim takibi için yüzdelik değerler kullanılır. Bu bağlamda bebeğinizin fiziksel verileri %3 ile %97 arasında bulunuyorsa gelişimsel açıdan bir problem olmadığına kanaat getirilebilir.
-                                            Persentil yüzdelerinin temsil ettiği değerler aşağıdaki gibi sıralanabilir:
-                                            %0 ve %10 arası en düşük değerdir. Bebeğinizin persentil değerinin bu aralıkta olması, yaşıt bebeklerin gelişimine kıyasla oldukça geride olduğunu gösterir. Bu durumda derhal bir doktora danışılması ve bu durumun sebebinin tespit edilmesi gerekir.
-                                            %10 ve %25 arası düşük değerdir. Bebeğinizin persentil değeri bu aralıktaysa doktor kontrolü altında olması gerekir. Aksi halde gelişim geriliği görülebilir.
-                                            %25 ve %75 arası normal değerdir. Bebeğinizin persentil değeri bu aralıktaysa bu durum bebeğinizin aynı yaş ve cinsiyetteki bebeklerle dengeli gelişim gösterdiği anlamına gelir. Bu durumda 3 ayda bir yeniden ölçüm yapılması ve persentil değerinin takip edilmesi yeterli olacaktır.
-                                            %75 ve %90 arası yüksek değerdir. Bu durumda bebeğiniz aynı yaş ve cinsiyetteki diğer bebeklere kıyasla daha kilolu ve daha uzun boyludur. Aynı zamanda bebeğinizin baş çevresi de diğer bebeklere kıyasla daha büyüktür. Bu durumda doktor kontrolünde ideal değerlere ulaşmak için bir program belirlenmesi gerekir.
-                                            %90 ve %100 arası en yüksek değerdir. Bu durumda bebeğiniz aynı yaş ve cinsiyetteki diğer bebeklerle kıyaslandığında fazla gelişim göstermektedir. Bu noktada bebeğinizde hormonal bozukluklar, genetik bazı hastalıklar ya da anomaliler, obezite gibi sağlık sorunları bulunabilir. Bebeğinizin persentil değerinin bu aralıkta bulunması durumunda düzenli doktor kontrolleriyle sorunun kaynağı bulunmalı ve tedaviye başlanmalıdır."
-                                                }
-                                                },
-                                                {
-                                                "@type": "Question",
-                                                "name": "Bebeğimlehayat Bebek Gelişim Tablosu İle Bebeğinizin Gelişimini Nasıl Takip Edebilirsiniz?",
-                                                "acceptedAnswer": {
-                                                    "@type": "Answer",
-                                                    "text": "Bebeklerin sağlıklı ve ideal gelişim gösterebilmesi için çeşitli reflekslerin ve becerilerin gelişimi takip edilebilir. Bununla birlikte gelişim özelliklerine dair en net veriler arasında kilo, boy ve baş çevresi değerleri de yer alır. Bebeğinizin ölçümlerini gerçekleştirdikten sonra Bebeğimlehayat bebek gelişim hesaplama aracı sayesinde pratik şekilde gelişim takibi gerçekleştirebilirsiniz!"
-                                                }
-                                                }
-                                            ]
-                                        }
-                                </script>
-
-
                             </div>
                         </div>
                     </div>
@@ -517,6 +429,82 @@ export default {
                 { hid: 'description', name: 'description', content: "Çocuk gelişimi tablosu kilo ve boy gibi çeşitli verileri içeren bir gelişim takip uygulamasıdır. Bebeğimlehayat'ta pratik şekilde çocuk gelişim tablosuna erişebilirsiniz!" },
                 { hid: 'og:title', property: 'og:title', content: "Çocuk gelişimi tablosu kilo ve boy gibi çeşitli verileri içeren bir gelişim takip uygulamasıdır. Bebeğimlehayat'ta pratik şekilde çocuk gelişim tablosuna erişebilirsiniz!" }
             ],
+            script: [
+                {
+                    body: true,
+                    type: 'application/ld+json',
+                    json: {
+                        "@context": "https://schema.org",
+                        "@type": "FAQPage",
+                        "mainEntity": [
+                            {
+                                "@type": "Question",
+                                "name": "Bebek Gelişim Tablosu Nedir?",
+                                "acceptedAnswer": {
+                                    "@type": "Answer",
+                                    "text": "Ebeveynler için minik yavrularının sağlığı oldukça önemlidir. Bu noktada evrensel bazı değerler üzerinden hesaplanan gelişim tablolarından faydalanılır. Bebek gelişim tabloları, çeşitli fiziksel özellikler dahilinde ideal gelişim sürecini planlamayı ve takip etmeyi sağlar. Peki, bebek gelişim tablosu neden önemlidir ve bebek gelişim tablosunda hangi veriler yer alır? Bebeğinizin ideal gelişimini takip etmek için kullanabileceğiniz bebek gelişim tabloları hakkında merak ettiğiniz her şey Bebeğimlehayat’ta!"
+                                }
+                            },
+                            {
+                                "@type": "Question",
+                                "name": "Bebek Gelişim Tablosu Neden Önemlidir?",
+                                "acceptedAnswer": {
+                                    "@type": "Answer",
+                                    "text": "Anne karnından itibaren bebeklerin fiziksel gelişimlerinin takip edilmesi olası problemlere dair fikir sahibi olmak ve erken tanı ihtimalini artırmak için önemlidir. Bebek gelişim tablosu bebeklerin çeşitli fiziksel verileri kullanılarak oluşturulmuştur ve \“ideal gelişim özellikleri\” ile bebeğinizin gelişim özelliklerini karşılaştırmanıza olanak tanır. Gelişim tablosundaki ideal değerler çeşitli etkenler bağlamında değişiklik gösterebilir ancak bebeklerin gelişimleriyle ilgili yeterli bilgiyi verir. Bebeklerin ideal boy uzunluğunun altında ya da üstünde olması, kilo kontrolü, kilo ve boy oranı gibi verileri ışığında çeşitli gelişimsel sorunlar ya da hastalıklar olup olmadığının tespit edilebilmesi için bu tablolar büyük önem taşır.Bebeğinizin gelişim değerlerinin ideal bebek gelişim tablosundaki değerlerle uyuşmaması her zaman ciddi bir problemin varlığına işaret etmeyebilir. Gelişim tabloları yalnızca fikir edinmek üzere tasarlanmıştır. En doğru bilgiyi çocuk doktorunuzdan alabilirsiniz."
+                                }
+                            },
+                            {
+                                "@type": "Question",
+                                "name": "Bebek Gelişim Tablosunda Hangi Veriler Yer Alır?",
+                                "acceptedAnswer": {
+                                    "@type": "Answer",
+                                    "text": "Bebek gelişim tabloları çeşitli veriler ve özellikler bağlamında geliştirilmiştir. Bu noktada ilk önemli faktör cinsiyettir. Kızlar ve erkekler gelişimsel açıdan birbirinden farklı ilerler. Bu sebeple her cinsiyet için ideal gelişim değerleri farklılık gösterir.Bebek gelişim tablosunda önemli bir diğer değer ise doğum tarihidir. Bebeğin ideal gelişiminin takip edilebilmesi için tam yaş değerinin gün, ay ve yıl olarak girilmesi oldukça önemlidir.Bebeğin gelişim tablosunu doğru şekilde kullanabilmek için verilerin son ölçüm tarihi de oldukça önemlidir. Ölçümler doktor kontrollerinde yapılabileceği gibi hassas araçlar yardımıyla ev ortamında da gerçekleştirilebilir.Bebeklerin baş çevresi de gelişim takibinde kullanılan verilerden biridir. Baş çevresi ölçüsü, beyin gelişimiyle ilgili veriler edinmek için kullanılır."
+                                }
+                            },
+                            {
+                                "@type": "Question",
+                                "name": "Bebeklerde Kilo, Boy ve Baş Çevresi Ölçümü Nasıl Yapılır?",
+                                "acceptedAnswer": {
+                                    "@type": "Answer",
+                                    "text": "Bebek gelişim tablosunda en doğru verilerin girilebilmesi ve takibin doğru şekilde yapılabilmesi için ölçüm tekniklerine dikkat edilmesi gerekir. Doktor kontrollerinde bebekler hassas bebek tartıları ve özel cetvellerle ölçülür. Kilo ölçümü esnasında bebeğin ayakkabılarının ve kıyafetlerinin çıkartılmış olması gerekir.Evde ölçüm yapmak istiyorsanız en doğru veriler için bir hassas bebek tartısı edinmeniz önerilir. Hassas bebek tartınız yoksa uygulayabileceğiniz basit bir yöntem daha bulunur. Bu yöntemde öncelikle bebeğinizin üzerindeki her şeyi çıkarmanız gerekir. Ardından bebeğinizi kucağınıza alarak tartıya çıkmanız ve gördüğünüz değeri not etmeniz gerekir. Sonraki adım ise bebeğinizi kucağınızdan indirip tartıya tekrar çıktığınızda gördüğünüz değeri not almanızdır. Bebeğinizle birlikte gerçekleştirdiğiniz ölçüm değerinden tek başınıza gerçekleştirdiğiniz ölçüm değerini çıkardığınızda bebeğinizin ağırlığını yaklaşık olarak tespit etmiş olursunuz.Bebeklerin boyu hastane ortamında özel cetveller yardımıyla ölçülür. Evde ölçüm yapmak için ise basit bir mezura kullanabilirsiniz. Bu noktada bebeğinizi tamamen uzanmış şekilde sabit tutması için bir başkasının yardımına ihtiyaç duyabilirsiniz. Mezuranın başlangıç noktasını bebeğinizin başına gelecek şekilde tutup ayak parmaklarına kadar esneterek bebeğinizin boyunu tespit edebilirsiniz. Bu noktada bebeğin düz bir zeminde, düz uzanmış şekilde yatması sağlıklı bir ölçüm yapılabilmesi açısından elzemdir.Baş çevresi ölçümü de en sağlıklı şekilde hastane ortamında yapılabilir ancak esnek bir mezura yardımıyla evde ölçüm yapmak da ihtiyaç duyulan verileri sağlayacaktır. Mezurayı bebeğinizin başının en geniş yerine, yani kulakların ve kaşların hemen üzerine yerleştirerek baş çevresi ölçümü yapabilirsiniz. Bu noktada ölçümü birkaç kez tekrarlamanız, alacağınız değerin güvenilirliği açısından önemlidir."
+                                }
+                            },
+                            {
+                                "@type": "Question",
+                                "name": "Bebeklerde Ölçüm Sıklığı Nasıl Olmalıdır?",
+                                "acceptedAnswer": {
+                                    "@type": "Answer",
+                                    "text": "Bebeklerde gelişim takibi için yapılması gereken ölçümlerin sıklığı da merak edilen konular arasında yer alır. En doğru takip için ilk 1 ay boyunca her hafta ölçüm yapmanız önerilir. Sonraki altı aylık süreçte her ay bir kez ölçüm yapılması gelişim takibi için idealdir. Bir yaşına ilerlerken her ay ölçüm yapmaya devam edilebileceği gibi iki ayda bir ölçüm yapmak da gelişim takibi için yeterli olur."
+                                }
+                            },
+                            {
+                                "@type": "Question",
+                                "name": "Persentil Nedir?",
+                                "acceptedAnswer": {
+                                    "@type": "Answer",
+                                    "text": "Persentil bebeklerin kilo, boy ve baş çevresi değerlerinin onlarla yaşıt bebeklerdeki ortalama ve ideal değerlere göre nasıl ilerlediğini takip etmeye yarayan eğrilerdir. Persentil eğrileri aynı zamanda \“büyüme eğrileri\” adıyla da bilinir. Bebeğinizin gelişim geriliği gösterip göstermediğini, ideal gelişim sürecinin hangi evresinde olduğunu tespit etmek için persentil eğrilerinden faydalanabilirsiniz."
+                                }
+                            },
+                            {
+                                "@type": "Question",
+                                "name": "Persentil Nasıl Hesaplanır?",
+                                "acceptedAnswer": {
+                                    "@type": "Answer",
+                                    "text": "Persentil değerleri farklı dönemlerde bebeklerin ortalama ve ideal kilo, boy ve baş çevresi ölçüleri baz alınarak oluşturulan tablolardır. Kız ve erkek bebekler için farklı değerlerle oluşturulan bu tablolarda gelişim takibi için yüzdelik değerler kullanılır. Bu bağlamda bebeğinizin fiziksel verileri %3 ile %97 arasında bulunuyorsa gelişimsel açıdan bir problem olmadığına kanaat getirilebilir.Persentil yüzdelerinin temsil ettiği değerler aşağıdaki gibi sıralanabilir:%0 ve %10 arası en düşük değerdir. Bebeğinizin persentil değerinin bu aralıkta olması, yaşıt bebeklerin gelişimine kıyasla oldukça geride olduğunu gösterir. Bu durumda derhal bir doktora danışılması ve bu durumun sebebinin tespit edilmesi gerekir.%10 ve %25 arası düşük değerdir. Bebeğinizin persentil değeri bu aralıktaysa doktor kontrolü altında olması gerekir. Aksi halde gelişim geriliği görülebilir.%25 ve %75 arası normal değerdir. Bebeğinizin persentil değeri bu aralıktaysa bu durum bebeğinizin aynı yaş ve cinsiyetteki bebeklerle dengeli gelişim gösterdiği anlamına gelir. Bu durumda 3 ayda bir yeniden ölçüm yapılması ve persentil değerinin takip edilmesi yeterli olacaktır.%75 ve %90 arası yüksek değerdir. Bu durumda bebeğiniz aynı yaş ve cinsiyetteki diğer bebeklere kıyasla daha kilolu ve daha uzun boyludur. Aynı zamanda bebeğinizin baş çevresi de diğer bebeklere kıyasla daha büyüktür. Bu durumda doktor kontrolünde ideal değerlere ulaşmak için bir program belirlenmesi gerekir. %90 ve %100 arası en yüksek değerdir. Bu durumda bebeğiniz aynı yaş ve cinsiyetteki diğer bebeklerle kıyaslandığında fazla gelişim göstermektedir. Bu noktada bebeğinizde hormonal bozukluklar, genetik bazı hastalıklar ya da anomaliler, obezite gibi sağlık sorunları bulunabilir. Bebeğinizin persentil değerinin bu aralıkta bulunması durumunda düzenli doktor kontrolleriyle sorunun kaynağı bulunmalı ve tedaviye başlanmalıdır."
+                                }
+                            },
+                            {
+                                "@type": "Question",
+                                "name": "Bebeğimlehayat Bebek Gelişim Tablosu İle Bebeğinizin Gelişimini Nasıl Takip Edebilirsiniz?",
+                                "acceptedAnswer": {
+                                    "@type": "Answer",
+                                    "text": "Bebeklerin sağlıklı ve ideal gelişim gösterebilmesi için çeşitli reflekslerin ve becerilerin gelişimi takip edilebilir. Bununla birlikte gelişim özelliklerine dair en net veriler arasında kilo, boy ve baş çevresi değerleri de yer alır. Bebeğinizin ölçümlerini gerçekleştirdikten sonra Bebeğimlehayat bebek gelişim hesaplama aracı sayesinde pratik şekilde gelişim takibi gerçekleştirebilirsiniz!"
+                                }
+                            }
+                        ]
+                    }
+                }
+            ]
         }
     },
     data() {
@@ -920,4 +908,5 @@ export default {
     #cocukGelisimiForm input {
         font-size: 16px;
     }
-}</style>
+}
+</style>

@@ -71,7 +71,7 @@
                     </div>
                 </div>
                 <div class="row my-4 my-md-5" v-else>
-                    <div class="col-12 col-lg-8 mb-4 mb-md-0">
+                    <div class="col-12 col-lg-8 mb-4 mb-md-0" id="blogDetail">
                         <div class="row">
                             <div class="col-12 mb-2 mb-md-4 blog-title">
                                 <h1 class="text-left">
@@ -297,6 +297,9 @@
 </template>
 
 <script>
+import Vue from 'vue'
+import { SkeletonPlugin } from 'bootstrap-vue'
+Vue.use(SkeletonPlugin)
 
 export default
     {
@@ -453,6 +456,36 @@ export default
         },
         async mounted() {
             this.blogViewed();
+            this.interestYouClientWidth = document.getElementById('interestYou').clientWidth;
+            let interestYou = document.getElementById('interestYou')
+            document.addEventListener('scroll' , function(e){
+                if(window.screen.width > 992) {
+                    if(window.innerHeight-interestYou.getBoundingClientRect().bottom > 30) {
+                        if(!interestYou.classList.contains('sticky')) {
+                            interestYou.style.maxWidth = interestYou.clientWidth + 'px';
+                            interestYou.classList.add('sticky');
+                            interestYou.style.bottom = '30px';
+                        }
+                    }
+    
+                    if(document.getElementById('blogDetail').getBoundingClientRect().top > 0) {
+                        if(interestYou.classList.contains('sticky')) {
+                            interestYou.classList.remove('sticky')
+                            interestYou.style.maxWidth = null;
+                            interestYou.style.bottom = null;
+                        }
+                    }
+
+                    if(window.innerHeight - document.getElementById('footer').getBoundingClientRect().top > 30) {
+                        if(interestYou.classList.contains('sticky')) {
+                            interestYou.style.bottom = window.innerHeight - document.getElementById('footer').getBoundingClientRect().top + 30 + 'px';
+                        }
+                    }
+                    else {
+                        interestYou.style.bottom = '30px';
+                    }
+                }
+            });
         }
     }
 </script>
@@ -565,6 +598,11 @@ export default
 #interestYou {
     background: #f5f2ee;
     padding: 30px;
+}
+
+#interestYou.sticky {
+    position: fixed;
+    width: 100%;
 }
 
 #blog-detail-short-link a:hover {

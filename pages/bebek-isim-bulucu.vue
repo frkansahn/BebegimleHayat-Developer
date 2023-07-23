@@ -149,60 +149,6 @@
                                     Tek yapmanız gereken sayfamızda bulunan isimleri incelemek ve bebeğinize en iyi isimleri
                                     seçmek. </p>
                                 <br><br>
-
-                                <script type="application/ld+json">
-                                    {
-                                        "@context": "https://schema.org",
-                                        "@type": "FAQPage",
-                                        "mainEntity": [
-                                            {
-                                            "@type": "Question",
-                                            "name": "Bebek İsim Bulucu Nedir?",
-                                            "acceptedAnswer": {
-                                                "@type": "Answer",
-                                                "text": "Hamileliğin en önemli aşamalarından birindesiniz. Artık bebeğinize isim seçme vakti. Doğuma yakın veya uzak olmanız fark etmez, bebeğinize isim düşünmeniz son derece önemlidir.
-                                        Bebek İsim Bulucuyu kullanmak için tek yapmanız gereken bebeğinizin cinsiyetini seçmek, arından da istediğiniz baş harfi seçmektir. Karşınıza çıkan isim listesinde isimlere tıklayarak anlamlarını öğrenebilirsiniz. Diğer isimleri görmek için Daha Fazla tuşuna tıklayabilirsiniz. Dilediğiniz zaman cinsiyeti veya harfi değiştirip başka isimlere de göz atabilirsiniz."
-                                            }
-                                            },
-                                            {
-                                            "@type": "Question",
-                                            "name": "Doğru Bebek İsmi Nasıl Seçilir?",
-                                            "acceptedAnswer": {
-                                                "@type": "Answer",
-                                                "text": "Bebeğinize doğru ismi seçmek her zaman zordur. Seçerken aklınıza gelecek birçok faktör bulunmaktadır. Sade ve güzel veya ihtişamlı ve yaratıcı bir isim seçerken engeller her zaman aynıdır.
-                                        - Bebeğiniz büyüdüğünde bu isim nasıl duracak? 
-                                        - Bu isim kulağınıza her zaman güzel gelecek mi yoksa zaman geçtikçe eskiyecek mi?
-                                        - Bebeğiniz isminin manası bebeğinizle uyuşacak mı?
-                                        Bu ve benzer sorular bir isimde karar kılmaya çalışırken aklınızı işgal ediyor olabilir. Her ebeveyn aynı ikilemleri yaşamaktadır. Bu da son derece doğaldır çünkü ismimizi ömrümüz boyunca taşırız."
-                                            }
-                                            },
-                                            {
-                                            "@type": "Question",
-                                            "name": "Bebek İsimlerinin Önemi Nedir?",
-                                            "acceptedAnswer": {
-                                                "@type": "Answer",
-                                                "text": "Her ismin kendine ait hikayesi vardır. Derin anlamları bazıları için hoşken bazıları içinse normaldir. Bebeklerimizle bu isimler büyür ve o isme yeni anlamlar katarlar. Bu yüzden duyulduğunda herkesi etkileyen mükemmel bir isim seçmeyi istemeniz son derece normaldir.
-                                        İsim seçerken şu soruları kendinize mutlaka sorun.
-                                        Köklerinize uygun bir isim mi seçmek istiyorsunuz yoksa modern bir isim mi?
-                                        Klasik isimlerden mi tercih etmelisiniz yoksa yeni nesil isimler mi?
-                                        Çocuğunuzun diğer insanlarla ortak bir isme mi sahip olmasını istiyorsunuz yoksa eşsiz mi?
-                                        Bu soruların yanı sıra çocuğunuz ikinci bir isim bulma durumu var. Hatta çocuğunuza 3 isim bile verebilirsiniz. Eğer birden fazla isim verirseniz bu isimlerin birbirine uyumlu olması da önemlidir.
-                                        İsim seçerken kendinizi yormanıza gerek yok. Güzel bulduğunuz isimlerin bir listesini çıkarın ardından yavaşça listeyi eleyin. Bebeğiniz doğana kadar hala vaktiniz var."
-                                            }
-                                            },
-                                            {
-                                            "@type": "Question",
-                                            "name": "Bebeğimle Hayat ile en iyi ismi nasıl bulabilirsiniz?",
-                                            "acceptedAnswer": {
-                                                "@type": "Answer",
-                                                "text": "Bebeğimle Hayat ekibi olarak her ebeveynin en güzel deneyimlere ortak olmasını istiyoruz. Bu yüzden bebeğinize eşsiz bir isim bulabilmeniz için devamlı çalışıyoruz. İsim kütüphanemizi her gün genişletiyor ve size en güzel Bebek İsim Bulucuyu getiriyoruz. Tek yapmanız gereken sayfamızda bulunan isimleri incelemek ve bebeğinize en iyi isimleri seçmek."
-                                            }
-                                            }
-                                        ]
-                                        }
-                                </script>
-
-
                             </div>
                         </div>
                     </div>
@@ -213,7 +159,7 @@
 </template>
 <script>
 import Vue from 'vue'
-import { FormPlugin, FormDatepickerPlugin , FormInputPlugin, FormGroupPlugin, FormRadioPlugin , ModalPlugin, SpinnerPlugin  } from 'bootstrap-vue'
+import { FormPlugin, FormDatepickerPlugin, FormInputPlugin, FormGroupPlugin, FormRadioPlugin, ModalPlugin, SpinnerPlugin } from 'bootstrap-vue'
 Vue.use(FormPlugin);
 Vue.use(FormDatepickerPlugin);
 Vue.use(FormInputPlugin);
@@ -232,6 +178,50 @@ export default {
                 { hid: 'description', name: 'description', content: "Bebek isimleri ebeveynlerin aklını kurcalayan konulardan biridir. Bebeğimlehayat'ta bebek isim bulucudan faydalanarak fikir edinebilirsiniz!" },
                 { hid: 'og:title', property: 'og:title', content: "Bebek isimleri ebeveynlerin aklını kurcalayan konulardan biridir. Bebeğimlehayat'ta bebek isim bulucudan faydalanarak fikir edinebilirsiniz!" }
             ],
+            script: [
+                {
+                    body: true,
+                    type: 'application/ld+json',
+                    json: {
+                        "@context": "https://schema.org",
+                        "@type": "FAQPage",
+                        "mainEntity": [
+                            {
+                                "@type": "Question",
+                                "name": "Bebek İsim Bulucu Nedir?",
+                                "acceptedAnswer": {
+                                    "@type": "Answer",
+                                    "text": "Hamileliğin en önemli aşamalarından birindesiniz. Artık bebeğinize isim seçme vakti. Doğuma yakın veya uzak olmanız fark etmez, bebeğinize isim düşünmeniz son derece önemlidir.Bebek İsim Bulucuyu kullanmak için tek yapmanız gereken bebeğinizin cinsiyetini seçmek, arından da istediğiniz baş harfi seçmektir. Karşınıza çıkan isim listesinde isimlere tıklayarak anlamlarını öğrenebilirsiniz. Diğer isimleri görmek için Daha Fazla tuşuna tıklayabilirsiniz. Dilediğiniz zaman cinsiyeti veya harfi değiştirip başka isimlere de göz atabilirsiniz."
+                                }
+                            },
+                            {
+                                "@type": "Question",
+                                "name": "Doğru Bebek İsmi Nasıl Seçilir?",
+                                "acceptedAnswer": {
+                                    "@type": "Answer",
+                                    "text": "Bebeğinize doğru ismi seçmek her zaman zordur. Seçerken aklınıza gelecek birçok faktör bulunmaktadır. Sade ve güzel veya ihtişamlı ve yaratıcı bir isim seçerken engeller her zaman aynıdır.- Bebeğiniz büyüdüğünde bu isim nasıl duracak? - Bu isim kulağınıza her zaman güzel gelecek mi yoksa zaman geçtikçe eskiyecek mi?- Bebeğiniz isminin manası bebeğinizle uyuşacak mı?Bu ve benzer sorular bir isimde karar kılmaya çalışırken aklınızı işgal ediyor olabilir. Her ebeveyn aynı ikilemleri yaşamaktadır. Bu da son derece doğaldır çünkü ismimizi ömrümüz boyunca taşırız."
+                                }
+                            },
+                            {
+                                "@type": "Question",
+                                "name": "Bebek İsimlerinin Önemi Nedir?",
+                                "acceptedAnswer": {
+                                    "@type": "Answer",
+                                    "text": "Her ismin kendine ait hikayesi vardır. Derin anlamları bazıları için hoşken bazıları içinse normaldir. Bebeklerimizle bu isimler büyür ve o isme yeni anlamlar katarlar. Bu yüzden duyulduğunda herkesi etkileyen mükemmel bir isim seçmeyi istemeniz son derece normaldir.İsim seçerken şu soruları kendinize mutlaka sorun.Köklerinize uygun bir isim mi seçmek istiyorsunuz yoksa modern bir isim mi?Klasik isimlerden mi tercih etmelisiniz yoksa yeni nesil isimler mi?Çocuğunuzun diğer insanlarla ortak bir isme mi sahip olmasını istiyorsunuz yoksa eşsiz mi?Bu soruların yanı sıra çocuğunuz ikinci bir isim bulma durumu var. Hatta çocuğunuza 3 isim bile verebilirsiniz. Eğer birden fazla isim verirseniz bu isimlerin birbirine uyumlu olması da önemlidir.İsim seçerken kendinizi yormanıza gerek yok. Güzel bulduğunuz isimlerin bir listesini çıkarın ardından yavaşça listeyi eleyin. Bebeğiniz doğana kadar hala vaktiniz var."
+                                }
+                            },
+                            {
+                                "@type": "Question",
+                                "name": "Bebeğimle Hayat ile en iyi ismi nasıl bulabilirsiniz?",
+                                "acceptedAnswer": {
+                                    "@type": "Answer",
+                                    "text": "Bebeğimle Hayat ekibi olarak her ebeveynin en güzel deneyimlere ortak olmasını istiyoruz. Bu yüzden bebeğinize eşsiz bir isim bulabilmeniz için devamlı çalışıyoruz. İsim kütüphanemizi her gün genişletiyor ve size en güzel Bebek İsim Bulucuyu getiriyoruz. Tek yapmanız gereken sayfamızda bulunan isimleri incelemek ve bebeğinize en iyi isimleri seçmek."
+                                }
+                            }
+                        ]
+                    }
+                }
+            ]
         }
     },
     data() {
@@ -659,4 +649,5 @@ export default {
     #bebekIsimBulucuForm {
         padding: 1em;
     }
-}</style>
+}
+</style>

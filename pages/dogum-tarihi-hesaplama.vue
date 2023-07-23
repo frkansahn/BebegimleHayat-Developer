@@ -131,59 +131,6 @@
                                     sağlıklısıdır. Aksi takdirde doğru sonuç alamayabilirsiniz. Daha hızlı ve doğru sonuçlar
                                     için doktorunuza başvurup kan testi yaptırabilirsiniz. </p>
                                 <br><br>
-
-                                <script type="application/ld+json">
-                                    {
-                                        "@context": "https://schema.org",
-                                        "@type": "FAQPage",
-                                        "mainEntity": [
-                                            {
-                                            "@type": "Question",
-                                            "name": "Doğum Tarihi Hesaplayıcısı Nedir?",
-                                            "acceptedAnswer": {
-                                                "@type": "Answer",
-                                                "text": "Doğum tarihi hesaplayıcısı ile bebeğinizin doğacağı günü hesaplayabilirsiniz. Son adet gününüz veya hamile kalma gününüze göre doğum tarihinizi hesaplayabilirsiniz. Tek yapmanız gereken yöntemi seçmek, tarihi seçmek ve hesapla tuşuna tıklamak."
-                                            }
-                                            },
-                                            {
-                                            "@type": "Question",
-                                            "name": "Doğum Tarihi Nasıl Hesaplanır?",
-                                            "acceptedAnswer": {
-                                                "@type": "Answer",
-                                                "text": "Doğum tarihinizi hesaplamanın birkaç yolu vardır. İlki hangi gün hamile kaldığınızı belirlemektir. Hamile kaldığınız gün üzerinden 38 hafta normal gebelik olarak hesaplanır. Ancak çoğu anne hangi gün hamile kaldığını bilmemektedir. Genellikle 1-2 aylık hamile olduktan sonra belirtilerle öğrenilir.
-                                        Bu yüzden bir diğer yöntem ise yumurtlama döneminizden hareket etmektir. Son adet gününüz ve adet döngünüzün uzunluğuna göre yumurtlama günleriniz hesaplanır. Yumurtlama zamanı adet döngünüzün genellikle tam ortasında gerçekleşmektedir. Yani 28 gün adet döngünüz varsa 14. gün yumurtlama gününüzdür. Bu hesaplamaya göre ne zaman hamile kalabileceğiniz belirlenir. Ardından aynı şekilde 38 hafta normal gebelik hesaplanır."
-                                            }
-                                            },
-                                            {
-                                            "@type": "Question",
-                                            "name": "Doğum tarihi değişebilir mi?",
-                                            "acceptedAnswer": {
-                                                "@type": "Answer",
-                                                "text": "Normal gebelik 38 hafta olarak kabul edilir. Ancak hamileliklerin bir kısmında erken doğum veya geç doğum söz konusu olabilir. Bu da öngörülen doğum tarihinin 2 hafta erkene veya geçe çekilmesiyle sonuçlanır. 
-                                        Doğum tarihinin öngörülenden farklı çıkmasının bir diğer sebebi ise hamile kaldığınız günün farklı olmasıdır. Spermlerin vücut içinde 5 güne kadar yaşayabilmesi ve düzensiz adetin yumurtlama zamanını değiştirmesi gibi koşullar hamileliğinizin sonlanacağı günü değiştirebilir. Bu durumda aynı şekilde 1 haftaya kadar değişiklik yaratabilir."
-                                            }
-                                            },
-                                            {
-                                            "@type": "Question",
-                                            "name": "Hesaplanan doğum tarihi ne kadar doğrudur?",
-                                            "acceptedAnswer": {
-                                                "@type": "Answer",
-                                                "text": "Öngörülen doğum tarihi elbette ki bir tahmindir. Ancak bu tahmin bilimsel verilere dayanmaktadır. Bu yüzden tutarlılığı son derece yüksektir. Doktorunuzun hesaplayacağı aynı bilimsel yöntemler ile çalışmaktadır. Doğum Tarihi Hesaplayıcının öngördüğü tarihten 2 hafta erken ya da geç olacak şekilde doğuma girmeniz olasıdır. 
-                                        Her kadının hamileliği özel olduğu için sadece kadınların %5’i tam olarak doğum tarihinde doğuma başlarlar. Yani doğum tarihi hesaplayıcının verdiği tarih kesin olmasa da bilimsel olarak en doğru süreci vermektedir."
-                                            }
-                                            },
-                                            {
-                                            "@type": "Question",
-                                            "name": "Ne zaman hamilelik testi yaptırmalıyım?",
-                                            "acceptedAnswer": {
-                                                "@type": "Answer",
-                                                "text": "Hamilelik testini yaptırmak için en iyi zaman adetinizin geciktiği günden birkaç gün sonrasıdır. Adetiniz geciktiğinde henüz bedeniniz hCG hormonu salgılamamış olabilir. Ya da adetiniz sadece gecikmiş de olabilir. Bu yüzden birkaç gün bekleyip test yaptırmak en sağlıklısıdır. Aksi takdirde doğru sonuç alamayabilirsiniz. Daha hızlı ve doğru sonuçlar için doktorunuza başvurup kan testi yaptırabilirsiniz."
-                                            }
-                                            }
-                                        ]
-                                    }
-                                </script>
-
                             </div>
                         </div>
                     </div>
@@ -199,7 +146,7 @@ import vSelect from "vue-select";
 import "vue-select/dist/vue-select.css";
 Vue.component("v-select", vSelect);
 
-import { FormPlugin, FormDatepickerPlugin , FormGroupPlugin, FormRadioPlugin, SpinnerPlugin } from 'bootstrap-vue'
+import { FormPlugin, FormDatepickerPlugin, FormGroupPlugin, FormRadioPlugin, SpinnerPlugin } from 'bootstrap-vue'
 Vue.use(FormPlugin);
 Vue.use(FormDatepickerPlugin);
 Vue.use(FormGroupPlugin);
@@ -216,6 +163,58 @@ export default {
                 { hid: 'description', name: 'description', content: "Bebek doğum tarihini hesaplama ebeveynler tarafından merak edilen konulardan biridir. Bebeğimlehayat'ta bebeğinizin doğum tarihini hesaplayabilirsiniz!" },
                 { hid: 'og:title', property: 'og:title', content: "Bebek doğum tarihini hesaplama ebeveynler tarafından merak edilen konulardan biridir. Bebeğimlehayat'ta bebeğinizin doğum tarihini hesaplayabilirsiniz!" }
             ],
+            script: [
+                {
+                    body: true,
+                    type: 'application/ld+json',
+                    json: {
+                        "@context": "https://schema.org",
+                        "@type": "FAQPage",
+                        "mainEntity": [
+                            {
+                                "@type": "Question",
+                                "name": "Doğum Tarihi Hesaplayıcısı Nedir?",
+                                "acceptedAnswer": {
+                                    "@type": "Answer",
+                                    "text": "Doğum tarihi hesaplayıcısı ile bebeğinizin doğacağı günü hesaplayabilirsiniz. Son adet gününüz veya hamile kalma gününüze göre doğum tarihinizi hesaplayabilirsiniz. Tek yapmanız gereken yöntemi seçmek, tarihi seçmek ve hesapla tuşuna tıklamak."
+                                }
+                            },
+                            {
+                                "@type": "Question",
+                                "name": "Doğum Tarihi Nasıl Hesaplanır?",
+                                "acceptedAnswer": {
+                                    "@type": "Answer",
+                                    "text": "Doğum tarihinizi hesaplamanın birkaç yolu vardır. İlki hangi gün hamile kaldığınızı belirlemektir. Hamile kaldığınız gün üzerinden 38 hafta normal gebelik olarak hesaplanır. Ancak çoğu anne hangi gün hamile kaldığını bilmemektedir. Genellikle 1-2 aylık hamile olduktan sonra belirtilerle öğrenilir.Bu yüzden bir diğer yöntem ise yumurtlama döneminizden hareket etmektir. Son adet gününüz ve adet döngünüzün uzunluğuna göre yumurtlama günleriniz hesaplanır. Yumurtlama zamanı adet döngünüzün genellikle tam ortasında gerçekleşmektedir. Yani 28 gün adet döngünüz varsa 14. gün yumurtlama gününüzdür. Bu hesaplamaya göre ne zaman hamile kalabileceğiniz belirlenir. Ardından aynı şekilde 38 hafta normal gebelik hesaplanır."
+                                }
+                            },
+                            {
+                                "@type": "Question",
+                                "name": "Doğum tarihi değişebilir mi?",
+                                "acceptedAnswer": {
+                                    "@type": "Answer",
+                                    "text": "Normal gebelik 38 hafta olarak kabul edilir. Ancak hamileliklerin bir kısmında erken doğum veya geç doğum söz konusu olabilir. Bu da öngörülen doğum tarihinin 2 hafta erkene veya geçe çekilmesiyle sonuçlanır. Doğum tarihinin öngörülenden farklı çıkmasının bir diğer sebebi ise hamile kaldığınız günün farklı olmasıdır. Spermlerin vücut içinde 5 güne kadar yaşayabilmesi ve düzensiz adetin yumurtlama zamanını değiştirmesi gibi koşullar hamileliğinizin sonlanacağı günü değiştirebilir. Bu durumda aynı şekilde 1 haftaya kadar değişiklik yaratabilir."
+                                }
+                            },
+                            {
+                                "@type": "Question",
+                                "name": "Hesaplanan doğum tarihi ne kadar doğrudur?",
+                                "acceptedAnswer": {
+                                    "@type": "Answer",
+                                    "text": "Öngörülen doğum tarihi elbette ki bir tahmindir. Ancak bu tahmin bilimsel verilere dayanmaktadır. Bu yüzden tutarlılığı son derece yüksektir. Doktorunuzun hesaplayacağı aynı bilimsel yöntemler ile çalışmaktadır. Doğum Tarihi Hesaplayıcının öngördüğü tarihten 2 hafta erken ya da geç olacak şekilde doğuma girmeniz olasıdır. Her kadının hamileliği özel olduğu için sadece kadınların %5’i tam olarak doğum tarihinde doğuma başlarlar. Yani doğum tarihi hesaplayıcının verdiği tarih kesin olmasa da bilimsel olarak en doğru süreci vermektedir."
+                                }
+                            },
+                            {
+                                "@type": "Question",
+                                "name": "Ne zaman hamilelik testi yaptırmalıyım?",
+                                "acceptedAnswer": {
+                                    "@type": "Answer",
+                                    "text": "Hamilelik testini yaptırmak için en iyi zaman adetinizin geciktiği günden birkaç gün sonrasıdır. Adetiniz geciktiğinde henüz bedeniniz hCG hormonu salgılamamış olabilir. Ya da adetiniz sadece gecikmiş de olabilir. Bu yüzden birkaç gün bekleyip test yaptırmak en sağlıklısıdır. Aksi takdirde doğru sonuç alamayabilirsiniz. Daha hızlı ve doğru sonuçlar için doktorunuza başvurup kan testi yaptırabilirsiniz."
+                                }
+                            }
+                        ]
+                    }
+                }
+            ]
         }
     },
     data() {
@@ -381,4 +380,5 @@ export default {
 
 .vs__search {
     font-size: 18px;
-}</style>
+}
+</style>

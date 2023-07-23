@@ -677,188 +677,6 @@
                                     tehlikeye atılmasına sebep olur.</p>
 
                                 <br><br>
-
-
-                                <script type="application/ld+json">
-                                    {
-                                        "@context": "https://schema.org",
-                                        "@type": "FAQPage",
-                                        "mainEntity": [
-                                            {
-                                            "@type": "Question",
-                                            "name": "Aşı nedir?",
-                                            "acceptedAnswer": {
-                                                "@type": "Answer",
-                                                "text": "Hastalıklardan korunmanın en etkili yolu ilaçlar değil, hastalığa karşı bağışıklık kazanmaktır. Bu bağışıklığı kazandırmak üzere geliştirilmiş olan aşılar sizi bulaşıcı hastalıklardan koruyabilmektedir. Aşıların içerisinde zayıflatılmış hastalık mikropları vardır. Vücudunuz bu zayıf mikroplarla karşılaştığında savaşır ve o mikroba özel antikor üretir. Böylece vücudunuz bağışıklık sahibi olur. Üretilen antikorlar daha sonra aynı mikrop ile karşılaşınca nasıl davranması gerektiğini bilir ve hastalığı başlamadan bitirir. "
-                                            }
-                                            },
-                                            {
-                                            "@type": "Question",
-                                            "name": "Çocuk ve bebeklerde aşının önemi nedir?",
-                                            "acceptedAnswer": {
-                                                "@type": "Answer",
-                                                "text": "Çocuk ve bebeklerin bağışıklık sistemi yetişkinlere göre nispeten daha zayıftır. Bu yüzden hastalıklara daha kolay yakalanırlar. Bulaşıcı hastalıklar önlem alınmadığında çocuklarda çok büyük riskler doğururlar. Özellikle ölüm ve sakatlık riski öne çıkmaktadır. Bu nedenle çocukluk aşıları son derece önemlidir. 
-                                        Aşılar sadece çocuğu korumakla kalmaz, tüm toplumu korur. Halkın %97’sinin aşılanması sonucunda hastalıklar zamanla yok olur. Çiçek hastalığı, çocuk felci ve kızamık gibi hastalıklar aşılar sayesinde toplumsal bağışıklık geliştirilerek ortadan kaybolmuştur."
-                                            }
-                                            },
-                                            {
-                                            "@type": "Question",
-                                            "name": "Çocuk ve bebeklerde aşılar nasıl etki gösterir?",
-                                            "acceptedAnswer": {
-                                                "@type": "Answer",
-                                                "text": "Aşı içerisindeki zayıflatılmış mikrop vücuda girdiğinde çocuk ve bebeklerin bağışıklık sistemi mikrobu tanır. Tanıdığı mikroba karşı özel bellek hücreler oluşturur. Aynı mikrop vücuda bir daha girerse hücreler o mikroba karşı özel antikorlar oluşturarak daha güçlü bir savunma ortaya çıkarır. Bu da mikrobun yayılmasını engeller."
-                                        }
-                                        },
-                                        {
-                                        "@type": "Question",
-                                        "name": "Bebek aşı takvimi nedir?",
-                                        "acceptedAnswer": {
-                                            "@type": "Answer",
-                                            "text": "Dünyadaki her ülkenin kendine göre bir bebek aşı takvimi vardır. Bebek aşı takvimleri doğumdan itibaren hangi, aşıların hangi aylarda, hangi yaşlarda ve hangi aşının yapılacağı bilgisini içerir.  Aşı takvimine göre aşılar yapıldığında hem bebeklerin hem de toplumun bağışıklığı sağlanmış olur. Bu şekilde pek çok ölümün ve hastalığın önüne geçilir. "
-                                        }
-                                        },
-                                        {
-                                        "@type": "Question",
-                                        "name": "Hepatit B Aşısı Nedir?",
-                                        "acceptedAnswer": {
-                                            "@type": "Answer",
-                                            "text": "Hepatit B bebekler doğar doğmaz yapılan ilk aşıdır. İkinci dozu 1 aylıkken ve üçüncü dozu 6 aylıkken yapılır. Üç doz aşı yapılmadığı takdirde aşı tam etkisini göstermez. Türkiye’de Hepatit B taşıyıcılığı son derece yaygındır. Aşıların yapılmadığı takdirde Hepatit B’ye yakalanılma olasılığı oldukça yüksektir. Hastalık B ilerlediği takdirde karaciğer yetmezliğine sebep olabilir. Hastalığı engellemek için bebekken yapılan 3 doz aşı bu yüzden son derece önemlidir."
-                                        }
-                                        },
-                                        {
-                                        "@type": "Question",
-                                        "name": "Verem (BCG) Aşısı Nedir?",
-                                        "acceptedAnswer": {
-                                            "@type": "Answer",
-                                            "text": "Verem aşısı 2. ayda tek doz şeklinde uygulanır. Verem, diğer adıyla tüberküloz, hava yoluyla yayılan ölümcül bir hastalıktır. Son derece yaygın olan Verem, akciğerleri hedef alır ve ölümcüldür. "
-                                        }
-                                        },
-                                        {
-                                        "@type": "Question",
-                                        "name": "5’li Karma Aşı (DaBT – İPA – Hib) Nedir?",
-                                        "acceptedAnswer": {
-                                            "@type": "Answer",
-                                            "text": "5’li karma aşı adı üstünde 5 farklı hastalık için uygulanan bir aşıdır. Bu hastalıklar Difteri, Aselüler Boğmaca, Tetanoz, İnaktif Polio ve Hemofilus Influenza Tip B hastalıklarıdır. Bebek 2 aylıkken, 4 aylık, 6 aylıkken ve 18 aylıkken toplamda 4 doz şeklinde yapılır. Hastalıkların her biri son derece bulaşıcıdır ve yakalanıldığında ciddi hasarlara sebep olabilir. Bu yüzden aşıların eksiksiz yapılması çok önemlidir. "
-                                        }
-                                        },
-                                        {
-                                        "@type": "Question",
-                                        "name": "Konjüge Pnömokok (KPA) Aşısı Nedir?",
-                                        "acceptedAnswer": {
-                                            "@type": "Answer",
-                                            "text": " KPA bebeğiniz 2 aylıkken, 4 aylıkken ve 12 aylıkken olmak üzere 3 dozdan oluşur. KPA aşısı zatürre, orta kulak iltihabı ve menenjit gibi hastalıklara karşı bağışıklık sağlar. Tedavi edilmediğinde bu hastalıklar ölümcül olabilir."
-                                        }
-                                        },
-                                        {
-                                        "@type": "Question",
-                                        "name": "Kızamık, Kızamıkçık ve Kabakulak (KKK) Aşısı Nedir?",
-                                        "acceptedAnswer": {
-                                            "@type": "Answer",
-                                            "text": "KKK aşısı 1 yaş ve 4 yaş olmak üzere 2 doz uygulanır. Kızamık, Kızamıkçık ve Kabakulak hastalıkları tüm dünyada son derece yaygın bir hastalıktır. Aşılar sayesinde yayılma ve ölümler durdurulmuştur."
-                                        }
-                                        },
-                                        {
-                                        "@type": "Question",
-                                        "name": "Suçiçeği Aşısı Nedir?",
-                                        "acceptedAnswer": {
-                                            "@type": "Answer",
-                                            "text": "Suçiçeği aşısı 1 yaşta tek doz olarak uygulanır. Su çiçeği son derece bulaşıcı bir hastalıktır ve yetişkinlerde ölümcül sonuçlar doğurabilmektedir. Yani bebeğin aşılanması aynı zamanda ebeveynleri de korumaktadır."
-                                        }
-                                        },
-                                        {
-                                        "@type": "Question",
-                                        "name": "Çocuk Felci (Oral Polio – OPA) Aşısı Nedir?",
-                                        "acceptedAnswer": {
-                                            "@type": "Answer",
-                                            "text": "OPA çocuğunuz 6 ve 18 aylık olmak üzere 2 doz yapılan bir aşıdır. Çocuk felci virüsü çocuklarda ve gençlerde felce sebep olabilmektedir. Aşı yapılmadığı takdirde hızlıca yayılır ve çok hızlı etkiler."
-                                        }
-                                        },
-                                        {
-                                        "@type": "Question",
-                                        "name": "Hepatit A Aşısı Nedir?",
-                                        "acceptedAnswer": {
-                                            "@type": "Answer",
-                                            "text": "Hepatit A 18 ve 24 aylıkken olmak üzere 2 doz yapılmaktadır. Hepatit A ülkemizde son derece yaygındır. Aşı yapılmadığı takdirde karaciğer yetmezliğine sebep olabilir."
-                                        }
-                                        },
-                                        {
-                                        "@type": "Question",
-                                        "name": "Aşı Takviminde Nelere Dikkat Edilmelidir?",
-                                        "acceptedAnswer": {
-                                            "@type": "Answer",
-                                            "text": "Aşı zamanını takip edince vakti geldiğinde geciktirmeden yapın. Aksi takdirde aşının diğer dozları etkisini kaybedebilir ve en baştan yaptırmanız gerekebilir.
-                                    Bebeğiniz prematüre bile olsa aşılar eksiksiz ve olması gereken düzende yapılmalıdırlar.
-                                    Aşı takvimi dışarısında önerilen çocuk aşıları bulunmaktadır. Bunlar hakkında daha fazla bilgiyi doktorunuzdan alabilirsiniz."
-                                        }
-                                        },
-                                        {
-                                        "@type": "Question",
-                                        "name": "Çocuk ve Bebeklerde Aşıların Yan Etkileri Nelerdir?",
-                                        "acceptedAnswer": {
-                                            "@type": "Answer",
-                                            "text": "Aşıların vücuda mikrop yollaması sonucunda bebeğinizin vücudu savaşmak için harekete geçecektir. Bu da ateşe, ağrılara ve halsizliğe sebep olabilir. Aynı zamanda aşının yapıldığı yerin kızarması da oldukça normaldir. Bu yan etkiler aşılar için oldukça yaygın ve doğaldır. Dinlenme ve sağlıklı beslenme ile kolayca geçerler. Eğer şikayetler ağırsa parasetemol kullanmayı düşünebilirsiniz."
-                                        }
-                                        },
-                                        {
-                                        "@type": "Question",
-                                        "name": "Aşılarda Nelere Dikkat Edilmelidir?",
-                                        "acceptedAnswer": {
-                                            "@type": "Answer",
-                                            "text": "Aşıların saklanırken soğuk zincirin kırılmaması ve son kullanma tarihinin geçmemiş olması önemlidir. Aşının yan etkileri konusunda aile ve çocuk bilgilendirilmelidir."
-                                        }
-                                        },
-                                        {
-                                        "@type": "Question",
-                                        "name": "Prematüre Bebeklerde Aşı Takvimi Nasıl Uygulanır?",
-                                        "acceptedAnswer": {
-                                            "@type": "Answer",
-                                            "text": "Prematüre bebekler de doğumdan itibaren aynı düzende aşı takvimi takip ederler. Diğer bebekler kadar gelişmiş olmalarına gerek yoktur. Eğer prematüre bebek fazla zayıfsa doktor bazı aşıların zamanını yeniden planlayabilir."
-                                        }
-                                        },
-                                        {
-                                        "@type": "Question",
-                                        "name": "Bebeklere Aşılar Koldan mı Yoksa Bacaktan mı Yapılır?",
-                                        "acceptedAnswer": {
-                                            "@type": "Answer",
-                                            "text": "Bebek iki yaşına gelene kadar aşılar bacaktan yapılır. İki yaşından sonra aşılar koldan yapılır."
-                                        }
-                                        },
-                                        {
-                                        "@type": "Question",
-                                        "name": "Aşı Sonrası Bebek Huzursuzluğu Nasıl Geçer?",
-                                        "acceptedAnswer": {
-                                            "@type": "Answer",
-                                            "text": "Bebeklerin aşıdan sonra ağrı ve halsizlik hissetmesi veya ateşlerinin çıkması son derece yaygındır. Bu süreçte bebeğiniz devamlı huzursuzluk yapabilir. Bebeğinizi rahatlatmak için devamlı ilgilenmeniz veya emzirmeniz gerekebilir. Eğer bebeğinizin şikayetleri artıyorsa parasetemol kullanmayı düşünebilirsiniz."
-                                        }
-                                        },
-                                        {
-                                        "@type": "Question",
-                                        "name": " Çocuk ve Bebeklere Aşı Uygulanmazsa Ne Olur?",
-                                        "acceptedAnswer": {
-                                            "@type": "Answer",
-                                            "text": "Şu anda aşı yapılan hastalıkların vakası olmasa bile bu hastalıkların ortadan kalktığı anlamına gelmez. Aşı yapılmadığı takdirde taşıyıcı olan diğer çocuklardan hastalık kapılabilir. Çocukluk döneminde aşısı yapılan birçok hastalık ölümcül olduğu için yapılmaktadır. Aşı uygulanmadığı takdirde çocuğunuz bu hastalıklara yakalanabilir."
-                                        }
-                                        },
-                                        {
-                                        "@type": "Question",
-                                        "name": " Zorunlu Olmayan Aşıların Yapılması Önemli midir?",
-                                        "acceptedAnswer": {
-                                            "@type": "Answer",
-                                            "text": "Zorunlu olmasalar da aşıların yapılması son derece önemlidir. Hastalıklara karşı bağışıklık kazanmak çocuğunuzun hastalıklara karşı koruyacaktır. Aşı yapılmadığı takdirde karşılaşılan mikroplar çocukların şiddetli hastalık geçirmesine, hastanelik olmasına ve hatta ölümüyle bile sonuçlanabilir."
-                                        }
-                                        },
-                                        {
-                                        "@type": "Question",
-                                        "name": " Aşı Karşıtlığı Hangi Sonuçları Doğurur?",
-                                        "acceptedAnswer": {
-                                            "@type": "Answer",
-                                            "text": "Aşılar insan hayatı korumak için geliştirilmiştir. Aşı mantığını ve çalışma prensibi bilmeyen kişiler tarafından aşılar hakkında yalan iddialar atılmaktadır. Bağımsız çalışmalar aşıların zararlı olmadığını ve insan hayatını kurtarmak için en etkili yöntemlerden biri olduğunu kanıtlamıştır. Aşılar her sene ülkemizde milyonlarca çocuğun hayatının kurtulmasını sağlamıştır. İnsanlar aşılanmaya devam ettiği sürece bulaşıcı hastalıklardan uzak durulabilir. Aşıların bırakılması uzun süredir görülmemiş hastalıkların yeniden ortaya çıkmasına ve hem çocukların hem de yetişkinlerin hayatının tehlikeye atılmasına sebep olur."
-                                        }
-                                        }
-                                    ]
-                                    }
-                                </script>
-
                             </div>
                         </div>
                     </div>
@@ -870,7 +688,7 @@
 </template>
 <script>
 import Vue from 'vue'
-import { FormPlugin, FormDatepickerPlugin , FormInputPlugin, FormGroupPlugin, FormRadioPlugin, SpinnerPlugin  } from 'bootstrap-vue'
+import { FormPlugin, FormDatepickerPlugin, FormInputPlugin, FormGroupPlugin, FormRadioPlugin, SpinnerPlugin } from 'bootstrap-vue'
 Vue.use(FormPlugin);
 Vue.use(FormDatepickerPlugin);
 Vue.use(FormInputPlugin);
@@ -888,6 +706,186 @@ export default {
                 { hid: 'description', name: 'description', content: "Bebek aşı takvimi sağlık açısından yakından takip edilmesi gereken verilerden biridir. Bebeğimlehayat bebek aşı takvimi hesaplama aracı ile pratik şekilde aşı tablosu oluşturabilirsiniz!" },
                 { hid: 'og:title', property: 'og:title', content: "Bebek aşı takvimi sağlık açısından yakından takip edilmesi gereken verilerden biridir. Bebeğimlehayat bebek aşı takvimi hesaplama aracı ile pratik şekilde aşı tablosu oluşturabilirsiniz!" }
             ],
+            script: [
+                {
+                    body: true,
+                    type: 'application/ld+json',
+                    json: {
+                        "@context": "https://schema.org",
+                        "@type": "FAQPage",
+                        "mainEntity": [
+                            {
+                                "@type": "Question",
+                                "name": "Aşı nedir?",
+                                "acceptedAnswer": {
+                                    "@type": "Answer",
+                                    "text": "Hastalıklardan korunmanın en etkili yolu ilaçlar değil, hastalığa karşı bağışıklık kazanmaktır. Bu bağışıklığı kazandırmak üzere geliştirilmiş olan aşılar sizi bulaşıcı hastalıklardan koruyabilmektedir. Aşıların içerisinde zayıflatılmış hastalık mikropları vardır. Vücudunuz bu zayıf mikroplarla karşılaştığında savaşır ve o mikroba özel antikor üretir. Böylece vücudunuz bağışıklık sahibi olur. Üretilen antikorlar daha sonra aynı mikrop ile karşılaşınca nasıl davranması gerektiğini bilir ve hastalığı başlamadan bitirir. "
+                                }
+                            },
+                            {
+                                "@type": "Question",
+                                "name": "Çocuk ve bebeklerde aşının önemi nedir?",
+                                "acceptedAnswer": {
+                                    "@type": "Answer",
+                                    "text": "Çocuk ve bebeklerin bağışıklık sistemi yetişkinlere göre nispeten daha zayıftır. Bu yüzden hastalıklara daha kolay yakalanırlar. Bulaşıcı hastalıklar önlem alınmadığında çocuklarda çok büyük riskler doğururlar. Özellikle ölüm ve sakatlık riski öne çıkmaktadır. Bu nedenle çocukluk aşıları son derece önemlidir. Aşılar sadece çocuğu korumakla kalmaz, tüm toplumu korur. Halkın %97’sinin aşılanması sonucunda hastalıklar zamanla yok olur. Çiçek hastalığı, çocuk felci ve kızamık gibi hastalıklar aşılar sayesinde toplumsal bağışıklık geliştirilerek ortadan kaybolmuştur."
+                                }
+                            },
+                            {
+                                "@type": "Question",
+                                "name": "Çocuk ve bebeklerde aşılar nasıl etki gösterir?",
+                                "acceptedAnswer": {
+                                    "@type": "Answer",
+                                    "text": "Aşı içerisindeki zayıflatılmış mikrop vücuda girdiğinde çocuk ve bebeklerin bağışıklık sistemi mikrobu tanır. Tanıdığı mikroba karşı özel bellek hücreler oluşturur. Aynı mikrop vücuda bir daha girerse hücreler o mikroba karşı özel antikorlar oluşturarak daha güçlü bir savunma ortaya çıkarır. Bu da mikrobun yayılmasını engeller."
+                                }
+                            },
+                            {
+                                "@type": "Question",
+                                "name": "Bebek aşı takvimi nedir?",
+                                "acceptedAnswer": {
+                                    "@type": "Answer",
+                                    "text": "Dünyadaki her ülkenin kendine göre bir bebek aşı takvimi vardır. Bebek aşı takvimleri doğumdan itibaren hangi, aşıların hangi aylarda, hangi yaşlarda ve hangi aşının yapılacağı bilgisini içerir.  Aşı takvimine göre aşılar yapıldığında hem bebeklerin hem de toplumun bağışıklığı sağlanmış olur. Bu şekilde pek çok ölümün ve hastalığın önüne geçilir. "
+                                }
+                            },
+                            {
+                                "@type": "Question",
+                                "name": "Hepatit B Aşısı Nedir?",
+                                "acceptedAnswer": {
+                                    "@type": "Answer",
+                                    "text": "Hepatit B bebekler doğar doğmaz yapılan ilk aşıdır. İkinci dozu 1 aylıkken ve üçüncü dozu 6 aylıkken yapılır. Üç doz aşı yapılmadığı takdirde aşı tam etkisini göstermez. Türkiye’de Hepatit B taşıyıcılığı son derece yaygındır. Aşıların yapılmadığı takdirde Hepatit B’ye yakalanılma olasılığı oldukça yüksektir. Hastalık B ilerlediği takdirde karaciğer yetmezliğine sebep olabilir. Hastalığı engellemek için bebekken yapılan 3 doz aşı bu yüzden son derece önemlidir."
+                                }
+                            },
+                            {
+                                "@type": "Question",
+                                "name": "Verem (BCG) Aşısı Nedir?",
+                                "acceptedAnswer": {
+                                    "@type": "Answer",
+                                    "text": "Verem aşısı 2. ayda tek doz şeklinde uygulanır. Verem, diğer adıyla tüberküloz, hava yoluyla yayılan ölümcül bir hastalıktır. Son derece yaygın olan Verem, akciğerleri hedef alır ve ölümcüldür. "
+                                }
+                            },
+                            {
+                                "@type": "Question",
+                                "name": "5’li Karma Aşı (DaBT – İPA – Hib) Nedir?",
+                                "acceptedAnswer": {
+                                    "@type": "Answer",
+                                    "text": "5’li karma aşı adı üstünde 5 farklı hastalık için uygulanan bir aşıdır. Bu hastalıklar Difteri, Aselüler Boğmaca, Tetanoz, İnaktif Polio ve Hemofilus Influenza Tip B hastalıklarıdır. Bebek 2 aylıkken, 4 aylık, 6 aylıkken ve 18 aylıkken toplamda 4 doz şeklinde yapılır. Hastalıkların her biri son derece bulaşıcıdır ve yakalanıldığında ciddi hasarlara sebep olabilir. Bu yüzden aşıların eksiksiz yapılması çok önemlidir. "
+                                }
+                            },
+                            {
+                                "@type": "Question",
+                                "name": "Konjüge Pnömokok (KPA) Aşısı Nedir?",
+                                "acceptedAnswer": {
+                                    "@type": "Answer",
+                                    "text": " KPA bebeğiniz 2 aylıkken, 4 aylıkken ve 12 aylıkken olmak üzere 3 dozdan oluşur. KPA aşısı zatürre, orta kulak iltihabı ve menenjit gibi hastalıklara karşı bağışıklık sağlar. Tedavi edilmediğinde bu hastalıklar ölümcül olabilir."
+                                }
+                            },
+                            {
+                                "@type": "Question",
+                                "name": "Kızamık, Kızamıkçık ve Kabakulak (KKK) Aşısı Nedir?",
+                                "acceptedAnswer": {
+                                    "@type": "Answer",
+                                    "text": "KKK aşısı 1 yaş ve 4 yaş olmak üzere 2 doz uygulanır. Kızamık, Kızamıkçık ve Kabakulak hastalıkları tüm dünyada son derece yaygın bir hastalıktır. Aşılar sayesinde yayılma ve ölümler durdurulmuştur."
+                                }
+                            },
+                            {
+                                "@type": "Question",
+                                "name": "Suçiçeği Aşısı Nedir?",
+                                "acceptedAnswer": {
+                                    "@type": "Answer",
+                                    "text": "Suçiçeği aşısı 1 yaşta tek doz olarak uygulanır. Su çiçeği son derece bulaşıcı bir hastalıktır ve yetişkinlerde ölümcül sonuçlar doğurabilmektedir. Yani bebeğin aşılanması aynı zamanda ebeveynleri de korumaktadır."
+                                }
+                            },
+                            {
+                                "@type": "Question",
+                                "name": "Çocuk Felci (Oral Polio – OPA) Aşısı Nedir?",
+                                "acceptedAnswer": {
+                                    "@type": "Answer",
+                                    "text": "OPA çocuğunuz 6 ve 18 aylık olmak üzere 2 doz yapılan bir aşıdır. Çocuk felci virüsü çocuklarda ve gençlerde felce sebep olabilmektedir. Aşı yapılmadığı takdirde hızlıca yayılır ve çok hızlı etkiler."
+                                }
+                            },
+                            {
+                                "@type": "Question",
+                                "name": "Hepatit A Aşısı Nedir?",
+                                "acceptedAnswer": {
+                                    "@type": "Answer",
+                                    "text": "Hepatit A 18 ve 24 aylıkken olmak üzere 2 doz yapılmaktadır. Hepatit A ülkemizde son derece yaygındır. Aşı yapılmadığı takdirde karaciğer yetmezliğine sebep olabilir."
+                                }
+                            },
+                            {
+                                "@type": "Question",
+                                "name": "Aşı Takviminde Nelere Dikkat Edilmelidir?",
+                                "acceptedAnswer": {
+                                    "@type": "Answer",
+                                    "text": "Aşı zamanını takip edince vakti geldiğinde geciktirmeden yapın. Aksi takdirde aşının diğer dozları etkisini kaybedebilir ve en baştan yaptırmanız gerekebilir.Bebeğiniz prematüre bile olsa aşılar eksiksiz ve olması gereken düzende yapılmalıdırlar.Aşı takvimi dışarısında önerilen çocuk aşıları bulunmaktadır. Bunlar hakkında daha fazla bilgiyi doktorunuzdan alabilirsiniz."
+                                }
+                            },
+                            {
+                                "@type": "Question",
+                                "name": "Çocuk ve Bebeklerde Aşıların Yan Etkileri Nelerdir?",
+                                "acceptedAnswer": {
+                                    "@type": "Answer",
+                                    "text": "Aşıların vücuda mikrop yollaması sonucunda bebeğinizin vücudu savaşmak için harekete geçecektir. Bu da ateşe, ağrılara ve halsizliğe sebep olabilir. Aynı zamanda aşının yapıldığı yerin kızarması da oldukça normaldir. Bu yan etkiler aşılar için oldukça yaygın ve doğaldır. Dinlenme ve sağlıklı beslenme ile kolayca geçerler. Eğer şikayetler ağırsa parasetemol kullanmayı düşünebilirsiniz."
+                                }
+                            },
+                            {
+                                "@type": "Question",
+                                "name": "Aşılarda Nelere Dikkat Edilmelidir?",
+                                "acceptedAnswer": {
+                                    "@type": "Answer",
+                                    "text": "Aşıların saklanırken soğuk zincirin kırılmaması ve son kullanma tarihinin geçmemiş olması önemlidir. Aşının yan etkileri konusunda aile ve çocuk bilgilendirilmelidir."
+                                }
+                            },
+                            {
+                                "@type": "Question",
+                                "name": "Prematüre Bebeklerde Aşı Takvimi Nasıl Uygulanır?",
+                                "acceptedAnswer": {
+                                    "@type": "Answer",
+                                    "text": "Prematüre bebekler de doğumdan itibaren aynı düzende aşı takvimi takip ederler. Diğer bebekler kadar gelişmiş olmalarına gerek yoktur. Eğer prematüre bebek fazla zayıfsa doktor bazı aşıların zamanını yeniden planlayabilir."
+                                }
+                            },
+                            {
+                                "@type": "Question",
+                                "name": "Bebeklere Aşılar Koldan mı Yoksa Bacaktan mı Yapılır?",
+                                "acceptedAnswer": {
+                                    "@type": "Answer",
+                                    "text": "Bebek iki yaşına gelene kadar aşılar bacaktan yapılır. İki yaşından sonra aşılar koldan yapılır."
+                                }
+                            },
+                            {
+                                "@type": "Question",
+                                "name": "Aşı Sonrası Bebek Huzursuzluğu Nasıl Geçer?",
+                                "acceptedAnswer": {
+                                    "@type": "Answer",
+                                    "text": "Bebeklerin aşıdan sonra ağrı ve halsizlik hissetmesi veya ateşlerinin çıkması son derece yaygındır. Bu süreçte bebeğiniz devamlı huzursuzluk yapabilir. Bebeğinizi rahatlatmak için devamlı ilgilenmeniz veya emzirmeniz gerekebilir. Eğer bebeğinizin şikayetleri artıyorsa parasetemol kullanmayı düşünebilirsiniz."
+                                }
+                            },
+                            {
+                                "@type": "Question",
+                                "name": " Çocuk ve Bebeklere Aşı Uygulanmazsa Ne Olur?",
+                                "acceptedAnswer": {
+                                    "@type": "Answer",
+                                    "text": "Şu anda aşı yapılan hastalıkların vakası olmasa bile bu hastalıkların ortadan kalktığı anlamına gelmez. Aşı yapılmadığı takdirde taşıyıcı olan diğer çocuklardan hastalık kapılabilir. Çocukluk döneminde aşısı yapılan birçok hastalık ölümcül olduğu için yapılmaktadır. Aşı uygulanmadığı takdirde çocuğunuz bu hastalıklara yakalanabilir."
+                                }
+                            },
+                            {
+                                "@type": "Question",
+                                "name": " Zorunlu Olmayan Aşıların Yapılması Önemli midir?",
+                                "acceptedAnswer": {
+                                    "@type": "Answer",
+                                    "text": "Zorunlu olmasalar da aşıların yapılması son derece önemlidir. Hastalıklara karşı bağışıklık kazanmak çocuğunuzun hastalıklara karşı koruyacaktır. Aşı yapılmadığı takdirde karşılaşılan mikroplar çocukların şiddetli hastalık geçirmesine, hastanelik olmasına ve hatta ölümüyle bile sonuçlanabilir."
+                                }
+                            },
+                            {
+                                "@type": "Question",
+                                "name": " Aşı Karşıtlığı Hangi Sonuçları Doğurur?",
+                                "acceptedAnswer": {
+                                    "@type": "Answer",
+                                    "text": "Aşılar insan hayatı korumak için geliştirilmiştir. Aşı mantığını ve çalışma prensibi bilmeyen kişiler tarafından aşılar hakkında yalan iddialar atılmaktadır. Bağımsız çalışmalar aşıların zararlı olmadığını ve insan hayatını kurtarmak için en etkili yöntemlerden biri olduğunu kanıtlamıştır. Aşılar her sene ülkemizde milyonlarca çocuğun hayatının kurtulmasını sağlamıştır. İnsanlar aşılanmaya devam ettiği sürece bulaşıcı hastalıklardan uzak durulabilir. Aşıların bırakılması uzun süredir görülmemiş hastalıkların yeniden ortaya çıkmasına ve hem çocukların hem de yetişkinlerin hayatının tehlikeye atılmasına sebep olur."
+                                }
+                            }
+                        ]
+                    }
+                }
+            ]
         }
     },
     data() {

@@ -79,7 +79,7 @@
                                     <div class="row">
                                         <div class="col-12 mb-4 mt-5 block-title">
                                             <h2 class="float-left w-100">
-                                                Herkes Onu Konuşuyor!
+                                                BebeğimleHayat'ın Sizler İçin Seçtikleri!
                                             </h2>
                                         </div>
                                     </div>

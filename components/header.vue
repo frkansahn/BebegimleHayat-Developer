@@ -46,11 +46,11 @@
 										</li>							
 									</ul>
 								</b-sidebar>
-								<div class="col-6 col-sm-5 col-md-6 col-lg-2 pl-0">
+								<div class="col-6 col-sm-5 col-md-6 col-lg-3 pl-0">
 									<NuxtLink to="/" id="logo" v-html="config && config.logo">
 									</NuxtLink>
 								</div>
-								<div class="col-8 col-lg-9 position-static d-none d-lg-block" id="headerMenu">
+								<div class="col-8 position-static d-none d-lg-block" id="headerMenu">
 									<div class="row">
 										<ul class="col-12 d-flex align-items-center justify-content-end text-center m-0 position-static">
 											<li class="text-left list-unstyled" v-for="(M, index) in menus"
@@ -373,8 +373,7 @@ export default {
 		margin: 0;
 		display: flex;
 		align-items: center;
-		max-height: 115px;
-    	height: 115px;
+    	height: 122px;
     	float: left;
 	}
 
@@ -388,20 +387,19 @@ export default {
 	}
 
 	#logo img {
-		max-height: 115px;
+    	max-height: 122px;
 		-webkit-transition: all .5s ease;
 		-moz-transition: all .5s ease;
 		-o-transition: all .5s ease;
 		-ms-transition: all .5s ease;
 		transition: all .5s ease;
 		width: auto;
-		height: auto;
 	}
 
 	#headerMenu a {
 		font-size: 20px;
 		font-weight: 500;
-		padding: 2.2em 1.5em;
+		padding: 2.2em 1em;
 		position: relative;
 		-webkit-transition: all .1s ease;
 		-moz-transition: all .1s ease;

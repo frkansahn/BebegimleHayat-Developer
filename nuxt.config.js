@@ -173,7 +173,9 @@ export default {
         { from: '^/cerez-politikasi-bebegimlehayat', to: '/cerez-politikasi' },
         { from: '^/hakkimizda-bebegimlehayat', to: '/hakkimizda' },
         { from: '^/goz-rengi-hesaplama', to: '/goz-rengi-tahmini' },
-        { from: '^/sac-rengi-hesaplama', to: '/sac-rengi-tahmini' }
+        { from: '^/sac-rengi-hesaplama', to: '/sac-rengi-tahmini' },
+        { from: '^/hamilelik-beslenme', to: '/hamilelikte-beslenme' },
+        { from: '^/contact', to: '/iletisim' }
     ],
     build: {
         extend(config, ctx) {

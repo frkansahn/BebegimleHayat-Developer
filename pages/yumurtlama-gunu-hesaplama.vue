@@ -163,88 +163,6 @@
                                     Ancak spermler 5 günde kadar hayatta kalabildiğinden dolayı doğurganlık zamanınız 5
                                     gündür. Yumurtlamadan önceki 5 gün içerisinde sevişirseniz hamile kalabilirsiniz. </p>
                                 <br><br>
-                                <script type="application/ld+json">
-                                    {
-                                        "@context": "https://schema.org",
-                                        "@type": "FAQPage",
-                                        "mainEntity": [
-                                            {
-                                            "@type": "Question",
-                                            "name": "Yumurtlama Günü Hesaplama Nedir?",
-                                            "acceptedAnswer": {
-                                                "@type": "Answer",
-                                                "text": "Yumurtlama günü hesaplayıcısı sonraki adet dönemini beklediğiniz günden 14 gün geriye sayarak ne zaman yumurtlayacağınızı tahmin eder. Burada döngü uzunluğunuz çok önemlidir. Döngü uzunluğunuza bağlı olarak yumurtlama günlerinizi değişecektir.
-                                        Doğurganlık günleriniz yumurtlayacağınız gün ve önceki beş günü kapsar. Bu 5 gün içerisinde hamile kalma olasılığınız gittikçe yükselir. Son 3 gün en yüksek olduğu dönemlerdir."
-                                            }
-                                            },
-                                            {
-                                            "@type": "Question",
-                                            "name": "Yumurtlama Belirtileri Nelerdir?",
-                                            "acceptedAnswer": {
-                                                "@type": "Answer",
-                                                "text": "-Vücutta ısı artışı
-                                        -Servikal mukus kıvamının yoğunlaşması
-                                        -Göğüs hasssasiyeti
-                                        -Karında hafif kramplar veya sancılar
-                                        -Hafif lekelenme
-                                        -Koku hassasiyeti
-                                        -Artan cinsel istek
-                                        -İştah artışı
-                                        -Ruh hali değişiklikleri
-                                        -Şişkinlik"
-                                            }
-                                            },
-                                            {
-                                            "@type": "Question",
-                                            "name": "Hamile Kalmak İçin İpuçları Nelerdir?",
-                                            "acceptedAnswer": {
-                                                "@type": "Answer",
-                                                "text": "-Yumurtlama günlerinizi takip edin.
-                                        -Yumurtlama döneminde her gün sevişin.
-                                        -Hamilelik öncesi vitaminler kullanın.
-                                        Farklı sağlık sorunlarınızın olmadığından emin olmak için doktor randevusu alın.
-                                        -Hamilelikte sorun çıkarabilecek durumları şimdiden halledin.
-                                        -Aşılarınızı eksiksiz olun.
-                                        -Spor yapın ve sağlıklı beslenin."
-                                            }
-                                            },
-                                            {
-                                            "@type": "Question",
-                                            "name": "Yumurtlama nedir?",
-                                            "acceptedAnswer": {
-                                                "@type": "Answer",
-                                                "text": "Yumurtlama, yumurtalarınızdan yumurta hücresinin fallop tüplerine ilerlemesidir. Ardından yumurtalarınız orada spermler ile karşılaşıp döllenecektir."
-                                            }
-                                            },
-                                            {
-                                            "@type": "Question",
-                                            "name": " Yumurtlama ne zaman olur?",
-                                            "acceptedAnswer": {
-                                                "@type": "Answer",
-                                                "text": " Genellikle adet döngünüzün tam ortasında gerçekleşir. Eğer 28 günde bir adet oluyorsanız muhtemelen 14. günde yumurtlama dönemine gireceksinizdir. Ancak adet döngünüz sabit değilse tam yumurtlama gününü tutturmak zor olabilir. Bu yüzden yumurtlama belirtilerini de göz önünde bulundurmanız genellikle mantıklı bir seçim olacaktır."
-                                            }
-                                            },
-                                            {
-                                            "@type": "Question",
-                                            "name": " Yumurtlamak nasıl hissettirir?",
-                                            "acceptedAnswer": {
-                                                "@type": "Answer",
-                                                "text": "Yumurtlama alt karın bölgesinde hafif kramplar veya tek taraflı ağrı olarak kendini gösterebilir. Elbette her kadın kramp hissetmeyebilir. Bunun dışında fiziksel bir şey hissetmezsiniz."
-                                            }
-                                            },
-                                            {
-                                            "@type": "Question",
-                                            "name": "Yumurtlama ne kadar sürer?",
-                                            "acceptedAnswer": {
-                                                "@type": "Answer",
-                                                "text": "Yumurtlama genellikle 12 – 14 saat sürer. Eğer bu süreçte yumurta döllenmezse yok olur. Ancak spermler 5 günde kadar hayatta kalabildiğinden dolayı doğurganlık zamanınız 5 gündür. Yumurtlamadan önceki 5 gün içerisinde sevişirseniz hamile kalabilirsiniz."
-                                            }
-                                            }
-                                        ]
-                                        }
-                                </script>
-
-
                             </div>
                         </div>
                     </div>
@@ -260,7 +178,7 @@ import vSelect from "vue-select";
 import "vue-select/dist/vue-select.css";
 Vue.component("v-select", vSelect);
 
-import { FormPlugin, FormDatepickerPlugin , FormInputPlugin, FormGroupPlugin, FormRadioPlugin, SpinnerPlugin  } from 'bootstrap-vue'
+import { FormPlugin, FormDatepickerPlugin, FormInputPlugin, FormGroupPlugin, FormRadioPlugin, SpinnerPlugin } from 'bootstrap-vue'
 Vue.use(FormPlugin);
 Vue.use(FormDatepickerPlugin);
 Vue.use(FormInputPlugin);
@@ -280,6 +198,74 @@ export default {
                 { hid: 'description', name: 'description', content: "Yumurtlama günü hesaplama hamile kalmak açısından oldukça önemlidir. Bebeğimlehayat'ta pratik yumurtlama günü hesaplayıcısını kullanabilirsiniz!" },
                 { hid: 'og:title', property: 'og:title', content: "Yumurtlama günü hesaplama hamile kalmak açısından oldukça önemlidir. Bebeğimlehayat'ta pratik yumurtlama günü hesaplayıcısını kullanabilirsiniz!" }
             ],
+            script: [
+                {
+                    body: true,
+                    type: 'application/ld+json',
+                    json: {
+                        "@context": "https://schema.org",
+                        "@type": "FAQPage",
+                        "mainEntity": [
+                            {
+                                "@type": "Question",
+                                "name": "Yumurtlama Günü Hesaplama Nedir?",
+                                "acceptedAnswer": {
+                                    "@type": "Answer",
+                                    "text": "Yumurtlama günü hesaplayıcısı sonraki adet dönemini beklediğiniz günden 14 gün geriye sayarak ne zaman yumurtlayacağınızı tahmin eder. Burada döngü uzunluğunuz çok önemlidir. Döngü uzunluğunuza bağlı olarak yumurtlama günlerinizi değişecektir. Doğurganlık günleriniz yumurtlayacağınız gün ve önceki beş günü kapsar. Bu 5 gün içerisinde hamile kalma olasılığınız gittikçe yükselir. Son 3 gün en yüksek olduğu dönemlerdir."
+                                }
+                            },
+                            {
+                                "@type": "Question",
+                                "name": "Yumurtlama Belirtileri Nelerdir?",
+                                "acceptedAnswer": {
+                                    "@type": "Answer",
+                                    "text": "-Vücutta ısı artışı -Servikal mukus kıvamının yoğunlaşması -Göğüs hasssasiyeti -Karında hafif kramplar veya sancılar -Hafif lekelenme -Koku hassasiyeti -Artan cinsel istek -İştah artışı -Ruh hali değişiklikleri -Şişkinlik"
+                                }
+                            },
+                            {
+                                "@type": "Question",
+                                "name": "Hamile Kalmak İçin İpuçları Nelerdir?",
+                                "acceptedAnswer": {
+                                    "@type": "Answer",
+                                    "text": "-Yumurtlama günlerinizi takip edin.-Yumurtlama döneminde her gün sevişin. -Hamilelik öncesi vitaminler kullanın. Farklı sağlık sorunlarınızın olmadığından emin olmak için doktor randevusu alın. -Hamilelikte sorun çıkarabilecek durumları şimdiden halledin. -Aşılarınızı eksiksiz olun. -Spor yapın ve sağlıklı beslenin."
+                                }
+                            },
+                            {
+                                "@type": "Question",
+                                "name": "Yumurtlama nedir?",
+                                "acceptedAnswer": {
+                                    "@type": "Answer",
+                                    "text": "Yumurtlama, yumurtalarınızdan yumurta hücresinin fallop tüplerine ilerlemesidir. Ardından yumurtalarınız orada spermler ile karşılaşıp döllenecektir."
+                                }
+                            },
+                            {
+                                "@type": "Question",
+                                "name": " Yumurtlama ne zaman olur?",
+                                "acceptedAnswer": {
+                                    "@type": "Answer",
+                                    "text": " Genellikle adet döngünüzün tam ortasında gerçekleşir. Eğer 28 günde bir adet oluyorsanız muhtemelen 14. günde yumurtlama dönemine gireceksinizdir. Ancak adet döngünüz sabit değilse tam yumurtlama gününü tutturmak zor olabilir. Bu yüzden yumurtlama belirtilerini de göz önünde bulundurmanız genellikle mantıklı bir seçim olacaktır."
+                                }
+                            },
+                            {
+                                "@type": "Question",
+                                "name": " Yumurtlamak nasıl hissettirir?",
+                                "acceptedAnswer": {
+                                    "@type": "Answer",
+                                    "text": "Yumurtlama alt karın bölgesinde hafif kramplar veya tek taraflı ağrı olarak kendini gösterebilir. Elbette her kadın kramp hissetmeyebilir. Bunun dışında fiziksel bir şey hissetmezsiniz."
+                                }
+                            },
+                            {
+                                "@type": "Question",
+                                "name": "Yumurtlama ne kadar sürer?",
+                                "acceptedAnswer": {
+                                    "@type": "Answer",
+                                    "text": "Yumurtlama genellikle 12 – 14 saat sürer. Eğer bu süreçte yumurta döllenmezse yok olur. Ancak spermler 5 günde kadar hayatta kalabildiğinden dolayı doğurganlık zamanınız 5 gündür. Yumurtlamadan önceki 5 gün içerisinde sevişirseniz hamile kalabilirsiniz."
+                                }
+                            }
+                        ]
+                    }
+                }
+            ]
         }
     },
     data() {
@@ -488,4 +474,5 @@ export default {
     #yumurtlamaGunuHesaplamaForm {
         padding: 1em;
     }
-}</style>
+}
+</style>
