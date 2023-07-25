@@ -188,26 +188,37 @@
                                 </div>
                             </div>
 
-                            <div class="col-12 mb-5" v-if="getBlogTitleList && getBlogTitleList.length > 0">
-                                <div class="float-left w-100 p-3 border rounded" id="blog-detail-short-link">
-                                    <a class="float-left w-100 h6 font-weight-normal my-1"
-                                        v-for="(section, index) in getBlogTitleList"
-                                        :href="`#blog_detail_${section.unique}`">
-                                        <span>
-                                            {{ index + 1 }}.
-                                        </span>
-                                        {{ section.name }} <b-icon-arrow-down scale=".8"
-                                            class="font-weight-bold ml-2"></b-icon-arrow-down>
-                                    </a>
+                            <div class="col-12 mb-5" v-if="$route.fullPath == '/bebek-isimleri'">
+                                <BlogDetailBabyNames :gender="null"/>
+                            </div>
+                            <div class="col-12 mb-5" v-else-if="$route.fullPath == '/kiz-bebek-isimleri'">
+                                <BlogDetailBabyNames :gender="1"/>
+                            </div>
+                            <div class="col-12 mb-5" v-else-if="$route.fullPath == '/erkek-bebek-isimleri'">
+                                <BlogDetailBabyNames :gender="0"/>
+                            </div>
+                            <div class="col-12" v-else>
+                                <div class="row">
+                                    <div class="col-12 mb-5" v-if="getBlogTitleList && getBlogTitleList.length > 0">
+                                        <div class="float-left w-100 p-3 border rounded" id="blog-detail-short-link">
+                                            <a class="float-left w-100 h6 font-weight-normal my-1"
+                                                v-for="(section, index) in getBlogTitleList"
+                                                :href="`#blog_detail_${section.unique}`">
+                                                <span>
+                                                    {{ index + 1 }}.
+                                                </span>
+                                                {{ section.name }} <b-icon-arrow-down scale=".8"
+                                                    class="font-weight-bold ml-2"></b-icon-arrow-down>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mb-5" id="blog_detail">
+                                        <section v-for="(section, index) in blog?.sections" :id="`blog_detail_${section.unique}`">
+                                            <div v-html="section.value" v-if="section.type == 'content'"></div>
+                                        </section>
+                                    </div>
                                 </div>
                             </div>
-
-                            <div class="col-12 mb-5" id="blog_detail">
-                                <section v-for="(section, index) in blog?.sections" :id="`blog_detail_${section.unique}`">
-                                    <div v-html="section.value" v-if="section.type == 'content'"></div>
-                                </section>
-                            </div>
-
 
                             <div class="col-12">
                                 <div class="float-left position-relative">
@@ -375,82 +386,155 @@ export default
             getBlogDetail() {
                 return new Promise((resolve, reject) => {
                     var _this = this;
-                    var seo_link = _this.seoLink;
-                    _this.$repositories.blog.show(seo_link)
-                        .then(res => {
-                            if (res) {
-                                _this.blog = res.data.response;
 
-                                if (_this.blog.sections && _this.blog.sections.length > 0) {
-                                    _this.blog.sections.map((item, index) => {
-                                        if (_this.$checkIsNullOrEmpty(item.name)) {
-                                            item["unique"] = 'blog_' + index;
+                    if(_this.$route.fullPath == '/bebek-isimleri' 
+                        || _this.$route.fullPath == '/kiz-bebek-isimleri'
+                        || _this.$route.fullPath == '/erkek-bebek-isimleri') 
+                    {
+                        var seo_link = _this.seoLink;
+                        _this.$repositories.blog.showNoSection(seo_link)
+                            .then(res => {
+                                if (res) {
+                                    _this.blog = res.data.response;
+                                    _this.href = "https://bebegimlehayat.com/" + _this.blog.seo_link;
+                                    _this.seo_title = _this.blog.seo_title;
+                                    _this.seo_keyword = _this.blog.seo_keyword;
+                                    _this.seo_description = _this.blog.seo_description;
+                                    _this.otherBlog = res.data.response.otherBlogs;
+                                    _this.navigation = [
+                                        {
+                                            "name": _this.blog.category_name,
+                                            "url": _this.blog.category_seo_link
+                                        },
+                                        {
+                                            "name": _this.blog.subject,
+                                            "url": _this.blog.seo_link
                                         }
-                                        else {
-                                            item["unique"] = '';
-                                        }
-                                    })
-                                }
-                                _this.href = "https://bebegimlehayat.com/" + _this.blog.seo_link;
-                                _this.seo_title = _this.blog.seo_title;
-                                _this.seo_keyword = _this.blog.seo_keyword;
-                                _this.seo_description = _this.blog.seo_description;
-                                _this.otherBlog = res.data.response.otherBlogs;
-                                _this.navigation = [
-                                    {
-                                        "name": _this.blog.category_name,
-                                        "url": _this.blog.category_seo_link
-                                    },
-                                    {
-                                        "name": _this.blog.subject,
-                                        "url": _this.blog.seo_link
+                                    ];
+    
+                                    this.blogPosting = {
+                                        "@context": "http://schema.org",
+                                        "@type": "BlogPosting",
+                                        "mainEntityOfPage": {
+                                            "@type": "WebPage",
+                                            "@id": process.env.baseUrl + '/' + this.blog?.seo_link
+                                        },
+                                        "headline": this.seo_title,
+                                        "image": this.blog.images,
+                                        "datePublished": this.blog?.updatedAt.split('T')[0],
+                                        "dateModified": this.blog?.createdAt.split('T')[0],
+                                        "author": {
+                                            "@type": "Person",
+                                            "id": "https://bebegimlehayat.com/yazar/admin",
+                                            "name": "Bebegimlehayat",
+                                            "url": "https://bebegimlehayat.com/yazar/admin",
+                                            "image": {
+                                                "type": "ImageObject",
+                                                "id": "https://bebegimlehayat.com/Data/Logo%20(1)-1684804940478.png",
+                                                "url": "https://bebegimlehayat.com/Data/Logo%20(1)-1684804940478.png",
+                                                "caption": "bebegimlehayat.com",
+                                                "inLanguage": "tr"
+                                            }
+                                        },
+                                        "publisher": {
+                                            "@type": "Organization",
+                                            "name": "BebegimleHayat",
+                                            "logo": {
+                                                "@type": "ImageObject",
+                                                "url": "https://bebegimlehayat.com/Data/Logo%20(1)-1684804940478.png",
+                                                "width": 714,
+                                                "height": 83
+                                            }
+                                        },
+                                        "description": this.seo_description,
+                                        "articleBody": this.blog.articleBody
                                     }
-                                ];
-
-                                this.blogPosting = {
-                                    "@context": "http://schema.org",
-                                    "@type": "BlogPosting",
-                                    "mainEntityOfPage": {
-                                        "@type": "WebPage",
-                                        "@id": process.env.baseUrl + '/' + this.blog?.seo_link
-                                    },
-                                    "headline": this.seo_title,
-                                    "image": this.blog.images,
-                                    "datePublished": this.blog?.updatedAt.split('T')[0],
-                                    "dateModified": this.blog?.createdAt.split('T')[0],
-                                    "author": {
-                                        "@type": "Person",
-                                        "id": "https://bebegimlehayat.com/yazar/admin",
-                                        "name": "Bebegimlehayat",
-                                        "url": "https://bebegimlehayat.com/yazar/admin",
-                                        "image": {
-                                            "type": "ImageObject",
-                                            "id": "https://bebegimlehayat.com/Data/Logo%20(1)-1684804940478.png",
-                                            "url": "https://bebegimlehayat.com/Data/Logo%20(1)-1684804940478.png",
-                                            "caption": "bebegimlehayat.com",
-                                            "inLanguage": "tr"
-                                        }
-                                    },
-                                    "publisher": {
-                                        "@type": "Organization",
-                                        "name": "BebegimleHayat",
-                                        "logo": {
-                                            "@type": "ImageObject",
-                                            "url": "https://bebegimlehayat.com/Data/Logo%20(1)-1684804940478.png",
-                                            "width": 714,
-                                            "height": 83
-                                        }
-                                    },
-                                    "description": this.seo_description,
-                                    "articleBody": this.blog.articleBody
+    
+                                    resolve(true);
                                 }
-
-                                resolve(true);
-                            }
-                            else {
-                                resolve(false);
-                            }
-                        });
+                                else {
+                                    resolve(false);
+                                }
+                            });
+                    }
+                    else {
+                        var seo_link = _this.seoLink;
+                        _this.$repositories.blog.show(seo_link)
+                            .then(res => {
+                                if (res) {
+                                    _this.blog = res.data.response;
+    
+                                    if (_this.blog.sections && _this.blog.sections.length > 0) {
+                                        _this.blog.sections.map((item, index) => {
+                                            if (_this.$checkIsNullOrEmpty(item.name)) {
+                                                item["unique"] = 'blog_' + index;
+                                            }
+                                            else {
+                                                item["unique"] = '';
+                                            }
+                                        })
+                                    }
+                                    _this.href = "https://bebegimlehayat.com/" + _this.blog.seo_link;
+                                    _this.seo_title = _this.blog.seo_title;
+                                    _this.seo_keyword = _this.blog.seo_keyword;
+                                    _this.seo_description = _this.blog.seo_description;
+                                    _this.otherBlog = res.data.response.otherBlogs;
+                                    _this.navigation = [
+                                        {
+                                            "name": _this.blog.category_name,
+                                            "url": _this.blog.category_seo_link
+                                        },
+                                        {
+                                            "name": _this.blog.subject,
+                                            "url": _this.blog.seo_link
+                                        }
+                                    ];
+    
+                                    this.blogPosting = {
+                                        "@context": "http://schema.org",
+                                        "@type": "BlogPosting",
+                                        "mainEntityOfPage": {
+                                            "@type": "WebPage",
+                                            "@id": process.env.baseUrl + '/' + this.blog?.seo_link
+                                        },
+                                        "headline": this.seo_title,
+                                        "image": this.blog.images,
+                                        "datePublished": this.blog?.updatedAt.split('T')[0],
+                                        "dateModified": this.blog?.createdAt.split('T')[0],
+                                        "author": {
+                                            "@type": "Person",
+                                            "id": "https://bebegimlehayat.com/yazar/admin",
+                                            "name": "Bebegimlehayat",
+                                            "url": "https://bebegimlehayat.com/yazar/admin",
+                                            "image": {
+                                                "type": "ImageObject",
+                                                "id": "https://bebegimlehayat.com/Data/Logo%20(1)-1684804940478.png",
+                                                "url": "https://bebegimlehayat.com/Data/Logo%20(1)-1684804940478.png",
+                                                "caption": "bebegimlehayat.com",
+                                                "inLanguage": "tr"
+                                            }
+                                        },
+                                        "publisher": {
+                                            "@type": "Organization",
+                                            "name": "BebegimleHayat",
+                                            "logo": {
+                                                "@type": "ImageObject",
+                                                "url": "https://bebegimlehayat.com/Data/Logo%20(1)-1684804940478.png",
+                                                "width": 714,
+                                                "height": 83
+                                            }
+                                        },
+                                        "description": this.seo_description,
+                                        "articleBody": this.blog.articleBody
+                                    }
+    
+                                    resolve(true);
+                                }
+                                else {
+                                    resolve(false);
+                                }
+                            });
+                    }
                 })
             }
         },
@@ -459,7 +543,7 @@ export default
             this.interestYouClientWidth = document.getElementById('interestYou').clientWidth;
             let interestYou = document.getElementById('interestYou')
             document.addEventListener('scroll' , function(e){
-                if(window.screen.width > 992) {
+                if(window.screen.width > 992 && interestYou.clientHeight > window.innerHeight) {
                     if(window.innerHeight-interestYou.getBoundingClientRect().bottom > 30) {
                         if(!interestYou.classList.contains('sticky')) {
                             interestYou.style.maxWidth = interestYou.clientWidth + 'px';

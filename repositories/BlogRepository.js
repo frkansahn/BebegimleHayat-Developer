@@ -43,6 +43,10 @@ export default ($store, $axios) => ({
         return $axios.get(`${blog}/${seo_link}`)
     },
 
+    showNoSection(seo_link) {
+        return $axios.get(`${blog}/noSection/${seo_link}`)
+    },
+
     create(payload) {
         return $axios.post(`${blog}/add`, payload, { headers: { 'Authorization': 'Bearer ' + $store.state.token } })
     },
@@ -69,5 +73,9 @@ export default ($store, $axios) => ({
         return $axios.post(
             `${blog}/controlLink/${seo_link}` , {id:id} , { headers: { 'Authorization': 'Bearer ' + $store.state.token } }
         )
+    },
+
+    getBabyName(payload) {
+        return $axios.post(`${blog}/getBabyName`, payload)
     },
 })
