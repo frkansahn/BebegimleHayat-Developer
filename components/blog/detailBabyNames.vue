@@ -1,6 +1,6 @@
 <template>
 	<div class="row">
-		<div class="col-2 col-lg-1 p-0">
+		<div class="col-2 col-lg-1 p-1 p-lg-0">
 			<ul class="p-0 list-unstyled" id="letters"> 
 				<li v-for="l in letters" :key="`letter_${l}`">
 					<span :class="[l == letter ? 'active':'']" @click="changeLetter(l)">
