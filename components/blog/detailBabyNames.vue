@@ -1,5 +1,5 @@
 <template>
-	<div class="row">
+	<div class="row" id="detailBabyNames">
 		<div class="col-2 col-lg-1 p-1 p-lg-0">
 			<ul class="p-0 list-unstyled" id="letters"> 
 				<li v-for="l in letters" :key="`letter_${l}`">
@@ -11,7 +11,7 @@
 		</div>
 		<div class="col-10 col-lg-11" id="names">
 			<div class="row">
-				<div class="col-12 my-1" v-for="name in names" :key="`name_${name}`"> 
+				<div class="col-12 my-1" v-for="(name,index) in names" :key="`baby_name_${index}`"> 
 					<span>
 						<strong>
 							{{ name.name }}
@@ -42,6 +42,8 @@ export default {
 		changeLetter(l) {
 			this.letter = l;
 			this.getBabyNames();
+			var element = document.getElementById("detailBabyNames");
+ 			element.scrollIntoView();
 		},
 		async getBabyNames() {
 			let reqData = {
@@ -94,8 +96,6 @@ export default {
 
 	#letters.sticky {
 		position: fixed;
-		max-height: 100vh;
-    	overflow: auto;
 		z-index: 2;
 	}
 

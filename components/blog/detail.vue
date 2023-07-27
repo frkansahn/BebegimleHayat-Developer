@@ -189,13 +189,36 @@
                             </div>
 
                             <div class="col-12 mb-5" v-if="$route.fullPath == '/bebek-isimleri'">
-                                <BlogDetailBabyNames :gender="null"/>
+                                <div class="row mb-3">
+                                    <p class="baby-names-description">
+                                        Bebeğinize isim mi arıyorsunuz? Hem kız hem de erkek bebekler için en güzel ve hoş
+                                        isimleri sizler için bir araya topladık. Listemizde rahatça gezerek erkek ve kız
+                                        bebek isimlerini ve anlamlarını rahatlıkla keşfedebilirsiniz. Kız ve erkek
+                                        bebekleriniz için en güzel isimleri sayfamızda bulabilirsiniz!
+                                    </p>
+                                </div>
+                                <BlogDetailBabyNames :gender="null" />
                             </div>
                             <div class="col-12 mb-5" v-else-if="$route.fullPath == '/kiz-bebek-isimleri'">
-                                <BlogDetailBabyNames :gender="1"/>
+                                <div class="row mb-3">
+                                    <p class="baby-names-description">
+                                        Kız bebeğinize isim mi arıyorsunuz? Güzel ve tatlı kız bebek isimlerini kolayca
+                                        bulabilmeniz için sayfamızda bir araya getirdik. Kız bebek isimlerini ve anlamlarını
+                                        isim listemizde öğrenebilir ve kız bebeğiniz için en iyi ismi keşfedebilirsiniz!
+                                    </p>
+                                </div>
+                                <BlogDetailBabyNames :gender="1" />
                             </div>
                             <div class="col-12 mb-5" v-else-if="$route.fullPath == '/erkek-bebek-isimleri'">
-                                <BlogDetailBabyNames :gender="0"/>
+                                <div class="row mb-3">
+                                    <p class="baby-names-description">
+                                        Erkek bebeğiniz için isim mi arıyorsunuz? Birbirinden güzel ve ilgi çekici erkek
+                                        bebek isimlerini sizin için bir araya getirdik. Erkek bebek isimlerini ve
+                                        anlamlarını isim listemizde kolayca gezerken bulabilir ve erkek bebeğiniz için doğru
+                                        ismi keşfedebilirsiniz!
+                                    </p>
+                                </div>
+                                <BlogDetailBabyNames :gender="0" />
                             </div>
                             <div class="col-12" v-else>
                                 <div class="row">
@@ -213,7 +236,8 @@
                                         </div>
                                     </div>
                                     <div class="col-12 mb-5" id="blog_detail">
-                                        <section v-for="(section, index) in blog?.sections" :id="`blog_detail_${section.unique}`">
+                                        <section v-for="(section, index) in blog?.sections"
+                                            :id="`blog_detail_${section.unique}`">
                                             <div v-html="section.value" v-if="section.type == 'content'"></div>
                                         </section>
                                     </div>
@@ -387,10 +411,9 @@ export default
                 return new Promise((resolve, reject) => {
                     var _this = this;
 
-                    if(_this.$route.fullPath == '/bebek-isimleri' 
+                    if (_this.$route.fullPath == '/bebek-isimleri'
                         || _this.$route.fullPath == '/kiz-bebek-isimleri'
-                        || _this.$route.fullPath == '/erkek-bebek-isimleri') 
-                    {
+                        || _this.$route.fullPath == '/erkek-bebek-isimleri') {
                         var seo_link = _this.seoLink;
                         _this.$repositories.blog.showNoSection(seo_link)
                             .then(res => {
@@ -411,7 +434,7 @@ export default
                                             "url": _this.blog.seo_link
                                         }
                                     ];
-    
+
                                     this.blogPosting = {
                                         "@context": "http://schema.org",
                                         "@type": "BlogPosting",
@@ -449,7 +472,7 @@ export default
                                         "description": this.seo_description,
                                         "articleBody": this.blog.articleBody
                                     }
-    
+
                                     resolve(true);
                                 }
                                 else {
@@ -463,7 +486,7 @@ export default
                             .then(res => {
                                 if (res) {
                                     _this.blog = res.data.response;
-    
+
                                     if (_this.blog.sections && _this.blog.sections.length > 0) {
                                         _this.blog.sections.map((item, index) => {
                                             if (_this.$checkIsNullOrEmpty(item.name)) {
@@ -489,7 +512,7 @@ export default
                                             "url": _this.blog.seo_link
                                         }
                                     ];
-    
+
                                     this.blogPosting = {
                                         "@context": "http://schema.org",
                                         "@type": "BlogPosting",
@@ -527,7 +550,7 @@ export default
                                         "description": this.seo_description,
                                         "articleBody": this.blog.articleBody
                                     }
-    
+
                                     resolve(true);
                                 }
                                 else {
@@ -542,26 +565,26 @@ export default
             this.blogViewed();
             this.interestYouClientWidth = document.getElementById('interestYou').clientWidth;
             let interestYou = document.getElementById('interestYou')
-            document.addEventListener('scroll' , function(e){
-                if(window.screen.width > 992 && interestYou.clientHeight > window.innerHeight) {
-                    if(window.innerHeight-interestYou.getBoundingClientRect().bottom > 30) {
-                        if(!interestYou.classList.contains('sticky')) {
+            document.addEventListener('scroll', function (e) {
+                if (window.screen.width > 992 && interestYou.clientHeight > window.innerHeight) {
+                    if (window.innerHeight - interestYou.getBoundingClientRect().bottom > 30) {
+                        if (!interestYou.classList.contains('sticky')) {
                             interestYou.style.maxWidth = interestYou.clientWidth + 'px';
                             interestYou.classList.add('sticky');
                             interestYou.style.bottom = '30px';
                         }
                     }
-    
-                    if(document.getElementById('blogDetail').getBoundingClientRect().top > 0) {
-                        if(interestYou.classList.contains('sticky')) {
+
+                    if (document.getElementById('blogDetail').getBoundingClientRect().top > 0) {
+                        if (interestYou.classList.contains('sticky')) {
                             interestYou.classList.remove('sticky')
                             interestYou.style.maxWidth = null;
                             interestYou.style.bottom = null;
                         }
                     }
 
-                    if(window.innerHeight - document.getElementById('footer').getBoundingClientRect().top > 30) {
-                        if(interestYou.classList.contains('sticky')) {
+                    if (window.innerHeight - document.getElementById('footer').getBoundingClientRect().top > 30) {
+                        if (interestYou.classList.contains('sticky')) {
                             interestYou.style.bottom = window.innerHeight - document.getElementById('footer').getBoundingClientRect().top + 30 + 'px';
                         }
                     }
@@ -725,7 +748,8 @@ export default
     font-weight: normal;
 }
 
-#blog_detail section h2+p {
+#blog_detail section h2+p,
+#blog_detail section h3+p {
     margin-top: 15px;
 }
 
@@ -739,6 +763,14 @@ export default
 
 #blog_detail section *+* {
     margin-top: 30px;
+}
+
+.baby-names-description {
+    line-height: 1.8;
+    letter-spacing: 0.2px;
+    font-size: 17px;
+    font-weight: normal;
+    margin-bottom: 10px;
 }
 
 @media screen and (max-width: 1200px) {}

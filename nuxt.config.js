@@ -175,7 +175,8 @@ export default {
         { from: '^/goz-rengi-hesaplama', to: '/goz-rengi-tahmini' },
         { from: '^/sac-rengi-hesaplama', to: '/sac-rengi-tahmini' },
         { from: '^/hamilelik-beslenme', to: '/hamilelikte-beslenme' },
-        { from: '^/contact', to: '/iletisim' }
+        { from: '^/contact', to: '/iletisim' },
+        { from: '^/hamilelik-cinsellik', to: '/hamilelikte-cinsellik' }
     ],
     build: {
         extend(config, ctx) {
