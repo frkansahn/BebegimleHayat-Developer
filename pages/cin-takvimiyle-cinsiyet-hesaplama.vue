@@ -156,7 +156,6 @@ export default {
         return {
             title: "Çin Takvimiyle Cinsiyet Hesaplama - BebeğimleHayat",
             meta: [
-                { hid: 'keywords', name: 'keywords', content: 'bebegimlehayat,cin,takvimiyle,cinsiyet,hesaplama' },
                 { hid: 'description', name: 'description', content: "Bebek cinsiyeti öğrenme ebeveynler için bir merak kaynağıdır. Çin takvimine göre bebek cinsiyeti belirleme yaygın bir yöntemdir. Bebeğimlehayat'ta Çin takvimine göre bebek cinsiyeti hesaplama uygulamasını kullanabilirsiniz!" },
                 { hid: 'og:title', property: 'og:title', content: "Bebek cinsiyeti öğrenme ebeveynler için bir merak kaynağıdır. Çin takvimine göre bebek cinsiyeti belirleme yaygın bir yöntemdir. Bebeğimlehayat'ta Çin takvimine göre bebek cinsiyeti hesaplama uygulamasını kullanabilirsiniz!" }
             ],

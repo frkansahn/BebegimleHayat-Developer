@@ -23,9 +23,6 @@
   "TreeCategory": {
     "description": "Auto imported from components/treeCategory.vue"
   },
-  "ContentDetail": {
-    "description": "Auto imported from components/content/detail.vue"
-  },
   "BlogBabyDictionary": {
     "description": "Auto imported from components/blog/babyDictionary.vue"
   },
@@ -67,6 +64,9 @@
   },
   "BlogToolNewBlogs": {
     "description": "Auto imported from components/blog/toolNewBlogs.vue"
+  },
+  "ContentDetail": {
+    "description": "Auto imported from components/content/detail.vue"
   },
   "ElementImage": {
     "description": "Auto imported from components/element/image.vue"

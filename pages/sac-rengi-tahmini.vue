@@ -1936,7 +1936,6 @@ export default {
         return {
             title: "Saç Rengi Rahmin Edici - BebeğimleHayat",
             meta: [
-                { hid: 'keywords', name: 'keywords', content: 'bebegimlehayat,sac,rengi,tahmini' },
                 { hid: 'description', name: 'description', content: "Bebek saç rengi ebeveynler tarafından merak edilen konulardan biridir. Bebeğimlehayat saç rengi tahmin edici sayesinde bebeğinizin saç rengini pratik şekilde tahmin edebilirsiniz!" },
                 { hid: 'og:title', property: 'og:title', content: "Bebek saç rengi ebeveynler tarafından merak edilen konulardan biridir. Bebeğimlehayat saç rengi tahmin edici sayesinde bebeğinizin saç rengini pratik şekilde tahmin edebilirsiniz!" }
             ],

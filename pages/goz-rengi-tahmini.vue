@@ -640,7 +640,6 @@ export default {
         return {
             title: "Göz Rengi Tahmin Edici - BebeğimleHayat ",
             meta: [
-                { hid: 'keywords', name: 'keywords', content: 'bebegimlehayat,göz,rengi,tahmin,edici' },
                 { hid: 'description', name: 'description', content: "Bebek göz rengi ebeveynler tarafından merak edilen konulardan biridir. Bebeğimlehayat göz rengi tahmin edici sayesinde bebeğinizin göz rengini pratik şekilde tahmin edebilirsiniz!" },
                 { hid: 'og:title', property: 'og:title', content: "Bebek göz rengi ebeveynler tarafından merak edilen konulardan biridir. Bebeğimlehayat göz rengi tahmin edici sayesinde bebeğinizin göz rengini pratik şekilde tahmin edebilirsiniz!" }
             ],

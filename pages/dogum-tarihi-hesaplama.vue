@@ -159,7 +159,6 @@ export default {
         return {
             title: "Doğum Tarihi Hesaplama - BebeğimleHayat ",
             meta: [
-                { hid: 'keywords', name: 'keywords', content: 'bebegimlehayat,dogum,tarihi,hesaplama' },
                 { hid: 'description', name: 'description', content: "Bebek doğum tarihini hesaplama ebeveynler tarafından merak edilen konulardan biridir. Bebeğimlehayat'ta bebeğinizin doğum tarihini hesaplayabilirsiniz!" },
                 { hid: 'og:title', property: 'og:title', content: "Bebek doğum tarihini hesaplama ebeveynler tarafından merak edilen konulardan biridir. Bebeğimlehayat'ta bebeğinizin doğum tarihini hesaplayabilirsiniz!" }
             ],

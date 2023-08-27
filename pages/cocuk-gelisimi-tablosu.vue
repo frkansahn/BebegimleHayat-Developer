@@ -425,7 +425,6 @@ export default {
         return {
             title: "Çocuk Gelişimi Tablosu - BebeğimleHayat ",
             meta: [
-                { hid: 'keywords', name: 'keywords', content: 'bebegimlehayat,çocuk,gelisimi,tablosu' },
                 { hid: 'description', name: 'description', content: "Çocuk gelişimi tablosu kilo ve boy gibi çeşitli verileri içeren bir gelişim takip uygulamasıdır. Bebeğimlehayat'ta pratik şekilde çocuk gelişim tablosuna erişebilirsiniz!" },
                 { hid: 'og:title', property: 'og:title', content: "Çocuk gelişimi tablosu kilo ve boy gibi çeşitli verileri içeren bir gelişim takip uygulamasıdır. Bebeğimlehayat'ta pratik şekilde çocuk gelişim tablosuna erişebilirsiniz!" }
             ],

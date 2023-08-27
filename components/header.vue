@@ -46,6 +46,47 @@
 										</li>							
 									</ul>
 								</b-sidebar>
+								<b-sidebar id="searchMenu" title="Arama" backdrop-variant="dark" bg-variant="white" no-header backdrop
+									shadow>
+									<div class="col-12 col-md-10 col-lg-8 mx-auto">
+										<div class="row">
+											<div class="col-12 py-4 py-lg-5 d-flex justify-content-end">
+												<span class="close-serach-button" v-b-toggle.searchMenu>
+													&times;
+												</span>
+											</div>
+										</div>
+										<span class="d-flex align-items-center justify-content-between search-page w-100 pt-4">
+											<b-form-input id="searchInput" size="lg" v-model="searchInput" type="text" @keydown="searchKeyDown" @keyup="searchKeyUp" placeholder="Ne aramıştın" class="border-secondary px-0 rounded-0 border-left-0 border-right-0 border-top-0"></b-form-input>
+											<b-icon-search class="search-button" role="button" variant="dark" font-scale="1"></b-icon-search>
+											<button class="btn-search btn btn-dark px-4 py-2" @click="search">ARA</button>
+										</span>
+										<div class="col-12 mb-4" id="searchContent" v-if="searchResult && searchInput.length > 0">
+											<div class="row">
+												<ul class="col-12">
+													<li class="row mb-4 pb-2 align-items-center" role="button" v-for="(R,index) in searchResult" @click="routeBlog(R.url)">
+														<div class="col-5 col-lg-3 px-0">
+															<span>
+																<picture data-not-lazy>
+																	<source type="image/webp" :srcset="`https://api.bebegimlehayat.com/Data/image/small/${R.image}.webp`" />
+																	<img :src="`https://api.bebegimlehayat.com/Data/image/small/${R.image}.jpeg`" :alt="R.title" :width="308" :height="268"  />
+																</picture>
+															</span>
+														</div>
+														<div class="col-7 col-lg-9">
+															<h6>
+																{{ R.subject }}
+															</h6>
+															<p>
+																{{ R.description }}
+															</p>
+														</div>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</b-sidebar>
 								<div class="col-6 col-sm-5 col-md-6 col-lg-3 pl-0">
 									<NuxtLink to="/" id="logo" v-html="config && config.logo">
 									</NuxtLink>
@@ -88,8 +129,11 @@
 										</ul>
 									</div>
 								</div>
-								<div class="col-4 col-lg-1 px-0">
-									<div class="d-flex align-items-center justify-content-end justify-content-lg-center mx-lg-5" id="headerAccount" v-if="customer && customer.userLoggedIn">
+								<div class="col-4 col-lg-1 px-0 d-flex align-items-center justify-content-end">
+									<div class="d-flex align-items-center justify-content-end search-menu" v-b-toggle.searchMenu>
+										<b-icon-search variant="secondary" font-scale="2.3"></b-icon-search>
+									</div>
+									<div class="d-flex align-items-center justify-content-end justify-content-lg-center mx-lg-3 ml-3" id="headerAccount" v-if="customer && customer.userLoggedIn">
 										<span class="title d-flex align-items-center justify-content-center flex-column">
 											<b-icon-person variant="secondary" font-scale="1.4"></b-icon-person>
 											Hesabım
@@ -113,7 +157,7 @@
 											</li>
 										</ul>
 									</div>
-									<div class="d-flex align-items-center justify-content-end justify-content-lg-center mx-lg-5" id="headerAccount" v-if="!(customer && customer.userLoggedIn)">
+									<div class="d-flex align-items-center justify-content-end justify-content-lg-center mx-lg-3 ml-3" id="headerAccount" v-if="!(customer && customer.userLoggedIn)">
 										<span class="title d-flex align-items-center justify-content-center flex-column">
 											<b-icon-person variant="secondary" font-scale="3"></b-icon-person>
 										</span>	
@@ -159,7 +203,15 @@ export default {
 			loading: true,
 			siteLoadedPopup: false,
 			headerIndex:null,
-			isMobileMenuSidebar:false
+			isMobileMenuSidebar:false,
+			searchInput:"",
+			searchResult:undefined,
+			searchInterval:undefined,
+			keyHistory:undefined,
+			searchPaging : {
+				start:0,
+				end:20
+			}
 		}
 	},
 	props:{
@@ -180,6 +232,41 @@ export default {
 		}
 	},
 	methods: {
+		routeBlog(url) {
+			this.searchInput = '';
+			this.$router.push(`/${url}`)
+		},
+		closeSearch() {
+			this.searchInput = '';
+		},
+		searchKeyDown(){
+			var _this = this;
+			clearInterval(_this.searchInterval);
+		},
+		searchKeyUp(){
+			var _this = this;
+			_this.searchInterval = setInterval(() => {
+				if(_this.searchInput != _this.keyHistory)
+				{
+					_this.search();
+					_this.keyHistory = _this.searchInput;
+				}
+			} , 1000);
+		},
+		search(){
+			var _this = this;
+			if(_this.$checkIsNullOrEmpty(_this.searchInput)) {
+				_this.$repositories.search.getSearch(_this.searchInput , _this.searchPaging.start, _this.searchPaging.end)
+				.then(res => {
+					if(res) {
+						_this.searchResult = res.data.response;
+					}
+				});
+			}
+			else {
+				_this.searchResult = undefined;
+			}
+		},
 		async logout() {
 			var _this = this;
 			_this.$cookiz.removeAll();
@@ -247,7 +334,13 @@ export default {
 }
 </script>
 
-<style>	#headerCart .mini-cart {
+<style>	
+	#searchMenu {
+		width: 100%;
+		padding:2em;
+	}
+
+	#headerCart .mini-cart {
 		display: none;
 		position: absolute;
 		top: 100%;
@@ -308,7 +401,43 @@ export default {
 
 	.search-button {
 		position: absolute;
-		right: 10px;
+		left: -81px;
+		top: 30px;
+		font-size: 59px;
+	}
+
+	.btn-search.btn {
+		position: absolute;
+		right: 0;
+		bottom: 7px;
+		padding: 10px 50px !important;
+	}
+
+	.close-serach-button {
+		position: fixed;
+		top: 0;
+		right: 50px;
+		font-size: 100px;
+		font-weight: 100;
+		font-family: auto;
+		line-height: 113px;
+	}
+
+	#searchContent h6 {
+		font-size: 16px;
+		color: #0095DB;
+		margin-bottom: 10px;
+		font-weight: 600;
+		text-transform: uppercase;
+	}
+
+	#searchContent p {
+		font-size: 16px;
+		margin-bottom: 10px;
+		display: -webkit-box;
+		-webkit-line-clamp: 2; /*Kaç Stırda sınırlamak istiyorsanız */
+		-webkit-box-orient: vertical;
+		overflow:hidden;
 	}
 
 	#headerWrapper.sticky {
@@ -561,6 +690,54 @@ export default {
 	}
 
 	@media screen and (max-width: 768px) {
+		#searchMenu {
+			padding: 1em;
+		}
+
+		#searchContent h6 {
+			font-size: 14px;
+			margin-bottom: 5px;
+		}
+
+		#searchContent p {
+			font-size: 14px;
+		}
+
+		.btn-search.btn {
+			padding: 7px 20px !important;
+			bottom: 0;
+		}
+
+		#searchMenu {
+			padding: 1em;
+		}
+
+		.btn-search.btn {
+			padding: 4px 20px !important;
+			bottom: -2px;
+			font-size: 14px;
+			border-radius: 0;
+		}
+
+		.search-button {
+			left: 0;
+			font-size: 22px;
+		}
+
+		#searchInput {
+			padding-left: 31px !important;
+		}
+
+		#searchInput::placeholder {
+			font-size: 15px;
+		}
+
+		.close-serach-button {
+			font-size: 50px;
+			right: 20px;
+			line-height: 75px;
+		}
+
 		#headerMenu ul {
 			overflow: auto;
 		}
@@ -570,7 +747,7 @@ export default {
 		}
 
 		.search-page {
-			height: 38px;
+			height: 55px;
 		}
 
 		#headerWrapper.sticky #search {

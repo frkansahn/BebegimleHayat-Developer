@@ -30,9 +30,7 @@ export default
             ]
         };
     },
-    async fetch() {
-		
-
+    async fetch() {	
         await this.$repositories.setting.getSiteSettings()
             .then(res => {
             if (res) {

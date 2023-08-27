@@ -81,7 +81,6 @@ export default
             return {
                 title: "İletişim - BebeğimleHayat",
                 meta: [
-                { hid: 'keywords', name: 'keywords', content: 'bebegimlehayat,iletişim' },
                 { hid: 'description', name: 'description', content: 'BebeğimleHayat bebeğinizle ilgili ihtiyaç duyduğunuz her şeye tek tıkla ulaşabileceğiniz bir platformdur. Bebeğimlehayat iletişim bilgileri için tıklayın!' },
                 { hid: 'og:title', property: 'og:title', content: 'İletişim - BebeğimleHayat' },
                 { hid: 'og:description', property: 'og:description', content: 'BebeğimleHayat bebeğinizle ilgili ihtiyaç duyduğunuz her şeye tek tıkla ulaşabileceğiniz bir platformdur. Bebeğimlehayat iletişim bilgileri için tıklayın!' }

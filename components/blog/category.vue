@@ -135,7 +135,6 @@ export default
             return {
                 title: this.seo_title,
                 meta: [
-                    { hid: 'keywords', name: 'keywords', content: this.seo_keyword },
                     { hid: 'description', name: 'description', content: this.seo_description },
                     { hid: 'og:title', property: 'og:title', content: this.seo_title },
                     { hid: 'og:description', property: 'og:description', content: this.seo_description },

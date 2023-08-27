@@ -27,7 +27,6 @@ export default {
             { charset: 'utf-8' },
             { name: 'viewport', content: 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no' },
             { name: 'author', content: 'Bebeklere Dair Her Şey Burada! | BebeğimleHayat' },
-            { hid: 'keywords', name: 'keywords', content: 'bebegimlehayat' },
             { hid: 'description', name: 'description', content: 'Bebeklere Dair Her Şey Burada! | BebeğimleHayat' },
             { hid: 'copyright', name: 'copyright', content: 'Bebeklere Dair Her Şey Burada! | BebeğimleHayat' },
             { hid: 'robots', name: 'robots', content: 'index,follow' },
@@ -168,15 +167,15 @@ export default {
         credentials: false
     },
     redirect: [
-        { from: '^/kullanim-sart-ve-kosullari-bebegimlehayat', to: '/kullanim-sart-ve-kosullari' },
-        { from: '^/kisisel-verilerin-korunmasi-politikasi-bebegimlehayat', to: '/kisisel-verilerin-korunmasi-politikasi' },
-        { from: '^/cerez-politikasi-bebegimlehayat', to: '/cerez-politikasi' },
-        { from: '^/hakkimizda-bebegimlehayat', to: '/hakkimizda' },
-        { from: '^/goz-rengi-hesaplama', to: '/goz-rengi-tahmini' },
-        { from: '^/sac-rengi-hesaplama', to: '/sac-rengi-tahmini' },
-        { from: '^/hamilelik-beslenme', to: '/hamilelikte-beslenme' },
-        { from: '^/contact', to: '/iletisim' },
-        { from: '^/hamilelik-cinsellik', to: '/hamilelikte-cinsellik' }
+        { from: '^/kullanim-sart-ve-kosullari-bebegimlehayat', to: '/kullanim-sart-ve-kosullari', statusCode: 301 },
+        { from: '^/kisisel-verilerin-korunmasi-politikasi-bebegimlehayat', to: '/kisisel-verilerin-korunmasi-politikasi', statusCode: 301 },
+        { from: '^/cerez-politikasi-bebegimlehayat', to: '/cerez-politikasi', statusCode: 301 },
+        { from: '^/hakkimizda-bebegimlehayat', to: '/hakkimizda', statusCode: 301 },
+        { from: '^/goz-rengi-hesaplama', to: '/goz-rengi-tahmini', statusCode: 301 },
+        { from: '^/sac-rengi-hesaplama', to: '/sac-rengi-tahmini', statusCode: 301 },
+        { from: '^/hamilelik-beslenme', to: '/hamilelikte-beslenme', statusCode: 301 },
+        { from: '^/contact', to: '/iletisim', statusCode: 301 },
+        { from: '^/hamilelik-cinsellik', to: '/hamilelikte-cinsellik', statusCode: 301 }
     ],
     build: {
         extend(config, ctx) {

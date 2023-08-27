@@ -174,7 +174,6 @@ export default {
         return {
             title: "Bebek İsim Bulucu - BebeğimleHayat ",
             meta: [
-                { hid: 'keywords', name: 'keywords', content: 'bebegimlehayat,bebek,isim,bulucu' },
                 { hid: 'description', name: 'description', content: "Bebek isimleri ebeveynlerin aklını kurcalayan konulardan biridir. Bebeğimlehayat'ta bebek isim bulucudan faydalanarak fikir edinebilirsiniz!" },
                 { hid: 'og:title', property: 'og:title', content: "Bebek isimleri ebeveynlerin aklını kurcalayan konulardan biridir. Bebeğimlehayat'ta bebek isim bulucudan faydalanarak fikir edinebilirsiniz!" }
             ],

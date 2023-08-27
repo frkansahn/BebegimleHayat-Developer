@@ -194,7 +194,6 @@ export default {
         return {
             title: "Yumurtalama Günü Hesaplama - BebeğimleHayat ",
             meta: [
-                { hid: 'keywords', name: 'keywords', content: 'bebegimlehayat,yumurtlama,gunu,hesaplama' },
                 { hid: 'description', name: 'description', content: "Yumurtlama günü hesaplama hamile kalmak açısından oldukça önemlidir. Bebeğimlehayat'ta pratik yumurtlama günü hesaplayıcısını kullanabilirsiniz!" },
                 { hid: 'og:title', property: 'og:title', content: "Yumurtlama günü hesaplama hamile kalmak açısından oldukça önemlidir. Bebeğimlehayat'ta pratik yumurtlama günü hesaplayıcısını kullanabilirsiniz!" }
             ],

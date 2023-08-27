@@ -210,7 +210,6 @@ export default {
         return {
             title: "Çocuk Boyu Hesaplama - BebeğimleHayat",
             meta: [
-                { hid: 'keywords', name: 'keywords', content: 'bebegimlehayat,çocuk,boyu,hesaplama' },
                 { hid: 'description', name: 'description', content: "Bebeğimlehayat'ta çocuk boyu hesaplama aracı sayesinde ihtiyaç duyduğunuz bilgilere pratik şekilde ulaşabilirsiniz!" },
                 { hid: 'og:title', property: 'og:title', content: "Bebeğimlehayat'ta çocuk boyu hesaplama aracı sayesinde ihtiyaç duyduğunuz bilgilere pratik şekilde ulaşabilirsiniz!" }
             ],

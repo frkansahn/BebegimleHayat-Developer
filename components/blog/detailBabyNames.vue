@@ -58,36 +58,6 @@ export default {
 		}
 	},
 	async mounted() {
-		this.lettersClientWidth = document.getElementById('letters').clientWidth;
-		let letters = document.getElementById('letters')
-		document.addEventListener('scroll' , function(e){
-			if(window.screen.width > 992) {
-				if(window.innerHeight-letters.getBoundingClientRect().bottom > 30) {
-					if(!letters.classList.contains('sticky')) {
-						letters.style.maxWidth = letters.clientWidth + 'px';
-						letters.classList.add('sticky');
-						letters.style.bottom = '0px';
-					}
-				}
-
-				if(document.getElementById('names').getBoundingClientRect().top > 0) {
-					if(letters.classList.contains('sticky')) {
-						letters.classList.remove('sticky')
-						letters.style.maxWidth = null;
-						letters.style.bottom = null;
-					}
-				}
-
-				if(window.innerHeight - document.getElementById('footer').getBoundingClientRect().top > 30) {
-					if(letters.classList.contains('sticky')) {
-						letters.style.bottom = window.innerHeight - document.getElementById('footer').getBoundingClientRect().top + 'px';
-					}
-				}
-				else {
-					letters.style.bottom = '0px';
-				}
-			}
-		});
 	}
 }
 </script>

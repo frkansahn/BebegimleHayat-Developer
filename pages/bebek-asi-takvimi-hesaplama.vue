@@ -702,7 +702,6 @@ export default {
         return {
             title: "Bebek Aşı Takvimi Hesaplama - BebeğimleHayat ",
             meta: [
-                { hid: 'keywords', name: 'keywords', content: 'bebegimlehayat,asi,takvimi,hesaplama' },
                 { hid: 'description', name: 'description', content: "Bebek aşı takvimi sağlık açısından yakından takip edilmesi gereken verilerden biridir. Bebeğimlehayat bebek aşı takvimi hesaplama aracı ile pratik şekilde aşı tablosu oluşturabilirsiniz!" },
                 { hid: 'og:title', property: 'og:title', content: "Bebek aşı takvimi sağlık açısından yakından takip edilmesi gereken verilerden biridir. Bebeğimlehayat bebek aşı takvimi hesaplama aracı ile pratik şekilde aşı tablosu oluşturabilirsiniz!" }
             ],

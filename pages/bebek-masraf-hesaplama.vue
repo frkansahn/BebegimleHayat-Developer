@@ -1220,7 +1220,6 @@ export default {
         return {
             title: "Bebek Masraf Hesaplama - BebeğimleHayat",
             meta: [
-                { hid: 'keywords', name: 'keywords', content: 'bebegimlehayat,hamilelik,kilo,hesaplama' },
                 { hid: 'description', name: 'description', content: "Hamilelikte kaç kilo alacağınızı merak ediyorsanız Bebeğimlehayat hamilelik kilo hesaplama aracımızdan faydalanabilir, pratik bir hesap yapabilirsiniz!" },
                 { hid: 'og:title', property: 'og:title', content: "Hamilelikte kaç kilo alacağınızı merak ediyorsanız Bebeğimlehayat hamilelik kilo hesaplama aracımızdan faydalanabilir, pratik bir hesap yapabilirsiniz!" }
             ],
