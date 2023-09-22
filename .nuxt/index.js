@@ -14,6 +14,7 @@ import { createStore } from './store.js'
 /* Plugins */
 
 import nuxt_plugin_plugin_89ad18e8 from 'nuxt_plugin_plugin_89ad18e8' // Source: .\\components\\plugin.js (mode: 'all')
+import nuxt_plugin_gtm_33bb7f76 from 'nuxt_plugin_gtm_33bb7f76' // Source: .\\gtm.js (mode: 'all')
 import nuxt_plugin_vlazyload_fa9e9146 from 'nuxt_plugin_vlazyload_fa9e9146' // Source: .\\v-lazy-load.js (mode: 'all')
 import nuxt_plugin_cookieuniversalnuxt_e4218952 from 'nuxt_plugin_cookieuniversalnuxt_e4218952' // Source: .\\cookie-universal-nuxt.js (mode: 'all')
 import nuxt_plugin_axios_47a8d9af from 'nuxt_plugin_axios_47a8d9af' // Source: .\\axios.js (mode: 'all')
@@ -92,7 +93,7 @@ async function createApp(ssrContext, config = {}) {
   // here we inject the router and store to all child components,
   // making them available everywhere as `this.$router` and `this.$store`.
   const app = {
-    head: {"title":"Bebeklere Dair Her Şey Burada! | BebeğimleHayat","htmlAttrs":{"lang":"tr"},"meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"},{"name":"author","content":"Bebeklere Dair Her Şey Burada! | BebeğimleHayat"},{"hid":"description","name":"description","content":"Bebeklere Dair Her Şey Burada! | BebeğimleHayat"},{"hid":"copyright","name":"copyright","content":"Bebeklere Dair Her Şey Burada! | BebeğimleHayat"},{"hid":"robots","name":"robots","content":"index,follow"},{"property":"og:image","content":"\u002FData\u002Fbebegimlehayat-logo.svg"},{"name":"twitter:image","content":"\u002FData\u002Fbebegimlehayat-logo-svg"},{"property":"og:type","content":"website"},{"hid":"og:title","property":"og:title","content":"Bebeklere Dair Her Şey Burada! | BebeğimleHayat"},{"hid":"og:description","property":"og:description","content":"Bebeklere Dair Her Şey Burada! | BebeğimleHayat"},{"property":"og:url","content":"https:\u002F\u002Fbebegimlehayat.com\u002F"},{"property":"og:site_name","content":"https:\u002F\u002Fbebegimlehayat.com\u002F"},{"name":"twitter:card","content":"summary"},{"name":"twitter:title","content":"Bebeklere Dair Her Şey Burada! | BebeğimleHayat"},{"name":"twitter:description","content":"Bebeklere Dair Her Şey Burada! | BebeğimleHayat"}],"link":[],"script":[{"innerHTML":"(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':\n                    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],\n                    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=\n                    'https:\u002F\u002Fwww.googletagmanager.com\u002Fgtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);\n                    })(window,document,'script','dataLayer','GTM-KM2FC8D');\n                "}],"style":[]},
+    head: {"title":"Bebeklere Dair Her Şey Burada! | BebeğimleHayat","htmlAttrs":{"lang":"tr"},"meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1.0, maximum-scale=1.0"},{"name":"author","content":"Bebeklere Dair Her Şey Burada! | BebeğimleHayat"},{"hid":"description","name":"description","content":"Bebeklere Dair Her Şey Burada! | BebeğimleHayat"},{"hid":"copyright","name":"copyright","content":"Bebeklere Dair Her Şey Burada! | BebeğimleHayat"},{"hid":"robots","name":"robots","content":"index,follow"},{"property":"og:image","content":"\u002FData\u002Fbebegimlehayat-logo.svg"},{"name":"twitter:image","content":"\u002FData\u002Fbebegimlehayat-logo-svg"},{"property":"og:type","content":"website"},{"hid":"og:title","property":"og:title","content":"Bebeklere Dair Her Şey Burada! | BebeğimleHayat"},{"hid":"og:description","property":"og:description","content":"Bebeklere Dair Her Şey Burada! | BebeğimleHayat"},{"property":"og:url","content":"https:\u002F\u002Fbebegimlehayat.com\u002F"},{"property":"og:site_name","content":"https:\u002F\u002Fbebegimlehayat.com\u002F"},{"name":"twitter:card","content":"summary"},{"name":"twitter:title","content":"Bebeklere Dair Her Şey Burada! | BebeğimleHayat"},{"name":"twitter:description","content":"Bebeklere Dair Her Şey Burada! | BebeğimleHayat"}],"link":[],"script":[],"style":[]},
 
     store,
     router,
@@ -224,6 +225,10 @@ async function createApp(ssrContext, config = {}) {
 
   if (typeof nuxt_plugin_plugin_89ad18e8 === 'function') {
     await nuxt_plugin_plugin_89ad18e8(app.context, inject)
+  }
+
+  if (typeof nuxt_plugin_gtm_33bb7f76 === 'function') {
+    await nuxt_plugin_gtm_33bb7f76(app.context, inject)
   }
 
   if (typeof nuxt_plugin_vlazyload_fa9e9146 === 'function') {

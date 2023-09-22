@@ -4,166 +4,145 @@
     "path": "/bebek-asi-takvimi-hesaplama",
     "component": "C:\\\\Users\\\\Piksel\\\\Desktop\\\\BebegimleHayat\\\\Software\\\\Frontend-Dev\\\\pages\\\\bebek-asi-takvimi-hesaplama.vue",
     "chunkName": "pages/bebek-asi-takvimi-hesaplama",
-    "url": "/bebek-asi-takvimi-hesaplama",
-    "_name": "_119e3b33"
+    "url": "/bebek-asi-takvimi-hesaplama"
   },
   {
     "name": "bebek-isim-bulucu",
     "path": "/bebek-isim-bulucu",
     "component": "C:\\\\Users\\\\Piksel\\\\Desktop\\\\BebegimleHayat\\\\Software\\\\Frontend-Dev\\\\pages\\\\bebek-isim-bulucu.vue",
     "chunkName": "pages/bebek-isim-bulucu",
-    "url": "/bebek-isim-bulucu",
-    "_name": "_0d1cef70"
+    "url": "/bebek-isim-bulucu"
   },
   {
     "name": "bebek-masraf-hesaplama",
     "path": "/bebek-masraf-hesaplama",
     "component": "C:\\\\Users\\\\Piksel\\\\Desktop\\\\BebegimleHayat\\\\Software\\\\Frontend-Dev\\\\pages\\\\bebek-masraf-hesaplama.vue",
     "chunkName": "pages/bebek-masraf-hesaplama",
-    "url": "/bebek-masraf-hesaplama",
-    "_name": "_0eb7910e"
+    "url": "/bebek-masraf-hesaplama"
   },
   {
     "name": "cin-takvimiyle-cinsiyet-hesaplama",
     "path": "/cin-takvimiyle-cinsiyet-hesaplama",
     "component": "C:\\\\Users\\\\Piksel\\\\Desktop\\\\BebegimleHayat\\\\Software\\\\Frontend-Dev\\\\pages\\\\cin-takvimiyle-cinsiyet-hesaplama.vue",
     "chunkName": "pages/cin-takvimiyle-cinsiyet-hesaplama",
-    "url": "/cin-takvimiyle-cinsiyet-hesaplama",
-    "_name": "_1387861e"
+    "url": "/cin-takvimiyle-cinsiyet-hesaplama"
   },
   {
     "name": "cocuk-boyu-hesaplama",
     "path": "/cocuk-boyu-hesaplama",
     "component": "C:\\\\Users\\\\Piksel\\\\Desktop\\\\BebegimleHayat\\\\Software\\\\Frontend-Dev\\\\pages\\\\cocuk-boyu-hesaplama.vue",
     "chunkName": "pages/cocuk-boyu-hesaplama",
-    "url": "/cocuk-boyu-hesaplama",
-    "_name": "_26cd2b12"
+    "url": "/cocuk-boyu-hesaplama"
   },
   {
     "name": "cocuk-gelisimi-tablosu",
     "path": "/cocuk-gelisimi-tablosu",
     "component": "C:\\\\Users\\\\Piksel\\\\Desktop\\\\BebegimleHayat\\\\Software\\\\Frontend-Dev\\\\pages\\\\cocuk-gelisimi-tablosu.vue",
     "chunkName": "pages/cocuk-gelisimi-tablosu",
-    "url": "/cocuk-gelisimi-tablosu",
-    "_name": "_76796f07"
+    "url": "/cocuk-gelisimi-tablosu"
   },
   {
     "name": "dogum-planlayici",
     "path": "/dogum-planlayici",
     "component": "C:\\\\Users\\\\Piksel\\\\Desktop\\\\BebegimleHayat\\\\Software\\\\Frontend-Dev\\\\pages\\\\dogum-planlayici.vue",
     "chunkName": "pages/dogum-planlayici",
-    "url": "/dogum-planlayici",
-    "_name": "_319454fa"
+    "url": "/dogum-planlayici"
   },
   {
     "name": "dogum-tarihi-hesaplama",
     "path": "/dogum-tarihi-hesaplama",
     "component": "C:\\\\Users\\\\Piksel\\\\Desktop\\\\BebegimleHayat\\\\Software\\\\Frontend-Dev\\\\pages\\\\dogum-tarihi-hesaplama.vue",
     "chunkName": "pages/dogum-tarihi-hesaplama",
-    "url": "/dogum-tarihi-hesaplama",
-    "_name": "_6828ed68"
+    "url": "/dogum-tarihi-hesaplama"
   },
   {
     "name": "goz-rengi-tahmini",
     "path": "/goz-rengi-tahmini",
     "component": "C:\\\\Users\\\\Piksel\\\\Desktop\\\\BebegimleHayat\\\\Software\\\\Frontend-Dev\\\\pages\\\\goz-rengi-tahmini.vue",
     "chunkName": "pages/goz-rengi-tahmini",
-    "url": "/goz-rengi-tahmini",
-    "_name": "_26b563aa"
+    "url": "/goz-rengi-tahmini"
   },
   {
     "name": "hamilelik-kilo-hesaplama",
     "path": "/hamilelik-kilo-hesaplama",
     "component": "C:\\\\Users\\\\Piksel\\\\Desktop\\\\BebegimleHayat\\\\Software\\\\Frontend-Dev\\\\pages\\\\hamilelik-kilo-hesaplama.vue",
     "chunkName": "pages/hamilelik-kilo-hesaplama",
-    "url": "/hamilelik-kilo-hesaplama",
-    "_name": "_e5e96548"
+    "url": "/hamilelik-kilo-hesaplama"
   },
   {
     "name": "iletisim",
     "path": "/iletisim",
     "component": "C:\\\\Users\\\\Piksel\\\\Desktop\\\\BebegimleHayat\\\\Software\\\\Frontend-Dev\\\\pages\\\\iletisim.vue",
     "chunkName": "pages/iletisim",
-    "url": "/iletisim",
-    "_name": "_57a86226"
+    "url": "/iletisim"
   },
   {
     "name": "sac-rengi-tahmini",
     "path": "/sac-rengi-tahmini",
     "component": "C:\\\\Users\\\\Piksel\\\\Desktop\\\\BebegimleHayat\\\\Software\\\\Frontend-Dev\\\\pages\\\\sac-rengi-tahmini.vue",
     "chunkName": "pages/sac-rengi-tahmini",
-    "url": "/sac-rengi-tahmini",
-    "_name": "_ce8f37a6"
+    "url": "/sac-rengi-tahmini"
   },
   {
     "name": "uye-giris",
     "path": "/uye-giris",
     "component": "C:\\\\Users\\\\Piksel\\\\Desktop\\\\BebegimleHayat\\\\Software\\\\Frontend-Dev\\\\pages\\\\uye-giris.vue",
     "chunkName": "pages/uye-giris",
-    "url": "/uye-giris",
-    "_name": "_24b51831"
+    "url": "/uye-giris"
   },
   {
     "name": "uye-kayit",
     "path": "/uye-kayit",
     "component": "C:\\\\Users\\\\Piksel\\\\Desktop\\\\BebegimleHayat\\\\Software\\\\Frontend-Dev\\\\pages\\\\uye-kayit.vue",
     "chunkName": "pages/uye-kayit",
-    "url": "/uye-kayit",
-    "_name": "_add1b8f6"
+    "url": "/uye-kayit"
   },
   {
     "name": "uye-sifremi-unuttum",
     "path": "/uye-sifremi-unuttum",
     "component": "C:\\\\Users\\\\Piksel\\\\Desktop\\\\BebegimleHayat\\\\Software\\\\Frontend-Dev\\\\pages\\\\uye-sifremi-unuttum.vue",
     "chunkName": "pages/uye-sifremi-unuttum",
-    "url": "/uye-sifremi-unuttum",
-    "_name": "_f156b2c6"
+    "url": "/uye-sifremi-unuttum"
   },
   {
     "name": "yumurtlama-gunu-hesaplama",
     "path": "/yumurtlama-gunu-hesaplama",
     "component": "C:\\\\Users\\\\Piksel\\\\Desktop\\\\BebegimleHayat\\\\Software\\\\Frontend-Dev\\\\pages\\\\yumurtlama-gunu-hesaplama.vue",
     "chunkName": "pages/yumurtlama-gunu-hesaplama",
-    "url": "/yumurtlama-gunu-hesaplama",
-    "_name": "_479ab8f7"
+    "url": "/yumurtlama-gunu-hesaplama"
   },
   {
     "name": "account-change-password",
     "path": "/account/change-password",
     "component": "C:\\\\Users\\\\Piksel\\\\Desktop\\\\BebegimleHayat\\\\Software\\\\Frontend-Dev\\\\pages\\\\account\\\\change-password.vue",
     "chunkName": "pages/account/change-password",
-    "url": "/account/change-password",
-    "_name": "_04568598"
+    "url": "/account/change-password"
   },
   {
     "name": "account-personal-information",
     "path": "/account/personal-information",
     "component": "C:\\\\Users\\\\Piksel\\\\Desktop\\\\BebegimleHayat\\\\Software\\\\Frontend-Dev\\\\pages\\\\account\\\\personal-information.vue",
     "chunkName": "pages/account/personal-information",
-    "url": "/account/personal-information",
-    "_name": "_5f45cb62"
+    "url": "/account/personal-information"
   },
   {
     "name": "yazar-admin",
     "path": "/yazar/admin",
     "component": "C:\\\\Users\\\\Piksel\\\\Desktop\\\\BebegimleHayat\\\\Software\\\\Frontend-Dev\\\\pages\\\\yazar\\\\admin.vue",
     "chunkName": "pages/yazar/admin",
-    "url": "/yazar/admin",
-    "_name": "_83e30a4e"
+    "url": "/yazar/admin"
   },
   {
     "name": "index",
     "path": "/",
     "component": "C:\\\\Users\\\\Piksel\\\\Desktop\\\\BebegimleHayat\\\\Software\\\\Frontend-Dev\\\\pages\\\\index.vue",
     "chunkName": "pages/index",
-    "url": "/",
-    "_name": "_1bf6ee15"
+    "url": "/"
   },
   {
     "name": "seoLink",
     "path": "/:seoLink",
     "component": "C:\\\\Users\\\\Piksel\\\\Desktop\\\\BebegimleHayat\\\\Software\\\\Frontend-Dev\\\\pages\\\\_seoLink.vue",
-    "chunkName": "pages/_seoLink",
-    "_name": "_31dc9076"
+    "chunkName": "pages/_seoLink"
   }
 ]

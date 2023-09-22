@@ -8,6 +8,7 @@ import SearchRepository from '~/repositories/SearchRepository'
 import PageRepository from '~/repositories/PageRepository'
 import ContactRepository from '~/repositories/ContactRepository'
 import CustomerRepository from '~/repositories/CustomerRepository'
+import NameRepository from '~/repositories/NameRepository'
 
 export default ($store, $axios , env) => ({
   category: CategoryRepository($store, $axios),
@@ -19,5 +20,6 @@ export default ($store, $axios , env) => ({
   search: SearchRepository($store, $axios),
   page: PageRepository($store,$axios),
   contact: ContactRepository($store,$axios),
-  customer: CustomerRepository($store,$axios)
+  customer: CustomerRepository($store,$axios),
+  name: NameRepository($store,$axios)
 })

@@ -25,7 +25,7 @@ export default {
         },
         meta: [
             { charset: 'utf-8' },
-            { name: 'viewport', content: 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no' },
+            { name: 'viewport', content: 'width=device-width, initial-scale=1.0, maximum-scale=1.0' },
             { name: 'author', content: 'Bebeklere Dair Her Şey Burada! | BebeğimleHayat' },
             { hid: 'description', name: 'description', content: 'Bebeklere Dair Her Şey Burada! | BebeğimleHayat' },
             { hid: 'copyright', name: 'copyright', content: 'Bebeklere Dair Her Şey Burada! | BebeğimleHayat' },
@@ -43,16 +43,7 @@ export default {
         ],
         link: [
         ],
-        script: [
-            {
-                innerHTML: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-                    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-                    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-                    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-                    })(window,document,'script','dataLayer','GTM-KM2FC8D');
-                `
-            }
-        ],
+        script: [],
     },
     env: {
         baseUrl: process.env.NODE_ENV == 'development' ? process.env.BASE_URL : process.env.BASE_PROD_URL
@@ -77,8 +68,12 @@ export default {
         'nuxt-purgecss',
         '@nuxtjs/sitemap',
         '@nuxtjs/redirect-module',
-        'nuxt-lazy-load'
+        'nuxt-lazy-load',
+        '@nuxtjs/gtm'
     ],
+    gtm: {
+        id: 'GTM-KM2FC8D'
+    },
     lazyLoad: {
         // These are the default values
         images: true,
@@ -175,7 +170,8 @@ export default {
         { from: '^/sac-rengi-hesaplama', to: '/sac-rengi-tahmini', statusCode: 301 },
         { from: '^/hamilelik-beslenme', to: '/hamilelikte-beslenme', statusCode: 301 },
         { from: '^/contact', to: '/iletisim', statusCode: 301 },
-        { from: '^/hamilelik-cinsellik', to: '/hamilelikte-cinsellik', statusCode: 301 }
+        { from: '^/hamilelik-cinsellik', to: '/hamilelikte-cinsellik', statusCode: 301 },
+        { from: '^/bebek-isimleri', to: '/adan-zye-bebek-isimleri-ve-anlamlari', statusCode: 301 }
     ],
     build: {
         extend(config, ctx) {

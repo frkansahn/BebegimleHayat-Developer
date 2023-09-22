@@ -3,6 +3,7 @@
         <BlogDetail :seoLink="this.$route.params.seoLink" v-if="pageType == 'blog'"/>
         <BlogCategory :seoLink="this.$route.params.seoLink" v-if="pageType == 'blog_category'"/>
         <ContentDetail :seoLink="this.$route.params.seoLink" v-if="pageType == 'content'"/>
+        <NameDetail :seoLink="this.$route.params.seoLink" v-if="pageType == 'name'"/>
     </div>
 </template>
 

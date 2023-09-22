@@ -9,7 +9,7 @@
                     <div class="col-12" v-show="loading">
                         <swiper ref="mySwiper"  :options="swiperOptions" @ready="handleSwiperReadied">
                             <swiper-slide :class="!loading ? 'col-6 col-sm-4 col-md-3 col-lg-2':''" v-for="(slide, index) in pregnancies" v-bind:key="`Slider${index}`">
-                                <NuxtLink class="d-flex align-items-center justify-content-between" :to="slide.url" :id="`slider${index}`">
+                                <NuxtLink class="d-flex align-items-center justify-content-between" :to="slide.url" :id="`pregnancy_slider_${index}`">
                                     <div class="d-flex flex-column">
                                         <div class="font-weight-bold h5 m-0">
                                             {{ slide.name }}.
@@ -20,7 +20,7 @@
                                         </span>
                                     </div>
                                     <span v-if="slide.image">
-                                        <img loading="lazy" width="140" height="140" :src="slide.image" />
+                                        <img loading="lazy" width="140" height="140" :src="slide.image" alt="Hafta hafta hamilelik"/>
                                     </span>
                                 </NuxtLink>
                             </swiper-slide>

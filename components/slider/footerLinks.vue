@@ -10,7 +10,7 @@
 
 								<picture>
 									<source type="image/webp" :srcset="`https://api.bebegimlehayat.com/Data/image/small/${slide.image}.webp`" />
-									<img :src="`https://api.bebegimlehayat.com/Data/image/small/${slide.image}.jpeg`" :alt="slide.name" width="158" height="112"/>
+									<img :src="`https://api.bebegimlehayat.com/Data/image/small/${slide.image}.jpeg`" :alt="'Footer Link ' + index" width="158" height="112"/>
 								</picture>
 							</span>
 							<p class="mt-2 text-white h6">

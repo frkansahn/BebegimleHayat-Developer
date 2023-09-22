@@ -68,9 +68,6 @@
   "ContentDetail": {
     "description": "Auto imported from components/content/detail.vue"
   },
-  "ElementImage": {
-    "description": "Auto imported from components/element/image.vue"
-  },
   "HomepageBabyNames": {
     "description": "Auto imported from components/homepage/BabyNames.vue"
   },
@@ -82,6 +79,12 @@
   },
   "HomepagePregnancyWeekByWeek": {
     "description": "Auto imported from components/homepage/PregnancyWeekByWeek.vue"
+  },
+  "ElementImage": {
+    "description": "Auto imported from components/element/image.vue"
+  },
+  "NameDetail": {
+    "description": "Auto imported from components/name/detail.vue"
   },
   "SliderFooterLinks": {
     "description": "Auto imported from components/slider/footerLinks.vue"

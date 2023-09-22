@@ -107,7 +107,7 @@
 
 					<div class="col-12 mt-5 d-flex d-md-none align-items-center justify-content-center"
 						id="social-link">
-						<a href="https://www.facebook.com/bebegimlehayatcom" target="_blank"
+						<a href="https://www.facebook.com/bebegimlehayatcom" aria-label="Facebok" target="_blank"
 							class="mx-1 facebook-link">
 							<svg xmlns="http://www.w3.org/2000/svg"
 								xmlns:xlink="http://www.w3.org/1999/xlink" fill="#fff" height="30"
@@ -118,7 +118,7 @@
 							</svg>
 						</a>
 
-						<a href="https://www.instagram.com/bebegimlehayatcom/" target="_blank"
+						<a href="https://www.instagram.com/bebegimlehayatcom/" aria-label="Instagram" target="_blank"
 							class="mx-1 instagram-link">
 							<svg xmlns="http://www.w3.org/2000/svg" fill="#fff" width="30"
 								height="30" viewBox="0 0 19.2 19.2" data-name="Instagram w/circle">
@@ -127,7 +127,7 @@
 							</svg>
 						</a>
 
-						<a href="https://www.youtube.com/@BebegimleHayatcom" target="_blank"
+						<a href="https://www.youtube.com/@BebegimleHayatcom" aria-label="Youtube" target="_blank"
 							class="mx-1 youtube-link">
 							<svg xmlns="http://www.w3.org/2000/svg" width="35" height="35"
 								viewBox="0 0 48 48" fill="none">
@@ -138,7 +138,7 @@
 							</svg>
 						</a>
 
-						<a href="https://www.linkedin.com/company/bebegimlehayatcom" target="_blank"
+						<a href="https://www.linkedin.com/company/bebegimlehayatcom" aria-label="Linkedin" target="_blank"
 							class="mx-1 linkedin-link">
 							<svg xmlns="http://www.w3.org/2000/svg" width="35" height="35"
 								viewBox="0 0 32 32" fill="none">
@@ -154,7 +154,7 @@
 							</svg>
 						</a>
 
-						<a href="https://twitter.com/bebegimlehayatt" target="_blank"
+						<a href="https://twitter.com/bebegimlehayatt" aria-label="Twitter" target="_blank"
 							class="mx-1 twitter-link">
 							<svg xmlns="http://www.w3.org/2000/svg" width="36" height="36"
 								viewBox="0 0 48 48" fill="none">
@@ -165,7 +165,7 @@
 							</svg>
 						</a>
 
-						<a href="https://www.threads.net/@bebegimlehayatcom" target="_blank"
+						<a href="https://www.threads.net/@bebegimlehayatcom" aria-label="Threads" target="_blank"
 							class="mx-1 threads-link">
 							<svg xmlns="http://www.w3.org/2000/svg" aria-label="Threads"
 								viewBox="0 0 192 192" width="35" height="35">
@@ -210,7 +210,7 @@
 							</li>
 						</ul>
 						<div class="d-none d-md-flex align-items-center" id="social-link">
-							<a href="https://www.facebook.com/bebegimlehayatcom" target="_blank" class="ml-3 facebook-link">
+							<a href="https://www.facebook.com/bebegimlehayatcom" target="_blank" aria-label="Facebok" class="ml-3 facebook-link">
 								<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
 									fill="#fff" height="30" width="30" version="1.1" id="Layer_1" viewBox="-143 145 512 512"
 									xml:space="preserve">
@@ -219,7 +219,7 @@
 								</svg>
 							</a>
 
-							<a href="https://www.instagram.com/bebegimlehayatcom/" target="_blank"
+							<a href="https://www.instagram.com/bebegimlehayatcom/" aria-label="Instagram" target="_blank"
 								class="ml-3 instagram-link">
 								<svg xmlns="http://www.w3.org/2000/svg" fill="#fff" width="30" height="30"
 									viewBox="0 0 19.2 19.2" data-name="Instagram w/circle">
@@ -228,7 +228,7 @@
 								</svg>
 							</a>
 
-							<a href="https://www.youtube.com/@BebegimleHayatcom" target="_blank" class="ml-3 youtube-link">
+							<a href="https://www.youtube.com/@BebegimleHayatcom" target="_blank" aria-label="Youtube" class="ml-3 youtube-link">
 								<svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 48 48"
 									fill="none">
 									<circle cx="24" cy="24" r="20" fill="#fff"></circle>
@@ -238,7 +238,7 @@
 								</svg>
 							</a>
 
-							<a href="https://www.linkedin.com/company/bebegimlehayatcom" target="_blank"
+							<a href="https://www.linkedin.com/company/bebegimlehayatcom" aria-label="Linkedin" target="_blank"
 								class="ml-3 linkedin-link">
 								<svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 32 32"
 									fill="none">
@@ -253,7 +253,7 @@
 								</svg>
 							</a>
 
-							<a href="https://twitter.com/bebegimlehayatt" target="_blank" class="ml-3 twitter-link">
+							<a href="https://twitter.com/bebegimlehayatt" target="_blank" aria-label="Twitter" class="ml-3 twitter-link">
 								<svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 48 48"
 									fill="none">
 									<circle cx="24" cy="24" r="20" fill="#fff"></circle>
@@ -263,7 +263,7 @@
 								</svg>
 							</a>
 
-							<a href="https://www.threads.net/@bebegimlehayatcom" target="_blank" class="ml-3 threads-link">
+							<a href="https://www.threads.net/@bebegimlehayatcom" target="_blank" aria-label="Threads" class="ml-3 threads-link">
 								<svg xmlns="http://www.w3.org/2000/svg" aria-label="Threads" viewBox="0 0 192 192"
 									width="35" height="35">
 									<path class="x19hqcy"
@@ -273,8 +273,7 @@
 						</div>
 					</div>
 					<div class="col-12 tumHaklar">
-						Bu sitede yer alan içerikler tamamen bilgilendirme amaçlıdır. Doktor tavsiyesi yerine kesinlikle
-						geçmez. Tanı ve tedavi için hekiminize danışınız.
+						Bu sitede yer alan içerikler tamamen bilgilendirme amaçlıdır. Bilgilerin yanlış anlaşılmasından ve buna bağlı olarak doğabilecek sorunlardan sitemiz yasal sorumluluk altında değildir. Bu sitede verilen bilgilerin kullanılmasının sorumlulugu tümüyle kullanıcıya aittir. Doktor tavsiyesi yerine kesinlikle geçmez. Tanı ve tedavi için hekiminize danışınız.
 					</div>
 				</div>
 			</div>
